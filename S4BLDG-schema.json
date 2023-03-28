@@ -4,11 +4,7 @@
   "title": "Common definitions for SAREF",
   "definitions": {
     "Measurement": {
-      "$id": "https://smart-data-models.github.com/dataModel.SAREF/Measurement",
-      "derivedFrom": "https://saref.etsi.org/core/v3.1.1/#saref:Measurement",
-      "title": "Smart data models - Measurement schema",
-      "type": "object",
-      "license": "https://opensource.org/licenses/BSD-3-Clause",
+     "type": "object",
       "description": "Property. Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement.",
       "properties": {
         "observedAt": {
@@ -27,10 +23,6 @@
       }
     },
     "Bounds": {
-      "$id": "https://smart-data-models.github.com/dataModel.SAREF/Bounds",
-      "title": "Smart data models - Bounds schema",
-      "type": "object",
-      "license": "https://opensource.org/licenses/BSD-3-Clause",
       "description": "Property. Represents a box in a 3D space.",
       "properties": {
         "max": {
@@ -51,10 +43,7 @@
       }
     },
     "Point": {
-      "$id": "https://smart-data-models.github.com/dataModel.SAREF/Point",
-      "title": "Smart data models - Point schema",
       "type": "object",
-      "license": "https://opensource.org/licenses/BSD-3-Clause",
       "description": "Property. Represents a point in a 3D space.",
       "properties": {
         "type": {
@@ -79,18 +68,9 @@
       }
     },
     "Predictions": {
-      "$id": "https://smart-data-models.github.com/dataModel.SAREF/Predictions",
-      "title": "Smart data models - Predictions schema",
       "type": "object",
-      "license": "https://opensource.org/licenses/BSD-3-Clause",
       "description": "Contains a list of predictions for a specific Measurement of a Physical Object.",
       "allOf": [
-        {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-        },
-        {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-        },
         {
           "properties": {
             "type": {
@@ -103,16 +83,6 @@
             "author": {
               "type": "string",
               "description": "Property. A sequence of characters identifying the provider of the harmonised data entity."
-            },
-            "dateCreated": {
-              "type": "string",
-              "format": "date-time",
-              "description": "Property. Entity creation timestamp. This will usually be allocated by the storage platform."
-            },
-            "dateModified": {
-              "type": "string",
-              "format": "date-time",
-              "description": "Property. Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
             },
             "isForPhysicalObject": {
               "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType",
@@ -129,29 +99,15 @@
                 "$ref": "#/definitions/Measurement",
                 "description": "Property. Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."
               }
-            },
-            "source": {
-              "type": "string",
-              "description": "Property. A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
             }
           }
         }
       ]
     },
     "PhysicalObject": {
-      "$id": "https://smart-data-models.github.com/dataModel.SAREF/PhysicalObject",
-      "derivedFrom": "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:PhysicalObject",
-      "title": "Smart data models - PhysicalObject schema",
       "type": "object",
-      "license": "https://opensource.org/licenses/BSD-3-Clause",
       "description": "Any Object that has a proper space region.  (Definition extracted from DUL ontology)",
       "allOf": [
-        {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-        },
-        {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-        },
         {
           "properties": {
             "type": {
