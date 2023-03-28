@@ -30,7 +30,7 @@
 <!-- 80-Examples -->  
 ## ＃＃＃＃有效载荷的例子  
 #### AirToAirHeatRecovery NGSI-v2 关键值示例  
-这里是一个以JSON-LD格式作为关键值的AirToAirHeatRecovery的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+下面是一个以JSON-LD格式作为关键值的AirToAirHeatRecovery的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
