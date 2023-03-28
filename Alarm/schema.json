@@ -19,7 +19,7 @@
       "properties": {
         "type": {
           "type": "string",
-          "description": "Property. It must be equal to `Alarm`.",
+          "description": "Property. It must be equal to Alarm.",
           "enum": [
             "Alarm"
           ]
