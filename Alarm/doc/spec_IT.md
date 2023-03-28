@@ -56,7 +56,7 @@
 ```  
 </details>  
 #### Allarme NGSI-v2 normalizzato Esempio  
-Ecco un esempio di allarme in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di allarme in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
