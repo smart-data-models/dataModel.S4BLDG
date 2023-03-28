@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.2",
+  "$schemaVersion": "0.0.1",
   "modelTags": "SAREF Actuator SMART DATA MODELS",
   "$id": "https://smart-data-models.github.com/dataModel.SAREF4BLDG/Actuator/schema.json",
   "derivedFrom": "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:Actuator",
