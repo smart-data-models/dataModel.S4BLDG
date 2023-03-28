@@ -88,7 +88,7 @@
 ```  
 </details>  
 #### AirToAirHeatRecovery NGSI-v2 正規化例  
-AirToAirHeatRecoveryをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+AirToAirHeatRecoveryをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
