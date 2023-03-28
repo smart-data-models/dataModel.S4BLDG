@@ -87,7 +87,7 @@
 }  
 ```  
 </details>  
-#### Recupero aria-aria-riscaldamento NGSI-v2 normalizzato Esempio  
+#### Recupero di calore da aria ad aria NGSI-v2 normalizzato Esempio  
 Ecco un esempio di recupero di calore AirToAirHeatRecovery in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
