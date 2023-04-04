@@ -7,6 +7,8 @@ Version: 0.0.1
 An alarm is a device that signals the existence of a condition or situation that is outside the boundaries of normal expectation or that activates such a device.  Alarms include the provision of break glass buttons and manual pull boxes that are used to activate alarms.
 ### Specification
 
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.S4BLDG/Alarm/swagger.yaml)
+
 Link to the [specification](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Alarm/doc/spec.md)
 
 Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Alarm/doc/spec_ES.md)
