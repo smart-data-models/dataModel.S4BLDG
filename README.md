@@ -9,10 +9,20 @@ The following entity types are available:
 
 - [Alarm](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Alarm/README.md). An alarm is a device that signals the existence of a condition or situation that is outside the boundaries of normal expectation or that activates such a device.  Alarms include the provision of break glass buttons and manual pull boxes that are used to activate alarms.
 
+- [AudioVisualAppliance](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/AudioVisualAppliance/README.md). An audio-visual appliance is a device that displays, captures, transmits, or receives audio or video.  Audio-visual appliances may be fixed in place or may be able to be moved from one space to another. They may require an electrical supply that may be supplied either by an electrical circuit or provided from a local battery source. Audio-visual appliances may be connected to data circuits including specialist circuits for audio visual purposes only.
+
+- [Boiler](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Boiler/README.md). A boiler is a closed, pressure-rated vessel in which water or other fluid is heated using an energy source such as natural gas, heating oil, or electricity. The fluid in the vessel is then circulated out of the boiler for use in various processes or heating applications.
+
+- [Burner](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Burner/README.md). A burner is a device that converts fuel into heat through combustion. It includes gas, oil, and wood burners.
+
+- [Chiller](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Chiller/README.md). A chiller is a device used to remove heat from a liquid via a vapor-compression or absorption refrigeration cycle to cool a fluid, typically water or a mixture of water and glycol. The chilled fluid is then used to cool and dehumidify air in a building.
+
+- [Coil](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Coil/README.md). A coil is a device used to provide heat transfer between non-mixing media. A common example is a cooling coil, which utilizes a finned coil in which circulates chilled water, antifreeze, or refrigerant that is used to remove heat from air moving across the surface of the coil. A coil may be used either for heating or cooling purposes by placing a series of tubes (the coil) carrying a heating or cooling fluid into an airstream. The coil may be constructed from tubes bundled in a serpentine form or from finned tubes that give a extended heat transfer surface.  Coils may also be used for non-airflow cases such as embedded in a floor slab.
+
 
 
 ### Contributors
-[Link](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/CONTRIBUTORS.yaml) to the 1 current contributors of the data models of this Subject.
+[Link](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/CONTRIBUTORS.yaml) to the 2 current contributors of the data models of this Subject.
 
 
 ### Contribution
