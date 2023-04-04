@@ -1,0 +1,3 @@
+/* (Beta) Export of data model AudioVisualAppliance of the subject dataModel.S4BLDG for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE AudioVisualAppliance_type AS ENUM ('AudioVisualAppliance');
+CREATE TABLE AudioVisualAppliance (address json, alternateName text, areaServed text, audioVolume json, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, hasManufacturer text, hasModel text, id text, isContainedInBuildingSpace json, isContainedInPhysicalObject json, isSubSystemOf json, location json, mediaSource text, name text, owner json, seeAlso json, source text, type AudioVisualAppliance_type);
