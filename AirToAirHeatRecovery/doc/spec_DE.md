@@ -7,16 +7,18 @@
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Globale Beschreibung: **Ein Luft-Luft-Wärmerückgewinnungsgerät verwendet einen Gegenstrom-Wärmetauscher zwischen dem eintretenden und dem austretenden Luftstrom. Er wird in der Regel verwendet, um Wärme von wärmerer Luft in einer Kammer auf kühlere Luft in der zweiten Kammer zu übertragen (d. h. er wird in der Regel verwendet, um Wärme aus der konditionierten Luft, die abgeleitet wird, und der Außenluft, die einem Gebäude zugeführt wird, zurückzugewinnen), was zu Energieeinsparungen durch einen geringeren Heiz- (oder Kühl-) Bedarf führt.**  
+Version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-<!-- /30-PropertiesList -->  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `hasDefrost[boolean]`: Eigenschaft. Ob der Wärmetauscher über eine Abtaufunktion verfügt oder nicht.  - `hasManufacturer[string]`: Eigenschaft. Eine Beziehung, die den Hersteller einer Entität (z. B. eines Geräts) identifiziert. Der Wert sollte eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen sein.  - `hasModel[string]`: Eigenschaft. Eine Beziehung, die das Modell einer Entität (z. B. eines Geräts) identifiziert. Als Wert wird eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen erwartet.  - `heatTransferTypeEnum[string]`: Eigenschaft. Art der Wärmeübertragung zwischen den beiden Luftströmen.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `isContainedInBuildingSpace[*]`: Beziehung. Eine Einheit, die zur Definition der physischen Räume des Gebäudes verwendet wird. Ein Gebäudebereich enthält Geräte oder Gebäudeobjekte. (GebäudeRaum)  - `isContainedInPhysicalObject[*]`: Verwandtschaft. Jedes Objekt, das eine eigene Raumregion hat.  (Definition aus der DUL Ontologie) (PhysicalObject)  - `isSubSystemOf[array]`: Beziehung. Ein Verweis auf ein oder mehrere Systeme, zu denen dieses physische Objekt gehört.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `operationTemperatureMax[object]`: Eigenschaft. Zulässiger Temperaturbereich der Betriebsumgebung (Luft, Flüssigkeit). Wird normalerweise in Grad Kelvin (K) gemessen.  - `operationTemperatureMin[object]`: Eigenschaft. Zulässiger Temperaturbereich der Betriebsumgebung (Luft, Flüssigkeit). Wird normalerweise in Grad Kelvin (K) gemessen.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `primaryAirFlowRateMax[object]`: Eigenschaft. Maximaler Primärluftstrom, der geliefert werden kann. Wird normalerweise in m3/s gemessen.  - `primaryAirFlowRateMin[object]`: Eigenschaft. Minimaler Primärluftstrom, der geliefert werden kann. Wird normalerweise in m3/s gemessen.  - `secondaryAirFlowRateMax[object]`: Eigenschaft. Maximaler sekundärer Luftstrom, der geliefert werden kann. Wird normalerweise in Pascal (Pa, N/m2) gemessen.  - `secondaryAirFlowRateMin[object]`: Eigenschaft. Maximaler sekundärer Luftstrom, der geliefert werden kann. Wird normalerweise in Pascal (Pa, N/m2) gemessen.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: Eigenschaft. Sie muss gleich `AirToAirHeatRecovery` sein.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- Keine erforderlichen Eigenschaften  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
@@ -24,6 +26,374 @@
 Alphabetisch sortiert (für Details anklicken)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
+AirToAirHeatRecovery:    
+  description: 'An air-to-air heat recovery device employs a counter-flow heat exchanger between inbound and outbound air flow. It is typically used to transfer heat from warmer air in one chamber to cooler air in the second chamber (i.e., typically used to recover heat from the conditioned air being exhausted and the outside air being supplied to a building), resulting in energy savings from reduced heating (or cooling) requirements.'    
+  properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          type: string    
+        addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          type: string    
+        addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          type: string    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          type: string    
+        postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          type: string    
+        postalCode:    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          type: string    
+        streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          type: string    
+        streetNr:    
+          description: Number identifying a specific property on a public street.    
+          type: string    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    hasDefrost:    
+      description: Property. Whether the heat exchanger has defrost function or not.    
+      type: boolean    
+      x-ngsi:    
+        type: Property    
+    hasManufacturer:    
+      description: 'Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    hasModel:    
+      description: 'Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    heatTransferTypeEnum:    
+      description: Property. Type of heat transfer between the two air streams.    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf: &airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
+        - description: Property. Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: Property. Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
+    isContainedInBuildingSpace:    
+      anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
+      description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
+      x-ngsi:    
+        type: Property    
+    isContainedInPhysicalObject:    
+      anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
+      description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
+      x-ngsi:    
+        type: Property    
+    isSubSystemOf:    
+      description: Relationship. A reference to a system(s) that this Physical Object is part of.    
+      items:    
+        anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
+        description: Property. Unique identifier of the entity    
+      type: array    
+      x-ngsi:    
+        type: Relationship    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: GeoProperty. Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+      x-ngsi:    
+        type: GeoProperty    
+    name:    
+      description: The name of this item.    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    operationTemperatureMax:    
+      description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
+      properties: &airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
+        observedAt:    
+          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).    
+          format: date-time    
+          type: string    
+        unitCode:    
+          description: Property. A relationship identifying the unit of measure used for a certain entity.    
+          type: string    
+        value:    
+          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'    
+          type: number    
+      type: object    
+      x-ngsi:    
+        type: Property    
+    operationTemperatureMin:    
+      description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
+      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
+      type: object    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
+        description: Property. Unique identifier of the entity    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    primaryAirFlowRateMax:    
+      description: Property. Maximum primary airflow that can be delivered. Usually measured in m3/s.    
+      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
+      type: object    
+      x-ngsi:    
+        type: Property    
+    primaryAirFlowRateMin:    
+      description: Property. Minimum primary airflow that can be delivered. Usually measured in m3/s.    
+      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
+      type: object    
+      x-ngsi:    
+        type: Property    
+    secondaryAirFlowRateMax:    
+      description: 'Property. Maximum secondary airflow that can be delivered. Usually measured in Pascals (Pa, N/m2).'    
+      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
+      type: object    
+      x-ngsi:    
+        type: Property    
+    secondaryAirFlowRateMin:    
+      description: 'Property. Maximum secondary airflow that can be delivered. Usually measured in Pascals (Pa, N/m2).'    
+      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
+      type: object    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    type:    
+      description: Property. It must be equal to `AirToAirHeatRecovery`.    
+      enum:    
+        - AirToAirHeatRecovery    
+      type: string    
+      x-ngsi:    
+        type: Property    
+  required:    
+    - id    
+    - type    
+  type: object    
+  x-derived-from: "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:AirToAirHeatRecovery"    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/AirToAirHeatRecovery/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/AirToAirHeatRecovery/schema.json    
+  x-model-tags: SAREF AirToAirHeatRecovery SMART DATA MODELS    
+  x-version: 0.0.1    
+```  
+</details>    
 <!-- /60-ModelYaml -->  
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
