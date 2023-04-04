@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://smart-data-models.github.com/dataModel.SAREF/commons",
-  "title": "Common definitions for SAREF",
+  "title": "Common definitions for SAREF for buildings",
   "definitions": {
     "Measurement": {
       "type": "number",
