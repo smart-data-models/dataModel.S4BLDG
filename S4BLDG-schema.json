@@ -4,23 +4,8 @@
   "title": "Common definitions for SAREF",
   "definitions": {
     "Measurement": {
-     "type": "object",
-      "description": "Property. Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement.",
-      "properties": {
-        "observedAt": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Property. A relationship stating the timestamp of an entity (e.g. a measurement)."
-        },
-        "value": {
-          "type": "number",
-          "description": "Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes."
-        },
-        "unitCode": {
-          "type": "string",
-          "description": "Property. A relationship identifying the unit of measure used for a certain entity."
-        }
-      }
+      "type": "number",
+      "description": "Property. Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."
     },
     "Bounds": {
       "description": "Property. Represents a box in a 3D space.",
