@@ -66,22 +66,22 @@ AirToAirHeatRecovery:
       x-ngsi:
         type: Property
     hasDefrost:
-      description: Whether the heat exchanger has defrost function or not.
+      description: Property. Whether the heat exchanger has defrost function or not.
       type: boolean
       x-ngsi:
         type: Property
     hasManufacturer:
-      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'
+      description: 'Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'
       type: string
       x-ngsi:
         type: Property
     hasModel:
-      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'
+      description: 'Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'
       type: string
       x-ngsi:
         type: Property
     heatTransferTypeEnum:
-      description: Type of heat transfer between the two air streams.
+      description: Property. Type of heat transfer between the two air streams.
       type: string
       x-ngsi:
         type: Property
@@ -100,16 +100,16 @@ AirToAirHeatRecovery:
         type: Property
     isContainedInBuildingSpace:
       anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof
-      description: Unique identifier of the entity
+      description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)
       x-ngsi:
         type: Property
     isContainedInPhysicalObject:
       anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof
-      description: Unique identifier of the entity
+      description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)
       x-ngsi:
         type: Property
     isSubSystemOf:
-      description: A reference to a system(s) that this Physical Object is part of.
+      description: Relationship. A reference to a system(s) that this Physical Object is part of.
       items:
         anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof
         description: Property. Unique identifier of the entity
@@ -275,7 +275,7 @@ AirToAirHeatRecovery:
       x-ngsi:
         type: Property
     operationTemperatureMax:
-      description: Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement.
+      description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'
       properties: &airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties
         observedAt:
           description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).
@@ -291,7 +291,7 @@ AirToAirHeatRecovery:
       x-ngsi:
         type: Property
     operationTemperatureMin:
-      description: Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement.
+      description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'
       properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties
       type: object
       x-ngsi:
@@ -305,25 +305,25 @@ AirToAirHeatRecovery:
       x-ngsi:
         type: Property
     primaryAirFlowRateMax:
-      description: Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement.
+      description: Property. Maximum primary airflow that can be delivered. Usually measured in m3/s.
       properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties
       type: object
       x-ngsi:
         type: Property
     primaryAirFlowRateMin:
-      description: Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement.
+      description: Property. Minimum primary airflow that can be delivered. Usually measured in m3/s.
       properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties
       type: object
       x-ngsi:
         type: Property
     secondaryAirFlowRateMax:
-      description: Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement.
+      description: 'Property. Maximum secondary airflow that can be delivered. Usually measured in Pascals (Pa, N/m2).'
       properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties
       type: object
       x-ngsi:
         type: Property
     secondaryAirFlowRateMin:
-      description: Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement.
+      description: 'Property. Maximum secondary airflow that can be delivered. Usually measured in Pascals (Pa, N/m2).'
       properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties
       type: object
       x-ngsi:
@@ -346,7 +346,7 @@ AirToAirHeatRecovery:
       x-ngsi:
         type: Property
     type:
-      description: It must be equal to `AirToAirHeatRecovery`.
+      description: Property. It must be equal to `AirToAirHeatRecovery`.
       enum:
         - AirToAirHeatRecovery
       type: string
