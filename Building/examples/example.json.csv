@@ -1,0 +1,2 @@
+"id_", "type_", "dateCreated_", "dateModified_", "source_", "name_", "alternateName_", "description_", "dataProvider_"
+"urn:ngsi-ld:Building:a3b15710-993b-4af9-9a28-bdccdf936948", "Building", "2023-01-26T08:50:56Z", "2023-01-25T16:09:41Z", "Import", "Building", "Building type 2", "Building of limited Building types", "IFC file"
