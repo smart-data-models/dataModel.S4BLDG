@@ -13,11 +13,21 @@ The following entity types are available:
 
 - [Boiler](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Boiler/README.md). A boiler is a closed, pressure-rated vessel in which water or other fluid is heated using an energy source such as natural gas, heating oil, or electricity. The fluid in the vessel is then circulated out of the boiler for use in various processes or heating applications.
 
+- [Building](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Building/README.md). A building represents a structure that provides shelter for its occupants or contents and stands in one place. The building is also used to provide a basic element within the spatial structure hierarchy for the components of a building project (together with site, storey, and space).
+
+- [BuildingSpace](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/BuildingSpace/README.md). An entity used to define the physical spaces of the building. A building space contains devices or building objects.
+
 - [Burner](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Burner/README.md). A burner is a device that converts fuel into heat through combustion. It includes gas, oil, and wood burners.
 
 - [Chiller](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Chiller/README.md). A chiller is a device used to remove heat from a liquid via a vapor-compression or absorption refrigeration cycle to cool a fluid, typically water or a mixture of water and glycol. The chilled fluid is then used to cool and dehumidify air in a building.
 
 - [Coil](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Coil/README.md). A coil is a device used to provide heat transfer between non-mixing media. A common example is a cooling coil, which utilizes a finned coil in which circulates chilled water, antifreeze, or refrigerant that is used to remove heat from air moving across the surface of the coil. A coil may be used either for heating or cooling purposes by placing a series of tubes (the coil) carrying a heating or cooling fluid into an airstream. The coil may be constructed from tubes bundled in a serpentine form or from finned tubes that give a extended heat transfer surface.  Coils may also be used for non-airflow cases such as embedded in a floor slab.
+
+- [CommunicationAppliance](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/CommunicationAppliance/README.md). A communications appliance transmits and receives electronic or digital information as data or sound.  Communication appliances may be fixed in place or may be able to be moved from one space to another. Communication appliances require an electrical supply that may be supplied either by an electrical circuit or provided from a local battery source.
+
+- [Compressor](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Compressor/README.md). A compressor is a device that compresses a fluid typically used in a refrigeration circuit.
+
+- [Condenser](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Condenser/README.md). A condenser is a device that is used to dissipate heat, typically by condensing a substance such as a refrigerant from its gaseous to its liquid state.
 
 
 
