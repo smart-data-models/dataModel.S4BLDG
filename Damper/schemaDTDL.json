@@ -1,0 +1,350 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Damper;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart data models - Damper schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/Damper/schema.json",
+    "description": "A damper typically participates in an HVAC duct distribution system and is used to control or modulate the flow of air.",
+    "displayName": "Damper",
+    "contents": [
+        {
+            "name": "airFlowRateMax",
+            "writable": true,
+            "displayName": "airFlowRateMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Maximum allowable air flow rate. Usually measured in m3/s."
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "bladeAction",
+            "writable": true,
+            "displayName": "bladeAction",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Blade action."
+        },
+        {
+            "name": "bladeEdge",
+            "writable": true,
+            "displayName": "bladeEdge",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Blade edge."
+        },
+        {
+            "name": "bladeShape",
+            "writable": true,
+            "displayName": "bladeShape",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Blade shape. Flat means triple V-groove."
+        },
+        {
+            "name": "bladeThickness",
+            "writable": true,
+            "displayName": "bladeThickness",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The thickness of the damper blade. Usually measured in millimeters (mm)."
+        },
+        {
+            "name": "closeOffRating",
+            "writable": true,
+            "displayName": "closeOffRating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Close off rating. Usually measured in Pascals (Pa, N/m2)."
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "faceArea",
+            "writable": true,
+            "displayName": "faceArea",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Face area open to the airstream. Usually measured in square metre (m2)."
+        },
+        {
+            "name": "frameDepth",
+            "writable": true,
+            "displayName": "frameDepth",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The length (or depth) of the damper frame. Usually measured in millimeters (mm)."
+        },
+        {
+            "name": "frameThickness",
+            "writable": true,
+            "displayName": "frameThickness",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The thickness of the damper frame material. Usually measured in millimeters (mm)."
+        },
+        {
+            "name": "frameType",
+            "writable": true,
+            "displayName": "frameType",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. The type of frame used by the damper (e.g., Standard, Single Flange, Single Reversed Flange, Double Flange, etc.)."
+        },
+        {
+            "name": "hasManufacturer",
+            "writable": true,
+            "displayName": "hasManufacturer",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag."
+        },
+        {
+            "name": "hasModel",
+            "writable": true,
+            "displayName": "hasModel",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag."
+        },
+        {
+            "name": "isContainedInBuildingSpace",
+            "writable": true,
+            "displayName": "isContainedInBuildingSpace"
+        },
+        {
+            "name": "isContainedInPhysicalObject",
+            "writable": true,
+            "displayName": "isContainedInPhysicalObject"
+        },
+        {
+            "name": "leakageFullyClosed",
+            "writable": true,
+            "displayName": "leakageFullyClosed",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Leakage when fully closed. Usually measured in m3/s."
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "nominalAirFlowRate",
+            "writable": true,
+            "displayName": "nominalAirFlowRate",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Nominal rate of air flow. Usually measured in m3/s."
+        },
+        {
+            "name": "numberOfBlades",
+            "writable": true,
+            "displayName": "numberOfBlades",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Number of blades."
+        },
+        {
+            "name": "openPressureDrop",
+            "writable": true,
+            "displayName": "openPressureDrop",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Total pressure drop across damper. Usually measured in Pascals (Pa, N/m2)."
+        },
+        {
+            "name": "operation",
+            "writable": true,
+            "displayName": "operation",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. The operational mechanism for the damper operation."
+        },
+        {
+            "name": "operationTemperatureMax",
+            "writable": true,
+            "displayName": "operationTemperatureMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+        },
+        {
+            "name": "operationTemperatureMin",
+            "writable": true,
+            "displayName": "operationTemperatureMin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+        },
+        {
+            "name": "orientation",
+            "writable": true,
+            "displayName": "orientation",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. The intended orientation for the damper as specified by the manufacturer."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "temperatureRating",
+            "writable": true,
+            "displayName": "temperatureRating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Temperature rating. Usually measured in degrees Kelvin (K)."
+        },
+        {
+            "name": "workingPressureMax",
+            "writable": true,
+            "displayName": "workingPressureMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Maximum working pressure. Usually measured in Pascals (Pa, N/m2)."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "isSubSystemOf",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Relationship. A reference to a system(s) that this Physical Object is part of.",
+            "displayName": "isSubSystemOf"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "operationMode",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "supply",
+                        "displayName": "supply",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "exhaust",
+                        "displayName": "exhaust",
+                        "enumValue": 2
+                    }
+                ]
+            }
+        }
+    ]
+}
