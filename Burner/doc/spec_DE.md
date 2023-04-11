@@ -475,7 +475,7 @@ Burner:
   "description": "Burner of limited Burner types",  
   "dataProvider": "IFC file",  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/incubated/master/SAREF/context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
   ]  
 }  
@@ -551,7 +551,7 @@ Burner:
     "value": "IFC file"  
   },  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/incubated/master/SAREF/context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
   ]  
 }  
