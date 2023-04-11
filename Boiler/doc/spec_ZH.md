@@ -7,7 +7,7 @@
 [文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-全球描述：**锅炉是一个封闭的、额定压力的容器，水或其他流体在其中利用能源（如天然气、加热油或电力）进行加热。容器中的液体然后从锅炉中循环出来，用于各种工艺或加热应用。**。  
+全球描述：**锅炉是一个封闭的、额定压力的容器，水或其他流体在其中利用能源（如天然气、加热油或电力）进行加热。容器中的液体然后从锅炉中循环出来，用于各种工艺或加热应用。  
 版本：0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
@@ -682,7 +682,7 @@ Boiler:
   "description": "Boiler of limited Boiler types",  
   "dataProvider": "IFC file",  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/incubated/master/SAREF/context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
   ]  
 }  
@@ -820,7 +820,7 @@ Boiler:
     "value": "IFC file"  
   },  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/incubated/master/SAREF/context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
   ]  
 }  

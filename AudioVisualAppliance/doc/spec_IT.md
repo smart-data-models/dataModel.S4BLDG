@@ -7,7 +7,7 @@
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descrizione globale: **Un apparecchio audiovisivo è un dispositivo che visualizza, cattura, trasmette o riceve audio o video.  Le apparecchiature audiovisive possono essere fisse o possono essere spostate da uno spazio all'altro. Possono richiedere un'alimentazione elettrica che può essere fornita da un circuito elettrico o da una batteria locale. Le apparecchiature audiovisive possono essere collegate a circuiti di dati, compresi i circuiti specializzati per i soli scopi audiovisivi.**  
+Descrizione globale: **Un apparecchio audiovisivo è un dispositivo che visualizza, cattura, trasmette o riceve audio o video.  Le apparecchiature audiovisive possono essere fisse o possono essere spostate da uno spazio all'altro. Possono richiedere un'alimentazione elettrica che può essere fornita da un circuito elettrico o da una batteria locale. Le apparecchiature audiovisive possono essere collegate a circuiti di dati, compresi i circuiti specializzati per scopi esclusivamente audiovisivi.**  
 versione: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
@@ -475,7 +475,7 @@ AudioVisualAppliance:
 }  
 ```  
 </details>  
-#### AudioVisualAppliance Valori chiave NGSI-LD Esempio  
+#### AudioVisualAppliance Valori-chiave NGSI-LD Esempio  
 Ecco un esempio di AudioVisualAppliance in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
@@ -501,7 +501,7 @@ AudioVisualAppliance:
   "description": "AudioVisualAppliance of limited AudioVisualAppliance types",  
   "dataProvider": "IFC file",  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/incubated/master/SAREF/context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
   ]  
 }  
@@ -583,7 +583,7 @@ AudioVisualAppliance:
     "value": "IFC file"  
   },  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/incubated/master/SAREF/context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
   ]  
 }  

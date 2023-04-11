@@ -7,7 +7,7 @@
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descrizione globale: **Un allarme è un dispositivo che segnala l'esistenza di una condizione o di una situazione che non rientra nei limiti delle normali aspettative o che attiva tale dispositivo.  Gli allarmi comprendono la fornitura di pulsanti per la rottura del vetro e di cassette di estrazione manuale che vengono utilizzate per attivare gli allarmi **.  
+Descrizione globale: **Un allarme è un dispositivo che segnala l'esistenza di una condizione o di una situazione che non rientra nei limiti delle normali aspettative o che attiva tale dispositivo.  Gli allarmi includono la fornitura di pulsanti per la rottura del vetro e di cassette di estrazione manuale che vengono utilizzate per attivare gli allarmi **.  
 versione: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
@@ -464,7 +464,7 @@ Alarm:
   "description": "Alarm of limited Alarm types",  
   "dataProvider": "IFC file",  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/incubated/master/SAREF/context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
   ]  
 }  
@@ -536,7 +536,7 @@ Alarm:
     "value": "IFC file"  
   },  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/incubated/master/SAREF/context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
   ]  
 }  
