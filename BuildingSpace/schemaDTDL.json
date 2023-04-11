@@ -1,0 +1,262 @@
+{
+    "@id": "dtmi:com:ngsi-ld:BuildingSpace;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart data models - BuildingSpace schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/BuildingSpace/schema.json",
+    "description": "An entity used to define the physical spaces of the building. A building space contains devices or building objects.",
+    "displayName": "BuildingSpace",
+    "contents": [
+        {
+            "name": "airVolume",
+            "writable": true,
+            "displayName": "airVolume",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Air Volume of this building space. Measured in m3."
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "bounds",
+            "writable": true,
+            "displayName": "bounds"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "isSpaceOfBuilding",
+            "writable": true,
+            "displayName": "isSpaceOfBuilding"
+        },
+        {
+            "name": "isSpaceOfBuildingSpace",
+            "writable": true,
+            "displayName": "isSpaceOfBuildingSpace"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "buildingSpaceKind",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "BuildingElementProxy",
+                        "displayName": "BuildingElementProxy",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "BuildingStorey",
+                        "displayName": "BuildingStorey",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "Column",
+                        "displayName": "Column",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "Covering",
+                        "displayName": "Covering",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "CurtainWall",
+                        "displayName": "CurtainWall",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "Door",
+                        "displayName": "Door",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "OpeningElement",
+                        "displayName": "OpeningElement",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "Plate",
+                        "displayName": "Plate",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "Railing",
+                        "displayName": "Railing",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "Roof",
+                        "displayName": "Roof",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "Site",
+                        "displayName": "Site",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "Slab",
+                        "displayName": "Slab",
+                        "enumValue": 12
+                    },
+                    {
+                        "name": "Space",
+                        "displayName": "Space",
+                        "enumValue": 13
+                    },
+                    {
+                        "name": "Stair",
+                        "displayName": "Stair",
+                        "enumValue": 14
+                    },
+                    {
+                        "name": "StairFlight",
+                        "displayName": "StairFlight",
+                        "enumValue": 15
+                    },
+                    {
+                        "name": "Storey",
+                        "displayName": "Storey",
+                        "enumValue": 16
+                    },
+                    {
+                        "name": "Wall",
+                        "displayName": "Wall",
+                        "enumValue": 17
+                    },
+                    {
+                        "name": "WallStandardCase",
+                        "displayName": "WallStandardCase",
+                        "enumValue": 18
+                    },
+                    {
+                        "name": "Window",
+                        "displayName": "Window",
+                        "enumValue": 19
+                    }
+                ]
+            }
+        }
+    ]
+}
