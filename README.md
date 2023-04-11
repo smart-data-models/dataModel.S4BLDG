@@ -29,6 +29,14 @@ The following entity types are available:
 
 - [Condenser](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Condenser/README.md). A condenser is a device that is used to dissipate heat, typically by condensing a substance such as a refrigerant from its gaseous to its liquid state.
 
+- [Controller](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Controller/README.md). A controller is a device that monitors inputs and controls outputs within a building automation system.  A controller may be physical (having placement within a spatial structure) or logical (a software interface or aggregated within a programmable physical controller).
+
+- [CooledBeam](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/CooledBeam/README.md). A cooled beam (or chilled beam) is a device typically used to cool air by circulating a fluid such as chilled water through exposed finned tubes above a space. Typically mounted overhead near or within a ceiling, the cooled beam uses convection to cool the space below it by acting as a heat sink for the naturally rising warm air of the space. Once cooled, the air naturally drops back to the floor where the cycle begins again.
+
+- [CoolingTower](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/CoolingTower/README.md). A cooling tower is a device which rejects heat to ambient air by circulating a fluid such as water through it to reduce its temperature by partial evaporation.
+
+- [Damper](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Damper/README.md). A damper typically participates in an HVAC duct distribution system and is used to control or modulate the flow of air.
+
 
 
 ### Contributors
