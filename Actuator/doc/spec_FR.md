@@ -354,7 +354,7 @@ Actuator:
 <!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### Actionneur NGSI-v2 valeurs clés Exemple  
-Voici un exemple d'un actionneur au format JSON-LD sous forme de valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+Voici un exemple d'actionneur au format JSON-LD sous forme de valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -486,7 +486,7 @@ Actuator:
   "description": "Actuator of limited Actuator types",  
   "dataProvider": "IFC file",  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/incubated/master/SAREF/context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
   ]  
 }  
@@ -566,7 +566,7 @@ Actuator:
     "value": "IFC file"  
   },  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/incubated/master/SAREF/context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
   ]  
 }  
