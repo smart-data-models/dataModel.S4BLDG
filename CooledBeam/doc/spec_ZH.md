@@ -443,7 +443,7 @@ CooledBeam:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ＃＃＃＃有效载荷的例子  
-#### CooledBeam NGSI-v2 关键值示例  
+#### CooledBeam NGSI-v2关键值示例  
 这里是一个以JSON-LD格式作为关键值的CooledBeam的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
@@ -489,7 +489,7 @@ CooledBeam:
 }  
 ```  
 </details>  
-#### CooledBeam NGSI-v2正常化的例子  
+#### CooledBeam NGSI-v2规范化示例  
 下面是一个以JSON-LD格式规范化的CooledBeam的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
