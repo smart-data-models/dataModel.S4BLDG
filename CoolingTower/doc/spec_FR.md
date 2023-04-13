@@ -414,7 +414,7 @@ CoolingTower:
 <!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### CoolingTower NGSI-v2 valeurs clés Exemple  
-Voici un exemple d'une CoolingTower au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'une CoolingTower au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
