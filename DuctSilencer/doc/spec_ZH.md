@@ -1,0 +1,720 @@
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+实体：风道消音器  
+========<!-- /10-Header -->  
+<!-- 15-License -->  
+[开放许可](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/DuctSilencer/LICENSE.md)  
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+全球描述：**风道消音器是一种通常安装在风道分配系统内的装置，目的是降低邻近空间或风道消音器装置下游的空气流动、风扇噪音等的噪音水平。  
+版本：0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
+
+##属性列表  
+
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `airFlowRateMax[number]`: 属性。最大允许的空气流速。通常以m3/s测量。  - `airFlowRateMin[number]`: 财产。最小允许的空气流速。通常以m3/s测量。  - `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `hasExteriorInsulation[boolean]`: 属性。如果消音器有外部绝缘，则为真。如果没有，则为 "FALSE"。  - `hasManufacturer[string]`: 属性。识别实体（例如，设备）的制造商的关系。该值应是一个字符串或一个带有语言标签的字符串。  - `hasModel[string]`: 属性。识别实体（例如，设备）的模型的关系。该值应是一个字符串或一个带有语言标签的字符串。  - `hydraulicDiameter[number]`: 属性。水力直径。通常以毫米（mm）为单位测量。  - `id[*]`: 实体的唯一标识符  - `isContainedInBuildingSpace[*]`: 关系。一个用于定义建筑物理空间的实体。一个建筑空间包含设备或建筑对象。(建筑空间)  - `isContainedInPhysicalObject[*]`: 关系。任何具有适当空间区域的物体。  (从DUL本体论中提取的定义）（PhysicalObject）。  - `isSubSystemOf[array]`: 关系。对该物理对象是其一部分的系统的引用。  - `length[number]`: 属性。设备的成品长度。通常以毫米（mm）为单位测量。  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `operationTemperatureMax[number]`: 属性。允许的操作环境（空气、液体）温度范围。通常以开尔文(K)度衡量。  - `operationTemperatureMin[number]`: 属性。允许的操作环境（空气、液体）温度范围。通常以开尔文(K)度衡量。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: 属性。它必须等于`风道消音器'。  - `weight[number]`: 属性。设备的重量。通常以公斤（kg）或克（g）为单位测量。  - `workingPressureMax[number]`: 属性。最大工作压力。通常以帕斯卡（Pa，N/m2）衡量。  - `workingPressureMin[number]`: 属性。允许的最低工作压力（相对于环境压力）。通常以帕斯卡（Pa，N/m2）衡量。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+所需属性  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## 数据模型的属性描述  
+按字母顺序排列（点击查看详情）。  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
+DuctSilencer:    
+  description: 'A duct silencer is a device that is typically installed inside a duct distribution system for the purpose of reducing the noise levels from air movement, fan noise, etc. in the adjacent space or downstream of the duct silencer device.'    
+  properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          type: string    
+        addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          type: string    
+        addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          type: string    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          type: string    
+        postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          type: string    
+        postalCode:    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          type: string    
+        streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          type: string    
+        streetNr:    
+          description: Number identifying a specific property on a public street.    
+          type: string    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    airFlowRateMax:    
+      description: Property. Maximum allowable air flow rate. Usually measured in m3/s.    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    airFlowRateMin:    
+      description: Property. Minimum allowable air flow rate. Usually measured in m3/s.    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    hasExteriorInsulation:    
+      description: Property. TRUE if the silencer has exterior insulation. FALSE if it does not.    
+      type: boolean    
+      x-ngsi:    
+        type: Property    
+    hasManufacturer:    
+      description: 'Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    hasModel:    
+      description: 'Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    hydraulicDiameter:    
+      description: Property. Hydraulic diameter. Usually measured in millimeters (mm).    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf: &ductsilencer_-_properties_-_iscontainedinbuildingspace_-_anyof    
+        - description: Property. Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: Property. Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
+    isContainedInBuildingSpace:    
+      anyOf: *ductsilencer_-_properties_-_iscontainedinbuildingspace_-_anyof    
+      description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
+      x-ngsi:    
+        type: Property    
+    isContainedInPhysicalObject:    
+      anyOf: *ductsilencer_-_properties_-_iscontainedinbuildingspace_-_anyof    
+      description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
+      x-ngsi:    
+        type: Property    
+    isSubSystemOf:    
+      description: Relationship. A reference to a system(s) that this Physical Object is part of.    
+      items:    
+        anyOf: *ductsilencer_-_properties_-_iscontainedinbuildingspace_-_anyof    
+        description: Property. Unique identifier of the entity    
+      type: array    
+      x-ngsi:    
+        type: Relationship    
+    length:    
+      description: Property. The finished length of the device. Usually measured in millimeters (mm).    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: GeoProperty. Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+      x-ngsi:    
+        type: GeoProperty    
+    name:    
+      description: The name of this item.    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    operationTemperatureMax:    
+      description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    operationTemperatureMin:    
+      description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf: *ductsilencer_-_properties_-_iscontainedinbuildingspace_-_anyof    
+        description: Property. Unique identifier of the entity    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    type:    
+      description: Property. It must be equal to `DuctSilencer`.    
+      enum:    
+        - DuctSilencer    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    weight:    
+      description: Property. The weight of the device. Usually measured in kilograms (kg) or grams (g).    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    workingPressureMax:    
+      description: 'Property. Maximum working pressure. Usually measured in Pascals (Pa, N/m2).'    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    workingPressureMin:    
+      description: 'Property. Allowable minimum working pressure (relative to ambient pressure). Usually measured in Pascals (Pa, N/m2).'    
+      type: number    
+      x-ngsi:    
+        type: Property    
+  required:    
+    - id    
+    - type    
+  type: object    
+  x-derived-from: "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:DuctSilencer"    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/DuctSilencer/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/DuctSilencer/schema.json    
+  x-model-tags: SAREF DuctSilencer    
+  x-version: 0.0.1    
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## ＃＃＃＃有效载荷的例子  
+#### DuctSilencer NGSI-v2 key-values 示例  
+下面是一个以JSON-LD格式作为关键值的DuctSilencer的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:DuctSilencer:439e7a92-6ff4-4b8b-94fa-cefa9b8cc9a2",  
+  "type": "DuctSilencer",  
+  "airFlowRateMax": 0.1608748792870458,  
+  "airFlowRateMin": 0.5144201035637935,  
+  "hasExteriorInsulation": true,  
+  "hydraulicDiameter": 0.655988670157379,  
+  "length": 0.6761801102701772,  
+  "operationTemperatureMax": 0.9108707788637439,  
+  "operationTemperatureMin": 0.38034850956825317,  
+  "weight": 0.3440451194010431,  
+  "workingPressureMax": 0.4689060124065172,  
+  "workingPressureMin": 0.6786833167445696,  
+  "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:35cd1a8e-8ad6-4cd0-9a0c-4270a9cf8680",  
+  "isContainedInPhysicalObject": "urn:ngsi-ld:PhysicalObject:3ba75bf1-2b1d-4988-bf7d-2000b44b87ab",  
+  "isSubSystemOf": [  
+    "urn:ngsi-ld:System:7dd27551-56f1-4c2b-b094-f490114a721e",  
+    "urn:ngsi-ld:System:b6550f33-a522-4632-81e4-dcd4c08d3229",  
+    "urn:ngsi-ld:System:68691c7c-07b2-4009-ae84-c326a9e32071"  
+  ],  
+  "hasManufacturer": "DuctSilencer Company Inc.",  
+  "hasModel": "DuctSilencer 0.1.2",  
+  "dateCreated": "2023-01-26T11:03:15Z",  
+  "dateModified": "2023-01-26T06:10:02Z",  
+  "source": "Import",  
+  "name": "DuctSilencer",  
+  "alternateName": "DuctSilencer type 2",  
+  "description": "DuctSilencer of limited DuctSilencer types",  
+  "dataProvider": "IFC file"  
+}  
+```  
+</details>  
+#### DuctSilencer NGSI-v2规范化示例  
+下面是一个JSON-LD格式的规范化的DuctSilencer的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:DuctSilencer:354bc2c9-fe84-4b86-870e-b4bb0f421e14",  
+  "type": "DuctSilencer",  
+  "airFlowRateMax": {  
+    "type": "Measurement",  
+    "value": 0.42241788558074733  
+  },  
+  "airFlowRateMin": {  
+    "type": "Measurement",  
+    "value": 0.3750532258722393  
+  },  
+  "hasExteriorInsulation": {  
+    "type": "Boolean",  
+    "value": false  
+  },  
+  "hydraulicDiameter": {  
+    "type": "Measurement",  
+    "value":  0.28893264554968967  
+  },  
+  "length": {  
+    "type": "Measurement",  
+    "value": 0.8546214350560009  
+  },  
+  "operationTemperatureMax": {  
+    "type": "Measurement",  
+    "value": 0.5534860278496251  
+  },  
+  "operationTemperatureMin": {  
+    "type": "Measurement",  
+    "value":  0.8929827048351656  
+  },  
+  "weight": {  
+    "type": "Measurement",  
+    "value":  0.6856055430291446  
+  },  
+  "workingPressureMax": {  
+    "type": "Measurement",  
+    "value":  0.28889395933436934  
+  },  
+  "workingPressureMin": {  
+    "type": "Measurement",  
+    "value": 0.5603647437955193  
+  },  
+  "isContainedInBuildingSpace": {  
+    "type": "URI",  
+    "value": "urn:ngsi-ld:BuildingSpace:2e17ab63-5c61-4d14-90a2-6d9c2f96681d"  
+  },  
+  "isContainedInPhysicalObject": {  
+    "type": "URI",  
+    "value": "urn:ngsi-ld:PhysicalObject:edc1a584-5b19-4244-b872-001cf887a7d7"  
+  },  
+  "isSubSystemOf": {  
+    "type": "array",  
+    "value": [  
+      {  
+        "type": "URI",  
+        "value": "urn:ngsi-ld:System:749d1fd1-6e00-4d22-96f6-aec2dda0e494"  
+      },  
+      {  
+        "type": "URI",  
+        "value": "urn:ngsi-ld:System:6e1df1b9-fdec-4c73-9a85-f28b88014ec8"  
+      },  
+      {  
+        "type": "URI",  
+        "value": "urn:ngsi-ld:System:b6ffa288-5b86-40d9-90d7-5fb8b8dc7f02"  
+      }  
+    ]  
+  },  
+  "hasManufacturer": {  
+    "type": "Text",  
+    "value": "DuctSilencer Company Inc."  
+  },  
+  "hasModel": {  
+    "type": "Text",  
+    "value": "DuctSilencer 0.1.2"  
+  },  
+  "dateCreated": {  
+    "type": "DateTime",  
+    "value": "2023-01-25T14:45:14.4588565+01:00"  
+  },  
+  "dateModified": {  
+    "type": "DateTime",  
+    "value": "2023-01-26T11:59:21.5030067+01:00"  
+  },  
+  "source": {  
+    "type": "Text",  
+    "value": "Import"  
+  },  
+  "name": {  
+    "type": "Text",  
+    "value": "DuctSilencer"  
+  },  
+  "alternateName": {  
+    "type": "Text",  
+    "value": "DuctSilencer type 2"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "DuctSilencer of limited DuctSilencer types"  
+  },  
+  "dataProvider": {  
+    "type": "Text",  
+    "value": "IFC file"  
+  }  
+}  
+```  
+</details>  
+#### DuctSilencer NGSI-LD关键值示例  
+这里是一个以JSON-LD格式作为关键值的DuctSilencer的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:DuctSilencer:439e7a92-6ff4-4b8b-94fa-cefa9b8cc9a2",  
+  "type": "DuctSilencer",  
+  "airFlowRateMax": 0.1608748792870458,  
+  "airFlowRateMin": 0.5144201035637935,  
+  "hasExteriorInsulation": true,  
+  "hydraulicDiameter": 0.655988670157379,  
+  "length": 0.6761801102701772,  
+  "operationTemperatureMax": 0.9108707788637439,  
+  "operationTemperatureMin": 0.38034850956825317,  
+  "weight": 0.3440451194010431,  
+  "workingPressureMax": 0.4689060124065172,  
+  "workingPressureMin": 0.6786833167445696,  
+  "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:35cd1a8e-8ad6-4cd0-9a0c-4270a9cf8680",  
+  "isContainedInPhysicalObject": "urn:ngsi-ld:PhysicalObject:3ba75bf1-2b1d-4988-bf7d-2000b44b87ab",  
+  "isSubSystemOf": [  
+    "urn:ngsi-ld:System:7dd27551-56f1-4c2b-b094-f490114a721e",  
+    "urn:ngsi-ld:System:b6550f33-a522-4632-81e4-dcd4c08d3229",  
+    "urn:ngsi-ld:System:68691c7c-07b2-4009-ae84-c326a9e32071"  
+  ],  
+  "hasManufacturer": "DuctSilencer Company Inc.",  
+  "hasModel": "DuctSilencer 0.1.2",  
+  "dateCreated": "2023-01-26T11:03:15Z",  
+  "dateModified": "2023-01-26T06:10:02Z",  
+  "source": "Import",  
+  "name": "DuctSilencer",  
+  "alternateName": "DuctSilencer type 2",  
+  "description": "DuctSilencer of limited DuctSilencer types",  
+  "dataProvider": "IFC file",  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+</details>  
+#### DuctSilencer NGSI-LD规范化示例  
+下面是一个JSON-LD格式的DuctSilencer规范化的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:DuctSilencer:f2f44b77-d3ee-4ab4-bd1a-1c476f674549",  
+  "type": "DuctSilencer",  
+  "airFlowRateMax": {  
+    "type": "Property",  
+    "unitCode": "m3/s",  
+    "observedAt": "2023-01-25T19:54:39Z",  
+    "value": 0.5746033930246481  
+  },  
+  "airFlowRateMin": {  
+    "type": "Property",  
+    "unitCode": "m3/s",  
+    "observedAt": "2023-01-25T21:24:51Z",  
+    "value": 0.6010968836956997  
+  },  
+  "hasExteriorInsulation": {  
+    "type": "Property",  
+    "value": true  
+  },  
+  "hydraulicDiameter": {  
+    "type": "Property",  
+    "unitCode": "mm",  
+    "observedAt": "2023-01-25T17:57:38Z",  
+    "value": 0.6623416028707915  
+  },  
+  "length": {  
+    "type": "Property",  
+    "unitCode": "mm",  
+    "observedAt": "2023-01-25T15:21:41Z",  
+    "value": 0.9676732407508329  
+  },  
+  "operationTemperatureMax": {  
+    "type": "Property",  
+    "unitCode": "K",  
+    "observedAt": "2023-01-26T11:39:38Z",  
+    "value": 0.56707910867758  
+  },  
+  "operationTemperatureMin": {  
+    "type": "Property",  
+    "unitCode": "K",  
+    "observedAt": "2023-01-26T09:06:00Z",  
+    "value": 0.7219158816538178  
+  },  
+  "weight": {  
+    "type": "Property",  
+    "unitCode": "g",  
+    "observedAt": "2023-01-25T21:05:44Z",  
+    "value": 0.6644043164355533  
+  },  
+  "workingPressureMax": {  
+    "type": "Property",  
+    "unitCode": "N/m2",  
+    "observedAt": "2023-01-26T04:07:57Z",  
+    "value": 0.058329572403388985  
+  },  
+  "workingPressureMin": {  
+    "type": "Property",  
+    "unitCode": "N/m2",  
+    "observedAt": "2023-01-25T23:17:06Z",  
+    "value": 0.10711886041657781  
+  },  
+  "isContainedInBuildingSpace": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:BuildingSpace:0addac31-ddff-4a11-97a1-e9411907e554"  
+  },  
+  "isContainedInPhysicalObject": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:PhysicalObject:ac4f9960-3415-4943-a490-81859df172a4"  
+  },  
+  "isSubSystemOf": [  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:a182c79d-ec15-4bfb-9b22-b0db74eac23e"  
+    },  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:f429ad1b-2285-441f-9305-8de0017d3b4c"  
+    },  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:d1dfe74b-ef79-4c61-be03-d1617663f8c4"  
+    }  
+  ],  
+  "hasManufacturer": {  
+    "type": "Property",  
+    "value": "DuctSilencer Company Inc."  
+  },  
+  "hasModel": {  
+    "type": "Property",  
+    "value": "DuctSilencer 0.1.2"  
+  },  
+  "dateCreated": {  
+    "type": "Property",  
+    "value": "2023-01-26T01:07:55Z"  
+  },  
+  "dateModified": {  
+    "type": "Property",  
+    "value": "2023-01-26T12:16:22Z"  
+  },  
+  "source": {  
+    "type": "Property",  
+    "value": "Import"  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "DuctSilencer"  
+  },  
+  "alternateName": {  
+    "type": "Property",  
+    "value": "DuctSilencer type 2"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "DuctSilencer of limited DuctSilencer types"  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "IFC file"  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
