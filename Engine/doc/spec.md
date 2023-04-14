@@ -7,16 +7,18 @@
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Global description: **An engine is a device that converts fuel into mechanical energy through combustion.**  
+version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-<!-- /30-PropertiesList -->  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `energySource[string]`: Property. The source of energy. Enumeration defining the energy source or fuel combusted to generate heat.  - `hasManufacturer[string]`: Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.  - `hasModel[string]`: Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.  - `id[*]`: Unique identifier of the entity  - `isContainedInBuildingSpace[*]`: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)  - `isContainedInPhysicalObject[*]`: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)  - `isSubSystemOf[array]`: Relationship. A reference to a system(s) that this Physical Object is part of.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: Property. It must be equal to `Engine`.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
-- No required properties  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
@@ -375,6 +377,79 @@ Engine:
 </details>  
 #### Engine NGSI-v2 normalized Example    
 Here is an example of a Engine in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:Engine:07431b3d-18e0-4939-b15d-949767863353",  
+  "type": "Engine",  
+  "energySource": {  
+    "type": "Text",  
+    "value": "Hawaii"  
+  },  
+  "isContainedInBuildingSpace": {  
+    "type": "URI",  
+    "value": "urn:ngsi-ld:BuildingSpace:792684e8-942d-4214-bca3-9d802f65a141"  
+  },  
+  "isContainedInPhysicalObject": {  
+    "type": "URI",  
+    "value": "urn:ngsi-ld:PhysicalObject:8176de9a-8d4e-4707-a9c5-3faafd8bbf8d"  
+  },  
+  "isSubSystemOf": {  
+    "type": "array",  
+    "value": [  
+      {  
+        "type": "URI",  
+        "value": "urn:ngsi-ld:System:57c03356-7a77-4c24-be6d-b9d1ea1c1755"  
+      },  
+      {  
+        "type": "URI",  
+        "value": "urn:ngsi-ld:System:0b84294f-39b9-4558-9821-f8703526d872"  
+      },  
+      {  
+        "type": "URI",  
+        "value": "urn:ngsi-ld:System:5067611d-d388-4815-b3e0-aac745f9d11b"  
+      }  
+    ]  
+  },  
+  "hasManufacturer": {  
+    "type": "Text",  
+    "value": "Engine Company Inc."  
+  },  
+  "hasModel": {  
+    "type": "Text",  
+    "value": "Engine 0.1.2"  
+  },  
+  "dateCreated": {  
+    "type": "DateTime",  
+    "value": "2023-01-26T14:10:32.5137431+01:00"  
+  },  
+  "dateModified": {  
+    "type": "DateTime",  
+    "value": "2023-01-26T06:35:02.0981345+01:00"  
+  },  
+  "source": {  
+    "type": "Text",  
+    "value": "Import"  
+  },  
+  "name": {  
+    "type": "Text",  
+    "value": "Engine"  
+  },  
+  "alternateName": {  
+    "type": "Text",  
+    "value": "Engine type 2"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "Engine of limited Engine types"  
+  },  
+  "dataProvider": {  
+    "type": "Text",  
+    "value": "IFC file"  
+  }  
+}  
+```  
+</details>  
 #### Engine NGSI-LD key-values Example    
 Here is an example of a Engine in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
@@ -408,7 +483,80 @@ Engine:
 </details>  
 #### Engine NGSI-LD normalized Example    
 Here is an example of a Engine in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-<!-- /80-Examples -->  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:Engine:c920d35c-4a53-44ba-a3d1-aa5b6335fa53",  
+  "type": "Engine",  
+  "energySource": {  
+    "type": "Property",  
+    "value": "clicks-and-mortar"  
+  },  
+  "isContainedInBuildingSpace": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:BuildingSpace:c0a71c4b-b58f-4c1d-9f45-aea4edfbf81c"  
+  },  
+  "isContainedInPhysicalObject": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:PhysicalObject:94a81a63-7fa4-4c21-a848-61673bd7f88c"  
+  },  
+  "isSubSystemOf": [  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:f31c4170-f77e-4f95-b42b-1cd21ef8e055"  
+    },  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:d45e4e4d-ed6f-485a-9cb7-9dedef98f469"  
+    },  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:34934d9a-5e85-4d2a-a629-95b645c2c89e"  
+    }  
+  ],  
+  "hasManufacturer": {  
+    "type": "Property",  
+    "value": "Engine Company Inc."  
+  },  
+  "hasModel": {  
+    "type": "Property",  
+    "value": "Engine 0.1.2"  
+  },  
+  "dateCreated": {  
+    "type": "Property",  
+    "value": "2023-01-25T16:26:36Z"  
+  },  
+  "dateModified": {  
+    "type": "Property",  
+    "value": "2023-01-25T19:49:05Z"  
+  },  
+  "source": {  
+    "type": "Property",  
+    "value": "Import"  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "Engine"  
+  },  
+  "alternateName": {  
+    "type": "Property",  
+    "value": "Engine type 2"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "Engine of limited Engine types"  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "IFC file"  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
