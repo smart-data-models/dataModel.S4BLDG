@@ -7,16 +7,18 @@
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Descripción global: **Un motor es un dispositivo que convierte el combustible en energía mecánica a través de la combustión.**  
+versión: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
 <sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
-<!-- /30-PropertiesList -->  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Descripción de este artículo  - `energySource[string]`: La propiedad. Fuente de energía. Enumeración que define la fuente de energía o el combustible quemado para generar calor.  - `hasManufacturer[string]`: Propiedad. Relación que identifica al fabricante de una entidad (por ejemplo, un dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  - `hasModel[string]`: Propiedad. Relación que identifica el modelo de una entidad (por ejemplo, dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  - `id[*]`: Identificador único de la entidad  - `isContainedInBuildingSpace[*]`: Relación. Entidad utilizada para definir los espacios físicos del edificio. Un espacio del edificio contiene dispositivos u objetos del edificio. (Espacio del edificio)  - `isContainedInPhysicalObject[*]`: Relación. Cualquier Objeto que tiene una región espacial propia.  (Definición extraída de la ontología DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relación. Referencia a uno o varios sistemas de los que forma parte este objeto físico.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Propiedad. Debe ser igual a `Engine`.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- No se requieren propiedades  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
@@ -375,6 +377,79 @@ Engine:
 </details>  
 #### Motor NGSI-v2 normalizado Ejemplo  
 He aquí un ejemplo de un Motor en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:Engine:07431b3d-18e0-4939-b15d-949767863353",  
+  "type": "Engine",  
+  "energySource": {  
+    "type": "Text",  
+    "value": "Hawaii"  
+  },  
+  "isContainedInBuildingSpace": {  
+    "type": "URI",  
+    "value": "urn:ngsi-ld:BuildingSpace:792684e8-942d-4214-bca3-9d802f65a141"  
+  },  
+  "isContainedInPhysicalObject": {  
+    "type": "URI",  
+    "value": "urn:ngsi-ld:PhysicalObject:8176de9a-8d4e-4707-a9c5-3faafd8bbf8d"  
+  },  
+  "isSubSystemOf": {  
+    "type": "array",  
+    "value": [  
+      {  
+        "type": "URI",  
+        "value": "urn:ngsi-ld:System:57c03356-7a77-4c24-be6d-b9d1ea1c1755"  
+      },  
+      {  
+        "type": "URI",  
+        "value": "urn:ngsi-ld:System:0b84294f-39b9-4558-9821-f8703526d872"  
+      },  
+      {  
+        "type": "URI",  
+        "value": "urn:ngsi-ld:System:5067611d-d388-4815-b3e0-aac745f9d11b"  
+      }  
+    ]  
+  },  
+  "hasManufacturer": {  
+    "type": "Text",  
+    "value": "Engine Company Inc."  
+  },  
+  "hasModel": {  
+    "type": "Text",  
+    "value": "Engine 0.1.2"  
+  },  
+  "dateCreated": {  
+    "type": "DateTime",  
+    "value": "2023-01-26T14:10:32.5137431+01:00"  
+  },  
+  "dateModified": {  
+    "type": "DateTime",  
+    "value": "2023-01-26T06:35:02.0981345+01:00"  
+  },  
+  "source": {  
+    "type": "Text",  
+    "value": "Import"  
+  },  
+  "name": {  
+    "type": "Text",  
+    "value": "Engine"  
+  },  
+  "alternateName": {  
+    "type": "Text",  
+    "value": "Engine type 2"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "Engine of limited Engine types"  
+  },  
+  "dataProvider": {  
+    "type": "Text",  
+    "value": "IFC file"  
+  }  
+}  
+```  
+</details>  
 #### Motor NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un Motor en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
@@ -408,7 +483,80 @@ Engine:
 </details>  
 #### Motor NGSI-LD normalizado Ejemplo  
 He aquí un ejemplo de un Motor en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-<!-- /80-Examples -->  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:Engine:c920d35c-4a53-44ba-a3d1-aa5b6335fa53",  
+  "type": "Engine",  
+  "energySource": {  
+    "type": "Property",  
+    "value": "clicks-and-mortar"  
+  },  
+  "isContainedInBuildingSpace": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:BuildingSpace:c0a71c4b-b58f-4c1d-9f45-aea4edfbf81c"  
+  },  
+  "isContainedInPhysicalObject": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:PhysicalObject:94a81a63-7fa4-4c21-a848-61673bd7f88c"  
+  },  
+  "isSubSystemOf": [  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:f31c4170-f77e-4f95-b42b-1cd21ef8e055"  
+    },  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:d45e4e4d-ed6f-485a-9cb7-9dedef98f469"  
+    },  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:34934d9a-5e85-4d2a-a629-95b645c2c89e"  
+    }  
+  ],  
+  "hasManufacturer": {  
+    "type": "Property",  
+    "value": "Engine Company Inc."  
+  },  
+  "hasModel": {  
+    "type": "Property",  
+    "value": "Engine 0.1.2"  
+  },  
+  "dateCreated": {  
+    "type": "Property",  
+    "value": "2023-01-25T16:26:36Z"  
+  },  
+  "dateModified": {  
+    "type": "Property",  
+    "value": "2023-01-25T19:49:05Z"  
+  },  
+  "source": {  
+    "type": "Property",  
+    "value": "Import"  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "Engine"  
+  },  
+  "alternateName": {  
+    "type": "Property",  
+    "value": "Engine type 2"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "Engine of limited Engine types"  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "IFC file"  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
