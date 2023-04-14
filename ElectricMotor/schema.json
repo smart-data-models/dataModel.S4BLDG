@@ -1,13 +1,13 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.2",
-  "modelTags": "SAREF Chiller SMART DATA MODELS",
-  "$id": "https://smart-data-models.github.com/dataModel.SAREF4BLDG/Chiller/schema.json",
-  "derivedFrom": "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:Chiller",
-  "title": "Smart data models - Chiller schema",
+  "modelTags": "SAREF ElectricMotor",
+  "$id": "https://smart-data-models.github.com/dataModel.SAREF4BLDG/ElectricMotor/schema.json",
+  "derivedFrom": "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:ElectricMotor",
+  "title": "Smart data models - ElectricMotor schema",
   "type": "object",
   "license": "https://opensource.org/licenses/BSD-3-Clause",
-  "description": "A chiller is a device used to remove heat from a liquid via a vapor-compression or absorption refrigeration cycle to cool a fluid, typically water or a mixture of water and glycol. The chilled fluid is then used to cool and dehumidify air in a building.",
+  "description": "An electric motor is an engine that is a machine for converting electrical energy into mechanical energy.",
   "allOf": [
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
@@ -19,34 +19,50 @@
       "properties": {
         "type": {
           "type": "string",
-          "description": "Property. It must be equal to `Chiller`.",
+          "description": "Property. It must be equal to `ElectricMotor`.",
           "enum": [
-            "Chiller"
+            "ElectricMotor"
           ]
         },
-        "nominalCapacity": {
+        "electricMotorEfficiency": {
           "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/S4BLDG-schema.json#/definitions/Measurement",
-          "description": "Property. Nominal capacity. Usually measured in Watts (W, J/s)."
+          "description": "Property. The ratio of output capacity to intake capacity."
         },
-        "nominalCondensingTemperature": {
-          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/S4BLDG-schema.json#/definitions/Measurement",
-          "description": "Property. Chiller condensing temperature. Usually measured in degrees Kelvin (K)."
+        "frameSize": {
+          "type": "string",
+          "description": "Property. Designation of the frame size according to the named range of frame sizes designated at the place of use or according to a given standard."
         },
-        "nominalEfficiency": {
-          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/S4BLDG-schema.json#/definitions/Measurement",
-          "description": "Property. Nominal chiller efficiency under nominal conditions. "
+        "hasPartWinding": {
+          "type": "boolean",
+          "description": "Property. Indication of whether the motor is single speed, i.e. has a single winding (= FALSE) or multi-speed i.e.has part winding (= TRUE) ."
         },
-        "nominalEvaporatingTemmperature": {
-          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/S4BLDG-schema.json#/definitions/Measurement",
-          "description": "Property. Chiller evaporating temperature.Usually measured in degrees Kelvin (K)."
+        "isGuarded": {
+          "type": "boolean",
+          "description": "Property. Indication of whether the motor enclosure is guarded (= TRUE) or not (= FALSE)."
         },
-        "nominalHeatRejectionRate": {
+        "lockedRotorCurrent": {
           "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/S4BLDG-schema.json#/definitions/Measurement",
-          "description": "Property. Sum of the refrigeration effect and the heat equivalent of the power input to the compressor. Usually measured in Watts (W, J/s)."
+          "description": "Property. Input current when a motor armature is energized but not rotating. Usually measured in Ampere (A)."
         },
-        "nominalPowerConsumption": {
+        "motorEnclosureType": {
+          "type": "string",
+          "description": "Property. A list of the available types of motor enclosure from which that required may be selected."
+        },
+        "powerOutputMax": {
           "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/S4BLDG-schema.json#/definitions/Measurement",
-          "description": "Property. Nominal total power consumption. Usually measured in Watts (W, J/s)."
+          "description": "Property. The maximum output power rating of the engine. Usually measured in Watts (W, J/s)."
+        },
+        "startCurrentFactor": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/S4BLDG-schema.json#/definitions/Measurement",
+          "description": "Property. IEC. Start current factor defines how large the peek starting current will become on the engine. StartCurrentFactor is multiplied to NominalCurrent and we get the start current."
+        },
+        "startingTime": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/S4BLDG-schema.json#/definitions/Measurement",
+          "description": "Property. The time (in s) needed for the motor to reach its rated speed with its driven equipment attached, starting from standstill and at the nominal voltage applied at its terminals."
+        },
+        "teTime": {
+          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/S4BLDG-schema.json#/definitions/Measurement",
+          "description": "Property. The maximum time (in s) at which the motor could run with locked rotor when the motor is used in an EX-environment. The time indicates that a protective device should trip before this time when the starting current of the motor is slowing through the device."
         },
         "isContainedInBuildingSpace": {
           "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType",

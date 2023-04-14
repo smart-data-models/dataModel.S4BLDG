@@ -1,13 +1,13 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.1",
-  "modelTags": "SAREF ElectricFlowStorageDevice",
-  "$id": "https://smart-data-models.github.com/dataModel.SAREF4BLDG/ElectricFlowStorageDevice/schema.json",
-  "derivedFrom": "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:ElectricFlowStorageDevice",
-  "title": "Smart data models - ElectricFlowStorageDevice schema",
+  "modelTags": "SAREF ElectricTimeControl",
+  "$id": "https://smart-data-models.github.com/dataModel.SAREF4BLDG/ElectricTimeControl/schema.json",
+  "derivedFrom": "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:ElectricTimeControl",
+  "title": "Smart data models - ElectricTimeControl schema",
   "type": "object",
   "license": "https://opensource.org/licenses/BSD-3-Clause",
-  "description": "An electric flow storage device is a device in which electrical energy is stored and from which energy may be progressively released.",
+  "description": "An electric time control is a device that applies control to the provision or flow of electrical energy over time.",
   "allOf": [
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
@@ -19,22 +19,10 @@
       "properties": {
         "type": {
           "type": "string",
-          "description": "Property. It must be equal to `ElectricFlowStorageDevice`.",
+          "description": "Property. It must be equal to `ElectricTimeControl`.",
           "enum": [
-            "ElectricFlowStorageDevice"
+            "ElectricTimeControl"
           ]
-        },
-        "nominalFrequency": {
-          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/S4BLDG-schema.json#/definitions/Measurement",
-          "description": "Property. The nominal frequency of the supply. Usually measured in cycles/s or Hertz (Hz)."
-        },
-        "nominalSupplyVoltage": {
-          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/S4BLDG-schema.json#/definitions/Measurement",
-          "description": "Property. The nominal voltage of the supply. Usually measured in Volts (V, W/A)."
-        },
-        "nominalSupplyVoltageMin": {
-          "$ref": "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/S4BLDG-schema.json#/definitions/Measurement",
-          "description": "Property. The maximum and minimum allowed voltage of the supply e.g. boundaries of 380V/440V may be applied for a nominal voltage of 400V."
         },
         "isContainedInBuildingSpace": {
           "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType",
