@@ -7,16 +7,18 @@
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Description globale : **Un moteur est un dispositif qui convertit le carburant en énergie mécanique par combustion**.  
+version : 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-<!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `energySource[string]`: Propriété. La source d'énergie. Enumération définissant la source d'énergie ou le combustible brûlé pour produire de la chaleur.  - `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  - `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  - `id[*]`: Identifiant unique de l'entité  - `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  - `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Propriété. Elle doit être égale à `Engine`.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
-- Aucune propriété requise  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
@@ -375,6 +377,79 @@ Engine:
 </details>  
 #### Moteur NGSI-v2 normalisé Exemple  
 Voici un exemple de moteur au format JSON-LD normalisé. Ce format est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:Engine:07431b3d-18e0-4939-b15d-949767863353",  
+  "type": "Engine",  
+  "energySource": {  
+    "type": "Text",  
+    "value": "Hawaii"  
+  },  
+  "isContainedInBuildingSpace": {  
+    "type": "URI",  
+    "value": "urn:ngsi-ld:BuildingSpace:792684e8-942d-4214-bca3-9d802f65a141"  
+  },  
+  "isContainedInPhysicalObject": {  
+    "type": "URI",  
+    "value": "urn:ngsi-ld:PhysicalObject:8176de9a-8d4e-4707-a9c5-3faafd8bbf8d"  
+  },  
+  "isSubSystemOf": {  
+    "type": "array",  
+    "value": [  
+      {  
+        "type": "URI",  
+        "value": "urn:ngsi-ld:System:57c03356-7a77-4c24-be6d-b9d1ea1c1755"  
+      },  
+      {  
+        "type": "URI",  
+        "value": "urn:ngsi-ld:System:0b84294f-39b9-4558-9821-f8703526d872"  
+      },  
+      {  
+        "type": "URI",  
+        "value": "urn:ngsi-ld:System:5067611d-d388-4815-b3e0-aac745f9d11b"  
+      }  
+    ]  
+  },  
+  "hasManufacturer": {  
+    "type": "Text",  
+    "value": "Engine Company Inc."  
+  },  
+  "hasModel": {  
+    "type": "Text",  
+    "value": "Engine 0.1.2"  
+  },  
+  "dateCreated": {  
+    "type": "DateTime",  
+    "value": "2023-01-26T14:10:32.5137431+01:00"  
+  },  
+  "dateModified": {  
+    "type": "DateTime",  
+    "value": "2023-01-26T06:35:02.0981345+01:00"  
+  },  
+  "source": {  
+    "type": "Text",  
+    "value": "Import"  
+  },  
+  "name": {  
+    "type": "Text",  
+    "value": "Engine"  
+  },  
+  "alternateName": {  
+    "type": "Text",  
+    "value": "Engine type 2"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "Engine of limited Engine types"  
+  },  
+  "dataProvider": {  
+    "type": "Text",  
+    "value": "IFC file"  
+  }  
+}  
+```  
+</details>  
 #### Moteur NGSI-LD valeurs clés Exemple  
 Voici un exemple de moteur au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
@@ -408,7 +483,80 @@ Engine:
 </details>  
 #### Moteur NGSI-LD normalisé Exemple  
 Voici un exemple de moteur au format JSON-LD normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-<!-- /80-Examples -->  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:Engine:c920d35c-4a53-44ba-a3d1-aa5b6335fa53",  
+  "type": "Engine",  
+  "energySource": {  
+    "type": "Property",  
+    "value": "clicks-and-mortar"  
+  },  
+  "isContainedInBuildingSpace": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:BuildingSpace:c0a71c4b-b58f-4c1d-9f45-aea4edfbf81c"  
+  },  
+  "isContainedInPhysicalObject": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:PhysicalObject:94a81a63-7fa4-4c21-a848-61673bd7f88c"  
+  },  
+  "isSubSystemOf": [  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:f31c4170-f77e-4f95-b42b-1cd21ef8e055"  
+    },  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:d45e4e4d-ed6f-485a-9cb7-9dedef98f469"  
+    },  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:34934d9a-5e85-4d2a-a629-95b645c2c89e"  
+    }  
+  ],  
+  "hasManufacturer": {  
+    "type": "Property",  
+    "value": "Engine Company Inc."  
+  },  
+  "hasModel": {  
+    "type": "Property",  
+    "value": "Engine 0.1.2"  
+  },  
+  "dateCreated": {  
+    "type": "Property",  
+    "value": "2023-01-25T16:26:36Z"  
+  },  
+  "dateModified": {  
+    "type": "Property",  
+    "value": "2023-01-25T19:49:05Z"  
+  },  
+  "source": {  
+    "type": "Property",  
+    "value": "Import"  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "Engine"  
+  },  
+  "alternateName": {  
+    "type": "Property",  
+    "value": "Engine type 2"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "Engine of limited Engine types"  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "IFC file"  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
