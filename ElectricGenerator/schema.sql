@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ElectricGenerator of the subject dataModel.S4BLDG for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ElectricGenerator_type AS ENUM ('ElectricGenerator');
+CREATE TABLE ElectricGenerator (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, electricGeneratorEfficiency text, hasManufacturer text, hasModel text, id text, isContainedInBuildingSpace json, isContainedInPhysicalObject json, isSubSystemOf json, location json, name text, owner json, powerOutputMax text, seeAlso json, source text, startCurrentFactor text, type ElectricGenerator_type);
