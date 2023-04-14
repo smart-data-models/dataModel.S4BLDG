@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ElectricFlowStorageDevice of the subject dataModel.S4BLDG for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ElectricFlowStorageDevice_type AS ENUM ('ElectricFlowStorageDevice');
+CREATE TABLE ElectricFlowStorageDevice (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, hasManufacturer text, hasModel text, id text, isContainedInBuildingSpace json, isContainedInPhysicalObject json, isSubSystemOf json, location json, name text, nominalFrequency text, nominalSupplyVoltage text, nominalSupplyVoltageMin text, owner json, seeAlso json, source text, type ElectricFlowStorageDevice_type);
