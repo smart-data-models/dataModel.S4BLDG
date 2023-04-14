@@ -37,6 +37,20 @@ The following entity types are available:
 
 - [Damper](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Damper/README.md). A damper typically participates in an HVAC duct distribution system and is used to control or modulate the flow of air.
 
+- [DuctSilencer](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/DuctSilencer/README.md). A duct silencer is a device that is typically installed inside a duct distribution system for the purpose of reducing the noise levels from air movement, fan noise, etc. in the adjacent space or downstream of the duct silencer device.
+
+- [ElectricAppliance](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/ElectricAppliance/README.md). An electric appliance is a device intended for consumer usage that is powered by electricity. Electric appliances may be fixed in place or may be able to be moved from one space to another. Electric appliances require an electrical supply that may be supplied either by an electrical circuit or provided from a local battery source.
+
+- [ElectricFlowStorageDevice](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/ElectricFlowStorageDevice/README.md). An electric flow storage device is a device in which electrical energy is stored and from which energy may be progressively released.
+
+- [ElectricGenerator](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/ElectricGenerator/README.md). An electric generator is an engine that is a machine for converting mechanical energy into electrical energy.
+
+- [ElectricMotor](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/ElectricMotor/README.md). An electric motor is an engine that is a machine for converting electrical energy into mechanical energy.
+
+- [ElectricTimeControl](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/ElectricTimeControl/README.md). An electric time control is a device that applies control to the provision or flow of electrical energy over time.
+
+- [Engine](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Engine/README.md). An engine is a device that converts fuel into mechanical energy through combustion.
+
 
 
 ### Contributors
