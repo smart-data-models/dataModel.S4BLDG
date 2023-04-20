@@ -1,0 +1,30 @@
+{
+    "id": "urn:ngsi-ld:Lamp:732d4c91-579b-4ff8-b6f1-fcc429bcc3d7",
+    "type": "Lamp",
+    "colorAppearance": "Washington",
+    "colorRenderingIndex": 0.8153696255721333,
+    "colorTemperature": 0.09664075512365078,
+    "contributedLuminousFlux": 0.9207573270583412,
+    "lampBallastType": "Cape",
+    "lampCompensationType": "systematic",
+    "lampMaintenanceFactor": 0.4913004655459732,
+    "lightEmitterNominalPower": 0.2998024622331251,
+    "spectrumMax": 0.2518554879273158,
+    "spectrumMin": 0.7386218055211833,
+    "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:eb3dae30-05b0-44ba-8c58-172cd5f7b96e",
+    "isContainedInPhysicalObject": "urn:ngsi-ld:PhysicalObject:5b981637-1f0e-41ac-b72d-4bc21f2bb629",
+    "isSubSystemOf": [
+        "urn:ngsi-ld:System:66da3c56-f167-4dd1-8691-9fea4013aa22",
+        "urn:ngsi-ld:System:1cab8165-219d-49db-823b-5eae961620c5",
+        "urn:ngsi-ld:System:76285f6c-9a86-48a1-94dd-e379a4fe4394"
+    ],
+    "hasManufacturer": "Lamp Company Inc.",
+    "hasModel": "Lamp 0.1.2",
+    "dateCreated": "2023-01-25T18:30:26Z",
+    "dateModified": "2023-01-25T16:57:18Z",
+    "source": "Import",
+    "name": "Lamp",
+    "alternateName": "Lamp type 2",
+    "description": "Lamp of limited Lamp types",
+    "dataProvider": "IFC file"
+}
