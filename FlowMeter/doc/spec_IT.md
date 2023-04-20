@@ -492,7 +492,7 @@ FlowMeter:
 }  
 ```  
 </details>  
-#### Flussometro NGSI-LD normalizzato Esempio  
+#### Flussimetro NGSI-LD normalizzato Esempio  
 Ecco un esempio di FlowMeter in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
