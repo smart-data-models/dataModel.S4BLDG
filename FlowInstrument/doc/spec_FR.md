@@ -344,7 +344,7 @@ FlowInstrument:
 <!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### FlowInstrument Valeurs clés NGSI-v2 Exemple  
-Voici un exemple de FlowInstrument au format JSON-LD sous forme de valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+Voici un exemple de FlowInstrument au format JSON-LD sous forme de valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
