@@ -1,0 +1,322 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Lamp;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart data models - Lamp schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/Lamp/schema.json",
+    "description": "A lamp is an artificial light source such as a light bulb or tube.",
+    "displayName": "Lamp",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "colorAppearance",
+            "writable": true,
+            "displayName": "colorAppearance",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. In both the DIN and CIE standards, artificial light sources are classified in terms of their color appearance. To the human eye they all appear to be white the difference can only be detected by direct comparison. Visual performance is not directly affected by differences in color appearance."
+        },
+        {
+            "name": "colorRenderingIndex",
+            "writable": true,
+            "displayName": "colorRenderingIndex",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The CRI indicates how well a light source renders eight standard colors compared to perfect reference lamp with the same color temperature. The CRI scale ranges from 1 to 100, with 100 representing perfect rendering properties."
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "hasManufacturer",
+            "writable": true,
+            "displayName": "hasManufacturer",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag."
+        },
+        {
+            "name": "hasModel",
+            "writable": true,
+            "displayName": "hasModel",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag."
+        },
+        {
+            "name": "isContainedInBuildingSpace",
+            "writable": true,
+            "displayName": "isContainedInBuildingSpace"
+        },
+        {
+            "name": "isContainedInPhysicalObject",
+            "writable": true,
+            "displayName": "isContainedInPhysicalObject"
+        },
+        {
+            "name": "lampBallastType",
+            "writable": true,
+            "displayName": "lampBallastType",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. The type of ballast used to stabilise gas discharge by limiting the current during operation and to deliver the necessary striking voltage for starting. Ballasts are needed to operate Discharge Lamps such as Fluorescent, Compact Fluorescent, High-pressure Mercury, Metal Halide and High-pressure Sodium Lamps. Magnetic ballasts are chokes which limit the current passing through a lamp connected in series on the principle of self-induction. The resultant current and power are decisive for the efficie"
+        },
+        {
+            "name": "lampCompensationType",
+            "writable": true,
+            "displayName": "lampCompensationType",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Identifies the form of compensation used for power factor correction and radio suppression."
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "isSubSystemOf",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Relationship. A reference to a system(s) that this Physical Object is part of.",
+            "displayName": "isSubSystemOf"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "colorTemperature",
+            "comment": "Property. The color temperature of any source of radiation is defined as the temperature (in Kelvin) of a black-body or Planckian radiator whose radiation has the same chromaticity as the source of radiation. Often the values are only approximate color temperatures as the black-body radiator cannot emit radiation of every chromaticity value. The color temperatures of the commonest artificial light sources range from less than 3000K (warm white) to 4000K (intermediate) and over 5000K (daylight). Usually meas",
+            "displayName": "colorTemperature",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "contributedLuminousFlux",
+            "comment": "Property. Luminous flux is a photometric measure of radiant flux, i.e. the volume of light emitted from a light source. Luminous flux is measured either for the interior as a whole or for a part of the interior (partial luminous flux for a solid angle). All other photometric parameters are derivatives of luminous flux. Luminous flux is measured in lumens (lm). The luminous flux is given as a nominal value for each lamp. Usually measured in Lumen (lm, Candela Steradian).",
+            "displayName": "contributedLuminousFlux",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "lampMaintenanceFactor",
+            "comment": "Property. Non recoverable losses of luminous flux of a lamp due to lamp depreciation i.e. the decreasing of light output of a luminaire due to aging and dirt.",
+            "displayName": "lampMaintenanceFactor",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "lightEmitterNominalPower",
+            "comment": "Property. Light emitter nominal power. Usually measured in Watts (W, J/s).",
+            "displayName": "lightEmitterNominalPower",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "spectrumMax",
+            "comment": "Property. The spectrum of radiation describes its composition with regard to wavelength. Light, for example, as the portion of electromagnetic radiation that is visible to the human eye, is radiation with wavelengths in the range of approx. 380 to 780 nm (1 nm = 10 m). The corresponding range of colours varies from violet to indigo, blue, green, yellow, orange, and red. These colours form a continuous spectrum, in which the various spectral sectors merge into each other.",
+            "displayName": "spectrumMax",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "spectrumMin",
+            "comment": "Property. The spectrum of radiation describes its composition with regard to wavelength. Light, for example, as the portion of electromagnetic radiation that is visible to the human eye, is radiation with wavelengths in the range of approx. 380 to 780 nm (1 nm = 10 m). The corresponding range of colours varies from violet to indigo, blue, green, yellow, orange, and red. These colours form a continuous spectrum, in which the various spectral sectors merge into each other.",
+            "displayName": "spectrumMin",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        }
+    ]
+}
