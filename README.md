@@ -51,6 +51,16 @@ The following entity types are available:
 
 - [Engine](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Engine/README.md). An engine is a device that converts fuel into mechanical energy through combustion.
 
+- [EvaporativeCooler](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/EvaporativeCooler/README.md). An evaporative cooler is a device that cools air by saturating it with water vapor.
+
+- [Evaporator](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Evaporator/README.md). An evaporator is a device in which a liquid refrigerent is vaporized and absorbs heat from the surrounding fluid.
+
+- [Fan](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Fan/README.md). A fan is a device which imparts mechanical work on a gas. A typical usage of a fan is to induce airflow in a building services air distribution system.
+
+- [Filter](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Filter/README.md). A filter is an apparatus used to remove particulate or gaseous matter from fluids and gases.
+
+- [FireSuppressionTerminal](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/FireSuppressionTerminal/README.md). A fire suppression terminal has the purpose of delivering a fluid (gas or liquid) that will suppress a fire.  A fire suppression terminal provides for all forms of sprinkler, spreader and other form of terminal that is connected to a pipework system and intended to act in the role of suppressing a fire.
+
 
 
 ### Contributors
