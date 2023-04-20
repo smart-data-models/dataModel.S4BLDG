@@ -493,7 +493,7 @@ FlowMeter:
 ```  
 </details>  
 #### 流量计NGSI-LD归一化示例  
-下面是一个JSON-LD格式的FlowMeter规范化的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+这里有一个JSON-LD格式的FlowMeter的例子，是规范化的。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
