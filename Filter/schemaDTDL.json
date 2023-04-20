@@ -1,0 +1,430 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Filter;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart data models - Filter schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/Filter/schema.json",
+    "description": "A filter is an apparatus used to remove particulate or gaseous matter from fluids and gases.",
+    "displayName": "Filter",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "hasManufacturer",
+            "writable": true,
+            "displayName": "hasManufacturer",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag."
+        },
+        {
+            "name": "hasModel",
+            "writable": true,
+            "displayName": "hasModel",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag."
+        },
+        {
+            "name": "isContainedInBuildingSpace",
+            "writable": true,
+            "displayName": "isContainedInBuildingSpace"
+        },
+        {
+            "name": "isContainedInPhysicalObject",
+            "writable": true,
+            "displayName": "isContainedInPhysicalObject"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "isSubSystemOf",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Relationship. A reference to a system(s) that this Physical Object is part of.",
+            "displayName": "isSubSystemOf"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "finalResistance",
+            "comment": "Property. Filter fluid resistance when replacement is required (i.e., Pressure drop at the maximum air flowrate across the filter when the filter needs replacement per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2).",
+            "displayName": "finalResistance",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "fluidFlowRateMax",
+            "comment": "Property. Possible range of fluid flowrate that can be delivered. Usually measured in m3/s.",
+            "displayName": "fluidFlowRateMax",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "fluidFlowRateMin",
+            "comment": "Property. Possible range of fluid flowrate that can be delivered. Usually measured in m3/s.",
+            "displayName": "fluidFlowRateMin",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "initialResistance",
+            "comment": "Property. Initial new filter fluid resistance (i.e., pressure drop at the maximum air flowrate across the filter when the filter is new per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2).",
+            "displayName": "initialResistance",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "nominalFilterFaceVelocity",
+            "comment": "Property. Filter face velocity. Usually measured in m/s.",
+            "displayName": "nominalFilterFaceVelocity",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "nominalFlowRate",
+            "comment": "Property. Nominal fluid flow rate through the filter. Usually measured in m3/s.",
+            "displayName": "nominalFlowRate",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "nominalMediaSurfaceVelocity",
+            "comment": "Property. Average fluid velocity at the media surface. Usually measured in m/s.",
+            "displayName": "nominalMediaSurfaceVelocity",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "nominalParticleGeometricMeanDiameter",
+            "comment": "Property. Particle geometric mean diameter associated with nominal efficiency. Usually measured in millimeters (mm).",
+            "displayName": "nominalParticleGeometricMeanDiameter",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "nominalParticleGeometricStandardDeviation",
+            "comment": "Property. Particle geometric standard deviation associated with nominal efficiency. ",
+            "displayName": "nominalParticleGeometricStandardDeviation",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "nominalPressureDrop",
+            "comment": "Property. Total pressure drop across the filter. Usually measured in Pascals (Pa, N/m2).",
+            "displayName": "nominalPressureDrop",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "operationTemperatureMax",
+            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).",
+            "displayName": "operationTemperatureMax",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "operationTemperatureMin",
+            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).",
+            "displayName": "operationTemperatureMin",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "weight",
+            "comment": "Property. The weight of the device. Usually measured in kilograms (kg) or grams (g).",
+            "displayName": "weight",
+            "fields": [
+                {
+                    "name": "observedAt",
+                    "schema": "dateTime"
+                },
+                {
+                    "name": "unitCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        }
+    ]
+}
