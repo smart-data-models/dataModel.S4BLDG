@@ -61,6 +61,20 @@ The following entity types are available:
 
 - [FireSuppressionTerminal](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/FireSuppressionTerminal/README.md). A fire suppression terminal has the purpose of delivering a fluid (gas or liquid) that will suppress a fire.  A fire suppression terminal provides for all forms of sprinkler, spreader and other form of terminal that is connected to a pipework system and intended to act in the role of suppressing a fire.
 
+- [FlowInstrument](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/FlowInstrument/README.md). A flow instrument reads and displays the value of a particular property of a system at a point, or displays the difference in the value of a property between two points.  Instrumentation is typically for the purpose of determining the value of the property at a point in time. It is not the purpose of an instrument to record or integrate the values over time (although they may be connected to recording devices that do perform such a function). This entity provides for all forms of mechanical flow instrument (thermometers, pressure gauges etc.) and electrical flow instruments (ammeters, voltmeters etc.)
+
+- [FlowMeter](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/FlowMeter/README.md). A flow meter is a device that is used to measure the flow rate in a system.
+
+- [HeatExchanger](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/HeatExchanger/README.md). A heat exchanger is a device used to provide heat transfer between non-mixing media such as plate and shell and tube heat exchangers. HeatExchanger is commonly used on water-side distribution systems to recover energy from a liquid to another liquid (typically water-based), whereas AirToAirHeatRecovery is commonly used on air-side distribution systems to recover energy from a gas to a gas (usually air).
+
+- [Humidifier](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Humidifier/README.md). A humidifier is a device that adds moisture into the air.
+
+- [Interceptor](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Interceptor/README.md). An interceptor is a device designed and installed in order to separate and retain deleterious, hazardous or undesirable matter while permitting normal sewage or liquids to discharge into a collection system by gravity.
+
+- [Lamp](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Lamp/README.md). A lamp is an artificial light source such as a light bulb or tube.
+
+- [MedicalDevice](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/MedicalDevice/README.md). A medical device is attached to a medical piping system and operates upon medical gases to perform a specific function. Medical gases include medical air, medical vacuum, oxygen, carbon dioxide, nitrogen, and nitrous oxide.
+
 
 
 ### Contributors
