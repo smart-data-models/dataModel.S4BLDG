@@ -1,0 +1,3 @@
+/* (Beta) Export of data model FlowMeter of the subject dataModel.S4BLDG for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE FlowMeter_type AS ENUM ('FlowMeter');
+CREATE TABLE FlowMeter (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, hasManufacturer text, hasModel text, id text, isContainedInBuildingSpace json, isContainedInPhysicalObject json, isSubSystemOf json, location json, name text, owner json, readOutType text, remoteReading text, seeAlso json, source text, type FlowMeter_type);
