@@ -75,6 +75,8 @@ The following entity types are available:
 
 - [MedicalDevice](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/MedicalDevice/README.md). A medical device is attached to a medical piping system and operates upon medical gases to perform a specific function. Medical gases include medical air, medical vacuum, oxygen, carbon dioxide, nitrogen, and nitrous oxide.
 
+- [Outlet](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Outlet/README.md). An outlet is a device installed at a point to receive one or more inserted plugs for electrical power or communications. Power outlets are commonly connected within a junction box; data outlets may be directly connected to a wall. For power outlets sharing the same circuit within a junction box, the ports should indicate the logical wiring relationship to the enclosing junction box, even though they may be physically connected to a cable going to another outlet, switch, or fixture.
+
 
 
 ### Contributors
