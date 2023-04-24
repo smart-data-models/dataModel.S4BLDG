@@ -66,17 +66,17 @@ Actuator:
       x-ngsi:
         type: Property
     failPosition:
-      description: Specifies the required fail-safe position of the actuator.
+      description: Property. Specifies the required fail-safe position of the actuator.
       type: string
       x-ngsi:
         type: Property
     hasManufacturer:
-      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'
+      description: 'Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'
       type: string
       x-ngsi:
         type: Property
     hasModel:
-      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'
+      description: 'Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'
       type: string
       x-ngsi:
         type: Property
@@ -95,16 +95,16 @@ Actuator:
         type: Property
     isContainedInBuildingSpace:
       anyOf: *actuator_-_properties_-_iscontainedinbuildingspace_-_anyof
-      description: Unique identifier of the entity
+      description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)
       x-ngsi:
         type: Property
     isContainedInPhysicalObject:
       anyOf: *actuator_-_properties_-_iscontainedinbuildingspace_-_anyof
-      description: Unique identifier of the entity
+      description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)
       x-ngsi:
         type: Property
     isSubSystemOf:
-      description: A reference to a system(s) that this Physical Object is part of.
+      description: Relationship. A reference to a system(s) that this Physical Object is part of.
       items:
         anyOf: *actuator_-_properties_-_iscontainedinbuildingspace_-_anyof
         description: Property. Unique identifier of the entity
@@ -265,7 +265,7 @@ Actuator:
       x-ngsi:
         type: GeoProperty
     manualOverride:
-      description: Identifies whether hand-operated operation is provided as an override (= TRUE) or not (= FALSE). Note that this value should be set to FALSE by default in the case of a Hand Operated Actuator.
+      description: Property. Identifies whether hand-operated operation is provided as an override (= TRUE) or not (= FALSE). Note that this value should be set to FALSE by default in the case of a Hand Operated Actuator.
       type: boolean
       x-ngsi:
         type: Property
@@ -300,7 +300,7 @@ Actuator:
       x-ngsi:
         type: Property
     type:
-      description: It must be equal to `Actuator`.
+      description: Property. It must be equal to `Actuator`.
       enum:
         - Actuator
       type: string
