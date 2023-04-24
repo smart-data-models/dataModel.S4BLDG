@@ -1,33 +1,81 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティアラーム  
-==========<!-- /10-Header -->  
-<!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Alarm/LICENSE.md)  
-[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-グローバルな記述です：**警報とは、通常の予想の枠を超えた状態や状況の存在を知らせる装置、またはそのような装置を作動させる装置のことである。  アラームには、アラームを作動させるために使用されるガラス破りボタンや手動式プルボックスの提供が含まれる**。  
-バージョン：0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+エンティティアラーム  
+==========
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `id[*]`: エンティティの一意な識別子  - `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  - `isSubSystemOf[array]`: 関係。この物理オブジェクトが所属するシステム（複数可）への参照。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `name[string]`: この項目の名称です。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: プロパティを指定します。Alarmと等しくなければならない。  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-必須プロパティ  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## プロパティのデータモデル記述  
-アルファベット順（クリックで詳細表示）  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Alarm/LICENSE.md)  
+
+[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+グローバルな記述です：**警報とは、通常の予想の枠を超えた状態や状況の存在を知らせる装置、またはそのような装置を作動させる装置のことである。  アラームには、アラームを作動させるために使用されるガラス破りボタンや手動式プルボックスの提供が含まれる**。  
+
+バージョン：0.0.1  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## プロパティ一覧  
+
+
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: このアイテムの別称  
+- `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  
+- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `description[string]`: このアイテムの説明  
+- `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  
+- `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  
+- `id[*]`: エンティティの一意な識別子  
+- `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  
+- `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  
+- `isSubSystemOf[array]`: 関係。この物理オブジェクトが所属するシステム（複数可）への参照。  
+- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  
+- `name[string]`: この項目の名称です。  
+- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  
+- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  
+- `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  
+- `type[string]`: プロパティを指定します。Alarmと等しくなければならない。  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+必須プロパティ  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## プロパティのデータモデル記述  
+
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 Alarm:    
   description: An alarm is a device that signals the existence of a condition or situation that is outside the boundaries of normal expectation or that activates such a device.  Alarms include the provision of break glass buttons and manual pull boxes that are used to activate alarms.    
   properties:    
@@ -334,20 +382,29 @@ Alarm:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Alarm/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Alarm/schema.json    
-  x-model-tags: SAREF Alarm SMART DATA MODELS    
+  x-model-tags: SAREF Alarm    
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ペイロードの例  
-#### アラームNGSI-v2キーバリュー例  
-ここでは、key-valuesとしてJSON-LD形式のAlarmの例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ペイロードの例  
+
+#### アラームNGSI-v2キーバリュー例  
+
+ここでは、key-valuesとしてJSON-LD形式のAlarmの例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Alarm:403ddbdf-79c0-4923-9d07-4c962837c527",  
   "type": "Alarm",  
   "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:5920683a-3228-480c-82f6-17c1cf239df4",  
@@ -369,11 +426,15 @@ Alarm:
 }  
 ```  
 </details>  
-#### 警報 NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のアラームの例を示す。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### 警報 NGSI-v2 正規化例  
+
+ここでは、正規化されたJSON-LD形式のアラームの例を示す。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Alarm:8ae04687-4a9f-4cc8-acfa-2bc726781aaa",  
   "type": "Alarm",  
   "isContainedInBuildingSpace": {  
@@ -440,11 +501,15 @@ Alarm:
 }  
 ```  
 </details>  
-#### アラーム NGSI-LD キー値例  
-ここでは、key-valuesとしてJSON-LD形式のAlarmの例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### アラーム NGSI-LD キー値例  
+
+ここでは、key-valuesとしてJSON-LD形式のAlarmの例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Alarm:5c49d555-274b-4ccd-b527-823329defc35",  
   "type": "Alarm",  
   "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:98c9f61a-d8f8-4326-b4f3-8845c97ad825",  
@@ -470,11 +535,15 @@ Alarm:
 }  
 ```  
 </details>  
-#### 警報 NGSI-LD 正規化例  
-ここでは、正規化されたJSON-LD形式のアラームの例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### 警報 NGSI-LD 正規化例  
+
+ここでは、正規化されたJSON-LD形式のアラームの例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Alarm:3200afb8-5a97-4a51-b454-a7bb5e7dd272",  
   "type": "Alarm",  
   "isContainedInBuildingSpace": {  
@@ -541,12 +610,21 @@ Alarm:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

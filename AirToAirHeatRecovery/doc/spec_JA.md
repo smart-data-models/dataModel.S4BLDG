@@ -1,33 +1,89 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティAirToAirHeatRecovery（エアトエアヒートリカバリー  
-========================================<!-- /10-Header -->  
-<!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/AirToAirHeatRecovery/LICENSE.md)  
-[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Global description：**空気対空気熱回収装置は、入気流と出気流の間に向流式熱交換器を採用している。これは、通常、1つのチャンバー内の暖かい空気から2番目のチャンバー内の冷たい空気に熱を伝達するために使用され（すなわち、通常、建物に供給される空調空気と外気から熱を回収するために使用される）、加熱（または冷却）要件の削減によるエネルギーの節約をもたらします。  
-バージョン：0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+エンティティAirToAirHeatRecovery（エアトエアヒートリカバリー  
+========================================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasDefrost[boolean]`: 特性です。熱交換器に霜取り機能があるかどうか。  - `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `heatTransferTypeEnum[string]`: 特性です。2つの空気流の間の熱伝達のタイプ。  - `id[*]`: エンティティの一意な識別子  - `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  - `isSubSystemOf[array]`: 関係。この物理オブジェクトが属するシステム（複数可）への参照。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `name[string]`: この項目の名称です。  - `operationTemperatureMax[object]`: 特性を示す。許容される動作周囲（空気、液体）温度範囲。通常、ケルビン（K）単位で測定される。  - `operationTemperatureMin[object]`: 特性を示す。許容される動作周囲（空気、液体）温度範囲。通常、ケルビン（K）単位で測定される。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `primaryAirFlowRateMax[object]`: 特性です。送出可能な最大一次空気流量。通常、m3/sで測定される。  - `primaryAirFlowRateMin[object]`: 特性です。供給可能な最小一次空気流量。通常、m3/sで測定される。  - `secondaryAirFlowRateMax[object]`: 特性です。送出可能な最大二次空気流量。通常、パスカル（Pa、N/m2）で測定される。  - `secondaryAirFlowRateMin[object]`: 特性です。送出可能な最大二次空気流量。通常、パスカル（Pa、N/m2）で測定される。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: プロパティを指定します。AirToAirHeatRecovery`と等しくなければならない。  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-必須プロパティ  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## プロパティのデータモデル記述  
-アルファベット順（クリックで詳細表示）  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/AirToAirHeatRecovery/LICENSE.md)  
+
+[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+Global description：**空気対空気熱回収装置は、入気流と出気流の間に向流式熱交換器を採用している。これは、通常、1つのチャンバー内の暖かい空気から2番目のチャンバー内の冷たい空気に熱を伝達するために使用され（すなわち、通常、建物に供給される空調空気と外気から熱を回収するために使用される）、加熱（または冷却）要件の削減によるエネルギーの節約をもたらします。  
+
+バージョン：0.0.1  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## プロパティ一覧  
+
+
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: このアイテムの別称  
+- `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  
+- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `description[string]`: このアイテムの説明  
+- `hasDefrost[boolean]`: 特性です。熱交換器に霜取り機能があるかどうか。  
+- `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  
+- `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  
+- `heatTransferTypeEnum[string]`: 特性です。2つの空気流の間の熱伝達のタイプ。  
+- `id[*]`: エンティティの一意な識別子  
+- `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  
+- `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  
+- `isSubSystemOf[array]`: 関係。この物理オブジェクトが属するシステム（複数可）への参照。  
+- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  
+- `name[string]`: この項目の名称です。  
+- `operationTemperatureMax[object]`: 特性を示す。許容される動作周囲（空気、液体）温度範囲。通常、ケルビン（K）単位で測定される。  
+- `operationTemperatureMin[object]`: 特性を示す。許容される動作周囲（空気、液体）温度範囲。通常、ケルビン（K）単位で測定される。  
+- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  
+- `primaryAirFlowRateMax[object]`: 特性です。送出可能な最大一次空気流量。通常、m3/sで測定される。  
+- `primaryAirFlowRateMin[object]`: 特性です。供給可能な最小一次空気流量。通常、m3/sで測定される。  
+- `secondaryAirFlowRateMax[object]`: 特性です。送出可能な最大二次空気流量。通常、パスカル（Pa、N/m2）で測定される。  
+- `secondaryAirFlowRateMin[object]`: 特性です。送出可能な最大二次空気流量。通常、パスカル（Pa、N/m2）で測定される。  
+- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  
+- `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  
+- `type[string]`: プロパティを指定します。AirToAirHeatRecovery`と等しくなければならない。  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+必須プロパティ  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## プロパティのデータモデル記述  
+
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 AirToAirHeatRecovery:    
   description: 'An air-to-air heat recovery device employs a counter-flow heat exchanger between inbound and outbound air flow. It is typically used to transfer heat from warmer air in one chamber to cooler air in the second chamber (i.e., typically used to recover heat from the conditioned air being exhausted and the outside air being supplied to a building), resulting in energy savings from reduced heating (or cooling) requirements.'    
   properties:    
@@ -390,20 +446,29 @@ AirToAirHeatRecovery:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/AirToAirHeatRecovery/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/AirToAirHeatRecovery/schema.json    
-  x-model-tags: SAREF AirToAirHeatRecovery SMART DATA MODELS    
+  x-model-tags: SAREF AirToAirHeatRecovery    
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ペイロードの例  
-#### AirToAirHeatRecovery NGSI-v2 キーバリュー例  
-AirToAirHeatRecoveryをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ペイロードの例  
+
+#### AirToAirHeatRecovery NGSI-v2 キーバリュー例  
+
+AirToAirHeatRecoveryをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:AirToAirHeatRecovery:8c59d316-ed05-4b56-bec3-886379421239",  
   "type": "AirToAirHeatRecovery",  
   "hasDefrost": false,  
@@ -457,11 +522,15 @@ AirToAirHeatRecovery:
 }  
 ```  
 </details>  
-#### AirToAirHeatRecovery NGSI-v2 正規化例  
-AirToAirHeatRecoveryをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### AirToAirHeatRecovery NGSI-v2 正規化例  
+
+AirToAirHeatRecoveryをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:AirToAirHeatRecovery:a732b90e-0296-47c9-ab0f-34f6de5edfb4",  
   "type": "AirToAirHeatRecovery",  
   "hasDefrost": {  
@@ -584,11 +653,15 @@ AirToAirHeatRecovery:
 }  
 ```  
 </details>  
-#### AirToAirHeatRecovery NGSI-LD キー値例  
-AirToAirHeatRecoveryをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### AirToAirHeatRecovery NGSI-LD キー値例  
+
+AirToAirHeatRecoveryをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:AirToAirHeatRecovery:8c59d316-ed05-4b56-bec3-886379421239",  
   "type": "AirToAirHeatRecovery",  
   "hasDefrost": false,  
@@ -646,11 +719,15 @@ AirToAirHeatRecovery:
 }  
 ```  
 </details>  
-#### AirToAirHeatRecovery NGSI-LD 正規化例  
-AirToAirHeatRecoveryをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### AirToAirHeatRecovery NGSI-LD 正規化例  
+
+AirToAirHeatRecoveryをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:AirToAirHeatRecovery:a8cd6aa9-dd5f-48bf-ba9f-3db11843b050",  
   "type": "AirToAirHeatRecovery",  
   "hasDefrost": {  
@@ -779,12 +856,21 @@ AirToAirHeatRecovery:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

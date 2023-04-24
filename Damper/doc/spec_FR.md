@@ -1,33 +1,102 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entité : Amortisseur  
-====================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Licence ouverte] (https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Damper/LICENSE.md)  
-[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Description globale : **Un registre fait généralement partie d'un système de distribution de gaines CVC et est utilisé pour contrôler ou moduler le flux d'air.  
-version : 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## Liste des propriétés  
+Entité : Amortisseur  
+====================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `airFlowRateMax[number]`: Propriété. Débit d'air maximal autorisé. Généralement mesuré en m3/s.  - `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `bladeAction[string]`: Propriété. Action de la lame.  - `bladeEdge[string]`: Propriété. Bord de la lame.  - `bladeShape[string]`: Propriété. Forme de la lame. Plat signifie triple rainure en V.  - `bladeThickness[number]`: Propriété. L'épaisseur de la lame de l'amortisseur. Généralement mesurée en millimètres (mm).  - `closeOffRating[number]`: Propriété. Indice de fermeture. Généralement mesuré en Pascals (Pa, N/m2).  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `faceArea[number]`: Propriété. Surface de la face ouverte au courant d'air. Généralement mesurée en mètre carré (m2).  - `frameDepth[number]`: Propriété. La longueur (ou la profondeur) du cadre de l'amortisseur. Généralement mesurée en millimètres (mm).  - `frameThickness[number]`: Propriété. L'épaisseur du matériau du cadre de l'amortisseur. Généralement mesurée en millimètres (mm).  - `frameType[string]`: Propriété. Le type de cadre utilisé par le registre (par exemple, standard, simple bride, simple bride inversée, double bride, etc.)  - `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  - `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  - `id[*]`: Identifiant unique de l'entité  - `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  - `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  - `leakageFullyClosed[number]`: Propriété. Fuite en cas de fermeture complète. Généralement mesurée en m3/s.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `nominalAirFlowRate[number]`: Propriété. Débit d'air nominal. Généralement mesuré en m3/s.  - `numberOfBlades[number]`: Propriété. Nombre de lames.  - `openPressureDrop[number]`: Propriété. Perte de charge totale dans l'amortisseur. Généralement mesurée en Pascals (Pa, N/m2).  - `operation[string]`: Propriété. Mécanisme opérationnel pour le fonctionnement du clapet.  - `operationMode[string]`: Propriété. Mode de fonctionnement de ce registre.  - `operationTemperatureMax[number]`: Propriété. Plage de température ambiante (air, fluide) autorisée pour le fonctionnement. Généralement mesurée en degrés Kelvin (K).  - `operationTemperatureMin[number]`: Propriété. Plage de température ambiante (air, fluide) autorisée pour le fonctionnement. Généralement mesurée en degrés Kelvin (K).  - `orientation[string]`: Propriété. L'orientation prévue pour le registre, telle que spécifiée par le fabricant.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `temperatureRating[number]`: Propriété. Température nominale. Généralement mesurée en degrés Kelvin (K).  - `type[string]`: Propriété. Elle doit être égale à `Damper`.  - `workingPressureMax[number]`: Propriété. Pression maximale de service. Généralement mesurée en Pascals (Pa, N/m2).  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Propriétés requises  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Modèle de données description des propriétés  
-Classés par ordre alphabétique (cliquez pour plus de détails)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Damper/LICENSE.md)  
+
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+Description globale : **Un registre fait généralement partie d'un système de distribution de gaines CVC et est utilisé pour contrôler ou moduler le flux d'air.  
+
+version : 0.0.1  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## Liste des propriétés  
+
+
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)
+- `airFlowRateMax[number]`: Propriété. Débit d'air maximal autorisé. Généralement mesuré en m3/s.  
+- `alternateName[string]`: Un nom alternatif pour ce poste  
+- `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `bladeAction[string]`: Propriété. Action de la lame.  
+- `bladeEdge[string]`: Propriété. Bord de la lame.  
+- `bladeShape[string]`: Propriété. Forme de la lame. Plat signifie triple rainure en V.  
+- `bladeThickness[number]`: Propriété. L'épaisseur de la lame de l'amortisseur. Généralement mesurée en millimètres (mm).  
+- `closeOffRating[number]`: Propriété. Indice de fermeture. Généralement mesuré en Pascals (Pa, N/m2).  
+- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  
+- `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  
+- `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  
+- `description[string]`: Une description de l'article  
+- `faceArea[number]`: Propriété. Surface de la face ouverte au courant d'air. Généralement mesurée en mètre carré (m2).  
+- `frameDepth[number]`: Propriété. La longueur (ou la profondeur) du cadre de l'amortisseur. Généralement mesurée en millimètres (mm).  
+- `frameThickness[number]`: Propriété. L'épaisseur du matériau du cadre de l'amortisseur. Généralement mesurée en millimètres (mm).  
+- `frameType[string]`: Propriété. Le type de cadre utilisé par le registre (par exemple, standard, simple bride, simple bride inversée, double bride, etc.)  
+- `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  
+- `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  
+- `id[*]`: Identifiant unique de l'entité  
+- `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  
+- `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  
+- `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  
+- `leakageFullyClosed[number]`: Propriété. Fuite en cas de fermeture complète. Généralement mesurée en m3/s.  
+- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  
+- `name[string]`: Le nom de cet élément.  
+- `nominalAirFlowRate[number]`: Propriété. Débit d'air nominal. Généralement mesuré en m3/s.  
+- `numberOfBlades[number]`: Propriété. Nombre de lames.  
+- `openPressureDrop[number]`: Propriété. Perte de charge totale dans l'amortisseur. Généralement mesurée en Pascals (Pa, N/m2).  
+- `operation[string]`: Propriété. Mécanisme opérationnel pour le fonctionnement du clapet.  
+- `operationMode[string]`: Propriété. Mode de fonctionnement de ce registre.  
+- `operationTemperatureMax[number]`: Propriété. Plage de température ambiante (air, fluide) autorisée pour le fonctionnement. Généralement mesurée en degrés Kelvin (K).  
+- `operationTemperatureMin[number]`: Propriété. Plage de température ambiante (air, fluide) autorisée pour le fonctionnement. Généralement mesurée en degrés Kelvin (K).  
+- `orientation[string]`: Propriété. L'orientation prévue pour le registre, telle que spécifiée par le fabricant.  
+- `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  
+- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  
+- `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  
+- `temperatureRating[number]`: Propriété. Température nominale. Généralement mesurée en degrés Kelvin (K).  
+- `type[string]`: Propriété. Elle doit être égale à `Damper`.  
+- `workingPressureMax[number]`: Propriété. Pression maximale de service. Généralement mesurée en Pascals (Pa, N/m2).  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+Propriétés requises  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## Modèle de données description des propriétés  
+
+Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 Damper:    
   description: A damper typically participates in an HVAC duct distribution system and is used to control or modulate the flow of air.    
   properties:    
@@ -442,20 +511,29 @@ Damper:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Damper/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Damper/schema.json    
-  x-model-tags: SAREF Damper SMART DATA MODELS    
+  x-model-tags: SAREF Damper    
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Exemples de charges utiles  
-#### Damper NGSI-v2 key-values Exemple  
-Voici un exemple de Damper au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## Exemples de charges utiles  
+
+#### Damper NGSI-v2 key-values Exemple  
+
+Voici un exemple de Damper au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Damper:65c94159-bfe6-416d-b02c-283479048fe3",  
   "type": "Damper",  
   "airFlowRateMax": 0.5927918101987754,  
@@ -498,11 +576,15 @@ Damper:
 }  
 ```  
 </details>  
-#### Damper NGSI-v2 normalisé Exemple  
-Voici un exemple d'amortisseur au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec l'INSG-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+
+#### Damper NGSI-v2 normalisé Exemple  
+
+Voici un exemple d'amortisseur au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec l'INSG-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Damper:30830dab-6aa5-4dd1-9e48-d6ac7e24e4bf",  
   "type": "Damper",  
   "airFlowRateMax": {  
@@ -653,11 +735,15 @@ Damper:
 }  
 ```  
 </details>  
-#### Damper Valeurs clés NGSI-LD Exemple  
-Voici un exemple de Damper au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+
+#### Damper Valeurs clés NGSI-LD Exemple  
+
+Voici un exemple de Damper au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Damper:65c94159-bfe6-416d-b02c-283479048fe3",  
   "type": "Damper",  
   "airFlowRateMax": 0.5927918101987754,  
@@ -704,11 +790,15 @@ Damper:
 }  
 ```  
 </details>  
-#### Damper NGSI-LD normalisé Exemple  
-Voici un exemple d'amortisseur au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+
+#### Damper NGSI-LD normalisé Exemple  
+
+Voici un exemple d'amortisseur au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Damper:99cb9b35-5f17-4e4d-89bb-e9d7bb88c2ba",  
   "type": "Damper",  
   "airFlowRateMax": {  
@@ -885,12 +975,21 @@ Damper:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.2",
-  "modelTags": "SAREF Coil SMART DATA MODELS",
+  "modelTags": "SAREF Coil",
   "$id": "https://smart-data-models.github.com/dataModel.SAREF4BLDG/Coil/schema.json",
   "derivedFrom": "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:Coil",
   "title": "Smart data models - Coil schema",

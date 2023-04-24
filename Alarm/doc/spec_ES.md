@@ -1,33 +1,81 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entidad: Alarma  
-===============<!-- /10-Header -->  
-<!-- 15-License -->  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Alarm/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Descripción global: **Una alarma es un dispositivo que señala la existencia de una condición o situación que está fuera de los límites de la expectativa normal o que activa dicho dispositivo.  Las alarmas incluyen la provisión de pulsadores de rotura de cristales y cajas de accionamiento manual que se utilizan para activar alarmas.**  
-versión: 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## Lista de propiedades  
+Entidad: Alarma  
+===============
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
-- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Descripción de este artículo  - `hasManufacturer[string]`: Propiedad. Relación que identifica al fabricante de una entidad (por ejemplo, un dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  - `hasModel[string]`: Propiedad. Relación que identifica el modelo de una entidad (por ejemplo, dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  - `id[*]`: Identificador único de la entidad  - `isContainedInBuildingSpace[*]`: Relación. Entidad utilizada para definir los espacios físicos del edificio. Un espacio del edificio contiene dispositivos u objetos del edificio. (Espacio del edificio)  - `isContainedInPhysicalObject[*]`: Relación. Cualquier Objeto que tiene una región espacial propia.  (Definición extraída de la ontología DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relación. Referencia a uno o varios sistemas de los que forma parte este objeto físico.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Propiedad. Debe ser igual a Alarma.  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Propiedades requeridas  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Descripción de las propiedades del modelo de datos  
-Ordenados alfabéticamente (pulse para más detalles)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[Licencia abierta](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Alarm/LICENSE.md)  
+
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+Descripción global: **Una alarma es un dispositivo que señala la existencia de una condición o situación que está fuera de los límites de la expectativa normal o que activa dicho dispositivo.  Las alarmas incluyen la provisión de pulsadores de rotura de cristales y cajas de accionamiento manual que se utilizan para activar alarmas.**  
+
+versión: 0.0.1  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## Lista de propiedades  
+
+
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: Un nombre alternativo para este artículo  
+- `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  
+- `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  
+- `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  
+- `description[string]`: Descripción de este artículo  
+- `hasManufacturer[string]`: Propiedad. Relación que identifica al fabricante de una entidad (por ejemplo, un dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  
+- `hasModel[string]`: Propiedad. Relación que identifica el modelo de una entidad (por ejemplo, dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  
+- `id[*]`: Identificador único de la entidad  
+- `isContainedInBuildingSpace[*]`: Relación. Entidad utilizada para definir los espacios físicos del edificio. Un espacio del edificio contiene dispositivos u objetos del edificio. (Espacio del edificio)  
+- `isContainedInPhysicalObject[*]`: Relación. Cualquier Objeto que tiene una región espacial propia.  (Definición extraída de la ontología DUL) (PhysicalObject)  
+- `isSubSystemOf[array]`: Relación. Referencia a uno o varios sistemas de los que forma parte este objeto físico.  
+- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  
+- `name[string]`: El nombre de este artículo.  
+- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  
+- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  
+- `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  
+- `type[string]`: Propiedad. Debe ser igual a Alarma.  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+Propiedades requeridas  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## Descripción de las propiedades del modelo de datos  
+
+Ordenados alfabéticamente (pulse para más detalles)  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 Alarm:    
   description: An alarm is a device that signals the existence of a condition or situation that is outside the boundaries of normal expectation or that activates such a device.  Alarms include the provision of break glass buttons and manual pull boxes that are used to activate alarms.    
   properties:    
@@ -334,20 +382,29 @@ Alarm:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Alarm/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Alarm/schema.json    
-  x-model-tags: SAREF Alarm SMART DATA MODELS    
+  x-model-tags: SAREF Alarm    
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Ejemplo de carga útil  
-#### Alarma NGSI-v2 key-values Ejemplo  
-He aquí un ejemplo de una Alarma en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## Ejemplo de carga útil  
+
+#### Alarma NGSI-v2 key-values Ejemplo  
+
+He aquí un ejemplo de una Alarma en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Alarm:403ddbdf-79c0-4923-9d07-4c962837c527",  
   "type": "Alarm",  
   "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:5920683a-3228-480c-82f6-17c1cf239df4",  
@@ -369,11 +426,15 @@ Alarm:
 }  
 ```  
 </details>  
-#### Alarma NGSI-v2 normalizada Ejemplo  
-He aquí un ejemplo de una Alarma en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+
+#### Alarma NGSI-v2 normalizada Ejemplo  
+
+He aquí un ejemplo de una Alarma en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Alarm:8ae04687-4a9f-4cc8-acfa-2bc726781aaa",  
   "type": "Alarm",  
   "isContainedInBuildingSpace": {  
@@ -440,11 +501,15 @@ Alarm:
 }  
 ```  
 </details>  
-#### Alarma NGSI-LD key-values Ejemplo  
-He aquí un ejemplo de una Alarma en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+
+#### Alarma NGSI-LD key-values Ejemplo  
+
+He aquí un ejemplo de una Alarma en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Alarm:5c49d555-274b-4ccd-b527-823329defc35",  
   "type": "Alarm",  
   "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:98c9f61a-d8f8-4326-b4f3-8845c97ad825",  
@@ -470,11 +535,15 @@ Alarm:
 }  
 ```  
 </details>  
-#### Alarma NGSI-LD normalizada Ejemplo  
-He aquí un ejemplo de una Alarma en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+
+#### Alarma NGSI-LD normalizada Ejemplo  
+
+He aquí un ejemplo de una Alarma en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Alarm:3200afb8-5a97-4a51-b454-a7bb5e7dd272",  
   "type": "Alarm",  
   "isContainedInBuildingSpace": {  
@@ -541,12 +610,21 @@ Alarm:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

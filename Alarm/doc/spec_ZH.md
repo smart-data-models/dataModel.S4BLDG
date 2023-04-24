@@ -1,33 +1,81 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体：警报  
-=====<!-- /10-Header -->  
-<!-- 15-License -->  
-[开放许可](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Alarm/LICENSE.md)  
-[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-全球描述：**报警器是一种装置，它向超出正常预期范围的条件或情况的存在发出信号，或激活这种装置。  警报器包括提供用于启动警报器的碎玻璃按钮和手动拉杆箱。**。  
-版本：0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-##属性列表  
+实体：警报  
+=====
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `hasManufacturer[string]`: 属性。识别实体（例如，设备）的制造商的关系。该值应是一个字符串或一个带有语言标签的字符串。  - `hasModel[string]`: 属性。识别实体（例如，设备）的模型的关系。该值应是一个字符串或一个带有语言标签的字符串。  - `id[*]`: 实体的唯一标识符  - `isContainedInBuildingSpace[*]`: 关系。一个用于定义建筑物理空间的实体。一个建筑空间包含设备或建筑对象。(建筑空间)  - `isContainedInPhysicalObject[*]`: 关系。任何具有适当空间区域的物体。  (从DUL本体论中提取的定义）（PhysicalObject）。  - `isSubSystemOf[array]`: 关系。对该物理对象是其一部分的系统的引用。  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: 属性。它必须等于报警。  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-所需属性  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[开放许可](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Alarm/LICENSE.md)  
+
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+全球描述：**报警器是一种装置，它向超出正常预期范围的条件或情况的存在发出信号，或激活这种装置。  警报器包括提供用于启动警报器的碎玻璃按钮和手动拉杆箱。**。  
+
+版本：0.0.1  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+##属性列表  
+
+
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: 这个项目的一个替代名称  
+- `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  
+- `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  
+- `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  
+- `description[string]`: 对这个项目的描述  
+- `hasManufacturer[string]`: 属性。识别实体（例如，设备）的制造商的关系。该值应是一个字符串或一个带有语言标签的字符串。  
+- `hasModel[string]`: 属性。识别实体（例如，设备）的模型的关系。该值应是一个字符串或一个带有语言标签的字符串。  
+- `id[*]`: 实体的唯一标识符  
+- `isContainedInBuildingSpace[*]`: 关系。一个用于定义建筑物理空间的实体。一个建筑空间包含设备或建筑对象。(建筑空间)  
+- `isContainedInPhysicalObject[*]`: 关系。任何具有适当空间区域的物体。  (从DUL本体论中提取的定义）（PhysicalObject）。  
+- `isSubSystemOf[array]`: 关系。对该物理对象是其一部分的系统的引用。  
+- `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  
+- `name[string]`: 这个项目的名称。  
+- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  
+- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  
+- `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  
+- `type[string]`: 属性。它必须等于报警。  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+所需属性  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## 数据模型的属性描述  
+
+按字母顺序排列（点击查看详情）。  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 Alarm:    
   description: An alarm is a device that signals the existence of a condition or situation that is outside the boundaries of normal expectation or that activates such a device.  Alarms include the provision of break glass buttons and manual pull boxes that are used to activate alarms.    
   properties:    
@@ -334,20 +382,29 @@ Alarm:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Alarm/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Alarm/schema.json    
-  x-model-tags: SAREF Alarm SMART DATA MODELS    
+  x-model-tags: SAREF Alarm    
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-#### 警报NGSI-v2关键值示例  
-这里有一个以JSON-LD格式作为key-values的Alarm的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ＃＃＃＃有效载荷的例子  
+
+#### 警报NGSI-v2关键值示例  
+
+这里有一个以JSON-LD格式作为key-values的Alarm的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Alarm:403ddbdf-79c0-4923-9d07-4c962837c527",  
   "type": "Alarm",  
   "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:5920683a-3228-480c-82f6-17c1cf239df4",  
@@ -369,11 +426,15 @@ Alarm:
 }  
 ```  
 </details>  
-#### 警报NGSI-v2规范化示例  
-下面是一个规范化的JSON-LD格式的报警器的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+
+#### 警报NGSI-v2规范化示例  
+
+下面是一个规范化的JSON-LD格式的报警器的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Alarm:8ae04687-4a9f-4cc8-acfa-2bc726781aaa",  
   "type": "Alarm",  
   "isContainedInBuildingSpace": {  
@@ -440,11 +501,15 @@ Alarm:
 }  
 ```  
 </details>  
-#### 警报NGSI-LD关键值示例  
-这里有一个以JSON-LD格式作为key-values的Alarm的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### 警报NGSI-LD关键值示例  
+
+这里有一个以JSON-LD格式作为key-values的Alarm的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Alarm:5c49d555-274b-4ccd-b527-823329defc35",  
   "type": "Alarm",  
   "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:98c9f61a-d8f8-4326-b4f3-8845c97ad825",  
@@ -470,11 +535,15 @@ Alarm:
 }  
 ```  
 </details>  
-#### 警报NGSI-LD正常化的例子  
-下面是一个规范化的JSON-LD格式的报警器的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### 警报NGSI-LD正常化的例子  
+
+下面是一个规范化的JSON-LD格式的报警器的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Alarm:3200afb8-5a97-4a51-b454-a7bb5e7dd272",  
   "type": "Alarm",  
   "isContainedInBuildingSpace": {  
@@ -541,12 +610,21 @@ Alarm:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

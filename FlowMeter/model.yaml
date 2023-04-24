@@ -314,5 +314,5 @@ FlowMeter:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/FlowMeter/LICENSE.md
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/FlowMeter/schema.json
-  x-model-tags: SAREF FlowMeter SMART DATA MODELS
+  x-model-tags: SAREF FlowMeter
   x-version: 0.0.1

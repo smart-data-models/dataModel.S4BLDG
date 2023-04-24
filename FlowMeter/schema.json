@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.1",
-  "modelTags": "SAREF FlowMeter SMART DATA MODELS",
+  "modelTags": "SAREF FlowMeter",
   "$id": "https://smart-data-models.github.com/dataModel.SAREF4BLDG/FlowMeter/schema.json",
   "derivedFrom": "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:FlowMeter",
   "title": "Smart data models - FlowMeter schema",

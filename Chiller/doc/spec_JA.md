@@ -1,33 +1,87 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティチラー  
-=========<!-- /10-Header -->  
-<!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Chiller/LICENSE.md)  
-[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Global description：チラーは、蒸気圧縮または吸収冷凍サイクルによって液体から熱を除去し、流体（通常は水または水とグリコールの混合物）を冷却するために使用される装置である**。冷やされた流体は、次に建物の空気を冷却し、除湿するために使用されます**。  
-バージョン：0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+エンティティチラー  
+=========
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `id[*]`: エンティティの一意な識別子  - `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  - `isSubSystemOf[array]`: 関係。この物理オブジェクトが属するシステム（複数可）への参照。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `name[string]`: この項目の名称です。  - `nominalCapacity[object]`: 特性です。公称容量。通常、ワット（W、J/s）で測定される。  - `nominalCondensingTemperature[object]`: 特性です。Chiller condensing temperature（チラー凝縮温度）。通常、ケルビン(K)単位で測定する。  - `nominalEfficiency[object]`: 特性です。公称条件下でのチラー効率。  - `nominalEvaporatingTemmperature[object]`: 特性。チラー蒸発温度。通常、ケルビン(K)単位で測定される。  - `nominalHeatRejectionRate[object]`: 特性。冷凍効果と圧縮機に入力される電力の熱等価値の合計。通常、ワット（W、J/s）単位で測定される。  - `nominalPowerConsumption[object]`: 特性です。公称総消費電力。通常、ワット（W、J/s）単位で測定される。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: プロパティです。これは `Chiller` と等しくなければならない。  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-必須プロパティ  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## プロパティのデータモデル記述  
-アルファベット順（クリックで詳細表示）  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Chiller/LICENSE.md)  
+
+[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+Global description：チラーは、蒸気圧縮または吸収冷凍サイクルによって液体から熱を除去し、流体（通常は水または水とグリコールの混合物）を冷却するために使用される装置である**。冷やされた流体は、次に建物の空気を冷却し、除湿するために使用されます**。  
+
+バージョン：0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## プロパティ一覧  
+
+
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: このアイテムの別称  
+- `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  
+- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `description[string]`: このアイテムの説明  
+- `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  
+- `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  
+- `id[*]`: エンティティの一意な識別子  
+- `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  
+- `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  
+- `isSubSystemOf[array]`: 関係。この物理オブジェクトが属するシステム（複数可）への参照。  
+- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  
+- `name[string]`: この項目の名称です。  
+- `nominalCapacity[object]`: 特性です。公称容量。通常、ワット（W、J/s）で測定される。  
+- `nominalCondensingTemperature[object]`: 特性です。Chiller condensing temperature（チラー凝縮温度）。通常、ケルビン(K)単位で測定する。  
+- `nominalEfficiency[object]`: 特性です。公称条件下でのチラー効率。  
+- `nominalEvaporatingTemmperature[object]`: 特性。チラー蒸発温度。通常、ケルビン(K)単位で測定される。  
+- `nominalHeatRejectionRate[object]`: 特性。冷凍効果と圧縮機に入力される電力の熱等価値の合計。通常、ワット（W、J/s）単位で測定される。  
+- `nominalPowerConsumption[object]`: 特性です。公称総消費電力。通常、ワット（W、J/s）単位で測定される。  
+- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  
+- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  
+- `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  
+- `type[string]`: プロパティです。これは `Chiller` と等しくなければならない。  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+必須プロパティ  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## プロパティのデータモデル記述  
+
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 Chiller:    
   description: 'A chiller is a device used to remove heat from a liquid via a vapor-compression or absorption refrigeration cycle to cool a fluid, typically water or a mixture of water and glycol. The chilled fluid is then used to cool and dehumidify air in a building.'    
   properties:    
@@ -404,20 +458,29 @@ Chiller:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Chiller/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Chiller/schema.json    
-  x-model-tags: SAREF Chiller SMART DATA MODELS    
+  x-model-tags: SAREF Chiller    
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ペイロードの例  
-#### Chiller NGSI-v2 キー値例  
-ここでは、ChillerをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ペイロードの例  
+
+#### Chiller NGSI-v2 キー値例  
+
+ここでは、ChillerをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Chiller:ba7497f8-4fd6-4ec0-8dd8-00ed95bd51fc",  
   "type": "Chiller",  
   "nominalCapacity": 0.09475720530736764,  
@@ -445,11 +508,15 @@ Chiller:
 }  
 ```  
 </details>  
-#### Chiller NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のChillerの例を示す。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### Chiller NGSI-v2 正規化例  
+
+ここでは、正規化されたJSON-LD形式のChillerの例を示す。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Chiller:fbbc813e-29ac-4462-9996-5a3d73d1ce98",  
   "type": "Chiller",  
   "nominalCapacity": {  
@@ -540,11 +607,15 @@ Chiller:
 }  
 ```  
 </details>  
-#### チラーNGSI-LDキー値例  
-ここでは、ChillerをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### チラーNGSI-LDキー値例  
+
+ここでは、ChillerをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Chiller:ba7497f8-4fd6-4ec0-8dd8-00ed95bd51fc",  
   "type": "Chiller",  
   "nominalCapacity": 0.09475720530736764,  
@@ -576,11 +647,15 @@ Chiller:
 }  
 ```  
 </details>  
-#### 冷熱機器 NGSI-LD 正規化例  
-ここでは、JSON-LD形式で正規化されたChillerの例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### 冷熱機器 NGSI-LD 正規化例  
+
+ここでは、JSON-LD形式で正規化されたChillerの例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Chiller:1a99f350-0e1d-4466-8579-912c1f3c9b8f",  
   "type": "Chiller",  
   "nominalCapacity": {  
@@ -683,12 +758,21 @@ Chiller:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

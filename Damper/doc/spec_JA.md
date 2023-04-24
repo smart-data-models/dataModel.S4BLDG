@@ -1,33 +1,102 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティダンパー  
-==========<!-- /10-Header -->  
-<!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Damper/LICENSE.md)  
-[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-グローバルな記述です：**ダンパーは、通常、HVACダクト分配システムに参加し、空気の流れを制御または調節するために使用されます。  
-バージョン：0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+エンティティダンパー  
+==========
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `airFlowRateMax[number]`: 特性です。最大許容空気流量のこと。通常、m3/sで測定される。  - `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `bladeAction[string]`: 特性です。ブレードアクション。  - `bladeEdge[string]`: 特性です。ブレードエッジです。  - `bladeShape[string]`: 特性です。ブレードの形状です。フラットとは3重のV溝を意味します。  - `bladeThickness[number]`: 特性です。ダンパーブレードの厚さです。通常、ミリメートル（mm）単位で測定される。  - `closeOffRating[number]`: プロパティです。クローズオフ定格。通常、パスカル（Pa、N/m2）で測定される。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `faceArea[number]`: 特性です。気流に開放されたフェイス面積。通常、平方メートル（m2）単位で測定される。  - `frameDepth[number]`: 特性。ダンパーフレームの長さ（または奥行き）です。通常、ミリメートル（mm）単位で測定される。  - `frameThickness[number]`: 特性を示す。ダンパーフレームの素材の厚さ。通常、ミリメートル（mm）単位で測定される。  - `frameType[string]`: 特性を示す。ダンパーが使用するフレームの種類（例：標準、シングルフランジ、シングル逆フランジ、ダブルフランジなど）。  - `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `id[*]`: エンティティの一意な識別子  - `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  - `isSubSystemOf[array]`: 関係。この物理オブジェクトが所属するシステム（複数可）への参照。  - `leakageFullyClosed[number]`: 特性です。全閉時のリーク量。通常、m3/sで測定される。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `name[string]`: この項目の名称です。  - `nominalAirFlowRate[number]`: 特性です。空気の流れの公称速度。通常、m3/sで測定される。  - `numberOfBlades[number]`: 特性です。ブレードの数。  - `openPressureDrop[number]`: 特性です。ダンパーを横切る総圧力損失。通常パスカル（Pa、N/m2）で測定される。  - `operation[string]`: 特性です。ダンパー操作の操作機構。  - `operationMode[string]`: 特性です。本ダンパーの動作モード。  - `operationTemperatureMax[number]`: 特性を示す。許容される動作周囲（空気、液体）温度範囲。通常、ケルビン（K）単位で測定される。  - `operationTemperatureMin[number]`: 特性を示す。許容される動作周囲（空気、液体）温度範囲。通常、ケルビン（K）単位で測定される。  - `orientation[string]`: 特性を有する。メーカーが指定するダンパーの意図する方向。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperatureRating[number]`: 特性です。温度定格。通常、ケルビン（K）単位で測定される。  - `type[string]`: プロパティです。Damper`と等しくなければならない。  - `workingPressureMax[number]`: 特性です。最高使用圧力。通常パスカル（Pa、N/m2）で測定される。  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-必須プロパティ  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## プロパティのデータモデル記述  
-アルファベット順（クリックで詳細表示）  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Damper/LICENSE.md)  
+
+[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+グローバルな記述です：**ダンパーは、通常、HVACダクト分配システムに参加し、空気の流れを制御または調節するために使用されます。  
+
+バージョン：0.0.1  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## プロパティ一覧  
+
+
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)
+- `airFlowRateMax[number]`: 特性です。最大許容空気流量のこと。通常、m3/sで測定される。  
+- `alternateName[string]`: このアイテムの別称  
+- `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `bladeAction[string]`: 特性です。ブレードアクション。  
+- `bladeEdge[string]`: 特性です。ブレードエッジです。  
+- `bladeShape[string]`: 特性です。ブレードの形状です。フラットとは3重のV溝を意味します。  
+- `bladeThickness[number]`: 特性です。ダンパーブレードの厚さです。通常、ミリメートル（mm）単位で測定される。  
+- `closeOffRating[number]`: プロパティです。クローズオフ定格。通常、パスカル（Pa、N/m2）で測定される。  
+- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  
+- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `description[string]`: このアイテムの説明  
+- `faceArea[number]`: 特性です。気流に開放されたフェイス面積。通常、平方メートル（m2）単位で測定される。  
+- `frameDepth[number]`: 特性。ダンパーフレームの長さ（または奥行き）です。通常、ミリメートル（mm）単位で測定される。  
+- `frameThickness[number]`: 特性を示す。ダンパーフレームの素材の厚さ。通常、ミリメートル（mm）単位で測定される。  
+- `frameType[string]`: 特性を示す。ダンパーが使用するフレームの種類（例：標準、シングルフランジ、シングル逆フランジ、ダブルフランジなど）。  
+- `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  
+- `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  
+- `id[*]`: エンティティの一意な識別子  
+- `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  
+- `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  
+- `isSubSystemOf[array]`: 関係。この物理オブジェクトが所属するシステム（複数可）への参照。  
+- `leakageFullyClosed[number]`: 特性です。全閉時のリーク量。通常、m3/sで測定される。  
+- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  
+- `name[string]`: この項目の名称です。  
+- `nominalAirFlowRate[number]`: 特性です。空気の流れの公称速度。通常、m3/sで測定される。  
+- `numberOfBlades[number]`: 特性です。ブレードの数。  
+- `openPressureDrop[number]`: 特性です。ダンパーを横切る総圧力損失。通常パスカル（Pa、N/m2）で測定される。  
+- `operation[string]`: 特性です。ダンパー操作の操作機構。  
+- `operationMode[string]`: 特性です。本ダンパーの動作モード。  
+- `operationTemperatureMax[number]`: 特性を示す。許容される動作周囲（空気、液体）温度範囲。通常、ケルビン（K）単位で測定される。  
+- `operationTemperatureMin[number]`: 特性を示す。許容される動作周囲（空気、液体）温度範囲。通常、ケルビン（K）単位で測定される。  
+- `orientation[string]`: 特性を有する。メーカーが指定するダンパーの意図する方向。  
+- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  
+- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  
+- `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  
+- `temperatureRating[number]`: 特性です。温度定格。通常、ケルビン（K）単位で測定される。  
+- `type[string]`: プロパティです。Damper`と等しくなければならない。  
+- `workingPressureMax[number]`: 特性です。最高使用圧力。通常パスカル（Pa、N/m2）で測定される。  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+必須プロパティ  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## プロパティのデータモデル記述  
+
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 Damper:    
   description: A damper typically participates in an HVAC duct distribution system and is used to control or modulate the flow of air.    
   properties:    
@@ -442,20 +511,29 @@ Damper:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Damper/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Damper/schema.json    
-  x-model-tags: SAREF Damper SMART DATA MODELS    
+  x-model-tags: SAREF Damper    
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ペイロードの例  
-#### ダンパーNGSI-v2キーバリュー例  
-ここでは、DamperをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ペイロードの例  
+
+#### ダンパーNGSI-v2キーバリュー例  
+
+ここでは、DamperをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Damper:65c94159-bfe6-416d-b02c-283479048fe3",  
   "type": "Damper",  
   "airFlowRateMax": 0.5927918101987754,  
@@ -498,11 +576,15 @@ Damper:
 }  
 ```  
 </details>  
-#### ダンパー NGSI-v2 正規化例  
-以下は、正規化されたJSON-LD形式のDamperの例である。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### ダンパー NGSI-v2 正規化例  
+
+以下は、正規化されたJSON-LD形式のDamperの例である。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Damper:30830dab-6aa5-4dd1-9e48-d6ac7e24e4bf",  
   "type": "Damper",  
   "airFlowRateMax": {  
@@ -653,11 +735,15 @@ Damper:
 }  
 ```  
 </details>  
-#### ダンパーNGSI-LDキーバリュ-例  
-ここでは、DamperをJSON-LD形式でkey-valuesとした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### ダンパーNGSI-LDキーバリュ-例  
+
+ここでは、DamperをJSON-LD形式でkey-valuesとした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Damper:65c94159-bfe6-416d-b02c-283479048fe3",  
   "type": "Damper",  
   "airFlowRateMax": 0.5927918101987754,  
@@ -704,11 +790,15 @@ Damper:
 }  
 ```  
 </details>  
-#### ダンパー NGSI-LD 正規化例  
-以下は、正規化されたJSON-LD形式のDamperの例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### ダンパー NGSI-LD 正規化例  
+
+以下は、正規化されたJSON-LD形式のDamperの例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Damper:99cb9b35-5f17-4e4d-89bb-e9d7bb88c2ba",  
   "type": "Damper",  
   "airFlowRateMax": {  
@@ -885,12 +975,21 @@ Damper:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

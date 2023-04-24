@@ -1,33 +1,102 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entity: Damper  
-==============<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Damper/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Global description: **A damper typically participates in an HVAC duct distribution system and is used to control or modulate the flow of air.**  
-version: 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## List of properties  
+Entity: Damper  
+==============
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `airFlowRateMax[number]`: Property. Maximum allowable air flow rate. Usually measured in m3/s.  - `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `bladeAction[string]`: Property. Blade action.  - `bladeEdge[string]`: Property. Blade edge.  - `bladeShape[string]`: Property. Blade shape. Flat means triple V-groove.  - `bladeThickness[number]`: Property. The thickness of the damper blade. Usually measured in millimeters (mm).  - `closeOffRating[number]`: Property. Close off rating. Usually measured in Pascals (Pa, N/m2).  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `faceArea[number]`: Property. Face area open to the airstream. Usually measured in square metre (m2).  - `frameDepth[number]`: Property. The length (or depth) of the damper frame. Usually measured in millimeters (mm).  - `frameThickness[number]`: Property. The thickness of the damper frame material. Usually measured in millimeters (mm).  - `frameType[string]`: Property. The type of frame used by the damper (e.g., Standard, Single Flange, Single Reversed Flange, Double Flange, etc.).  - `hasManufacturer[string]`: Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.  - `hasModel[string]`: Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.  - `id[*]`: Unique identifier of the entity  - `isContainedInBuildingSpace[*]`: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)  - `isContainedInPhysicalObject[*]`: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)  - `isSubSystemOf[array]`: Relationship. A reference to a system(s) that this Physical Object is part of.  - `leakageFullyClosed[number]`: Property. Leakage when fully closed. Usually measured in m3/s.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `nominalAirFlowRate[number]`: Property. Nominal rate of air flow. Usually measured in m3/s.  - `numberOfBlades[number]`: Property. Number of blades.  - `openPressureDrop[number]`: Property. Total pressure drop across damper. Usually measured in Pascals (Pa, N/m2).  - `operation[string]`: Property. The operational mechanism for the damper operation.  - `operationMode[string]`: Property. Operation mode of this damper.  - `operationTemperatureMax[number]`: Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).  - `operationTemperatureMin[number]`: Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).  - `orientation[string]`: Property. The intended orientation for the damper as specified by the manufacturer.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `temperatureRating[number]`: Property. Temperature rating. Usually measured in degrees Kelvin (K).  - `type[string]`: Property. It must be equal to `Damper`.  - `workingPressureMax[number]`: Property. Maximum working pressure. Usually measured in Pascals (Pa, N/m2).  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Required properties  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Data Model description of properties  
-Sorted alphabetically (click for details)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[Open License](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Damper/LICENSE.md)  
+
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+Global description: **A damper typically participates in an HVAC duct distribution system and is used to control or modulate the flow of air.**  
+
+version: 0.0.1  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## List of properties  
+
+
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)
+- `airFlowRateMax[number]`: Property. Maximum allowable air flow rate. Usually measured in m3/s.  
+- `alternateName[string]`: An alternative name for this item  
+- `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `bladeAction[string]`: Property. Blade action.  
+- `bladeEdge[string]`: Property. Blade edge.  
+- `bladeShape[string]`: Property. Blade shape. Flat means triple V-groove.  
+- `bladeThickness[number]`: Property. The thickness of the damper blade. Usually measured in millimeters (mm).  
+- `closeOffRating[number]`: Property. Close off rating. Usually measured in Pascals (Pa, N/m2).  
+- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  
+- `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  
+- `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  
+- `description[string]`: A description of this item  
+- `faceArea[number]`: Property. Face area open to the airstream. Usually measured in square metre (m2).  
+- `frameDepth[number]`: Property. The length (or depth) of the damper frame. Usually measured in millimeters (mm).  
+- `frameThickness[number]`: Property. The thickness of the damper frame material. Usually measured in millimeters (mm).  
+- `frameType[string]`: Property. The type of frame used by the damper (e.g., Standard, Single Flange, Single Reversed Flange, Double Flange, etc.).  
+- `hasManufacturer[string]`: Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.  
+- `hasModel[string]`: Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.  
+- `id[*]`: Unique identifier of the entity  
+- `isContainedInBuildingSpace[*]`: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)  
+- `isContainedInPhysicalObject[*]`: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)  
+- `isSubSystemOf[array]`: Relationship. A reference to a system(s) that this Physical Object is part of.  
+- `leakageFullyClosed[number]`: Property. Leakage when fully closed. Usually measured in m3/s.  
+- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  
+- `name[string]`: The name of this item.  
+- `nominalAirFlowRate[number]`: Property. Nominal rate of air flow. Usually measured in m3/s.  
+- `numberOfBlades[number]`: Property. Number of blades.  
+- `openPressureDrop[number]`: Property. Total pressure drop across damper. Usually measured in Pascals (Pa, N/m2).  
+- `operation[string]`: Property. The operational mechanism for the damper operation.  
+- `operationMode[string]`: Property. Operation mode of this damper.  
+- `operationTemperatureMax[number]`: Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).  
+- `operationTemperatureMin[number]`: Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).  
+- `orientation[string]`: Property. The intended orientation for the damper as specified by the manufacturer.  
+- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  
+- `seeAlso[*]`: list of uri pointing to additional resources about the item  
+- `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  
+- `temperatureRating[number]`: Property. Temperature rating. Usually measured in degrees Kelvin (K).  
+- `type[string]`: Property. It must be equal to `Damper`.  
+- `workingPressureMax[number]`: Property. Maximum working pressure. Usually measured in Pascals (Pa, N/m2).  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+Required properties  
+- `id`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## Data Model description of properties  
+
+Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 Damper:    
   description: A damper typically participates in an HVAC duct distribution system and is used to control or modulate the flow of air.    
   properties:    
@@ -442,20 +511,29 @@ Damper:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Damper/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Damper/schema.json    
-  x-model-tags: SAREF Damper SMART DATA MODELS    
+  x-model-tags: SAREF Damper    
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Example payloads    
-#### Damper NGSI-v2 key-values Example    
-Here is an example of a Damper in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## Example payloads    
+
+#### Damper NGSI-v2 key-values Example    
+
+Here is an example of a Damper in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Damper:65c94159-bfe6-416d-b02c-283479048fe3",  
   "type": "Damper",  
   "airFlowRateMax": 0.5927918101987754,  
@@ -498,11 +576,15 @@ Damper:
 }  
 ```  
 </details>  
-#### Damper NGSI-v2 normalized Example    
-Here is an example of a Damper in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+
+#### Damper NGSI-v2 normalized Example    
+
+Here is an example of a Damper in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Damper:30830dab-6aa5-4dd1-9e48-d6ac7e24e4bf",  
   "type": "Damper",  
   "airFlowRateMax": {  
@@ -653,11 +735,15 @@ Damper:
 }  
 ```  
 </details>  
-#### Damper NGSI-LD key-values Example    
-Here is an example of a Damper in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+
+#### Damper NGSI-LD key-values Example    
+
+Here is an example of a Damper in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Damper:65c94159-bfe6-416d-b02c-283479048fe3",  
   "type": "Damper",  
   "airFlowRateMax": 0.5927918101987754,  
@@ -704,11 +790,15 @@ Damper:
 }  
 ```  
 </details>  
-#### Damper NGSI-LD normalized Example    
-Here is an example of a Damper in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+
+#### Damper NGSI-LD normalized Example    
+
+Here is an example of a Damper in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Damper:99cb9b35-5f17-4e4d-89bb-e9d7bb88c2ba",  
   "type": "Damper",  
   "airFlowRateMax": {  
@@ -885,12 +975,21 @@ Damper:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  
