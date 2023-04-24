@@ -15,7 +15,7 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `capacityControlType[string]`: Eigenschaft. Einlass-Schaufel: Steuerung durch Verstellen des Einlassflügels. VariableSpeedDrive: Steuerung durch einen Antrieb mit variabler Geschwindigkeit. BladePitchAngle: Steuerung durch Einstellen des Blattanstellwinkels. ZweiGeschwindigkeiten: Steuerung durch Umschalten zwischen hoher und niedriger Geschwindigkeit. DischargeDamper: Steuerung durch Modulation der Auslassklappe.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `hasManufacturer[string]`: Eigenschaft. Eine Beziehung, die den Hersteller einer Entität (z. B. eines Geräts) identifiziert. Der Wert sollte eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen sein.  - `hasModel[string]`: Eigenschaft. Eine Beziehung, die das Modell einer Entität (z. B. eines Geräts) identifiziert. Als Wert wird eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen erwartet.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `isContainedInBuildingSpace[*]`: Beziehung. Eine Einheit, die zur Definition der physischen Räume des Gebäudes verwendet wird. Ein Gebäudebereich enthält Geräte oder Gebäudeobjekte. (GebäudeRaum)  - `isContainedInPhysicalObject[*]`: Verwandtschaft. Jedes Objekt, das eine eigene Raumregion hat.  (Definition aus der DUL Ontologie) (PhysicalObject)  - `isSubSystemOf[array]`: Beziehung. Ein Verweis auf ein oder mehrere Systeme, zu denen dieses physische Objekt gehört.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `motorDriveType[string]`: Eigenschaft. Motorantriebstyp: DIRECTDRIVE: Direktantrieb. BELTDRIVE: Riemenantrieb. COUPLING: Kupplung. OTHER: Andere Art von Motorantrieb. UNKNOWN: Unbekannter Motorantriebstyp.  - `name[string]`: Der Name dieses Artikels.  - `nominalAirFlowRate[object]`: Eigenschaft. Nominale Luftdurchflussrate. Wird normalerweise in m3/s gemessen.  - `nominalPowerRate[object]`: Eigenschaft. Nennleistung des Gebläses, normalerweise gemessen in Watt (W, J/s).  - `nominalRotationSpeed[object]`: Eigenschaft. Nenndrehzahl des Lüfterrads. Wird normalerweise in Zyklen/s gemessen.  - `nominalStaticPressure[object]`: Eigenschaft. Der statische Druck innerhalb des Luftstroms, den der Ventilator überwinden muss, um die vorgesehene Luftzirkulation zu gewährleisten. Wird normalerweise in Pascal (Pa, N/m2) gemessen.  - `nominalTotalPressure[object]`: Eigenschaft. Nomineller Gesamtdruckanstieg über den Ventilator. Wird normalerweise in Pascal (Pa, N/m2) gemessen.  - `operationMode[string]`: Eigenschaft. Betriebsart des Ventilators.  - `operationTemperatureMax[object]`: Eigenschaft. Zulässiger Temperaturbereich der Betriebsumgebung (Luft, Flüssigkeit). Wird normalerweise in Grad Kelvin (K) gemessen.  - `operationTemperatureMin[object]`: Eigenschaft. Zulässiger Temperaturbereich der Betriebsumgebung (Luft, Flüssigkeit). Wird normalerweise in Grad Kelvin (K) gemessen.  - `operationalRiterial[object]`: Eigenschaft. Betriebszeit bei maximaler betrieblicher Umgebungslufttemperatur. Gemessen in Sekunden (s) oder Tagen (d) oder anderen Zeiteinheiten.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: Eigenschaft. Sie muss gleich `Fan` sein.  <!-- /30-PropertiesList -->  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `capacityControlType[string]`: Eigenschaft. Einlass-Schaufel: Steuerung durch Verstellen des Einlassflügels. VariableSpeedDrive: Steuerung durch einen Antrieb mit variabler Geschwindigkeit. BladePitchAngle: Steuerung durch Einstellen des Blattanstellwinkels. ZweiGeschwindigkeiten: Steuerung durch Umschalten zwischen hoher und niedriger Geschwindigkeit. DischargeDamper: Steuerung durch Modulation der Auslassklappe.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `hasManufacturer[string]`: Eigenschaft. Eine Beziehung, die den Hersteller einer Entität (z. B. eines Geräts) identifiziert. Der Wert sollte eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen sein.  - `hasModel[string]`: Eigenschaft. Eine Beziehung, die das Modell einer Entität (z. B. eines Geräts) identifiziert. Als Wert wird eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen erwartet.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `isContainedInBuildingSpace[*]`: Beziehung. Eine Einheit, die zur Definition der physischen Räume des Gebäudes verwendet wird. Ein Gebäudebereich enthält Geräte oder Gebäudeobjekte. (GebäudeRaum)  - `isContainedInPhysicalObject[*]`: Verwandtschaft. Jedes Objekt, das eine eigene Raumregion hat.  (Definition entnommen aus der DUL-Ontologie) (PhysicalObject)  - `isSubSystemOf[array]`: Beziehung. Ein Verweis auf ein oder mehrere Systeme, zu denen dieses physische Objekt gehört.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `motorDriveType[string]`: Eigenschaft. Motorantriebstyp: DIRECTDRIVE: Direktantrieb. BELTDRIVE: Riemenantrieb. COUPLING: Kupplung. OTHER: Andere Art von Motorantrieb. UNKNOWN: Unbekannter Motorantriebstyp.  - `name[string]`: Der Name dieses Artikels.  - `nominalAirFlowRate[number]`: Eigenschaft. Nominale Luftdurchflussrate. Wird normalerweise in m3/s gemessen.  - `nominalPowerRate[number]`: Eigenschaft. Nennleistung des Gebläses, normalerweise gemessen in Watt (W, J/s).  - `nominalRotationSpeed[number]`: Eigenschaft. Nenndrehzahl des Lüfterrads. Wird normalerweise in Zyklen/s gemessen.  - `nominalStaticPressure[number]`: Eigenschaft. Der statische Druck innerhalb des Luftstroms, den der Ventilator überwinden muss, um die vorgesehene Luftzirkulation zu gewährleisten. Wird normalerweise in Pascal (Pa, N/m2) gemessen.  - `nominalTotalPressure[number]`: Eigenschaft. Nomineller Gesamtdruckanstieg über den Ventilator. Wird normalerweise in Pascal (Pa, N/m2) gemessen.  - `operationMode[string]`: Eigenschaft. Betriebsart des Ventilators.  - `operationTemperatureMax[number]`: Eigenschaft. Zulässiger Temperaturbereich der Betriebsumgebung (Luft, Flüssigkeit). Wird normalerweise in Grad Kelvin (K) gemessen.  - `operationTemperatureMin[number]`: Eigenschaft. Zulässiger Temperaturbereich der Betriebsumgebung (Luft, Flüssigkeit). Wird normalerweise in Grad Kelvin (K) gemessen.  - `operationalRiterial[number]`: Eigenschaft. Betriebszeit bei maximaler betrieblicher Umgebungslufttemperatur. Gemessen in Sekunden (s) oder Tagen (d) oder anderen Zeiteinheiten.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: Eigenschaft. Sie muss gleich `Fan` sein.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -305,63 +305,28 @@ Fan:
       x-ngsi:    
         type: Property    
     nominalAirFlowRate:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Nominal rate of air flow. Usually measured in m3/s.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: &fan_-_properties_-_nominalpowerrate_-_properties    
-        observedAt:    
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).    
-          format: date-time    
-          type: string    
-        unitCode:    
-          description: Property. A relationship identifying the unit of measure used for a certain entity.    
-          type: string    
-        value:    
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'    
-          type: number    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalPowerRate:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal fan power rate.Usually measured in Watts (W, J/s).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalRotationSpeed:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Nominal fan wheel speed. Usually measured in cycles/s.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalStaticPressure:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. The static pressure within the air stream that the fan must overcome to insure designed circulation of air. Usually measured in Pascals (Pa, N/m2).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalTotalPressure:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal total pressure rise across the fan. Usually measured in Pascals (Pa, N/m2).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     operationMode:    
@@ -373,33 +338,18 @@ Fan:
       x-ngsi:    
         type: Property    
     operationTemperatureMax:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     operationTemperatureMin:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     operationalRiterial:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Time of operation at maximum operational ambient air temperature. Measured in seconds (s) or days (d) or other units of time.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     owner:    
