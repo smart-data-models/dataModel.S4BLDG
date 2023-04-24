@@ -1,89 +1,33 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: AirToAirHeatRecovery  
+=============================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Licencia abierta](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/AirToAirHeatRecovery/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descripción global: **Un dispositivo de recuperación de calor aire-aire emplea un intercambiador de calor de contracorriente entre el flujo de aire entrante y saliente. Se suele utilizar para transferir calor del aire más caliente de una cámara al aire más frío de la segunda cámara (es decir, se suele utilizar para recuperar el calor del aire acondicionado que se expulsa y del aire exterior que se suministra a un edificio), con el consiguiente ahorro de energía derivado de la reducción de las necesidades de calefacción (o refrigeración).**.  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-Entidad: AirToAirHeatRecovery  
-=============================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## Lista de propiedades  
 
-[Licencia abierta](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/AirToAirHeatRecovery/LICENSE.md)  
-
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-
-Descripción global: **Un dispositivo de recuperación de calor aire-aire emplea un intercambiador de calor de contracorriente entre el flujo de aire entrante y saliente. Se suele utilizar para transferir calor del aire más caliente de una cámara al aire más frío de la segunda cámara (es decir, se suele utilizar para recuperar el calor del aire acondicionado que se expulsa y del aire exterior que se suministra a un edificio), con el consiguiente ahorro de energía derivado de la reducción de las necesidades de calefacción (o refrigeración).**.  
-
-versión: 0.0.1  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## Lista de propiedades  
-
-
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
-- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)
-- `alternateName[string]`: Un nombre alternativo para este artículo  
-- `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  
-- `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  
-- `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  
-- `description[string]`: Descripción de este artículo  
-- `hasDefrost[boolean]`: Propiedad. Si el intercambiador tiene función de desescarche o no.  
-- `hasManufacturer[string]`: Propiedad. Relación que identifica al fabricante de una entidad (por ejemplo, un dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  
-- `hasModel[string]`: Propiedad. Relación que identifica el modelo de una entidad (por ejemplo, dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  
-- `heatTransferTypeEnum[string]`: Propiedad. Tipo de transferencia de calor entre las dos corrientes de aire.  
-- `id[*]`: Identificador único de la entidad  
-- `isContainedInBuildingSpace[*]`: Relación. Entidad utilizada para definir los espacios físicos del edificio. Un espacio del edificio contiene dispositivos u objetos del edificio. (Espacio del edificio)  
-- `isContainedInPhysicalObject[*]`: Relación. Cualquier Objeto que tiene una región espacial propia.  (Definición extraída de la ontología DUL) (PhysicalObject)  
-- `isSubSystemOf[array]`: Relación. Referencia a uno o varios sistemas de los que forma parte este objeto físico.  
-- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  
-- `name[string]`: El nombre de este artículo.  
-- `operationTemperatureMax[object]`: Propiedad. Rango de temperatura ambiente (aire, fluido) de funcionamiento admisible. Suele medirse en grados Kelvin (K).  
-- `operationTemperatureMin[object]`: Propiedad. Rango de temperatura ambiente (aire, fluido) de funcionamiento admisible. Suele medirse en grados Kelvin (K).  
-- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  
-- `primaryAirFlowRateMax[object]`: Propiedad. Caudal de aire primario máximo que se puede suministrar. Suele medirse en m3/s.  
-- `primaryAirFlowRateMin[object]`: Propiedad. Caudal de aire primario mínimo que se puede suministrar. Suele medirse en m3/s.  
-- `secondaryAirFlowRateMax[object]`: Propiedad. Máximo caudal de aire secundario que se puede suministrar. Suele medirse en pascales (Pa, N/m2).  
-- `secondaryAirFlowRateMin[object]`: Propiedad. Máximo caudal de aire secundario que se puede suministrar. Suele medirse en pascales (Pa, N/m2).  
-- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  
-- `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  
-- `type[string]`: Propiedad. Debe ser igual a `AirToAirHeatRecovery`.  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-Propiedades requeridas  
-- `id`  
-- `type`  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## Descripción de las propiedades del modelo de datos  
-
-Ordenados alfabéticamente (pulse para más detalles)  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Descripción de este artículo  - `hasDefrost[boolean]`: Propiedad. Si el intercambiador tiene función de desescarche o no.  - `hasManufacturer[string]`: Propiedad. Relación que identifica al fabricante de una entidad (por ejemplo, un dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  - `hasModel[string]`: Propiedad. Relación que identifica el modelo de una entidad (por ejemplo, dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  - `heatTransferTypeEnum[string]`: Propiedad. Tipo de transferencia de calor entre las dos corrientes de aire.  - `id[*]`: Identificador único de la entidad  - `isContainedInBuildingSpace[*]`: Relación. Entidad utilizada para definir los espacios físicos del edificio. Un espacio del edificio contiene dispositivos u objetos del edificio. (Espacio del edificio)  - `isContainedInPhysicalObject[*]`: Relación. Cualquier Objeto que tiene una región espacial propia.  (Definición extraída de la ontología DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relación. Referencia a uno o varios sistemas de los que forma parte este objeto físico.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo.  - `operationTemperatureMax[number]`: Propiedad. Rango de temperatura ambiente (aire, fluido) de funcionamiento admisible. Suele medirse en grados Kelvin (K).  - `operationTemperatureMin[number]`: Propiedad. Rango de temperatura ambiente (aire, fluido) de funcionamiento admisible. Suele medirse en grados Kelvin (K).  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `primaryAirFlowRateMax[number]`: Propiedad. Caudal de aire primario máximo que se puede suministrar. Suele medirse en m3/s.  - `primaryAirFlowRateMin[number]`: Propiedad. Caudal de aire primario mínimo que se puede suministrar. Suele medirse en m3/s.  - `secondaryAirFlowRateMax[number]`: Propiedad. Máximo caudal de aire secundario que se puede suministrar. Suele medirse en pascales (Pa, N/m2).  - `secondaryAirFlowRateMin[number]`: Propiedad. Máximo caudal de aire secundario que se puede suministrar. Suele medirse en pascales (Pa, N/m2).  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Propiedad. Debe ser igual a `AirToAirHeatRecovery`.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Propiedades requeridas  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 AirToAirHeatRecovery:    
   description: 'An air-to-air heat recovery device employs a counter-flow heat exchanger between inbound and outbound air flow. It is typically used to transfer heat from warmer air in one chamber to cooler air in the second chamber (i.e., typically used to recover heat from the conditioned air being exhausted and the outside air being supplied to a building), resulting in energy savings from reduced heating (or cooling) requirements.'    
   properties:    
@@ -172,7 +116,7 @@ AirToAirHeatRecovery:
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
+      anyOf: &airtoairheatrecovery_-_properties_-_owner_-_items_-_anyof    
         - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
@@ -185,20 +129,44 @@ AirToAirHeatRecovery:
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
-      anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
+      anyOf:    
+        - description: Property. Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: Property. Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
       description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
       x-ngsi:    
-        type: Property    
+        type: Relationship    
     isContainedInPhysicalObject:    
-      anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
+      anyOf:    
+        - description: Property. Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: Property. Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
       description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
       x-ngsi:    
-        type: Property    
+        type: Relationship    
     isSubSystemOf:    
       description: Relationship. A reference to a system(s) that this Physical Object is part of.    
       items:    
-        anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Property. Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+          - description: Property. Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+        description: 'Relationship. The class of systems, i.e., systems virtually isolated from the environment, whose behaviour and interactions with the environment are modeled. Systems can be connected to other systems. Connected systems interact in some ways. Systems can also have subsystems. Properties of subsystems somehow contribute to the properties of the supersystem. (System)'    
       type: array    
       x-ngsi:    
         type: Relationship    
@@ -362,56 +330,40 @@ AirToAirHeatRecovery:
         type: Property    
     operationTemperatureMax:    
       description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
-      properties: &airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
-        observedAt:    
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).    
-          format: date-time    
-          type: string    
-        unitCode:    
-          description: Property. A relationship identifying the unit of measure used for a certain entity.    
-          type: string    
-        value:    
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'    
-          type: number    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     operationTemperatureMin:    
       description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
-      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
+        anyOf: *airtoairheatrecovery_-_properties_-_owner_-_items_-_anyof    
         description: Property. Unique identifier of the entity    
       type: array    
       x-ngsi:    
         type: Property    
     primaryAirFlowRateMax:    
       description: Property. Maximum primary airflow that can be delivered. Usually measured in m3/s.    
-      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     primaryAirFlowRateMin:    
       description: Property. Minimum primary airflow that can be delivered. Usually measured in m3/s.    
-      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     secondaryAirFlowRateMax:    
       description: 'Property. Maximum secondary airflow that can be delivered. Usually measured in Pascals (Pa, N/m2).'    
-      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     secondaryAirFlowRateMin:    
       description: 'Property. Maximum secondary airflow that can be delivered. Usually measured in Pascals (Pa, N/m2).'    
-      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     seeAlso:    
@@ -450,25 +402,16 @@ AirToAirHeatRecovery:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## Ejemplo de carga útil  
-
-#### AirToAirHeatRecovery NGSI-v2 key-values Ejemplo  
-
-Aquí hay un ejemplo de un AirToAirHeatRecovery en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Ejemplo de carga útil  
+#### AirToAirHeatRecovery NGSI-v2 key-values Ejemplo  
+Aquí hay un ejemplo de un AirToAirHeatRecovery en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:AirToAirHeatRecovery:8c59d316-ed05-4b56-bec3-886379421239",  
   "type": "AirToAirHeatRecovery",  
   "hasDefrost": false,  
@@ -522,15 +465,11 @@ Aquí hay un ejemplo de un AirToAirHeatRecovery en formato JSON-LD como key-valu
 }  
 ```  
 </details>  
-
-#### AirToAirHeatRecovery NGSI-v2 normalizado Ejemplo  
-
-He aquí un ejemplo de AirToAirHeatRecovery en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### AirToAirHeatRecovery NGSI-v2 normalizado Ejemplo  
+He aquí un ejemplo de AirToAirHeatRecovery en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:AirToAirHeatRecovery:a732b90e-0296-47c9-ab0f-34f6de5edfb4",  
   "type": "AirToAirHeatRecovery",  
   "hasDefrost": {  
@@ -653,15 +592,11 @@ He aquí un ejemplo de AirToAirHeatRecovery en formato JSON-LD normalizado. Esto
 }  
 ```  
 </details>  
-
-#### AirToAirHeatRecovery NGSI-LD key-values Ejemplo  
-
-Aquí hay un ejemplo de un AirToAirHeatRecovery en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### AirToAirHeatRecovery NGSI-LD key-values Ejemplo  
+Aquí hay un ejemplo de un AirToAirHeatRecovery en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:AirToAirHeatRecovery:8c59d316-ed05-4b56-bec3-886379421239",  
   "type": "AirToAirHeatRecovery",  
   "hasDefrost": false,  
@@ -719,15 +654,11 @@ Aquí hay un ejemplo de un AirToAirHeatRecovery en formato JSON-LD como key-valu
 }  
 ```  
 </details>  
-
-#### AirToAirHeatRecovery NGSI-LD normalizado Ejemplo  
-
-He aquí un ejemplo de AirToAirHeatRecovery en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### AirToAirHeatRecovery NGSI-LD normalizado Ejemplo  
+He aquí un ejemplo de AirToAirHeatRecovery en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:AirToAirHeatRecovery:a8cd6aa9-dd5f-48bf-ba9f-3db11843b050",  
   "type": "AirToAirHeatRecovery",  
   "hasDefrost": {  
@@ -856,21 +787,12 @@ He aquí un ejemplo de AirToAirHeatRecovery en formato JSON-LD normalizado. Esto
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
