@@ -79,6 +79,14 @@
             "comment": "Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag."
         },
         {
+            "name": "heatExchangeArea",
+            "writable": true,
+            "displayName": "heatExchangeArea",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Heat exchange area. Usually measured in square metre (m2)."
+        },
+        {
             "name": "isContainedInBuildingSpace",
             "writable": true,
             "displayName": "isContainedInBuildingSpace"
@@ -102,6 +110,22 @@
             "comment": "The name of this item."
         },
         {
+            "name": "operationTemperatureMax",
+            "writable": true,
+            "displayName": "operationTemperatureMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+        },
+        {
+            "name": "operationTemperatureMin",
+            "writable": true,
+            "displayName": "operationTemperatureMin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+        },
+        {
             "name": "seeAlso",
             "writable": true,
             "displayName": "seeAlso"
@@ -113,6 +137,14 @@
             "@type": "Property",
             "schema": "string",
             "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "waterRequirement",
+            "writable": true,
+            "displayName": "waterRequirement",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Make-up water requirement. Usually measured in m3/s."
         },
         {
             "@type": "Telemetry",
@@ -171,86 +203,6 @@
                 {
                     "name": "streetNr",
                     "schema": "string"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "heatExchangeArea",
-            "comment": "Property. Heat exchange area. Usually measured in square metre (m2).",
-            "displayName": "heatExchangeArea",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "operationTemperatureMax",
-            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).",
-            "displayName": "operationTemperatureMax",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "operationTemperatureMin",
-            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).",
-            "displayName": "operationTemperatureMin",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "waterRequirement",
-            "comment": "Property. Make-up water requirement. Usually measured in m3/s.",
-            "displayName": "waterRequirement",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
                 }
             ]
         }
