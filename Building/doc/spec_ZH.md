@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 全球描述：**建筑物代表了一种为其居住者或内容物提供庇护并矗立在一个地方的结构。建筑物也被用来为建筑项目的组成部分提供空间结构层次中的一个基本元素（与场地、楼层和空间一起）**。  
-版本：0.0.2  
+版本：0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -307,7 +307,7 @@ Building:
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Building/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Building/schema.json    
   x-model-tags: SAREF Building    
-  x-version: 0.0.2    
+  x-version: 0.0.1    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
