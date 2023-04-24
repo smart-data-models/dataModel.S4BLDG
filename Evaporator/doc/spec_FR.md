@@ -15,7 +15,7 @@
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `evaporationCoolant[string]`: Propriété. Le fluide utilisé comme liquide de refroidissement dans l'évaporateur.  - `evaporationMediumType[string]`: Propriété. ColdLiquid : L'évaporateur utilise un fluide de type liquide pour échanger de la chaleur avec le réfrigérant. ColdAir : L'évaporateur utilise de l'air pour échanger de la chaleur avec le réfrigérant.  - `externalSurfaceArea[object]`: Propriété. Surface extérieure (primaire et secondaire). Généralement mesurée en mètre carré (m2).  - `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  - `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  - `id[*]`: Identifiant unique de l'entité  - `internalRefrigerantVolume[object]`: Propriété. Volume interne de l'évaporateur (côté réfrigérant). Généralement mesuré en mètre cube (m3).  - `internalSurfaceArea[object]`: Propriété. Surface intérieure. Généralement mesurée en mètre carré (m2).  - `internalWaterVolume[object]`: Propriété. Volume interne de l'évaporateur (côté eau). Généralement mesuré en mètre cube (m3).  - `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  - `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `nominalHeatTransferArea[object]`: Propriété. Surface nominale de transfert de chaleur associée au coefficient nominal global de transfert de chaleur. Généralement mesurée en mètre carré (m2).  - `nominalHeatTransferCoefficient[object]`: Propriété. Coefficient nominal global de transfert de chaleur associé à la surface nominale de transfert de chaleur. Généralement mesuré en Watts/m2 Kelvin.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `refrigerantClass[string]`: Propriété. Classe de réfrigérant utilisée par le compresseur. CFC : Chlorofluorocarbures. HCFC : Hydrochlorofluorocarbures. HFC : Hydrofluorocarbures.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Propriété. Elle doit être égale à `Evaporator`.  <!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `evaporationCoolant[string]`: Propriété. Le fluide utilisé comme liquide de refroidissement dans l'évaporateur.  - `evaporationMediumType[string]`: Propriété. ColdLiquid : L'évaporateur utilise un fluide de type liquide pour échanger de la chaleur avec le réfrigérant. ColdAir : L'évaporateur utilise de l'air pour échanger de la chaleur avec le réfrigérant.  - `externalSurfaceArea[number]`: Propriété. Surface extérieure (primaire et secondaire). Généralement mesurée en mètre carré (m2).  - `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  - `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  - `id[*]`: Identifiant unique de l'entité  - `internalRefrigerantVolume[number]`: Propriété. Volume interne de l'évaporateur (côté réfrigérant). Généralement mesuré en mètre cube (m3).  - `internalSurfaceArea[number]`: Propriété. Surface intérieure. Généralement mesurée en mètre carré (m2).  - `internalWaterVolume[number]`: Propriété. Volume interne de l'évaporateur (côté eau). Généralement mesuré en mètre cube (m3).  - `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  - `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `nominalHeatTransferArea[number]`: Propriété. Surface nominale de transfert de chaleur associée à un coefficient nominal global de transfert de chaleur. Généralement mesurée en mètre carré (m2).  - `nominalHeatTransferCoefficient[number]`: Propriété. Coefficient nominal global de transfert de chaleur associé à la surface nominale de transfert de chaleur. Généralement mesuré en Watts/m2 Kelvin.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `refrigerantClass[string]`: Propriété. Classe de réfrigérant utilisée par le compresseur. CFC : Chlorofluorocarbures. HCFC : Hydrochlorofluorocarbures. HFC : Hydrofluorocarbures.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Propriété. Elle doit être égale à `Evaporator`.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -106,23 +106,8 @@ Evaporator:
       x-ngsi:    
         type: Property    
     externalSurfaceArea:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. External surface area (both primary and secondary area). Usually measured in square metre (m2).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: &evaporator_-_properties_-_internalrefrigerantvolume_-_properties    
-        observedAt:    
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).    
-          format: date-time    
-          type: string    
-        unitCode:    
-          description: Property. A relationship identifying the unit of measure used for a certain entity.    
-          type: string    
-        value:    
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'    
-          type: number    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     hasManufacturer:    
@@ -149,33 +134,18 @@ Evaporator:
       x-ngsi:    
         type: Property    
     internalRefrigerantVolume:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Internal volume of evaporator (refrigerant side). Usually measured in cubic metre (m3).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *evaporator_-_properties_-_internalrefrigerantvolume_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     internalSurfaceArea:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Internal surface area. Usually measured in square metre (m2).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *evaporator_-_properties_-_internalrefrigerantvolume_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     internalWaterVolume:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Internal volume of evaporator (water side). Usually measured in cubic metre (m3).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *evaporator_-_properties_-_internalrefrigerantvolume_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
@@ -355,23 +325,13 @@ Evaporator:
       x-ngsi:    
         type: Property    
     nominalHeatTransferArea:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Nominal heat transfer surface area associated with nominal overall heat transfer coefficient. Usually measured in square metre (m2).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *evaporator_-_properties_-_internalrefrigerantvolume_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalHeatTransferCoefficient:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Nominal overall heat transfer coefficient associated with nominal heat transfer area. Usually measured in Watts/m2 Kelvin.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *evaporator_-_properties_-_internalrefrigerantvolume_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     owner:    
