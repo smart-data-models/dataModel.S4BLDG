@@ -110,6 +110,54 @@
             "comment": "The name of this item."
         },
         {
+            "name": "operationTemperatureMax",
+            "writable": true,
+            "displayName": "operationTemperatureMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+        },
+        {
+            "name": "operationTemperatureMin",
+            "writable": true,
+            "displayName": "operationTemperatureMin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+        },
+        {
+            "name": "primaryAirFlowRateMax",
+            "writable": true,
+            "displayName": "primaryAirFlowRateMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Maximum primary airflow that can be delivered. Usually measured in m3/s."
+        },
+        {
+            "name": "primaryAirFlowRateMin",
+            "writable": true,
+            "displayName": "primaryAirFlowRateMin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Minimum primary airflow that can be delivered. Usually measured in m3/s."
+        },
+        {
+            "name": "secondaryAirFlowRateMax",
+            "writable": true,
+            "displayName": "secondaryAirFlowRateMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Maximum secondary airflow that can be delivered. Usually measured in Pascals (Pa, N/m2)."
+        },
+        {
+            "name": "secondaryAirFlowRateMin",
+            "writable": true,
+            "displayName": "secondaryAirFlowRateMin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Maximum secondary airflow that can be delivered. Usually measured in Pascals (Pa, N/m2)."
+        },
+        {
             "name": "seeAlso",
             "writable": true,
             "displayName": "seeAlso"
@@ -179,126 +227,6 @@
                 {
                     "name": "streetNr",
                     "schema": "string"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "operationTemperatureMax",
-            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).",
-            "displayName": "operationTemperatureMax",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "operationTemperatureMin",
-            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).",
-            "displayName": "operationTemperatureMin",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "primaryAirFlowRateMax",
-            "comment": "Property. Maximum primary airflow that can be delivered. Usually measured in m3/s.",
-            "displayName": "primaryAirFlowRateMax",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "primaryAirFlowRateMin",
-            "comment": "Property. Minimum primary airflow that can be delivered. Usually measured in m3/s.",
-            "displayName": "primaryAirFlowRateMin",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "secondaryAirFlowRateMax",
-            "comment": "Property. Maximum secondary airflow that can be delivered. Usually measured in Pascals (Pa, N/m2).",
-            "displayName": "secondaryAirFlowRateMax",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "secondaryAirFlowRateMin",
-            "comment": "Property. Maximum secondary airflow that can be delivered. Usually measured in Pascals (Pa, N/m2).",
-            "displayName": "secondaryAirFlowRateMin",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
                 }
             ]
         }
