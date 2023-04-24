@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Description globale : **Un bâtiment représente une structure qui fournit un abri à ses occupants ou à son contenu et qui se trouve en un seul endroit. Le bâtiment est également utilisé pour fournir un élément de base dans la hiérarchie des structures spatiales pour les composants d'un projet de construction (avec le site, l'étage et l'espace).  
-version : 0.0.2  
+version : 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -307,7 +307,7 @@ Building:
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Building/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Building/schema.json    
   x-model-tags: SAREF Building    
-  x-version: 0.0.2    
+  x-version: 0.0.1    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
