@@ -334,5 +334,5 @@ Chiller:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Chiller/LICENSE.md
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Chiller/schema.json
-  x-model-tags: SAREF Chiller
+  x-model-tags: SAREF Chiller SMART DATA MODELS
   x-version: 0.0.2
