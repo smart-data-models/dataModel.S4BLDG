@@ -15,7 +15,7 @@
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `coverLength[object]`: Property. The length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the cover of the oil interceptor. Usually measured in millimeters (mm).  - `coverWidth[object]`: Property. The length measured along the x-axis in the local coordinate system of the cover of the oil interceptor. Usually measured in millimeters (mm).  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `hasManufacturer[string]`: Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.  - `hasModel[string]`: Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.  - `id[*]`: Unique identifier of the entity  - `inletConnectionSize[object]`: Property. Size of the inlet connection. Usually measured in millimeters (mm).  - `isContainedInBuildingSpace[*]`: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)  - `isContainedInPhysicalObject[*]`: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)  - `isSubSystemOf[array]`: Relationship. A reference to a system(s) that this Physical Object is part of.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `nominalBodyDepth[object]`: Property. Nominal or quoted =length, measured along the z-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).  - `nominalBodyLength[object]`: Property. Nominal or quoted length, measured along the x-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).  - `nominalBodyWidth[object]`: Property. Nominal or quoted length, measured along the y-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).  - `outletConnectionSize[object]`: Property. Size of the outlet connection. Usually measured in millimeters (mm).  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: Property. It must be equal to `Interceptor`.  - `ventilatingPipeSize[object]`: Property. Size of the ventilating pipe(s). Usually measured in millimeters (mm).  <!-- /30-PropertiesList -->  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `coverLength[number]`: Property. The length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the cover of the oil interceptor. Usually measured in millimeters (mm).  - `coverWidth[number]`: Property. The length measured along the x-axis in the local coordinate system of the cover of the oil interceptor. Usually measured in millimeters (mm).  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `hasManufacturer[string]`: Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.  - `hasModel[string]`: Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.  - `id[*]`: Unique identifier of the entity  - `inletConnectionSize[number]`: Property. Size of the inlet connection. Usually measured in millimeters (mm).  - `isContainedInBuildingSpace[*]`: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)  - `isContainedInPhysicalObject[*]`: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)  - `isSubSystemOf[array]`: Relationship. A reference to a system(s) that this Physical Object is part of.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `nominalBodyDepth[number]`: Property. Nominal or quoted =length, measured along the z-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).  - `nominalBodyLength[number]`: Property. Nominal or quoted length, measured along the x-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).  - `nominalBodyWidth[number]`: Property. Nominal or quoted length, measured along the y-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).  - `outletConnectionSize[number]`: Property. Size of the outlet connection. Usually measured in millimeters (mm).  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: Property. It must be equal to `Interceptor`.  - `ventilatingPipeSize[number]`: Property. Size of the ventilating pipe(s). Usually measured in millimeters (mm).  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -74,33 +74,13 @@ Interceptor:
         model: https://schema.org/Text    
         type: Property    
     coverLength:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. The length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the cover of the oil interceptor. Usually measured in millimeters (mm).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: &interceptor_-_properties_-_coverwidth_-_properties    
-        observedAt:    
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).    
-          format: date-time    
-          type: string    
-        unitCode:    
-          description: Property. A relationship identifying the unit of measure used for a certain entity.    
-          type: string    
-        value:    
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'    
-          type: number    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     coverWidth:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. The length measured along the x-axis in the local coordinate system of the cover of the oil interceptor. Usually measured in millimeters (mm).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *interceptor_-_properties_-_coverwidth_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     dataProvider:    
@@ -149,13 +129,8 @@ Interceptor:
       x-ngsi:    
         type: Property    
     inletConnectionSize:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Size of the inlet connection. Usually measured in millimeters (mm).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *interceptor_-_properties_-_coverwidth_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
@@ -335,43 +310,23 @@ Interceptor:
       x-ngsi:    
         type: Property    
     nominalBodyDepth:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal or quoted =length, measured along the z-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *interceptor_-_properties_-_coverwidth_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalBodyLength:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal or quoted length, measured along the x-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *interceptor_-_properties_-_coverwidth_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalBodyWidth:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal or quoted length, measured along the y-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *interceptor_-_properties_-_coverwidth_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     outletConnectionSize:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Size of the outlet connection. Usually measured in millimeters (mm).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *interceptor_-_properties_-_coverwidth_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     owner:    
@@ -407,13 +362,8 @@ Interceptor:
       x-ngsi:    
         type: Property    
     ventilatingPipeSize:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Size of the ventilating pipe(s). Usually measured in millimeters (mm).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *interceptor_-_properties_-_coverwidth_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
   required:    
