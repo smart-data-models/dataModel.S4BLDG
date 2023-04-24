@@ -7,7 +7,7 @@
 [文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな説明です：**インターセプターは、通常の汚水や液体を重力によって収集システムに排出することを許可する一方で、有害な、危険な、または望ましくない物質を分離して保持するために設計および設置された装置です**。  
+グローバルな説明です：**インターセプターは、通常の下水や液体が重力によって収集システムに排出されることを許可する一方で、有害な、危険な、または望ましくない物質を分離して保持するために設計および設置された装置です**。  
 version: 0.0.  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
@@ -15,7 +15,7 @@
 ## プロパティ一覧  
 
 <sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `coverLength[object]`: 特性。ローカル座標系でX軸に沿って測定した長さ、またはオイルインターセプターのカバーの半径（平面が円形の場合）。通常、ミリメートル（mm）単位で測定する。  - `coverWidth[object]`: 特性。オイルインターセプターのカバーのローカル座標系でX軸に沿って測定した長さを示す。通常、ミリメートル（mm）単位で測定される。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `id[*]`: エンティティの一意な識別子  - `inletConnectionSize[object]`: プロパティです。インレットコネクションのサイズ。通常、ミリメートル（mm）単位で測定される。  - `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  - `isSubSystemOf[array]`: 関係。この物理オブジェクトが属するシステム（複数可）への参照。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかとする。  - `name[string]`: この項目の名称です。  - `nominalBodyDepth[object]`: 特性。公称または引用された =長さ。オブジェクトのローカル座標系のz軸に沿って測定された、オブジェクトの本体の長さ。通常、ミリメートル（mm）単位で測定される。  - `nominalBodyLength[object]`: 特性。オブジェクトの本体の、オブジェクトのローカル座標系のX軸に沿って測定された、公称または引用された長さ。通常、ミリメートル（mm）単位で測定される。  - `nominalBodyWidth[object]`: 特性。オブジェクトのローカル座標系のy軸に沿って測定された、オブジェクトの本体の公称または引用された長さ。通常、ミリメートル（mm）単位で測定される。  - `outletConnectionSize[object]`: プロパティです。アウトレットコネクションのサイズ。通常、ミリメートル（mm）単位で測定される。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: プロパティです。これは `Interceptor` と等しくなければならない。  - `ventilatingPipeSize[object]`: プロパティ換気パイプ（複数可）のサイズ。通常、ミリメートル（mm）単位で測定される。  <!-- /30-PropertiesList -->  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `coverLength[number]`: 特性。ローカル座標系でX軸に沿って測定した長さ、またはオイルインターセプターのカバーの半径（平面が円形の場合）。通常、ミリメートル（mm）単位で測定する。  - `coverWidth[number]`: 特性。オイルインターセプターのカバーのローカル座標系でX軸に沿って測定した長さを示す。通常、ミリメートル（mm）単位で測定される。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `id[*]`: エンティティの一意な識別子  - `inletConnectionSize[number]`: プロパティです。インレットコネクションのサイズ。通常、ミリメートル（mm）単位で測定される。  - `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  - `isSubSystemOf[array]`: 関係。この物理オブジェクトが属するシステム（複数可）への参照。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `name[string]`: この項目の名称です。  - `nominalBodyDepth[number]`: 特性。公称または引用された =長さ。オブジェクトのローカル座標系のz軸に沿って測定された、オブジェクトのボディの長さ。通常、ミリメートル（mm）単位で測定される。  - `nominalBodyLength[number]`: 特性。オブジェクトの本体の、オブジェクトのローカル座標系のX軸に沿って測定された、公称または引用された長さ。通常、ミリメートル（mm）単位で測定される。  - `nominalBodyWidth[number]`: 特性。オブジェクトのローカル座標系のy軸に沿って測定された、オブジェクトの本体の公称または引用された長さ。通常、ミリメートル（mm）単位で測定される。  - `outletConnectionSize[number]`: プロパティです。アウトレットコネクションのサイズ。通常、ミリメートル（mm）単位で測定される。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: プロパティです。これは `Interceptor` と等しくなければならない。  - `ventilatingPipeSize[number]`: プロパティ換気パイプ（複数可）のサイズ。通常、ミリメートル（mm）単位で測定される。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -74,33 +74,13 @@ Interceptor:
         model: https://schema.org/Text    
         type: Property    
     coverLength:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. The length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the cover of the oil interceptor. Usually measured in millimeters (mm).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: &interceptor_-_properties_-_coverwidth_-_properties    
-        observedAt:    
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).    
-          format: date-time    
-          type: string    
-        unitCode:    
-          description: Property. A relationship identifying the unit of measure used for a certain entity.    
-          type: string    
-        value:    
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'    
-          type: number    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     coverWidth:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. The length measured along the x-axis in the local coordinate system of the cover of the oil interceptor. Usually measured in millimeters (mm).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *interceptor_-_properties_-_coverwidth_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     dataProvider:    
@@ -149,13 +129,8 @@ Interceptor:
       x-ngsi:    
         type: Property    
     inletConnectionSize:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Size of the inlet connection. Usually measured in millimeters (mm).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *interceptor_-_properties_-_coverwidth_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
@@ -335,43 +310,23 @@ Interceptor:
       x-ngsi:    
         type: Property    
     nominalBodyDepth:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal or quoted =length, measured along the z-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *interceptor_-_properties_-_coverwidth_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalBodyLength:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal or quoted length, measured along the x-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *interceptor_-_properties_-_coverwidth_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalBodyWidth:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal or quoted length, measured along the y-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *interceptor_-_properties_-_coverwidth_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     outletConnectionSize:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Size of the outlet connection. Usually measured in millimeters (mm).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *interceptor_-_properties_-_coverwidth_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     owner:    
@@ -407,13 +362,8 @@ Interceptor:
       x-ngsi:    
         type: Property    
     ventilatingPipeSize:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Size of the ventilating pipe(s). Usually measured in millimeters (mm).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *interceptor_-_properties_-_coverwidth_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
   required:    
