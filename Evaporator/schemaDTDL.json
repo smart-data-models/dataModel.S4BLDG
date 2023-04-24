@@ -71,6 +71,14 @@
             "comment": "Property. ColdLiquid: Evaporator is using liquid type of fluid to exchange heat with refrigerant. ColdAir: Evaporator is using air to exchange heat with refrigerant."
         },
         {
+            "name": "externalSurfaceArea",
+            "writable": true,
+            "displayName": "externalSurfaceArea",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. External surface area (both primary and secondary area). Usually measured in square metre (m2)."
+        },
+        {
             "name": "hasManufacturer",
             "writable": true,
             "displayName": "hasManufacturer",
@@ -85,6 +93,30 @@
             "@type": "Property",
             "schema": "string",
             "comment": "Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag."
+        },
+        {
+            "name": "internalRefrigerantVolume",
+            "writable": true,
+            "displayName": "internalRefrigerantVolume",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Internal volume of evaporator (refrigerant side). Usually measured in cubic metre (m3)."
+        },
+        {
+            "name": "internalSurfaceArea",
+            "writable": true,
+            "displayName": "internalSurfaceArea",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Internal surface area. Usually measured in square metre (m2)."
+        },
+        {
+            "name": "internalWaterVolume",
+            "writable": true,
+            "displayName": "internalWaterVolume",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Internal volume of evaporator (water side). Usually measured in cubic metre (m3)."
         },
         {
             "name": "isContainedInBuildingSpace",
@@ -108,6 +140,22 @@
             "@type": "Property",
             "schema": "string",
             "comment": "The name of this item."
+        },
+        {
+            "name": "nominalHeatTransferArea",
+            "writable": true,
+            "displayName": "nominalHeatTransferArea",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Nominal heat transfer surface area associated with nominal overall heat transfer coefficient. Usually measured in square metre (m2)."
+        },
+        {
+            "name": "nominalHeatTransferCoefficient",
+            "writable": true,
+            "displayName": "nominalHeatTransferCoefficient",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Nominal overall heat transfer coefficient associated with nominal heat transfer area. Usually measured in Watts/m2 Kelvin."
         },
         {
             "name": "refrigerantClass",
@@ -187,126 +235,6 @@
                 {
                     "name": "streetNr",
                     "schema": "string"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "externalSurfaceArea",
-            "comment": "Property. External surface area (both primary and secondary area). Usually measured in square metre (m2).",
-            "displayName": "externalSurfaceArea",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "internalRefrigerantVolume",
-            "comment": "Property. Internal volume of evaporator (refrigerant side). Usually measured in cubic metre (m3).",
-            "displayName": "internalRefrigerantVolume",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "internalSurfaceArea",
-            "comment": "Property. Internal surface area. Usually measured in square metre (m2).",
-            "displayName": "internalSurfaceArea",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "internalWaterVolume",
-            "comment": "Property. Internal volume of evaporator (water side). Usually measured in cubic metre (m3).",
-            "displayName": "internalWaterVolume",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalHeatTransferArea",
-            "comment": "Property. Nominal heat transfer surface area associated with nominal overall heat transfer coefficient. Usually measured in square metre (m2).",
-            "displayName": "nominalHeatTransferArea",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalHeatTransferCoefficient",
-            "comment": "Property. Nominal overall heat transfer coefficient associated with nominal heat transfer area. Usually measured in Watts/m2 Kelvin.",
-            "displayName": "nominalHeatTransferCoefficient",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
                 }
             ]
         }
