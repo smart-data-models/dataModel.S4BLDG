@@ -15,7 +15,7 @@
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `application[string]`: Propriété. Application de l'humidificateur. Fixe : Humidificateur installé dans un système de distribution par gaine. Portable : L'humidificateur n'est pas installé dans un système de distribution par gaine.  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  - `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  - `id[*]`: Identifiant unique de l'entité  - `internalControl[string]`: Propriété. Contrôle de modulation interne.  - `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  - `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `nominalAirFlowRate[object]`: Propriété. Débit d'air nominal. Généralement mesuré en m3/s.  - `nominalMoistureGain[object]`: Propriété. Taux nominal de vapeur d'eau ajoutée dans le flux d'air. Généralement mesuré en kg/s.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Propriété. Elle doit être égale à `Humidifier`.  - `waterRequirement[object]`: Propriété. Besoin en eau d'appoint. Généralement mesuré en m3/s.  - `weight[object]`: Propriété. Le poids de l'appareil. Généralement mesuré en kilogrammes (kg) ou en grammes (g).  <!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `application[string]`: Propriété. Application de l'humidificateur. Fixe : Humidificateur installé dans un système de distribution par gaine. Portable : L'humidificateur n'est pas installé dans un système de distribution par gaine.  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  - `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  - `id[*]`: Identifiant unique de l'entité  - `internalControl[string]`: Propriété. Contrôle de modulation interne.  - `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  - `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `nominalAirFlowRate[number]`: Propriété. Débit d'air nominal. Généralement mesuré en m3/s.  - `nominalMoistureGain[number]`: Propriété. Taux nominal de vapeur d'eau ajoutée dans le flux d'air. Généralement mesuré en kg/s.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Propriété. Elle doit être égale à `Humidifier`.  - `waterRequirement[number]`: Propriété. Besoin en eau d'appoint. Généralement mesuré en m3/s.  - `weight[number]`: Propriété. Le poids de l'appareil. Généralement mesuré en kilogrammes (kg) ou en grammes (g).  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -305,33 +305,13 @@ Humidifier:
       x-ngsi:    
         type: Property    
     nominalAirFlowRate:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Nominal rate of air flow. Usually measured in m3/s.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: &humidifier_-_properties_-_nominalmoisturegain_-_properties    
-        observedAt:    
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).    
-          format: date-time    
-          type: string    
-        unitCode:    
-          description: Property. A relationship identifying the unit of measure used for a certain entity.    
-          type: string    
-        value:    
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'    
-          type: number    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalMoistureGain:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Nominal rate of water vapor added into the airstream. Usually measured in kg/s.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *humidifier_-_properties_-_nominalmoisturegain_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     owner:    
@@ -367,23 +347,13 @@ Humidifier:
       x-ngsi:    
         type: Property    
     waterRequirement:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Make-up water requirement. Usually measured in m3/s.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *humidifier_-_properties_-_nominalmoisturegain_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     weight:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. The weight of the device. Usually measured in kilograms (kg) or grams (g).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *humidifier_-_properties_-_nominalmoisturegain_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
   required:    
