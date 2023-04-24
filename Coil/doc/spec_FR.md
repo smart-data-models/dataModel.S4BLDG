@@ -1,90 +1,33 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : Bobine  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Coil/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Description globale : **Un serpentin est un dispositif utilisé pour assurer le transfert de chaleur entre des milieux qui ne se mélangent pas. Un exemple courant est le serpentin de refroidissement, qui utilise un serpentin à ailettes dans lequel circule de l'eau réfrigérée, de l'antigel ou un réfrigérant utilisé pour éliminer la chaleur de l'air se déplaçant à la surface du serpentin. Un serpentin peut être utilisé à des fins de chauffage ou de refroidissement en plaçant une série de tubes (le serpentin) transportant un fluide chauffant ou refroidissant dans un courant d'air. Le serpentin peut être constitué de tubes regroupés en forme de serpentin ou de tubes à ailettes qui offrent une surface de transfert de chaleur étendue.  Les serpentins peuvent également être utilisés dans les cas où il n'y a pas de flux d'air, par exemple lorsqu'ils sont encastrés dans une dalle de sol.  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-Entité : La bobine  
-==================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## Liste des propriétés  
 
-[Licence ouverte] (https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Coil/LICENSE.md)  
-
-[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-
-Description globale : **Un serpentin est un dispositif utilisé pour assurer le transfert de chaleur entre des milieux qui ne se mélangent pas. Un exemple courant est le serpentin de refroidissement, qui utilise un serpentin à ailettes dans lequel circule de l'eau réfrigérée, de l'antigel ou un réfrigérant utilisé pour éliminer la chaleur de l'air se déplaçant à la surface du serpentin. Un serpentin peut être utilisé à des fins de chauffage ou de refroidissement en plaçant une série de tubes (le serpentin) transportant un fluide chauffant ou refroidissant dans un courant d'air. Le serpentin peut être constitué de tubes regroupés en forme de serpentin ou de tubes à ailettes qui offrent une surface de transfert de chaleur étendue.  Les serpentins peuvent également être utilisés dans les cas où il n'y a pas de flux d'air, par exemple lorsqu'ils sont encastrés dans une dalle de sol.  
-
-version : 0.0.2  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## Liste des propriétés  
-
-
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)
-- `airFlowRateMax[object]`: Propriété. Débit d'air maximal autorisé. Généralement mesuré en m3/s.  
-- `airFlowRateMin[object]`: Propriété. Débit d'air minimum autorisé. Généralement mesuré en m3/s.  
-- `alternateName[string]`: Un nom alternatif pour ce poste  
-- `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  
-- `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  
-- `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  
-- `description[string]`: Une description de l'article  
-- `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  
-- `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  
-- `id[*]`: Identifiant unique de l'entité  
-- `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  
-- `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  
-- `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  
-- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  
-- `name[string]`: Le nom de cet élément.  
-- `nominalLatentCapacity[object]`: Propriété. Capacité latente nominale. Généralement mesurée en watts (W, J/s).  
-- `nominalSensibleCapacity[object]`: Propriété. Capacité sensible nominale. Généralement mesurée en watts (W, J/s).  
-- `nominalUa[object]`: Propriété. Valeur nominale de l'UA.  
-- `operationMode[string]`: Propriété. Mode de fonctionnement de cette bobine.  
-- `operationTemperatureMax[object]`: Propriété. Plage de température ambiante (air, fluide) autorisée pour le fonctionnement. Généralement mesurée en degrés Kelvin (K).  
-- `operationTemperatureMin[object]`: Propriété. Plage de température ambiante (air, fluide) autorisée pour le fonctionnement. Généralement mesurée en degrés Kelvin (K).  
-- `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  
-- `placementType[string]`: Propriété. Indique comment le dispositif est conçu pour être placé.  
-- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  
-- `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  
-- `type[string]`: Propriété. Il doit être égal à `Coil`.  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-Propriétés requises  
-- `id`  
-- `type`  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## Modèle de données description des propriétés  
-
-Classés par ordre alphabétique (cliquez pour plus de détails)  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `airFlowRateMax[number]`: Propriété. Débit d'air maximal autorisé. Généralement mesuré en m3/s.  - `airFlowRateMin[number]`: Propriété. Débit d'air minimum autorisé. Généralement mesuré en m3/s.  - `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  - `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  - `id[*]`: Identifiant unique de l'entité  - `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  - `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `nominalLatentCapacity[number]`: Propriété. Capacité latente nominale. Généralement mesurée en watts (W, J/s).  - `nominalSensibleCapacity[number]`: Propriété. Capacité sensible nominale. Généralement mesurée en watts (W, J/s).  - `nominalUa[number]`: Propriété. Valeur nominale de l'UA.  - `operationMode[string]`: Propriété. Mode de fonctionnement de cette bobine.  - `operationTemperatureMax[number]`: Propriété. Plage de température ambiante (air, fluide) autorisée pour le fonctionnement. Généralement mesurée en degrés Kelvin (K).  - `operationTemperatureMin[number]`: Propriété. Plage de température ambiante (air, fluide) autorisée pour le fonctionnement. Généralement mesurée en degrés Kelvin (K).  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `placementType[string]`: Propriété. Indique comment le dispositif est conçu pour être placé.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Propriété. Il doit être égal à `Coil`.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Propriétés requises  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modèle de données description des propriétés  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 Coil:    
   description: 'A coil is a device used to provide heat transfer between non-mixing media. A common example is a cooling coil, which utilizes a finned coil in which circulates chilled water, antifreeze, or refrigerant that is used to remove heat from air moving across the surface of the coil. A coil may be used either for heating or cooling purposes by placing a series of tubes (the coil) carrying a heating or cooling fluid into an airstream. The coil may be constructed from tubes bundled in a serpentine form or from finned tubes that give a extended heat transfer surface.  Coils may also be used for non-airflow cases such as embedded in a floor slab.'    
   properties:    
@@ -120,33 +63,13 @@ Coil:
         model: https://schema.org/address    
         type: Property    
     airFlowRateMax:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Maximum allowable air flow rate. Usually measured in m3/s.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: &coil_-_properties_-_airflowratemin_-_properties    
-        observedAt:    
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).    
-          format: date-time    
-          type: string    
-        unitCode:    
-          description: Property. A relationship identifying the unit of measure used for a certain entity.    
-          type: string    
-        value:    
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'    
-          type: number    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     airFlowRateMin:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Minimum allowable air flow rate. Usually measured in m3/s.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *coil_-_properties_-_airflowratemin_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     alternateName:    
@@ -382,33 +305,18 @@ Coil:
       x-ngsi:    
         type: Property    
     nominalLatentCapacity:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal latent capacity. Usually measured in Watts (W, J/s).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *coil_-_properties_-_airflowratemin_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalSensibleCapacity:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal sensible capacity. Usually measured in Watts (W, J/s).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *coil_-_properties_-_airflowratemin_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalUa:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Nominal UA value.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *coil_-_properties_-_airflowratemin_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     operationMode:    
@@ -420,23 +328,13 @@ Coil:
       x-ngsi:    
         type: Property    
     operationTemperatureMax:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *coil_-_properties_-_airflowratemin_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     operationTemperatureMin:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *coil_-_properties_-_airflowratemin_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     owner:    
@@ -485,28 +383,19 @@ Coil:
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Coil/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Coil/schema.json    
   x-model-tags: SAREF Coil    
-  x-version: 0.0.2    
+  x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## Exemples de charges utiles  
-
-#### Coil NGSI-v2 key-values Exemple  
-
-Voici un exemple de bobine au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Exemples de charges utiles  
+#### Coil NGSI-v2 key-values Exemple  
+Voici un exemple de bobine au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Coil:180d0665-9242-42c6-b336-d7edcf8fc3b5",  
   "type": "Coil",  
   "airFlowRateMax": 0.22332143818011307,  
@@ -538,15 +427,11 @@ Voici un exemple de bobine au format JSON-LD en tant que valeurs clés. Ceci est
   }  
 ```  
 </details>  
-
-#### Bobine NGSI-v2 normalisée Exemple  
-
-Voici un exemple de bobine au format JSON-LD normalisé. Ce format est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### Bobine NGSI-v2 normalisée Exemple  
+Voici un exemple de bobine au format JSON-LD normalisé. Ce format est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Coil:13d40aef-8b95-4cb2-af1e-483e4c874941",  
   "type": "Coil",  
   "airFlowRateMax": {  
@@ -649,15 +534,11 @@ Voici un exemple de bobine au format JSON-LD normalisé. Ce format est compatibl
 }  
 ```  
 </details>  
-
-#### Coil Valeurs clés NGSI-LD Exemple  
-
-Voici un exemple de bobine au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+#### Coil Valeurs clés NGSI-LD Exemple  
+Voici un exemple de bobine au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Coil:180d0665-9242-42c6-b336-d7edcf8fc3b5",  
   "type": "Coil",  
   "airFlowRateMax": 0.22332143818011307,  
@@ -693,15 +574,11 @@ Voici un exemple de bobine au format JSON-LD en tant que valeurs clés. Ceci est
   }  
 ```  
 </details>  
-
-#### Bobine NGSI-LD normalisée Exemple  
-
-Voici un exemple de bobine au format JSON-LD normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### Bobine NGSI-LD normalisée Exemple  
+Voici un exemple de bobine au format JSON-LD normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Coil:fcc6fa4b-fa43-42de-af7d-c8be6efda789",  
   "type": "Coil",  
   "airFlowRateMax": {  
@@ -818,21 +695,12 @@ Voici un exemple de bobine au format JSON-LD normalisé. Ce format est compatibl
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
