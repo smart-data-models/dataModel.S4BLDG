@@ -275,63 +275,28 @@ Fan:
       x-ngsi:
         type: Property
     nominalAirFlowRate:
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"
       description: Property. Nominal rate of air flow. Usually measured in m3/s.
-      license: https://opensource.org/licenses/BSD-3-Clause
-      properties: &fan_-_properties_-_nominalpowerrate_-_properties
-        observedAt:
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).
-          format: date-time
-          type: string
-        unitCode:
-          description: Property. A relationship identifying the unit of measure used for a certain entity.
-          type: string
-        value:
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'
-          type: number
-      title: Smart data models - Measurement schema
-      type: object
+      type: number
       x-ngsi:
         type: Property
     nominalPowerRate:
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"
       description: 'Property. Nominal fan power rate.Usually measured in Watts (W, J/s).'
-      license: https://opensource.org/licenses/BSD-3-Clause
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties
-      title: Smart data models - Measurement schema
-      type: object
+      type: number
       x-ngsi:
         type: Property
     nominalRotationSpeed:
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"
       description: Property. Nominal fan wheel speed. Usually measured in cycles/s.
-      license: https://opensource.org/licenses/BSD-3-Clause
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties
-      title: Smart data models - Measurement schema
-      type: object
+      type: number
       x-ngsi:
         type: Property
     nominalStaticPressure:
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"
       description: 'Property. The static pressure within the air stream that the fan must overcome to insure designed circulation of air. Usually measured in Pascals (Pa, N/m2).'
-      license: https://opensource.org/licenses/BSD-3-Clause
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties
-      title: Smart data models - Measurement schema
-      type: object
+      type: number
       x-ngsi:
         type: Property
     nominalTotalPressure:
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"
       description: 'Property. Nominal total pressure rise across the fan. Usually measured in Pascals (Pa, N/m2).'
-      license: https://opensource.org/licenses/BSD-3-Clause
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties
-      title: Smart data models - Measurement schema
-      type: object
+      type: number
       x-ngsi:
         type: Property
     operationMode:
@@ -343,33 +308,18 @@ Fan:
       x-ngsi:
         type: Property
     operationTemperatureMax:
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"
       description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'
-      license: https://opensource.org/licenses/BSD-3-Clause
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties
-      title: Smart data models - Measurement schema
-      type: object
+      type: number
       x-ngsi:
         type: Property
     operationTemperatureMin:
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"
       description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'
-      license: https://opensource.org/licenses/BSD-3-Clause
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties
-      title: Smart data models - Measurement schema
-      type: object
+      type: number
       x-ngsi:
         type: Property
     operationalRiterial:
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"
       description: Property. Time of operation at maximum operational ambient air temperature. Measured in seconds (s) or days (d) or other units of time.
-      license: https://opensource.org/licenses/BSD-3-Clause
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties
-      title: Smart data models - Measurement schema
-      type: object
+      type: number
       x-ngsi:
         type: Property
     owner:
