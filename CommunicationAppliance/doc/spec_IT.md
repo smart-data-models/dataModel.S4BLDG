@@ -343,7 +343,7 @@ CommunicationAppliance:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Esempi di payload  
-#### CommunicationAppliance NGSI-v2 valori chiave Esempio  
+#### CommunicationAppliance NGSI-v2 Valori chiave Esempio  
 Ecco un esempio di CommunicationAppliance in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
