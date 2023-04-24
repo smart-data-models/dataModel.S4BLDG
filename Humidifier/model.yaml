@@ -275,33 +275,13 @@ Humidifier:
       x-ngsi:
         type: Property
     nominalAirFlowRate:
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"
       description: Property. Nominal rate of air flow. Usually measured in m3/s.
-      license: https://opensource.org/licenses/BSD-3-Clause
-      properties: &humidifier_-_properties_-_nominalmoisturegain_-_properties
-        observedAt:
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).
-          format: date-time
-          type: string
-        unitCode:
-          description: Property. A relationship identifying the unit of measure used for a certain entity.
-          type: string
-        value:
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'
-          type: number
-      title: Smart data models - Measurement schema
-      type: object
+      type: number
       x-ngsi:
         type: Property
     nominalMoistureGain:
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"
       description: Property. Nominal rate of water vapor added into the airstream. Usually measured in kg/s.
-      license: https://opensource.org/licenses/BSD-3-Clause
-      properties: *humidifier_-_properties_-_nominalmoisturegain_-_properties
-      title: Smart data models - Measurement schema
-      type: object
+      type: number
       x-ngsi:
         type: Property
     owner:
@@ -337,23 +317,13 @@ Humidifier:
       x-ngsi:
         type: Property
     waterRequirement:
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"
       description: Property. Make-up water requirement. Usually measured in m3/s.
-      license: https://opensource.org/licenses/BSD-3-Clause
-      properties: *humidifier_-_properties_-_nominalmoisturegain_-_properties
-      title: Smart data models - Measurement schema
-      type: object
+      type: number
       x-ngsi:
         type: Property
     weight:
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"
       description: Property. The weight of the device. Usually measured in kilograms (kg) or grams (g).
-      license: https://opensource.org/licenses/BSD-3-Clause
-      properties: *humidifier_-_properties_-_nominalmoisturegain_-_properties
-      title: Smart data models - Measurement schema
-      type: object
+      type: number
       x-ngsi:
         type: Property
   required:
