@@ -76,7 +76,7 @@ Alarm:
       x-ngsi:
         type: Property
     id:
-      anyOf: &alarm_-_properties_-_iscontainedinbuildingspace_-_anyof
+      anyOf: &alarm_-_properties_-_owner_-_items_-_anyof
         - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
@@ -89,20 +89,44 @@ Alarm:
       x-ngsi:
         type: Property
     isContainedInBuildingSpace:
-      anyOf: *alarm_-_properties_-_iscontainedinbuildingspace_-_anyof
+      anyOf:
+        - description: Property. Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+        - description: Property. Identifier format of any NGSI entity
+          format: uri
+          type: string
       description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)
       x-ngsi:
-        type: Property
+        type: Relationship
     isContainedInPhysicalObject:
-      anyOf: *alarm_-_properties_-_iscontainedinbuildingspace_-_anyof
+      anyOf:
+        - description: Property. Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+        - description: Property. Identifier format of any NGSI entity
+          format: uri
+          type: string
       description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)
       x-ngsi:
-        type: Property
+        type: Relationship
     isSubSystemOf:
       description: Relationship. A reference to a system(s) that this Physical Object is part of.
       items:
-        anyOf: *alarm_-_properties_-_iscontainedinbuildingspace_-_anyof
-        description: Property. Unique identifier of the entity
+        anyOf:
+          - description: Property. Identifier format of any NGSI entity
+            maxLength: 256
+            minLength: 1
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+            type: string
+          - description: Property. Identifier format of any NGSI entity
+            format: uri
+            type: string
+        description: 'Relationship. The class of systems, i.e., systems virtually isolated from the environment, whose behaviour and interactions with the environment are modeled. Systems can be connected to other systems. Connected systems interact in some ways. Systems can also have subsystems. Properties of subsystems somehow contribute to the properties of the supersystem. (System)'
       type: array
       x-ngsi:
         type: Relationship
@@ -267,7 +291,7 @@ Alarm:
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
-        anyOf: *alarm_-_properties_-_iscontainedinbuildingspace_-_anyof
+        anyOf: *alarm_-_properties_-_owner_-_items_-_anyof
         description: Property. Unique identifier of the entity
       type: array
       x-ngsi:
