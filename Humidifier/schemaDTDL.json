@@ -110,6 +110,22 @@
             "comment": "The name of this item."
         },
         {
+            "name": "nominalAirFlowRate",
+            "writable": true,
+            "displayName": "nominalAirFlowRate",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Nominal rate of air flow. Usually measured in m3/s."
+        },
+        {
+            "name": "nominalMoistureGain",
+            "writable": true,
+            "displayName": "nominalMoistureGain",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Nominal rate of water vapor added into the airstream. Usually measured in kg/s."
+        },
+        {
             "name": "seeAlso",
             "writable": true,
             "displayName": "seeAlso"
@@ -121,6 +137,22 @@
             "@type": "Property",
             "schema": "string",
             "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "waterRequirement",
+            "writable": true,
+            "displayName": "waterRequirement",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Make-up water requirement. Usually measured in m3/s."
+        },
+        {
+            "name": "weight",
+            "writable": true,
+            "displayName": "weight",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The weight of the device. Usually measured in kilograms (kg) or grams (g)."
         },
         {
             "@type": "Telemetry",
@@ -179,86 +211,6 @@
                 {
                     "name": "streetNr",
                     "schema": "string"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalAirFlowRate",
-            "comment": "Property. Nominal rate of air flow. Usually measured in m3/s.",
-            "displayName": "nominalAirFlowRate",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalMoistureGain",
-            "comment": "Property. Nominal rate of water vapor added into the airstream. Usually measured in kg/s.",
-            "displayName": "nominalMoistureGain",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "waterRequirement",
-            "comment": "Property. Make-up water requirement. Usually measured in m3/s.",
-            "displayName": "waterRequirement",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "weight",
-            "comment": "Property. The weight of the device. Usually measured in kilograms (kg) or grams (g).",
-            "displayName": "weight",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
                 }
             ]
         }
