@@ -1,101 +1,33 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : CooledBeam  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/CooledBeam/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Description globale : **Une poutre froide (ou poutre réfrigérée) est un dispositif généralement utilisé pour refroidir l'air en faisant circuler un fluide tel que de l'eau réfrigérée dans des tubes à ailettes exposés au-dessus d'un espace. Généralement montée en hauteur, près ou dans un plafond, la poutre froide utilise la convection pour refroidir l'espace en dessous d'elle en agissant comme un puits de chaleur pour l'air chaud qui s'élève naturellement dans l'espace. Une fois refroidi, l'air redescend naturellement vers le sol où le cycle recommence**.  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-Entité : CooledBeam  
-===================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## Liste des propriétés  
 
-[Licence ouverte] (https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/CooledBeam/LICENSE.md)  
-
-[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-
-Description globale : **Une poutre froide (ou poutre réfrigérée) est un dispositif généralement utilisé pour refroidir l'air en faisant circuler un fluide tel que de l'eau réfrigérée dans des tubes à ailettes exposés au-dessus d'un espace. Généralement montée en hauteur, près ou dans un plafond, la poutre froide utilise la convection pour refroidir l'espace en dessous d'elle en agissant comme un puits de chaleur pour l'air chaud qui s'élève naturellement dans l'espace. Une fois refroidi, l'air redescend naturellement vers le sol où le cycle recommence**.  
-
-version : 0.0.2  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## Liste des propriétés  
-
-
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)
-- `alternateName[string]`: Un nom alternatif pour ce poste  
-- `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `coilLength[number]`: Propriété. Longueur de la bobine. Généralement mesurée en millimètres (mm).  
-- `coilWidth[number]`: Propriété. Largeur de la bobine. Généralement mesurée en millimètres (mm  
-- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  
-- `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  
-- `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  
-- `description[string]`: Une description de l'article  
-- `finishColor[string]`: Propriété. Couleur de finition de la poutre refroidie.  
-- `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  
-- `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  
-- `id[*]`: Identifiant unique de l'entité  
-- `integratedLightingType[string]`: Propriété. Éclairage intégré dans la poutre refroidie.  
-- `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  
-- `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  
-- `isFreeHanging[boolean]`: Propriété. S'agit-il d'un appareil à suspension libre (non monté dans un faux plafond) ?  
-- `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  
-- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  
-- `name[string]`: Le nom de cet élément.  
-- `nominalCoolingCapacity[number]`: Propriété. Capacité nominale de refroidissement. Généralement mesurée en watts (W, J/s).  
-- `nominalHeatingCapacity[number]`: Propriété. Capacité de chauffage nominale. Généralement mesurée en watts (W, J/s).  
-- `nominalReturnWaterTemperatureCooling[number]`: Propriété. Température nominale de l'eau de retour (se réfère à la capacité nominale de refroidissement). Généralement mesurée en degrés Kelvin (K).  
-- `nominalReturnWaterTemperatureHeating[number]`: Propriété. Température nominale de l'eau de retour (se réfère à la capacité nominale de chauffage). Généralement mesurée en degrés Kelvin (K).  
-- `nominalSorroundingHumidityCooling[number]`: Propriété. Humidité ambiante nominale (se réfère à la capacité de refroidissement nominale). Généralement mesurée en degrés Kelvin (K).  
-- `nominalSorroundingTemperatureCooling[number]`: Propriété. Température ambiante nominale (se réfère à la capacité de refroidissement nominale). Généralement mesurée en degrés Kelvin (K).  
-- `nominalSorroundingTemperatureHeating[number]`: Propriété. Température ambiante nominale (se réfère à la capacité de chauffage nominale). Généralement mesurée en degrés Kelvin (K).  
-- `nominalSupplyWaterTemperatureCooling[number]`: Propriété. Température nominale de l'eau d'alimentation (se réfère à la capacité nominale de refroidissement). Généralement mesurée en degrés Kelvin (K).  
-- `nominalSupplyWaterTemperatureHeating[number]`: Propriété. Température nominale de l'eau d'alimentation (se réfère à la capacité nominale de chauffage). Généralement mesurée en degrés Kelvin (K).  
-- `nominalWaterFlowCooling[number]`: Propriété. Débit d'eau nominal (se réfère à la capacité de refroidissement nominale). Généralement mesuré en m3/s.  
-- `nominalWaterFlowHeating[number]`: Propriété. Débit d'eau nominal (se réfère à la capacité de chauffage nominale). Généralement mesuré en m3/s.  
-- `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  
-- `pipeConnectionEnum[string]`: Propriété. La manière dont le raccordement de la tuyauterie est effectué sur la poutre refroidie.  
-- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  
-- `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  
-- `type[string]`: Propriété. Elle doit être égale à `CooledBeam`.  
-- `waterFlowControlSystemType[string]`: Propriété. Système de contrôle du débit d'eau monté en usine.  
-- `waterPressureMax[number]`: Propriété. Plage de pression de service admissible du circuit d'eau. Généralement mesurée en Pascals (Pa, N/m2).  
-- `waterPressureMin[number]`: Propriété. Plage de pression de service admissible du circuit d'eau. Généralement mesurée en Pascals (Pa, N/m2).  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-Propriétés requises  
-- `id`  
-- `type`  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## Modèle de données description des propriétés  
-
-Classés par ordre alphabétique (cliquez pour plus de détails)  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `coilLength[number]`: Propriété. Longueur de la bobine. Généralement mesurée en millimètres (mm).  - `coilWidth[number]`: Propriété. Largeur de la bobine. Généralement mesurée en millimètres (mm  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `finishColor[string]`: Propriété. Couleur de finition de la poutre refroidie.  - `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  - `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  - `id[*]`: Identifiant unique de l'entité  - `integratedLightingType[string]`: Propriété. Éclairage intégré dans la poutre refroidie.  - `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  - `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  - `isFreeHanging[boolean]`: Propriété. S'agit-il d'un appareil à suspension libre (non monté dans un faux plafond) ?  - `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `nominalCoolingCapacity[number]`: Propriété. Capacité nominale de refroidissement. Généralement mesurée en watts (W, J/s).  - `nominalHeatingCapacity[number]`: Propriété. Capacité de chauffage nominale. Généralement mesurée en watts (W, J/s).  - `nominalReturnWaterTemperatureCooling[number]`: Propriété. Température nominale de l'eau de retour (se réfère à la capacité nominale de refroidissement). Généralement mesurée en degrés Kelvin (K).  - `nominalReturnWaterTemperatureHeating[number]`: Propriété. Température nominale de l'eau de retour (se réfère à la capacité nominale de chauffage). Généralement mesurée en degrés Kelvin (K).  - `nominalSorroundingHumidityCooling[number]`: Propriété. Humidité ambiante nominale (se réfère à la capacité de refroidissement nominale). Généralement mesurée en degrés Kelvin (K).  - `nominalSorroundingTemperatureCooling[number]`: Propriété. Température ambiante nominale (se réfère à la capacité de refroidissement nominale). Généralement mesurée en degrés Kelvin (K).  - `nominalSorroundingTemperatureHeating[number]`: Propriété. Température ambiante nominale (se réfère à la capacité de chauffage nominale). Généralement mesurée en degrés Kelvin (K).  - `nominalSupplyWaterTemperatureCooling[number]`: Propriété. Température nominale de l'eau d'alimentation (se réfère à la capacité nominale de refroidissement). Généralement mesurée en degrés Kelvin (K).  - `nominalSupplyWaterTemperatureHeating[number]`: Propriété. Température nominale de l'eau d'alimentation (se réfère à la capacité nominale de chauffage). Généralement mesurée en degrés Kelvin (K).  - `nominalWaterFlowCooling[number]`: Propriété. Débit d'eau nominal (se réfère à la capacité de refroidissement nominale). Généralement mesuré en m3/s.  - `nominalWaterFlowHeating[number]`: Propriété. Débit d'eau nominal (se réfère à la capacité de chauffage nominale). Généralement mesuré en m3/s.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `pipeConnectionEnum[string]`: Propriété. La manière dont le raccordement de la tuyauterie est effectué sur la poutre refroidie.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Propriété. Elle doit être égale à `CooledBeam`.  - `waterFlowControlSystemType[string]`: Propriété. Système de contrôle du débit d'eau monté en usine.  - `waterPressureMax[number]`: Propriété. Plage de pression de service admissible du circuit d'eau. Généralement mesurée en Pascals (Pa, N/m2).  - `waterPressureMin[number]`: Propriété. Plage de pression de service admissible du circuit d'eau. Généralement mesurée en Pascals (Pa, N/m2).  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Propriétés requises  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modèle de données description des propriétés  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 CooledBeam:    
   description: 'A cooled beam (or chilled beam) is a device typically used to cool air by circulating a fluid such as chilled water through exposed finned tubes above a space. Typically mounted overhead near or within a ceiling, the cooled beam uses convection to cool the space below it by acting as a heat sink for the naturally rising warm air of the space. Once cooled, the air naturally drops back to the floor where the cycle begins again.'    
   properties:    
@@ -503,28 +435,19 @@ CooledBeam:
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/CooledBeam/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/CooledBeam/schema.json    
   x-model-tags: SAREF CooledBeam    
-  x-version: 0.0.2    
+  x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## Exemples de charges utiles  
-
-#### CooledBeam NGSI-v2 key-values Exemple  
-
-Voici un exemple d'un CooledBeam au format JSON-LD sous forme de valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Exemples de charges utiles  
+#### CooledBeam NGSI-v2 key-values Exemple  
+Voici un exemple d'un CooledBeam au format JSON-LD sous forme de valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:CooledBeam:82040ca8-778f-478d-a8fd-28485704919f",  
   "type": "CooledBeam",  
   "coilLength": 0.12136965337189098,  
@@ -566,15 +489,11 @@ Voici un exemple d'un CooledBeam au format JSON-LD sous forme de valeurs clés. 
 }  
 ```  
 </details>  
-
-#### CooledBeam NGSI-v2 normalisé Exemple  
-
-Voici un exemple d'un CooledBeam au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### CooledBeam NGSI-v2 normalisé Exemple  
+Voici un exemple d'un CooledBeam au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:CooledBeam:38dcdd25-ae94-441c-8409-218ec91e3006",  
   "type": "CooledBeam",  
   "coilLength": {  
@@ -721,15 +640,11 @@ Voici un exemple d'un CooledBeam au format JSON-LD tel qu'il a été normalisé.
 }  
 ```  
 </details>  
-
-#### CooledBeam NGSI-LD key-values Exemple  
-
-Voici un exemple d'un CooledBeam au format JSON-LD sous forme de valeurs-clés. Ce format est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### CooledBeam NGSI-LD key-values Exemple  
+Voici un exemple d'un CooledBeam au format JSON-LD sous forme de valeurs-clés. Ce format est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:CooledBeam:82040ca8-778f-478d-a8fd-28485704919f",  
   "type": "CooledBeam",  
   "coilLength": 0.12136965337189098,  
@@ -775,15 +690,11 @@ Voici un exemple d'un CooledBeam au format JSON-LD sous forme de valeurs-clés. 
 }  
 ```  
 </details>  
-
-#### CooledBeam NGSI-LD normalisé Exemple  
-
-Voici un exemple d'un CooledBeam au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### CooledBeam NGSI-LD normalisé Exemple  
+Voici un exemple d'un CooledBeam au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:CooledBeam:baa66543-6434-4e28-8e85-20b2b260d404",  
   "type": "CooledBeam",  
   "coilLength": {  
@@ -960,21 +871,12 @@ Voici un exemple d'un CooledBeam au format JSON-LD tel qu'il a été normalisé.
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
