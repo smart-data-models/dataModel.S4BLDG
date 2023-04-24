@@ -1,89 +1,33 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+实体：空气到空气的热量回收  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
+[开放许可](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/AirToAirHeatRecovery/LICENSE.md)  
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+全球描述：**空气-空气热回收装置在进气和出气之间采用了一个逆流式热交换器。它通常用于将热量从一个腔室的较热空气转移到第二个腔室的较冷空气中（即通常用于回收被排出的空调空气和被供应给建筑物的外部空气中的热量），从而通过减少加热（或冷却）需求来节约能源**。  
+版本：0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-实体：空气到空气的热量回收  
-=============
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+##属性列表  
 
-[开放许可](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/AirToAirHeatRecovery/LICENSE.md)  
-
-[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-
-全球描述：**空气-空气热回收装置在进气和出气之间采用了一个逆流式热交换器。它通常用于将热量从一个腔室的较热空气转移到第二个腔室的较冷空气中（即通常用于回收被排出的空调空气和被供应给建筑物的外部空气中的热量），从而通过减少加热（或冷却）需求来节约能源**。  
-
-版本：0.0.1  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-##属性列表  
-
-
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)
-- `alternateName[string]`: 这个项目的一个替代名称  
-- `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  
-- `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  
-- `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  
-- `description[string]`: 对这个项目的描述  
-- `hasDefrost[boolean]`: 属性。热交换器是否有除霜功能。  
-- `hasManufacturer[string]`: 属性。识别实体（例如，设备）的制造商的关系。该值应是一个字符串或一个带有语言标签的字符串。  
-- `hasModel[string]`: 属性。识别实体（例如，设备）的模型的关系。该值应是一个字符串或一个带有语言标签的字符串。  
-- `heatTransferTypeEnum[string]`: 属性。两个气流之间的传热类型。  
-- `id[*]`: 实体的唯一标识符  
-- `isContainedInBuildingSpace[*]`: 关系。一个用于定义建筑物理空间的实体。一个建筑空间包含设备或建筑对象。(建筑空间)  
-- `isContainedInPhysicalObject[*]`: 关系。任何具有适当空间区域的物体。  (从DUL本体论中提取的定义）（PhysicalObject）。  
-- `isSubSystemOf[array]`: 关系。对该物理对象是其一部分的系统的引用。  
-- `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  
-- `name[string]`: 这个项目的名称。  
-- `operationTemperatureMax[object]`: 属性。允许的操作环境（空气、液体）温度范围。通常以开尔文(K)度衡量。  
-- `operationTemperatureMin[object]`: 属性。允许的操作环境（空气、液体）温度范围。通常以开尔文(K)度衡量。  
-- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  
-- `primaryAirFlowRateMax[object]`: 属性。可输送的最大一次空气流量。通常以m3/s测量。  
-- `primaryAirFlowRateMin[object]`: 属性。可以输送的最小一次空气流量。通常以m3/s测量。  
-- `secondaryAirFlowRateMax[object]`: 属性。可输送的最大二次风量。通常以帕斯卡（Pa，N/m2）衡量。  
-- `secondaryAirFlowRateMin[object]`: 属性。可输送的最大二次风量。通常以帕斯卡（Pa，N/m2）衡量。  
-- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  
-- `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  
-- `type[string]`: 属性。它必须等于`AirToAirHeatRecovery`。  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-所需属性  
-- `id`  
-- `type`  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## 数据模型的属性描述  
-
-按字母顺序排列（点击查看详情）。  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `hasDefrost[boolean]`: 属性。热交换器是否有除霜功能。  - `hasManufacturer[string]`: 属性。识别实体（例如，设备）的制造商的关系。该值应是一个字符串或一个带有语言标签的字符串。  - `hasModel[string]`: 属性。识别实体（例如，设备）的模型的关系。该值应是一个字符串或一个带有语言标签的字符串。  - `heatTransferTypeEnum[string]`: 属性。两个气流之间的传热类型。  - `id[*]`: 实体的唯一标识符  - `isContainedInBuildingSpace[*]`: 关系。一个用于定义建筑物理空间的实体。一个建筑空间包含设备或建筑对象。(建筑空间)  - `isContainedInPhysicalObject[*]`: 关系。任何具有适当空间区域的物体。  (从DUL本体论中提取的定义）（PhysicalObject）。  - `isSubSystemOf[array]`: 关系。对该物理对象是其一部分的系统的引用。  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `operationTemperatureMax[number]`: 属性。允许的操作环境（空气、液体）温度范围。通常以开尔文(K)度衡量。  - `operationTemperatureMin[number]`: 属性。允许的操作环境（空气、液体）温度范围。通常以开尔文(K)度衡量。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `primaryAirFlowRateMax[number]`: 属性。可输送的最大一次空气流量。通常以m3/s测量。  - `primaryAirFlowRateMin[number]`: 属性。可以输送的最小一次空气流量。通常以m3/s测量。  - `secondaryAirFlowRateMax[number]`: 属性。可输送的最大二次风量。通常以帕斯卡（Pa，N/m2）衡量。  - `secondaryAirFlowRateMin[number]`: 属性。可输送的最大二次风量。通常以帕斯卡（Pa，N/m2）衡量。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: 属性。它必须等于`AirToAirHeatRecovery`。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+所需属性  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## 数据模型的属性描述  
+按字母顺序排列（点击查看详情）。  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 AirToAirHeatRecovery:    
   description: 'An air-to-air heat recovery device employs a counter-flow heat exchanger between inbound and outbound air flow. It is typically used to transfer heat from warmer air in one chamber to cooler air in the second chamber (i.e., typically used to recover heat from the conditioned air being exhausted and the outside air being supplied to a building), resulting in energy savings from reduced heating (or cooling) requirements.'    
   properties:    
@@ -172,7 +116,7 @@ AirToAirHeatRecovery:
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
+      anyOf: &airtoairheatrecovery_-_properties_-_owner_-_items_-_anyof    
         - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
@@ -185,20 +129,44 @@ AirToAirHeatRecovery:
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
-      anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
+      anyOf:    
+        - description: Property. Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: Property. Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
       description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
       x-ngsi:    
-        type: Property    
+        type: Relationship    
     isContainedInPhysicalObject:    
-      anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
+      anyOf:    
+        - description: Property. Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: Property. Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
       description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
       x-ngsi:    
-        type: Property    
+        type: Relationship    
     isSubSystemOf:    
       description: Relationship. A reference to a system(s) that this Physical Object is part of.    
       items:    
-        anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Property. Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+          - description: Property. Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+        description: 'Relationship. The class of systems, i.e., systems virtually isolated from the environment, whose behaviour and interactions with the environment are modeled. Systems can be connected to other systems. Connected systems interact in some ways. Systems can also have subsystems. Properties of subsystems somehow contribute to the properties of the supersystem. (System)'    
       type: array    
       x-ngsi:    
         type: Relationship    
@@ -362,56 +330,40 @@ AirToAirHeatRecovery:
         type: Property    
     operationTemperatureMax:    
       description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
-      properties: &airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
-        observedAt:    
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).    
-          format: date-time    
-          type: string    
-        unitCode:    
-          description: Property. A relationship identifying the unit of measure used for a certain entity.    
-          type: string    
-        value:    
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'    
-          type: number    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     operationTemperatureMin:    
       description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
-      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *airtoairheatrecovery_-_properties_-_iscontainedinbuildingspace_-_anyof    
+        anyOf: *airtoairheatrecovery_-_properties_-_owner_-_items_-_anyof    
         description: Property. Unique identifier of the entity    
       type: array    
       x-ngsi:    
         type: Property    
     primaryAirFlowRateMax:    
       description: Property. Maximum primary airflow that can be delivered. Usually measured in m3/s.    
-      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     primaryAirFlowRateMin:    
       description: Property. Minimum primary airflow that can be delivered. Usually measured in m3/s.    
-      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     secondaryAirFlowRateMax:    
       description: 'Property. Maximum secondary airflow that can be delivered. Usually measured in Pascals (Pa, N/m2).'    
-      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     secondaryAirFlowRateMin:    
       description: 'Property. Maximum secondary airflow that can be delivered. Usually measured in Pascals (Pa, N/m2).'    
-      properties: *airtoairheatrecovery_-_properties_-_operationtemperaturemin_-_properties    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     seeAlso:    
@@ -450,25 +402,16 @@ AirToAirHeatRecovery:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## ＃＃＃＃有效载荷的例子  
-
-#### AirToAirHeatRecovery NGSI-v2 关键值示例  
-
-下面是一个以JSON-LD格式作为关键值的AirToAirHeatRecovery的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## ＃＃＃＃有效载荷的例子  
+#### AirToAirHeatRecovery NGSI-v2 关键值示例  
+下面是一个以JSON-LD格式作为关键值的AirToAirHeatRecovery的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:AirToAirHeatRecovery:8c59d316-ed05-4b56-bec3-886379421239",  
   "type": "AirToAirHeatRecovery",  
   "hasDefrost": false,  
@@ -522,15 +465,11 @@ AirToAirHeatRecovery:
 }  
 ```  
 </details>  
-
-#### AirToAirHeatRecovery NGSI-v2规范化示例  
-
-下面是一个以JSON-LD格式规范化的AirToAirHeatRecovery的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+#### AirToAirHeatRecovery NGSI-v2规范化示例  
+下面是一个以JSON-LD格式规范化的AirToAirHeatRecovery的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:AirToAirHeatRecovery:a732b90e-0296-47c9-ab0f-34f6de5edfb4",  
   "type": "AirToAirHeatRecovery",  
   "hasDefrost": {  
@@ -653,15 +592,11 @@ AirToAirHeatRecovery:
 }  
 ```  
 </details>  
-
-#### AirToAirHeatRecovery NGSI-LD关键值示例  
-
-这里是一个以JSON-LD格式作为关键值的AirToAirHeatRecovery的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+#### AirToAirHeatRecovery NGSI-LD关键值示例  
+这里是一个以JSON-LD格式作为关键值的AirToAirHeatRecovery的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:AirToAirHeatRecovery:8c59d316-ed05-4b56-bec3-886379421239",  
   "type": "AirToAirHeatRecovery",  
   "hasDefrost": false,  
@@ -719,15 +654,11 @@ AirToAirHeatRecovery:
 }  
 ```  
 </details>  
-
-#### AirToAirHeatRecovery NGSI-LD归一化示例  
-
-这里是一个以JSON-LD格式规范化的AirToAirHeatRecovery的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+#### AirToAirHeatRecovery NGSI-LD归一化示例  
+这里是一个以JSON-LD格式规范化的AirToAirHeatRecovery的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:AirToAirHeatRecovery:a8cd6aa9-dd5f-48bf-ba9f-3db11843b050",  
   "type": "AirToAirHeatRecovery",  
   "hasDefrost": {  
@@ -856,21 +787,12 @@ AirToAirHeatRecovery:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
