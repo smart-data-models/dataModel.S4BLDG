@@ -1,87 +1,33 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: Enfriadora  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Licencia abierta](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Chiller/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descripción global: **Un enfriador es un dispositivo utilizado para eliminar el calor de un líquido mediante un ciclo de refrigeración por compresión de vapor o absorción para enfriar un fluido, normalmente agua o una mezcla de agua y glicol. El fluido enfriado se utiliza entonces para enfriar y deshumidificar el aire de un edificio.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-Entidad: Enfriadora  
-===================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## Lista de propiedades  
 
-[Licencia abierta](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Chiller/LICENSE.md)  
-
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-
-Descripción global: **Un enfriador es un dispositivo utilizado para eliminar el calor de un líquido mediante un ciclo de refrigeración por compresión de vapor o absorción para enfriar un fluido, normalmente agua o una mezcla de agua y glicol. El fluido enfriado se utiliza entonces para enfriar y deshumidificar el aire de un edificio.**  
-
-versión: 0.0.2  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## Lista de propiedades  
-
-
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
-- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)
-- `alternateName[string]`: Un nombre alternativo para este artículo  
-- `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  
-- `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  
-- `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  
-- `description[string]`: Descripción de este artículo  
-- `hasManufacturer[string]`: Propiedad. Relación que identifica al fabricante de una entidad (por ejemplo, un dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  
-- `hasModel[string]`: Propiedad. Relación que identifica el modelo de una entidad (por ejemplo, dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  
-- `id[*]`: Identificador único de la entidad  
-- `isContainedInBuildingSpace[*]`: Relación. Entidad utilizada para definir los espacios físicos del edificio. Un espacio del edificio contiene dispositivos u objetos del edificio. (Espacio del edificio)  
-- `isContainedInPhysicalObject[*]`: Relación. Cualquier Objeto que tiene una región espacial propia.  (Definición extraída de la ontología DUL) (PhysicalObject)  
-- `isSubSystemOf[array]`: Relación. Referencia a uno o varios sistemas de los que forma parte este objeto físico.  
-- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  
-- `name[string]`: El nombre de este artículo.  
-- `nominalCapacity[object]`: Propiedad. Capacidad nominal. Normalmente se mide en vatios (W, J/s).  
-- `nominalCondensingTemperature[object]`: Propiedad. Temperatura de condensación de la enfriadora. Normalmente se mide en grados Kelvin (K).  
-- `nominalEfficiency[object]`: Propiedad. Rendimiento nominal de la enfriadora en condiciones nominales.  
-- `nominalEvaporatingTemmperature[object]`: Propiedad. Temperatura de evaporación del refrigerador, medida normalmente en grados Kelvin (K).  
-- `nominalHeatRejectionRate[object]`: Propiedad. Suma del efecto frigorífico y del equivalente térmico de la potencia absorbida por el compresor. Suele medirse en vatios (W, J/s).  
-- `nominalPowerConsumption[object]`: Propiedad. Consumo nominal total de energía. Suele medirse en vatios (W, J/s).  
-- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  
-- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  
-- `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  
-- `type[string]`: Propiedad. Debe ser igual a `Chiller`.  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-Propiedades requeridas  
-- `id`  
-- `type`  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## Descripción de las propiedades del modelo de datos  
-
-Ordenados alfabéticamente (pulse para más detalles)  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Descripción de este artículo  - `hasManufacturer[string]`: Propiedad. Relación que identifica al fabricante de una entidad (por ejemplo, un dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  - `hasModel[string]`: Propiedad. Relación que identifica el modelo de una entidad (por ejemplo, dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  - `id[*]`: Identificador único de la entidad  - `isContainedInBuildingSpace[*]`: Relación. Entidad utilizada para definir los espacios físicos del edificio. Un espacio del edificio contiene dispositivos u objetos del edificio. (Espacio del edificio)  - `isContainedInPhysicalObject[*]`: Relación. Cualquier Objeto que tiene una región espacial propia.  (Definición extraída de la ontología DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relación. Referencia a uno o varios sistemas de los que forma parte este objeto físico.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo.  - `nominalCapacity[number]`: Propiedad. Capacidad nominal. Normalmente se mide en vatios (W, J/s).  - `nominalCondensingTemperature[number]`: Propiedad. Temperatura de condensación de la enfriadora. Normalmente se mide en grados Kelvin (K).  - `nominalEfficiency[number]`: Propiedad. Rendimiento nominal de la enfriadora en condiciones nominales.  - `nominalEvaporatingTemmperature[number]`: Propiedad. Temperatura de evaporación del refrigerador, medida normalmente en grados Kelvin (K).  - `nominalHeatRejectionRate[number]`: Propiedad. Suma del efecto frigorífico y del equivalente térmico de la potencia absorbida por el compresor. Suele medirse en vatios (W, J/s).  - `nominalPowerConsumption[number]`: Propiedad. Consumo nominal total de energía. Suele medirse en vatios (W, J/s).  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Propiedad. Debe ser igual a `Chiller`.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Propiedades requeridas  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 Chiller:    
   description: 'A chiller is a device used to remove heat from a liquid via a vapor-compression or absorption refrigeration cycle to cool a fluid, typically water or a mixture of water and glycol. The chilled fluid is then used to cool and dehumidify air in a building.'    
   properties:    
@@ -349,73 +295,33 @@ Chiller:
       x-ngsi:    
         type: Property    
     nominalCapacity:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal capacity. Usually measured in Watts (W, J/s).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: &chiller_-_properties_-_nominalcondensingtemperature_-_properties    
-        observedAt:    
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).    
-          format: date-time    
-          type: string    
-        unitCode:    
-          description: Property. A relationship identifying the unit of measure used for a certain entity.    
-          type: string    
-        value:    
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'    
-          type: number    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalCondensingTemperature:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Chiller condensing temperature. Usually measured in degrees Kelvin (K).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *chiller_-_properties_-_nominalcondensingtemperature_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalEfficiency:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal chiller efficiency under nominal conditions. '    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *chiller_-_properties_-_nominalcondensingtemperature_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalEvaporatingTemmperature:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Chiller evaporating temperature.Usually measured in degrees Kelvin (K).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *chiller_-_properties_-_nominalcondensingtemperature_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalHeatRejectionRate:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Sum of the refrigeration effect and the heat equivalent of the power input to the compressor. Usually measured in Watts (W, J/s).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *chiller_-_properties_-_nominalcondensingtemperature_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalPowerConsumption:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal total power consumption. Usually measured in Watts (W, J/s).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *chiller_-_properties_-_nominalcondensingtemperature_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     owner:    
@@ -459,28 +365,19 @@ Chiller:
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Chiller/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Chiller/schema.json    
   x-model-tags: SAREF Chiller    
-  x-version: 0.0.2    
+  x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## Ejemplo de carga útil  
-
-#### Chiller NGSI-v2 key-values Ejemplo  
-
-He aquí un ejemplo de un Chiller en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Ejemplo de carga útil  
+#### Chiller NGSI-v2 key-values Ejemplo  
+He aquí un ejemplo de un Chiller en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Chiller:ba7497f8-4fd6-4ec0-8dd8-00ed95bd51fc",  
   "type": "Chiller",  
   "nominalCapacity": 0.09475720530736764,  
@@ -508,15 +405,11 @@ He aquí un ejemplo de un Chiller en formato JSON-LD como key-values. Esto es co
 }  
 ```  
 </details>  
-
-#### Enfriadora NGSI-v2 normalizada Ejemplo  
-
-He aquí un ejemplo de un Chiller en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### Enfriadora NGSI-v2 normalizada Ejemplo  
+He aquí un ejemplo de un Chiller en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Chiller:fbbc813e-29ac-4462-9996-5a3d73d1ce98",  
   "type": "Chiller",  
   "nominalCapacity": {  
@@ -607,15 +500,11 @@ He aquí un ejemplo de un Chiller en formato JSON-LD normalizado. Esto es compat
 }  
 ```  
 </details>  
-
-#### Chiller NGSI-LD key-values Ejemplo  
-
-He aquí un ejemplo de un Chiller en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### Chiller NGSI-LD key-values Ejemplo  
+He aquí un ejemplo de un Chiller en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Chiller:ba7497f8-4fd6-4ec0-8dd8-00ed95bd51fc",  
   "type": "Chiller",  
   "nominalCapacity": 0.09475720530736764,  
@@ -647,15 +536,11 @@ He aquí un ejemplo de un Chiller en formato JSON-LD como key-values. Esto es co
 }  
 ```  
 </details>  
-
-#### Enfriador NGSI-LD normalizado Ejemplo  
-
-He aquí un ejemplo de un Chiller en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### Enfriador NGSI-LD normalizado Ejemplo  
+He aquí un ejemplo de un Chiller en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Chiller:1a99f350-0e1d-4466-8579-912c1f3c9b8f",  
   "type": "Chiller",  
   "nominalCapacity": {  
@@ -758,21 +643,12 @@ He aquí un ejemplo de un Chiller en formato JSON-LD normalizado. Esto es compat
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
