@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 グローバルな記述です：グローバルな説明： **建物は、居住者または内容物に避難場所を提供し、1つの場所に立っている構造物を表す。また、建物は、建築プロジェクトの構成要素（敷地、階数、空間とともに）の空間構造階層内の基本要素を提供するために用いられる**。  
-バージョン：0.0.2  
+バージョン：0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -307,7 +307,7 @@ Building:
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Building/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Building/schema.json    
   x-model-tags: SAREF Building    
-  x-version: 0.0.2    
+  x-version: 0.0.1    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -333,7 +333,7 @@ Building:
 ```  
 </details>  
 #### NGSI-v2 正規化例の構築  
-JSON-LD形式のBuildingを正規化した例を示します。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、正規化したJSON-LD形式のBuildingの例を示す。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
