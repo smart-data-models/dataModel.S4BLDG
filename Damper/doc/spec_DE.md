@@ -1,102 +1,33 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: Dämpfer  
+================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Offene Lizenz](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Damper/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Eine Klappe ist in der Regel Teil eines HVAC-Kanalverteilungssystems und wird zur Steuerung oder Modulation des Luftstroms verwendet.**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-Entität: Dämpfer  
-================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## Liste der Eigenschaften  
 
-[Offene Lizenz](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Damper/LICENSE.md)  
-
-[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-
-Globale Beschreibung: **Eine Klappe ist in der Regel Teil eines HVAC-Kanalverteilungssystems und wird zur Steuerung oder Modulation des Luftstroms verwendet.**  
-
-Version: 0.0.1  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## Liste der Eigenschaften  
-
-
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)
-- `airFlowRateMax[number]`: Eigenschaft. Maximal zulässiger Luftdurchsatz. Wird normalerweise in m3/s gemessen.  
-- `alternateName[string]`: Ein alternativer Name für diesen Artikel  
-- `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `bladeAction[string]`: Eigenschaft. Klingen-Aktion.  
-- `bladeEdge[string]`: Eigenschaft. Schneide der Klinge.  
-- `bladeShape[string]`: Eigenschaft. Form der Klinge. Flach bedeutet dreifache V-Nut.  
-- `bladeThickness[number]`: Eigenschaft. Die Dicke des Dämpferblattes. Wird normalerweise in Millimetern (mm) gemessen.  
-- `closeOffRating[number]`: Eigenschaft. Abschaltvermögen. Wird normalerweise in Pascal (Pa, N/m2) gemessen.  
-- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  
-- `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  
-- `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  
-- `description[string]`: Eine Beschreibung dieses Artikels  
-- `faceArea[number]`: Eigenschaft. Zur Luftströmung offene Fläche. Wird normalerweise in Quadratmetern (m2) gemessen.  
-- `frameDepth[number]`: Eigenschaft. Die Länge (oder Tiefe) des Dämpferrahmens. Wird normalerweise in Millimetern (mm) gemessen.  
-- `frameThickness[number]`: Eigenschaft. Die Dicke des Materials des Dämpferrahmens. Wird normalerweise in Millimetern (mm) gemessen.  
-- `frameType[string]`: Eigenschaft. Der von der Klappe verwendete Rahmentyp (z. B. Standard, Einfacher Flansch, Einfacher umgekehrter Flansch, Doppelter Flansch, usw.).  
-- `hasManufacturer[string]`: Eigenschaft. Eine Beziehung, die den Hersteller einer Entität (z. B. eines Geräts) identifiziert. Der Wert sollte eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen sein.  
-- `hasModel[string]`: Eigenschaft. Eine Beziehung, die das Modell einer Entität (z. B. eines Geräts) identifiziert. Als Wert wird eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen erwartet.  
-- `id[*]`: Eindeutiger Bezeichner der Entität  
-- `isContainedInBuildingSpace[*]`: Beziehung. Eine Einheit, die zur Definition der physischen Räume des Gebäudes verwendet wird. Ein Gebäudebereich enthält Geräte oder Gebäudeobjekte. (GebäudeRaum)  
-- `isContainedInPhysicalObject[*]`: Verwandtschaft. Jedes Objekt, das eine eigene Raumregion hat.  (Definition aus der DUL Ontologie) (PhysicalObject)  
-- `isSubSystemOf[array]`: Beziehung. Ein Verweis auf ein oder mehrere Systeme, zu denen dieses physische Objekt gehört.  
-- `leakageFullyClosed[number]`: Eigenschaft. Leckage bei vollständiger Schließung. Wird normalerweise in m3/s gemessen.  
-- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  
-- `name[string]`: Der Name dieses Artikels.  
-- `nominalAirFlowRate[number]`: Eigenschaft. Nominale Luftdurchflussrate. Wird normalerweise in m3/s gemessen.  
-- `numberOfBlades[number]`: Eigenschaft. Anzahl der Klingen.  
-- `openPressureDrop[number]`: Eigenschaft. Gesamtdruckabfall über der Klappe. Wird normalerweise in Pascal (Pa, N/m2) gemessen.  
-- `operation[string]`: Eigenschaft. Der Betriebsmechanismus für den Betrieb der Klappe.  
-- `operationMode[string]`: Eigenschaft. Betriebsart dieser Klappe.  
-- `operationTemperatureMax[number]`: Eigenschaft. Zulässiger Temperaturbereich der Betriebsumgebung (Luft, Flüssigkeit). Wird normalerweise in Grad Kelvin (K) gemessen.  
-- `operationTemperatureMin[number]`: Eigenschaft. Zulässiger Temperaturbereich der Betriebsumgebung (Luft, Flüssigkeit). Wird normalerweise in Grad Kelvin (K) gemessen.  
-- `orientation[string]`: Eigenschaft. Die vom Hersteller angegebene vorgesehene Ausrichtung des Dämpfers.  
-- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  
-- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  
-- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  
-- `temperatureRating[number]`: Eigenschaft. Temperaturklasse. Wird normalerweise in Grad Kelvin (K) gemessen.  
-- `type[string]`: Eigenschaft. Sie muss gleich `Damper` sein.  
-- `workingPressureMax[number]`: Eigenschaft. Maximaler Arbeitsdruck. Wird normalerweise in Pascal (Pa, N/m2) gemessen.  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-Erforderliche Eigenschaften  
-- `id`  
-- `type`  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## Datenmodell Beschreibung der Eigenschaften  
-
-Alphabetisch sortiert (für Details anklicken)  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `airFlowRateMax[number]`: Eigenschaft. Maximal zulässiger Luftdurchsatz. Wird normalerweise in m3/s gemessen.  - `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `bladeAction[string]`: Eigenschaft. Klingen-Aktion.  - `bladeEdge[string]`: Eigenschaft. Schneide der Klinge.  - `bladeShape[string]`: Eigenschaft. Form der Klinge. Flach bedeutet dreifache V-Nut.  - `bladeThickness[number]`: Eigenschaft. Die Dicke des Dämpferblattes. Wird normalerweise in Millimetern (mm) gemessen.  - `closeOffRating[number]`: Eigenschaft. Abschaltvermögen. Wird normalerweise in Pascal (Pa, N/m2) gemessen.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `faceArea[number]`: Eigenschaft. Zur Luftströmung offene Fläche. Wird normalerweise in Quadratmetern (m2) gemessen.  - `frameDepth[number]`: Eigenschaft. Die Länge (oder Tiefe) des Dämpferrahmens. Wird normalerweise in Millimetern (mm) gemessen.  - `frameThickness[number]`: Eigenschaft. Die Dicke des Materials des Dämpferrahmens. Wird normalerweise in Millimetern (mm) gemessen.  - `frameType[string]`: Eigenschaft. Der von der Klappe verwendete Rahmentyp (z. B. Standard, Einfacher Flansch, Einfacher umgekehrter Flansch, Doppelter Flansch, usw.).  - `hasManufacturer[string]`: Eigenschaft. Eine Beziehung, die den Hersteller einer Entität (z. B. eines Geräts) identifiziert. Der Wert sollte eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen sein.  - `hasModel[string]`: Eigenschaft. Eine Beziehung, die das Modell einer Entität (z. B. eines Geräts) identifiziert. Als Wert wird eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen erwartet.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `isContainedInBuildingSpace[*]`: Beziehung. Eine Einheit, die zur Definition der physischen Räume des Gebäudes verwendet wird. Ein Gebäudebereich enthält Geräte oder Gebäudeobjekte. (GebäudeRaum)  - `isContainedInPhysicalObject[*]`: Verwandtschaft. Jedes Objekt, das eine eigene Raumregion hat.  (Definition aus der DUL Ontologie) (PhysicalObject)  - `isSubSystemOf[array]`: Beziehung. Ein Verweis auf ein oder mehrere Systeme, zu denen dieses physische Objekt gehört.  - `leakageFullyClosed[number]`: Eigenschaft. Leckage bei vollständiger Schließung. Wird normalerweise in m3/s gemessen.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `nominalAirFlowRate[number]`: Eigenschaft. Nominale Luftdurchflussrate. Wird normalerweise in m3/s gemessen.  - `numberOfBlades[number]`: Eigenschaft. Anzahl der Klingen.  - `openPressureDrop[number]`: Eigenschaft. Gesamtdruckabfall über der Klappe. Wird normalerweise in Pascal (Pa, N/m2) gemessen.  - `operation[string]`: Eigenschaft. Der Betriebsmechanismus für den Betrieb der Klappe.  - `operationMode[string]`: Eigenschaft. Betriebsart dieser Klappe.  - `operationTemperatureMax[number]`: Eigenschaft. Zulässiger Temperaturbereich der Betriebsumgebung (Luft, Flüssigkeit). Wird normalerweise in Grad Kelvin (K) gemessen.  - `operationTemperatureMin[number]`: Eigenschaft. Zulässiger Temperaturbereich der Betriebsumgebung (Luft, Flüssigkeit). Wird normalerweise in Grad Kelvin (K) gemessen.  - `orientation[string]`: Eigenschaft. Die vom Hersteller angegebene vorgesehene Ausrichtung des Dämpfers.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `temperatureRating[number]`: Eigenschaft. Temperaturklasse. Wird normalerweise in Grad Kelvin (K) gemessen.  - `type[string]`: Eigenschaft. Sie muss gleich `Damper` sein.  - `workingPressureMax[number]`: Eigenschaft. Maximaler Arbeitsdruck. Wird normalerweise in Pascal (Pa, N/m2) gemessen.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Erforderliche Eigenschaften  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Datenmodell Beschreibung der Eigenschaften  
+Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 Damper:    
   description: A damper typically participates in an HVAC duct distribution system and is used to control or modulate the flow of air.    
   properties:    
@@ -515,25 +446,16 @@ Damper:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## Beispiel-Nutzlasten  
-
-#### Dämpfer NGSI-v2 Schlüsselwerte Beispiel  
-
-Hier ist ein Beispiel für einen Damper im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Beispiel-Nutzlasten  
+#### Dämpfer NGSI-v2 Schlüsselwerte Beispiel  
+Hier ist ein Beispiel für einen Damper im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Damper:65c94159-bfe6-416d-b02c-283479048fe3",  
   "type": "Damper",  
   "airFlowRateMax": 0.5927918101987754,  
@@ -576,15 +498,11 @@ Hier ist ein Beispiel für einen Damper im JSON-LD-Format als Key-Values. Dies i
 }  
 ```  
 </details>  
-
-#### Dämpfer NGSI-v2 normalisiert Beispiel  
-
-Hier ist ein Beispiel für einen Dämpfer im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### Dämpfer NGSI-v2 normalisiert Beispiel  
+Hier ist ein Beispiel für einen Dämpfer im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Damper:30830dab-6aa5-4dd1-9e48-d6ac7e24e4bf",  
   "type": "Damper",  
   "airFlowRateMax": {  
@@ -735,15 +653,11 @@ Hier ist ein Beispiel für einen Dämpfer im JSON-LD-Format in normalisierter Fo
 }  
 ```  
 </details>  
-
-#### Dämpfer NGSI-LD Schlüsselwerte Beispiel  
-
-Hier ist ein Beispiel für einen Damper im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+#### Dämpfer NGSI-LD Schlüsselwerte Beispiel  
+Hier ist ein Beispiel für einen Damper im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Damper:65c94159-bfe6-416d-b02c-283479048fe3",  
   "type": "Damper",  
   "airFlowRateMax": 0.5927918101987754,  
@@ -790,15 +704,11 @@ Hier ist ein Beispiel für einen Damper im JSON-LD-Format als Key-Values. Dies i
 }  
 ```  
 </details>  
-
-#### Dämpfer NGSI-LD normalisiert Beispiel  
-
-Hier ist ein Beispiel für einen Dämpfer im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### Dämpfer NGSI-LD normalisiert Beispiel  
+Hier ist ein Beispiel für einen Dämpfer im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Damper:99cb9b35-5f17-4e4d-89bb-e9d7bb88c2ba",  
   "type": "Damper",  
   "airFlowRateMax": {  
@@ -975,21 +885,12 @@ Hier ist ein Beispiel für einen Dämpfer im JSON-LD-Format in normalisierter Fo
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
