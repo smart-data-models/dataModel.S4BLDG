@@ -15,7 +15,7 @@
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `finalResistance[object]`: Property. Filter fluid resistance when replacement is required (i.e., Pressure drop at the maximum air flowrate across the filter when the filter needs replacement per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2).  - `fluidFlowRateMax[object]`: Property. Possible range of fluid flowrate that can be delivered. Usually measured in m3/s.  - `fluidFlowRateMin[object]`: Property. Possible range of fluid flowrate that can be delivered. Usually measured in m3/s.  - `hasManufacturer[string]`: Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.  - `hasModel[string]`: Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.  - `id[*]`: Unique identifier of the entity  - `initialResistance[object]`: Property. Initial new filter fluid resistance (i.e., pressure drop at the maximum air flowrate across the filter when the filter is new per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2).  - `isContainedInBuildingSpace[*]`: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)  - `isContainedInPhysicalObject[*]`: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)  - `isSubSystemOf[array]`: Relationship. A reference to a system(s) that this Physical Object is part of.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `nominalFilterFaceVelocity[object]`: Property. Filter face velocity. Usually measured in m/s.  - `nominalFlowRate[object]`: Property. Nominal fluid flow rate through the filter. Usually measured in m3/s.  - `nominalMediaSurfaceVelocity[object]`: Property. Average fluid velocity at the media surface. Usually measured in m/s.  - `nominalParticleGeometricMeanDiameter[object]`: Property. Particle geometric mean diameter associated with nominal efficiency. Usually measured in millimeters (mm).  - `nominalParticleGeometricStandardDeviation[object]`: Property. Particle geometric standard deviation associated with nominal efficiency.   - `nominalPressureDrop[object]`: Property. Total pressure drop across the filter. Usually measured in Pascals (Pa, N/m2).  - `operationTemperatureMax[object]`: Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).  - `operationTemperatureMin[object]`: Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: Property. It must be equal to `Filter`.  - `weight[object]`: Property. The weight of the device. Usually measured in kilograms (kg) or grams (g).  <!-- /30-PropertiesList -->  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `finalResistance[number]`: Property. Filter fluid resistance when replacement is required (i.e., Pressure drop at the maximum air flowrate across the filter when the filter needs replacement per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2).  - `fluidFlowRateMax[number]`: Property. Possible range of fluid flowrate that can be delivered. Usually measured in m3/s.  - `fluidFlowRateMin[number]`: Property. Possible range of fluid flowrate that can be delivered. Usually measured in m3/s.  - `hasManufacturer[string]`: Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.  - `hasModel[string]`: Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.  - `id[*]`: Unique identifier of the entity  - `initialResistance[number]`: Property. Initial new filter fluid resistance (i.e., pressure drop at the maximum air flowrate across the filter when the filter is new per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2).  - `isContainedInBuildingSpace[*]`: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)  - `isContainedInPhysicalObject[*]`: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)  - `isSubSystemOf[array]`: Relationship. A reference to a system(s) that this Physical Object is part of.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `nominalFilterFaceVelocity[number]`: Property. Filter face velocity. Usually measured in m/s.  - `nominalFlowRate[number]`: Property. Nominal fluid flow rate through the filter. Usually measured in m3/s.  - `nominalMediaSurfaceVelocity[number]`: Property. Average fluid velocity at the media surface. Usually measured in m/s.  - `nominalParticleGeometricMeanDiameter[number]`: Property. Particle geometric mean diameter associated with nominal efficiency. Usually measured in millimeters (mm).  - `nominalParticleGeometricStandardDeviation[number]`: Property. Particle geometric standard deviation associated with nominal efficiency.   - `nominalPressureDrop[number]`: Property. Total pressure drop across the filter. Usually measured in Pascals (Pa, N/m2).  - `operationTemperatureMax[number]`: Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).  - `operationTemperatureMin[number]`: Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: Property. It must be equal to `Filter`.  - `weight[number]`: Property. The weight of the device. Usually measured in kilograms (kg) or grams (g).  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -96,43 +96,18 @@ Filter:
       x-ngsi:    
         type: Property    
     finalResistance:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Filter fluid resistance when replacement is required (i.e., Pressure drop at the maximum air flowrate across the filter when the filter needs replacement per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: &filter_-_properties_-_fluidflowratemax_-_properties    
-        observedAt:    
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).    
-          format: date-time    
-          type: string    
-        unitCode:    
-          description: Property. A relationship identifying the unit of measure used for a certain entity.    
-          type: string    
-        value:    
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'    
-          type: number    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     fluidFlowRateMax:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Possible range of fluid flowrate that can be delivered. Usually measured in m3/s.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *filter_-_properties_-_fluidflowratemax_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     fluidFlowRateMin:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Possible range of fluid flowrate that can be delivered. Usually measured in m3/s.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *filter_-_properties_-_fluidflowratemax_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     hasManufacturer:    
@@ -159,13 +134,8 @@ Filter:
       x-ngsi:    
         type: Property    
     initialResistance:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Initial new filter fluid resistance (i.e., pressure drop at the maximum air flowrate across the filter when the filter is new per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *filter_-_properties_-_fluidflowratemax_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
@@ -345,83 +315,43 @@ Filter:
       x-ngsi:    
         type: Property    
     nominalFilterFaceVelocity:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Filter face velocity. Usually measured in m/s.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *filter_-_properties_-_fluidflowratemax_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalFlowRate:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Nominal fluid flow rate through the filter. Usually measured in m3/s.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *filter_-_properties_-_fluidflowratemax_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalMediaSurfaceVelocity:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Average fluid velocity at the media surface. Usually measured in m/s.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *filter_-_properties_-_fluidflowratemax_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalParticleGeometricMeanDiameter:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Particle geometric mean diameter associated with nominal efficiency. Usually measured in millimeters (mm).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *filter_-_properties_-_fluidflowratemax_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalParticleGeometricStandardDeviation:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Particle geometric standard deviation associated with nominal efficiency. '    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *filter_-_properties_-_fluidflowratemax_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalPressureDrop:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Total pressure drop across the filter. Usually measured in Pascals (Pa, N/m2).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *filter_-_properties_-_fluidflowratemax_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     operationTemperatureMax:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *filter_-_properties_-_fluidflowratemax_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     operationTemperatureMin:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *filter_-_properties_-_fluidflowratemax_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     owner:    
@@ -457,13 +387,8 @@ Filter:
       x-ngsi:    
         type: Property    
     weight:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. The weight of the device. Usually measured in kilograms (kg) or grams (g).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *filter_-_properties_-_fluidflowratemax_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
   required:    
