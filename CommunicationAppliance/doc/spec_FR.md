@@ -370,7 +370,7 @@ CommunicationAppliance:
 ```  
 </details>  
 #### CommunicationAppliance NGSI-v2 normalisé Exemple  
-Voici un exemple de CommunicationAppliance au format JSON-LD tel que normalisé. Ce format est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple de CommunicationAppliance au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
