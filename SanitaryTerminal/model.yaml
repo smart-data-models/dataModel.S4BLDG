@@ -1,5 +1,5 @@
-Coil:
-  description: 'A coil is a device used to provide heat transfer between non-mixing media. A common example is a cooling coil, which utilizes a finned coil in which circulates chilled water, antifreeze, or refrigerant that is used to remove heat from air moving across the surface of the coil. A coil may be used either for heating or cooling purposes by placing a series of tubes (the coil) carrying a heating or cooling fluid into an airstream. The coil may be constructed from tubes bundled in a serpentine form or from finned tubes that give a extended heat transfer surface.  Coils may also be used for non-airflow cases such as embedded in a floor slab.'
+SanitaryTerminal:
+  description: 'A sanitary terminal is a fixed appliance or terminal usually supplied with water and used for drinking, cleaning or foul water disposal or that is an item of equipment directly used with such an appliance or terminal.'
   properties:
     address:
       description: The mailing address
@@ -31,16 +31,6 @@ Coil:
       type: object
       x-ngsi:
         model: https://schema.org/address
-        type: Property
-    airFlowRateMax:
-      description: Property. Maximum allowable air flow rate. Usually measured in m3/s.
-      type: number
-      x-ngsi:
-        type: Property
-    airFlowRateMin:
-      description: Property. Minimum allowable air flow rate. Usually measured in m3/s.
-      type: number
-      x-ngsi:
         type: Property
     alternateName:
       description: An alternative name for this item
@@ -86,7 +76,7 @@ Coil:
       x-ngsi:
         type: Property
     id:
-      anyOf: &coil_-_properties_-_iscontainedinbuildingspace_-_anyof
+      anyOf: &sanitaryterminal_-_properties_-_iscontainedinbuildingspace_-_anyof
         - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
@@ -99,19 +89,19 @@ Coil:
       x-ngsi:
         type: Property
     isContainedInBuildingSpace:
-      anyOf: *coil_-_properties_-_iscontainedinbuildingspace_-_anyof
+      anyOf: *sanitaryterminal_-_properties_-_iscontainedinbuildingspace_-_anyof
       description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)
       x-ngsi:
         type: Property
     isContainedInPhysicalObject:
-      anyOf: *coil_-_properties_-_iscontainedinbuildingspace_-_anyof
+      anyOf: *sanitaryterminal_-_properties_-_iscontainedinbuildingspace_-_anyof
       description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)
       x-ngsi:
         type: Property
     isSubSystemOf:
       description: Relationship. A reference to a system(s) that this Physical Object is part of.
       items:
-        anyOf: *coil_-_properties_-_iscontainedinbuildingspace_-_anyof
+        anyOf: *sanitaryterminal_-_properties_-_iscontainedinbuildingspace_-_anyof
         description: Property. Unique identifier of the entity
       type: array
       x-ngsi:
@@ -274,50 +264,12 @@ Coil:
       type: string
       x-ngsi:
         type: Property
-    nominalLatentCapacity:
-      description: 'Property. Nominal latent capacity. Usually measured in Watts (W, J/s).'
-      type: number
-      x-ngsi:
-        type: Property
-    nominalSensibleCapacity:
-      description: 'Property. Nominal sensible capacity. Usually measured in Watts (W, J/s).'
-      type: number
-      x-ngsi:
-        type: Property
-    nominalUa:
-      description: Property. Nominal UA value.
-      type: number
-      x-ngsi:
-        type: Property
-    operationMode:
-      description: Property. Operation mode of this coil.
-      enum:
-        - cooling
-        - heating
-      type: string
-      x-ngsi:
-        type: Property
-    operationTemperatureMax:
-      description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'
-      type: number
-      x-ngsi:
-        type: Property
-    operationTemperatureMin:
-      description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'
-      type: number
-      x-ngsi:
-        type: Property
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
-        anyOf: *coil_-_properties_-_iscontainedinbuildingspace_-_anyof
+        anyOf: *sanitaryterminal_-_properties_-_iscontainedinbuildingspace_-_anyof
         description: Property. Unique identifier of the entity
       type: array
-      x-ngsi:
-        type: Property
-    placementType:
-      description: Property. Indicates how the device is designed to be placed.
-      type: string
       x-ngsi:
         type: Property
     seeAlso:
@@ -338,9 +290,9 @@ Coil:
       x-ngsi:
         type: Property
     type:
-      description: Property. It must be equal to `Coil`.
+      description: Property. It must be equal to `SanitaryTerminal`.
       enum:
-        - Coil
+        - SanitaryTerminal
       type: string
       x-ngsi:
         type: Property
@@ -348,9 +300,9 @@ Coil:
     - id
     - type
   type: object
-  x-derived-from: "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:Coil"
+  x-derived-from: "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:SanitaryTerminal"
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
-  x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Coil/LICENSE.md
-  x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Coil/schema.json
-  x-model-tags: SAREF Coil SMART DATA MODELS
-  x-version: 0.0.2
+  x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/SanitaryTerminal/LICENSE.md
+  x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/SanitaryTerminal/schema.json
+  x-model-tags: SAREF SanitaryTerminal
+  x-version: 0.0.
