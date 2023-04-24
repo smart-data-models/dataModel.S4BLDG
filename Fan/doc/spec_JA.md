@@ -15,7 +15,7 @@
 ## プロパティ一覧  
 
 <sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `capacityControlType[string]`: プロパティInletVane（インレットベーン）：インレットベーンを調整することで制御します。VariableSpeedDrive（可変速ドライブ）：可変速駆動で制御する。BladePitchAngle：ブレードピッチアングル：ブレードピッチアングルを調整することで制御します。TwoSpeed（ツースピード高速と低速の切り替えで制御します。DischargeDamper（ディスチャージダンパー）：吐出ダンパーの調整で制御します。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `id[*]`: エンティティの一意な識別子  - `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  - `isSubSystemOf[array]`: 関係。この物理オブジェクトが属するシステム（複数可）への参照。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかとする。  - `motorDriveType[string]`: 特性です。モータードライブタイプ：DIRECTDRIVE：ダイレクトドライブ。BELTDRIVE：ベルトドライブ。COUPLING：カップリング。OTHER：その他のモータードライブタイプ。UNKNOWN：不明なモータードライブタイプ。  - `name[string]`: この項目の名称です。  - `nominalAirFlowRate[object]`: 特性です。空気の流れの公称速度。通常、m3/sで測定される。  - `nominalPowerRate[object]`: 特性。公称ファン出力率。通常、ワット（W、J/s）で測定されます。  - `nominalRotationSpeed[object]`: 特性です。ファンホイールの公称回転数。通常、サイクル/sで測定される。  - `nominalStaticPressure[object]`: 特性。設計された空気の循環を保証するために、ファンが克服しなければならない空気流内の静圧。通常、パスカル（Pa、N/m2）で測定される。  - `nominalTotalPressure[object]`: 特性。ファンを横切る公称総圧力上昇。通常パスカル（Pa、N/m2）で測定される。  - `operationMode[string]`: プロパティこのファンの動作モード。  - `operationTemperatureMax[object]`: 特性を示す。許容される動作周囲（空気、液体）温度範囲。通常、ケルビン（K）単位で測定される。  - `operationTemperatureMin[object]`: 特性を示す。許容される動作周囲（空気、液体）温度範囲。通常、ケルビン（K）単位で測定される。  - `operationalRiterial[object]`: 特性です。最大動作周囲空気温度での動作時間。秒（s）または日（d）または他の時間の単位で測定される。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: プロパティです。これは `Fan` と等しくなければならない。  <!-- /30-PropertiesList -->  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `capacityControlType[string]`: プロパティInletVane（インレットベーン）：インレットベーンを調整することで制御します。VariableSpeedDrive（可変速ドライブ）：可変速駆動で制御する。BladePitchAngle：ブレードピッチアングル：ブレードピッチアングルを調整することで制御します。TwoSpeed（ツースピード高速と低速の切り替えで制御します。DischargeDamper（ディスチャージダンパー）：吐出ダンパーの調整で制御します。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `id[*]`: エンティティの一意な識別子  - `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  - `isSubSystemOf[array]`: 関係。この物理オブジェクトが所属するシステム（複数可）への参照。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `motorDriveType[string]`: 特性です。モータードライブタイプ：DIRECTDRIVE：ダイレクトドライブ。BELTDRIVE：ベルトドライブ。COUPLING：カップリング。OTHER：その他のモータードライブタイプ。UNKNOWN：不明なモータードライブタイプ。  - `name[string]`: この項目の名称です。  - `nominalAirFlowRate[number]`: 特性です。空気の流れの公称速度。通常、m3/sで測定される。  - `nominalPowerRate[number]`: 特性。公称ファン出力率。通常、ワット（W、J/s）で測定されます。  - `nominalRotationSpeed[number]`: 特性です。ファンホイールの公称回転数。通常、サイクル/sで測定される。  - `nominalStaticPressure[number]`: 特性。設計された空気の循環を保証するために、ファンが克服しなければならない空気流内の静圧。通常、パスカル（Pa、N/m2）単位で測定される。  - `nominalTotalPressure[number]`: 特性。ファンを横切る公称総圧力上昇。通常パスカル（Pa、N/m2）で測定される。  - `operationMode[string]`: プロパティこのファンの動作モード。  - `operationTemperatureMax[number]`: 特性を示す。許容される動作周囲（空気、液体）温度範囲。通常、ケルビン（K）単位で測定される。  - `operationTemperatureMin[number]`: 特性を示す。許容される動作周囲（空気、液体）温度範囲。通常、ケルビン（K）単位で測定される。  - `operationalRiterial[number]`: 特性です。最大動作周囲空気温度での動作時間。秒（s）または日（d）または他の時間の単位で測定される。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: プロパティです。これは `Fan` と等しくなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -305,63 +305,28 @@ Fan:
       x-ngsi:    
         type: Property    
     nominalAirFlowRate:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Nominal rate of air flow. Usually measured in m3/s.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: &fan_-_properties_-_nominalpowerrate_-_properties    
-        observedAt:    
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).    
-          format: date-time    
-          type: string    
-        unitCode:    
-          description: Property. A relationship identifying the unit of measure used for a certain entity.    
-          type: string    
-        value:    
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'    
-          type: number    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalPowerRate:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal fan power rate.Usually measured in Watts (W, J/s).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalRotationSpeed:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Nominal fan wheel speed. Usually measured in cycles/s.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalStaticPressure:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. The static pressure within the air stream that the fan must overcome to insure designed circulation of air. Usually measured in Pascals (Pa, N/m2).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalTotalPressure:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Nominal total pressure rise across the fan. Usually measured in Pascals (Pa, N/m2).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     operationMode:    
@@ -373,33 +338,18 @@ Fan:
       x-ngsi:    
         type: Property    
     operationTemperatureMax:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     operationTemperatureMin:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     operationalRiterial:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Time of operation at maximum operational ambient air temperature. Measured in seconds (s) or days (d) or other units of time.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *fan_-_properties_-_nominalpowerrate_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     owner:    
