@@ -1,0 +1,274 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Tank;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart data models - Tank schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/Tank/schema.json",
+    "description": "A tank is a vessel or container in which a fluid or gas is stored for later use.",
+    "displayName": "Tank",
+    "contents": [
+        {
+            "name": "accessType",
+            "writable": true,
+            "displayName": "accessType",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Defines the types of access (or cover) to a tank that may be specified. Note that covers are generally specified for rectangular tanks. For cylindrical tanks, access will normally be via a manhole."
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "effectiveCapacity",
+            "writable": true,
+            "displayName": "effectiveCapacity",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The total effective or actual volumetric capacity of the tank. Usually measured in cubic metre (m3).B3"
+        },
+        {
+            "name": "endShapeType",
+            "writable": true,
+            "displayName": "endShapeType",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Defines the types of end shapes that can be used for preformed tanks. The convention for reading these enumerated values is that for a vertical cylinder, the first value is the base and the second is the top for a horizontal cylinder, the order of reading should be left to right. For a speherical tank, the value UNSET should be used.B5"
+        },
+        {
+            "name": "firstCurvatureRadius",
+            "writable": true,
+            "displayName": "firstCurvatureRadius",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. FirstCurvatureRadius should be defined as the base or left side radius of curvature value. Usually measured in millimeters (mm)."
+        },
+        {
+            "name": "hasManufacturer",
+            "writable": true,
+            "displayName": "hasManufacturer",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag."
+        },
+        {
+            "name": "hasModel",
+            "writable": true,
+            "displayName": "hasModel",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag."
+        },
+        {
+            "name": "isContainedInBuildingSpace",
+            "writable": true,
+            "displayName": "isContainedInBuildingSpace"
+        },
+        {
+            "name": "isContainedInPhysicalObject",
+            "writable": true,
+            "displayName": "isContainedInPhysicalObject"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "nominalDepth",
+            "writable": true,
+            "displayName": "nominalDepth",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The nominal depth of the tank. Note: Not required for a horizontal cylindrical tank. Usually measured in millimeters (mm)."
+        },
+        {
+            "name": "nominalLengthOrDiameter",
+            "writable": true,
+            "displayName": "nominalLengthOrDiameter",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The nominal length or, in the case of a vertical cylindrical tank, the nominal diameter of the tank. Usually measured in millimeters (mm)."
+        },
+        {
+            "name": "nominalVolumetricCapacity",
+            "writable": true,
+            "displayName": "nominalVolumetricCapacity",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The total nominal or design volumetric capacity of the tank. Usually measured in cubic metre (m3)."
+        },
+        {
+            "name": "nominalWidthOrDiameter",
+            "writable": true,
+            "displayName": "nominalWidthOrDiameter",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The nominal width or, in the case of a horizontal cylindrical tank, the nominal diameter of the tank. Note: Not required for a vertical cylindrical tank. Usually measured in millimeters (mm)."
+        },
+        {
+            "name": "numberOfSections",
+            "writable": true,
+            "displayName": "numberOfSections",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Number of sections used."
+        },
+        {
+            "name": "operatingWeight",
+            "writable": true,
+            "displayName": "operatingWeight",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Operating weight of the tank including all of its contents. Usually measured in kilograms (kg) or grams (g)."
+        },
+        {
+            "name": "patternType",
+            "writable": true,
+            "displayName": "patternType",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Defines the types of pattern (or shape of a tank that may be specified."
+        },
+        {
+            "name": "secondCurvatureRadius",
+            "writable": true,
+            "displayName": "secondCurvatureRadius",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. SecondCurvatureRadius should be defined as the top or right side radius of curvature value. Usually measured in millimeters (mm)."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "storageType",
+            "writable": true,
+            "displayName": "storageType",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Defines the general material category intended to be stored."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "isSubSystemOf",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Relationship. A reference to a system(s) that this Physical Object is part of.",
+            "displayName": "isSubSystemOf"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
