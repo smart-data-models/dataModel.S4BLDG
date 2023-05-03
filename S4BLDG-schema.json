@@ -8,6 +8,7 @@
       "description": "Property. Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."
     },
     "Bounds": {
+      "type": "object",
       "description": "Property. Represents a box in a 3D space.",
       "properties": {
         "max": {
