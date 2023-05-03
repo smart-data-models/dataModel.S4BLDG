@@ -15,7 +15,7 @@
 ##属性列表  
 
 <sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `airVolume[number]`: 属性。该建筑空间的空气量。测量单位为m3。  - `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `bounds[*]`: 属性。这个建筑空间的边界在三维中表示为一个盒子。  - `buildingSpaceKind[string]`: 物业。建筑空间的详细类型。  - `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `id[*]`: 实体的唯一标识符  - `isSpaceOfBuilding[*]`: 关系。建筑物代表了一个为其居住者或内容物提供庇护并矗立在一个地方的结构。建筑物也被用来为建筑项目的组成部分提供空间结构层次中的一个基本元素（与场地、楼层和空间一起）。(建筑)  - `isSpaceOfBuildingSpace[*]`: 关系。一个用于定义建筑物理空间的实体。一个建筑空间包含设备或建筑对象。(建筑空间)  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: 属性。它必须等于`建筑空间'。  <!-- /30-PropertiesList -->  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `airVolume[number]`: 属性。该建筑空间的空气量。测量单位是m3。  - `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `bounds[*]`: 属性。这个建筑空间的边界在三维中表示为一个盒子。  - `buildingSpaceKind[string]`: 财产。建筑空间的详细类型。  - `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `id[*]`: 实体的唯一标识符  - `isSpaceOfBuilding[*]`: 关系。建筑物代表了一个为其居住者或内容物提供庇护并矗立在一个地方的结构。建筑物也被用来为建筑项目的组成部分提供空间结构层次中的一个基本元素（与场地、楼层和空间一起）。(建筑)  - `isSpaceOfBuildingSpace[*]`: 关系。一个用于定义建筑物理空间的实体。一个建筑空间包含设备或建筑对象。(建筑空间)  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 提供实体数据原始来源的一连串字符，作为一个URL。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: 属性。它必须等于 "建筑空间"。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -108,6 +108,7 @@ BuildingSpace:
           enum:    
             - Bounds    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     buildingSpaceKind:    
@@ -423,7 +424,7 @@ BuildingSpace:
 ```  
 </details>  
 #### BuildingSpace NGSI-v2规范化示例  
-下面是一个以JSON-LD格式规范化的BuildingSpace的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+这里是一个以JSON-LD格式规范化的BuildingSpace的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  

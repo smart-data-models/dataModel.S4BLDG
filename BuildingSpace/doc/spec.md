@@ -108,6 +108,7 @@ BuildingSpace:
           enum:    
             - Bounds    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     buildingSpaceKind:    

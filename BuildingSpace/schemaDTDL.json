@@ -31,11 +31,6 @@
             "comment": "The geographic area where a service or offered item is provided"
         },
         {
-            "name": "bounds",
-            "writable": true,
-            "displayName": "bounds"
-        },
-        {
             "name": "dataProvider",
             "writable": true,
             "displayName": "dataProvider",
@@ -150,6 +145,26 @@
                 {
                     "name": "streetNr",
                     "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "bounds",
+            "comment": "Property. Bounds of this building space represented as a box in 3D.",
+            "displayName": "bounds",
+            "fields": [
+                {
+                    "name": "max",
+                    "schema": "object"
+                },
+                {
+                    "name": "min",
+                    "schema": "object"
+                },
+                {
+                    "name": "type",
+                    "schema": "enum"
                 }
             ]
         },

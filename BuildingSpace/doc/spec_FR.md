@@ -108,6 +108,7 @@ BuildingSpace:
           enum:    
             - Bounds    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     buildingSpaceKind:    
@@ -423,7 +424,7 @@ BuildingSpace:
 ```  
 </details>  
 #### BuildingSpace NGSI-v2 normalisé Exemple  
-Voici un exemple d'espace de construction au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec l'INSG-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'espace de construction au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec la norme NGSI-v2 lorsque les options ne sont pas utilisées et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
