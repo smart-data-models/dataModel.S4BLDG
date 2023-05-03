@@ -401,7 +401,7 @@ SpaceHeater:
 #### SpaceHeater NGSI-v2 normalizado Ejemplo  
 He aquí un ejemplo de un SpaceHeater en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 #### SpaceHeater NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un SpaceHeater en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un SpaceHeater en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 #### SpaceHeater NGSI-LD normalizado Ejemplo  
 He aquí un ejemplo de un SpaceHeater en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <!-- /80-Examples -->  
