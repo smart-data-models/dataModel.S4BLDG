@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Descrizione globale: **Un edificio rappresenta una struttura che offre riparo ai suoi occupanti o ai suoi contenuti e che si trova in un luogo. L'edificio è anche utilizzato per fornire un elemento di base all'interno della gerarchia delle strutture spaziali per i componenti di un progetto edilizio (insieme a sito, piano e spazio)**.  
-versione: 0.0.2  
+versione: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -307,7 +307,7 @@ Building:
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Building/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Building/schema.json    
   x-model-tags: SAREF Building    
-  x-version: 0.0.2    
+  x-version: 0.0.1    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  

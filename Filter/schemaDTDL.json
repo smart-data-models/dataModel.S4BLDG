@@ -55,6 +55,30 @@
             "comment": "A description of this item"
         },
         {
+            "name": "finalResistance",
+            "writable": true,
+            "displayName": "finalResistance",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Filter fluid resistance when replacement is required (i.e., Pressure drop at the maximum air flowrate across the filter when the filter needs replacement per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2)."
+        },
+        {
+            "name": "fluidFlowRateMax",
+            "writable": true,
+            "displayName": "fluidFlowRateMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Possible range of fluid flowrate that can be delivered. Usually measured in m3/s."
+        },
+        {
+            "name": "fluidFlowRateMin",
+            "writable": true,
+            "displayName": "fluidFlowRateMin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Possible range of fluid flowrate that can be delivered. Usually measured in m3/s."
+        },
+        {
             "name": "hasManufacturer",
             "writable": true,
             "displayName": "hasManufacturer",
@@ -69,6 +93,14 @@
             "@type": "Property",
             "schema": "string",
             "comment": "Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag."
+        },
+        {
+            "name": "initialResistance",
+            "writable": true,
+            "displayName": "initialResistance",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Initial new filter fluid resistance (i.e., pressure drop at the maximum air flowrate across the filter when the filter is new per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2)."
         },
         {
             "name": "isContainedInBuildingSpace",
@@ -94,6 +126,70 @@
             "comment": "The name of this item."
         },
         {
+            "name": "nominalFilterFaceVelocity",
+            "writable": true,
+            "displayName": "nominalFilterFaceVelocity",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Filter face velocity. Usually measured in m/s."
+        },
+        {
+            "name": "nominalFlowRate",
+            "writable": true,
+            "displayName": "nominalFlowRate",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Nominal fluid flow rate through the filter. Usually measured in m3/s."
+        },
+        {
+            "name": "nominalMediaSurfaceVelocity",
+            "writable": true,
+            "displayName": "nominalMediaSurfaceVelocity",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Average fluid velocity at the media surface. Usually measured in m/s."
+        },
+        {
+            "name": "nominalParticleGeometricMeanDiameter",
+            "writable": true,
+            "displayName": "nominalParticleGeometricMeanDiameter",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Particle geometric mean diameter associated with nominal efficiency. Usually measured in millimeters (mm)."
+        },
+        {
+            "name": "nominalParticleGeometricStandardDeviation",
+            "writable": true,
+            "displayName": "nominalParticleGeometricStandardDeviation",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Particle geometric standard deviation associated with nominal efficiency. "
+        },
+        {
+            "name": "nominalPressureDrop",
+            "writable": true,
+            "displayName": "nominalPressureDrop",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Total pressure drop across the filter. Usually measured in Pascals (Pa, N/m2)."
+        },
+        {
+            "name": "operationTemperatureMax",
+            "writable": true,
+            "displayName": "operationTemperatureMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+        },
+        {
+            "name": "operationTemperatureMin",
+            "writable": true,
+            "displayName": "operationTemperatureMin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+        },
+        {
             "name": "seeAlso",
             "writable": true,
             "displayName": "seeAlso"
@@ -105,6 +201,14 @@
             "@type": "Property",
             "schema": "string",
             "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "weight",
+            "writable": true,
+            "displayName": "weight",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The weight of the device. Usually measured in kilograms (kg) or grams (g)."
         },
         {
             "@type": "Telemetry",
@@ -163,266 +267,6 @@
                 {
                     "name": "streetNr",
                     "schema": "string"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "finalResistance",
-            "comment": "Property. Filter fluid resistance when replacement is required (i.e., Pressure drop at the maximum air flowrate across the filter when the filter needs replacement per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2).",
-            "displayName": "finalResistance",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "fluidFlowRateMax",
-            "comment": "Property. Possible range of fluid flowrate that can be delivered. Usually measured in m3/s.",
-            "displayName": "fluidFlowRateMax",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "fluidFlowRateMin",
-            "comment": "Property. Possible range of fluid flowrate that can be delivered. Usually measured in m3/s.",
-            "displayName": "fluidFlowRateMin",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "initialResistance",
-            "comment": "Property. Initial new filter fluid resistance (i.e., pressure drop at the maximum air flowrate across the filter when the filter is new per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2).",
-            "displayName": "initialResistance",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalFilterFaceVelocity",
-            "comment": "Property. Filter face velocity. Usually measured in m/s.",
-            "displayName": "nominalFilterFaceVelocity",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalFlowRate",
-            "comment": "Property. Nominal fluid flow rate through the filter. Usually measured in m3/s.",
-            "displayName": "nominalFlowRate",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalMediaSurfaceVelocity",
-            "comment": "Property. Average fluid velocity at the media surface. Usually measured in m/s.",
-            "displayName": "nominalMediaSurfaceVelocity",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalParticleGeometricMeanDiameter",
-            "comment": "Property. Particle geometric mean diameter associated with nominal efficiency. Usually measured in millimeters (mm).",
-            "displayName": "nominalParticleGeometricMeanDiameter",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalParticleGeometricStandardDeviation",
-            "comment": "Property. Particle geometric standard deviation associated with nominal efficiency. ",
-            "displayName": "nominalParticleGeometricStandardDeviation",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalPressureDrop",
-            "comment": "Property. Total pressure drop across the filter. Usually measured in Pascals (Pa, N/m2).",
-            "displayName": "nominalPressureDrop",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "operationTemperatureMax",
-            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).",
-            "displayName": "operationTemperatureMax",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "operationTemperatureMin",
-            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).",
-            "displayName": "operationTemperatureMin",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "weight",
-            "comment": "Property. The weight of the device. Usually measured in kilograms (kg) or grams (g).",
-            "displayName": "weight",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
                 }
             ]
         }

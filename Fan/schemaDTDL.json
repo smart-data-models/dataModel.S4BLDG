@@ -110,6 +110,70 @@
             "comment": "The name of this item."
         },
         {
+            "name": "nominalAirFlowRate",
+            "writable": true,
+            "displayName": "nominalAirFlowRate",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Nominal rate of air flow. Usually measured in m3/s."
+        },
+        {
+            "name": "nominalPowerRate",
+            "writable": true,
+            "displayName": "nominalPowerRate",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Nominal fan power rate.Usually measured in Watts (W, J/s)."
+        },
+        {
+            "name": "nominalRotationSpeed",
+            "writable": true,
+            "displayName": "nominalRotationSpeed",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Nominal fan wheel speed. Usually measured in cycles/s."
+        },
+        {
+            "name": "nominalStaticPressure",
+            "writable": true,
+            "displayName": "nominalStaticPressure",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The static pressure within the air stream that the fan must overcome to insure designed circulation of air. Usually measured in Pascals (Pa, N/m2)."
+        },
+        {
+            "name": "nominalTotalPressure",
+            "writable": true,
+            "displayName": "nominalTotalPressure",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Nominal total pressure rise across the fan. Usually measured in Pascals (Pa, N/m2)."
+        },
+        {
+            "name": "operationTemperatureMax",
+            "writable": true,
+            "displayName": "operationTemperatureMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+        },
+        {
+            "name": "operationTemperatureMin",
+            "writable": true,
+            "displayName": "operationTemperatureMin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+        },
+        {
+            "name": "operationalRiterial",
+            "writable": true,
+            "displayName": "operationalRiterial",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Time of operation at maximum operational ambient air temperature. Measured in seconds (s) or days (d) or other units of time."
+        },
+        {
             "name": "seeAlso",
             "writable": true,
             "displayName": "seeAlso"
@@ -179,166 +243,6 @@
                 {
                     "name": "streetNr",
                     "schema": "string"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalAirFlowRate",
-            "comment": "Property. Nominal rate of air flow. Usually measured in m3/s.",
-            "displayName": "nominalAirFlowRate",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalPowerRate",
-            "comment": "Property. Nominal fan power rate.Usually measured in Watts (W, J/s).",
-            "displayName": "nominalPowerRate",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalRotationSpeed",
-            "comment": "Property. Nominal fan wheel speed. Usually measured in cycles/s.",
-            "displayName": "nominalRotationSpeed",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalStaticPressure",
-            "comment": "Property. The static pressure within the air stream that the fan must overcome to insure designed circulation of air. Usually measured in Pascals (Pa, N/m2).",
-            "displayName": "nominalStaticPressure",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalTotalPressure",
-            "comment": "Property. Nominal total pressure rise across the fan. Usually measured in Pascals (Pa, N/m2).",
-            "displayName": "nominalTotalPressure",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "operationTemperatureMax",
-            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).",
-            "displayName": "operationTemperatureMax",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "operationTemperatureMin",
-            "comment": "Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).",
-            "displayName": "operationTemperatureMin",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "operationalRiterial",
-            "comment": "Property. Time of operation at maximum operational ambient air temperature. Measured in seconds (s) or days (d) or other units of time.",
-            "displayName": "operationalRiterial",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
                 }
             ]
         },

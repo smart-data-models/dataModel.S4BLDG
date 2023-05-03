@@ -1,102 +1,33 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: Amortiguador  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Licencia abierta](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Damper/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descripción global: **Una compuerta participa típicamente en un sistema de distribución de conductos HVAC y se utiliza para controlar o modular el flujo de aire.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-Entidad: Amortiguador  
-=====================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## Lista de propiedades  
 
-[Licencia abierta](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Damper/LICENSE.md)  
-
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-
-Descripción global: **Una compuerta participa típicamente en un sistema de distribución de conductos HVAC y se utiliza para controlar o modular el flujo de aire.**  
-
-versión: 0.0.1  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## Lista de propiedades  
-
-
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
-- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)
-- `airFlowRateMax[number]`: Propiedad. Caudal de aire máximo admisible. Suele medirse en m3/s.  
-- `alternateName[string]`: Un nombre alternativo para este artículo  
-- `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `bladeAction[string]`: Propiedad. Acción de la cuchilla.  
-- `bladeEdge[string]`: Propiedad. Filo de la hoja.  
-- `bladeShape[string]`: Propiedades. Forma de la hoja. Plana significa triple ranura en V.  
-- `bladeThickness[number]`: Propiedad. Espesor de la lama del amortiguador. Suele medirse en milímetros (mm).  
-- `closeOffRating[number]`: Propiedad. Índice de cierre. Suele medirse en pascales (Pa, N/m2).  
-- `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  
-- `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  
-- `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  
-- `description[string]`: Descripción de este artículo  
-- `faceArea[number]`: Propiedad. Superficie de la cara abierta a la corriente de aire. Suele medirse en metros cuadrados (m2).  
-- `frameDepth[number]`: Propiedad. Longitud (o profundidad) del marco de la compuerta. Suele medirse en milímetros (mm).  
-- `frameThickness[number]`: Propiedad. Espesor del material del bastidor del amortiguador. Suele medirse en milímetros (mm).  
-- `frameType[string]`: Propiedad. Tipo de marco utilizado por la compuerta (por ejemplo, Estándar, Brida simple, Brida simple invertida, Brida doble, etc.).  
-- `hasManufacturer[string]`: Propiedad. Relación que identifica al fabricante de una entidad (por ejemplo, un dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  
-- `hasModel[string]`: Propiedad. Relación que identifica el modelo de una entidad (por ejemplo, dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  
-- `id[*]`: Identificador único de la entidad  
-- `isContainedInBuildingSpace[*]`: Relación. Entidad utilizada para definir los espacios físicos del edificio. Un espacio del edificio contiene dispositivos u objetos del edificio. (Espacio del edificio)  
-- `isContainedInPhysicalObject[*]`: Relación. Cualquier Objeto que tiene una región espacial propia.  (Definición extraída de la ontología DUL) (PhysicalObject)  
-- `isSubSystemOf[array]`: Relación. Referencia a uno o varios sistemas de los que forma parte este objeto físico.  
-- `leakageFullyClosed[number]`: Propiedad. Fuga cuando está completamente cerrado. Suele medirse en m3/s.  
-- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  
-- `name[string]`: El nombre de este artículo.  
-- `nominalAirFlowRate[number]`: Propiedad. Caudal nominal de aire. Suele medirse en m3/s.  
-- `numberOfBlades[number]`: Propiedad. Número de cuchillas.  
-- `openPressureDrop[number]`: Propiedad. Caída de presión total a través de la compuerta. Suele medirse en pascales (Pa, N/m2).  
-- `operation[string]`: Propiedad. Mecanismo de funcionamiento de la compuerta.  
-- `operationMode[string]`: Propiedad. Modo de funcionamiento de esta compuerta.  
-- `operationTemperatureMax[number]`: Propiedad. Rango de temperatura ambiente (aire, fluido) de funcionamiento admisible. Suele medirse en grados Kelvin (K).  
-- `operationTemperatureMin[number]`: Propiedad. Rango de temperatura ambiente (aire, fluido) de funcionamiento admisible. Suele medirse en grados Kelvin (K).  
-- `orientation[string]`: Propiedad. La orientación prevista para la compuerta según las especificaciones del fabricante.  
-- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  
-- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  
-- `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  
-- `temperatureRating[number]`: Propiedades. Temperatura nominal. Suele medirse en grados Kelvin (K).  
-- `type[string]`: Propiedad. Debe ser igual a `Damper`.  
-- `workingPressureMax[number]`: Propiedades. Presión máxima de servicio. Normalmente se mide en pascales (Pa, N/m2).  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-Propiedades requeridas  
-- `id`  
-- `type`  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## Descripción de las propiedades del modelo de datos  
-
-Ordenados alfabéticamente (pulse para más detalles)  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `airFlowRateMax[number]`: Propiedad. Caudal de aire máximo admisible. Suele medirse en m3/s.  - `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `bladeAction[string]`: Propiedad. Acción de la cuchilla.  - `bladeEdge[string]`: Propiedad. Filo de la hoja.  - `bladeShape[string]`: Propiedades. Forma de la hoja. Plana significa triple ranura en V.  - `bladeThickness[number]`: Propiedad. Espesor de la lama del amortiguador. Suele medirse en milímetros (mm).  - `closeOffRating[number]`: Propiedad. Índice de cierre. Suele medirse en pascales (Pa, N/m2).  - `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Descripción de este artículo  - `faceArea[number]`: Propiedad. Superficie de la cara abierta a la corriente de aire. Suele medirse en metros cuadrados (m2).  - `frameDepth[number]`: Propiedad. Longitud (o profundidad) del marco de la compuerta. Suele medirse en milímetros (mm).  - `frameThickness[number]`: Propiedad. Espesor del material del bastidor del amortiguador. Suele medirse en milímetros (mm).  - `frameType[string]`: Propiedad. Tipo de marco utilizado por la compuerta (por ejemplo, Estándar, Brida simple, Brida simple invertida, Brida doble, etc.).  - `hasManufacturer[string]`: Propiedad. Relación que identifica al fabricante de una entidad (por ejemplo, un dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  - `hasModel[string]`: Propiedad. Relación que identifica el modelo de una entidad (por ejemplo, dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  - `id[*]`: Identificador único de la entidad  - `isContainedInBuildingSpace[*]`: Relación. Entidad utilizada para definir los espacios físicos del edificio. Un espacio del edificio contiene dispositivos u objetos del edificio. (Espacio del edificio)  - `isContainedInPhysicalObject[*]`: Relación. Cualquier Objeto que tiene una región espacial propia.  (Definición extraída de la ontología DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relación. Referencia a uno o varios sistemas de los que forma parte este objeto físico.  - `leakageFullyClosed[number]`: Propiedad. Fuga cuando está completamente cerrado. Suele medirse en m3/s.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo.  - `nominalAirFlowRate[number]`: Propiedad. Caudal nominal de aire. Suele medirse en m3/s.  - `numberOfBlades[number]`: Propiedad. Número de cuchillas.  - `openPressureDrop[number]`: Propiedad. Caída de presión total a través de la compuerta. Suele medirse en pascales (Pa, N/m2).  - `operation[string]`: Propiedad. Mecanismo de funcionamiento de la compuerta.  - `operationMode[string]`: Propiedad. Modo de funcionamiento de esta compuerta.  - `operationTemperatureMax[number]`: Propiedad. Rango de temperatura ambiente (aire, fluido) de funcionamiento admisible. Suele medirse en grados Kelvin (K).  - `operationTemperatureMin[number]`: Propiedad. Rango de temperatura ambiente (aire, fluido) de funcionamiento admisible. Suele medirse en grados Kelvin (K).  - `orientation[string]`: Propiedad. La orientación prevista para la compuerta según las especificaciones del fabricante.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `temperatureRating[number]`: Propiedades. Temperatura nominal. Suele medirse en grados Kelvin (K).  - `type[string]`: Propiedad. Debe ser igual a `Damper`.  - `workingPressureMax[number]`: Propiedades. Presión máxima de servicio. Normalmente se mide en pascales (Pa, N/m2).  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Propiedades requeridas  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 Damper:    
   description: A damper typically participates in an HVAC duct distribution system and is used to control or modulate the flow of air.    
   properties:    
@@ -515,25 +446,16 @@ Damper:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## Ejemplo de carga útil  
-
-#### Damper NGSI-v2 key-values Ejemplo  
-
-Aquí hay un ejemplo de un Damper en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Ejemplo de carga útil  
+#### Damper NGSI-v2 key-values Ejemplo  
+Aquí hay un ejemplo de un Damper en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Damper:65c94159-bfe6-416d-b02c-283479048fe3",  
   "type": "Damper",  
   "airFlowRateMax": 0.5927918101987754,  
@@ -576,15 +498,11 @@ Aquí hay un ejemplo de un Damper en formato JSON-LD como key-values. Esto es co
 }  
 ```  
 </details>  
-
-#### Amortiguador NGSI-v2 normalizado Ejemplo  
-
-He aquí un ejemplo de un Damper en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### Amortiguador NGSI-v2 normalizado Ejemplo  
+He aquí un ejemplo de un Damper en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Damper:30830dab-6aa5-4dd1-9e48-d6ac7e24e4bf",  
   "type": "Damper",  
   "airFlowRateMax": {  
@@ -735,15 +653,11 @@ He aquí un ejemplo de un Damper en formato JSON-LD normalizado. Esto es compati
 }  
 ```  
 </details>  
-
-#### Valores clave de la compuerta NGSI-LD Ejemplo  
-
-Aquí hay un ejemplo de un Damper en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### Valores clave de la compuerta NGSI-LD Ejemplo  
+Aquí hay un ejemplo de un Damper en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Damper:65c94159-bfe6-416d-b02c-283479048fe3",  
   "type": "Damper",  
   "airFlowRateMax": 0.5927918101987754,  
@@ -790,15 +704,11 @@ Aquí hay un ejemplo de un Damper en formato JSON-LD como key-values. Esto es co
 }  
 ```  
 </details>  
-
-#### Amortiguador NGSI-LD normalizado Ejemplo  
-
-He aquí un ejemplo de un Damper en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### Amortiguador NGSI-LD normalizado Ejemplo  
+He aquí un ejemplo de un Damper en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Damper:99cb9b35-5f17-4e4d-89bb-e9d7bb88c2ba",  
   "type": "Damper",  
   "airFlowRateMax": {  
@@ -975,21 +885,12 @@ He aquí un ejemplo de un Damper en formato JSON-LD normalizado. Esto es compati
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

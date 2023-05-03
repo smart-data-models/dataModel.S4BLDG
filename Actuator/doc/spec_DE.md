@@ -1,83 +1,33 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: Aktuator  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Offene Lizenz](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Actuator/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Ein Aktuator ist eine mechanische Vorrichtung zur Bewegung oder Steuerung eines Mechanismus oder Systems. Ein Aktuator nimmt Energie auf, die in der Regel durch Luft, Elektrizität oder Flüssigkeit erzeugt wird, und wandelt diese in eine Art von Bewegung um.**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-Entität: Aktuator  
-=================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## Liste der Eigenschaften  
 
-[Offene Lizenz](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Actuator/LICENSE.md)  
-
-[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-
-Globale Beschreibung: **Ein Aktuator ist eine mechanische Vorrichtung zur Bewegung oder Steuerung eines Mechanismus oder Systems. Ein Aktuator nimmt Energie auf, die in der Regel durch Luft, Elektrizität oder Flüssigkeit erzeugt wird, und wandelt diese in eine Art von Bewegung um.**  
-
-Version: 0.0.1  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## Liste der Eigenschaften  
-
-
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)
-- `alternateName[string]`: Ein alternativer Name für diesen Artikel  
-- `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  
-- `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  
-- `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  
-- `description[string]`: Eine Beschreibung dieses Artikels  
-- `failPosition[string]`: Gibt die gewünschte Sicherheitsstellung des Stellantriebs an.  
-- `hasManufacturer[string]`: Eine Beziehung zur Identifizierung des Herstellers einer Entität (z. B. eines Geräts). Der Wert sollte eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen sein.  
-- `hasModel[string]`: Eine Beziehung, die das Modell einer Entität (z. B. eines Geräts) identifiziert. Der Wert sollte eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen sein.  
-- `id[*]`: Eindeutiger Bezeichner der Entität  
-- `isContainedInBuildingSpace[*]`: Eindeutiger Bezeichner der Entität  
-- `isContainedInPhysicalObject[*]`: Eindeutiger Bezeichner der Entität  
-- `isSubSystemOf[array]`: Ein Verweis auf ein oder mehrere Systeme, zu denen dieses physische Objekt gehört.  
-- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  
-- `manualOverride[boolean]`: Gibt an, ob der handbetätigte Betrieb als Override vorgesehen ist (= TRUE) oder nicht (= FALSE). Beachten Sie, dass dieser Wert im Falle eines handbetätigten Stellantriebs standardmäßig auf FALSE gesetzt werden sollte.  
-- `name[string]`: Der Name dieses Artikels.  
-- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  
-- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  
-- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  
-- `type[string]`: Er muss gleich `Actuator` sein.  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-Erforderliche Eigenschaften  
-- `id`  
-- `type`  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## Datenmodell Beschreibung der Eigenschaften  
-
-Alphabetisch sortiert (für Details anklicken)  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `failPosition[string]`: Eigenschaft. Gibt die gewünschte Sicherheitsstellung des Stellantriebs an.  - `hasManufacturer[string]`: Eigenschaft. Eine Beziehung, die den Hersteller einer Entität (z. B. eines Geräts) identifiziert. Der Wert sollte eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen sein.  - `hasModel[string]`: Eigenschaft. Eine Beziehung, die das Modell einer Entität (z. B. eines Geräts) identifiziert. Als Wert wird eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen erwartet.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `isContainedInBuildingSpace[*]`: Beziehung. Eine Einheit, die zur Definition der physischen Räume des Gebäudes verwendet wird. Ein Gebäudebereich enthält Geräte oder Gebäudeobjekte. (GebäudeRaum)  - `isContainedInPhysicalObject[*]`: Verwandtschaft. Jedes Objekt, das eine eigene Raumregion hat.  (Definition entnommen aus der DUL-Ontologie) (PhysicalObject)  - `isSubSystemOf[array]`: Beziehung. Ein Verweis auf ein oder mehrere Systeme, zu denen dieses physische Objekt gehört.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `manualOverride[boolean]`: Eigenschaft. Gibt an, ob der handbetätigte Betrieb als Override vorgesehen ist (= TRUE) oder nicht (= FALSE). Beachten Sie, dass dieser Wert im Falle eines handbetätigten Aktuators standardmäßig auf FALSE gesetzt werden sollte.  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: Eigenschaft. Sie muss gleich `Actuator` sein.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Erforderliche Eigenschaften  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Datenmodell Beschreibung der Eigenschaften  
+Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 Actuator:    
   description: 'An actuator is a mechanical device for moving or controlling a mechanism or system. An actuator takes energy, usually created by air, electricity, or liquid, and converts that into some kind of motion.'    
   properties:    
@@ -146,17 +96,17 @@ Actuator:
       x-ngsi:    
         type: Property    
     failPosition:    
-      description: Specifies the required fail-safe position of the actuator.    
+      description: Property. Specifies the required fail-safe position of the actuator.    
       type: string    
       x-ngsi:    
         type: Property    
     hasManufacturer:    
-      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
       type: string    
       x-ngsi:    
         type: Property    
     hasModel:    
-      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -175,16 +125,16 @@ Actuator:
         type: Property    
     isContainedInBuildingSpace:    
       anyOf: *actuator_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Unique identifier of the entity    
+      description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
       x-ngsi:    
         type: Property    
     isContainedInPhysicalObject:    
       anyOf: *actuator_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Unique identifier of the entity    
+      description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
       x-ngsi:    
         type: Property    
     isSubSystemOf:    
-      description: A reference to a system(s) that this Physical Object is part of.    
+      description: Relationship. A reference to a system(s) that this Physical Object is part of.    
       items:    
         anyOf: *actuator_-_properties_-_iscontainedinbuildingspace_-_anyof    
         description: Property. Unique identifier of the entity    
@@ -345,7 +295,7 @@ Actuator:
       x-ngsi:    
         type: GeoProperty    
     manualOverride:    
-      description: Identifies whether hand-operated operation is provided as an override (= TRUE) or not (= FALSE). Note that this value should be set to FALSE by default in the case of a Hand Operated Actuator.    
+      description: Property. Identifies whether hand-operated operation is provided as an override (= TRUE) or not (= FALSE). Note that this value should be set to FALSE by default in the case of a Hand Operated Actuator.    
       type: boolean    
       x-ngsi:    
         type: Property    
@@ -380,7 +330,7 @@ Actuator:
       x-ngsi:    
         type: Property    
     type:    
-      description: It must be equal to `Actuator`.    
+      description: Property. It must be equal to `Actuator`.    
       enum:    
         - Actuator    
       type: string    
@@ -398,25 +348,16 @@ Actuator:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## Beispiel-Nutzlasten  
-
-#### Aktor NGSI-v2 Schlüsselwerte Beispiel  
-
-Hier ist ein Beispiel für einen Actuator im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Beispiel-Nutzlasten  
+#### Aktor NGSI-v2 Schlüsselwerte Beispiel  
+Hier ist ein Beispiel für einen Actuator im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Actuator:1f654c8f-195f-4f68-a9c4-25c365ae3bd6",  
   "type": "Actuator",  
   "failPosition": "Unbranded Wooden Sausages",  
@@ -440,15 +381,11 @@ Hier ist ein Beispiel für einen Actuator im JSON-LD-Format als Key-Values. Dies
 }  
 ```  
 </details>  
-
-#### Aktuator NGSI-v2 normalisiert Beispiel  
-
-Hier ist ein Beispiel für einen Actuator im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### Aktuator NGSI-v2 normalisiert Beispiel  
+Hier ist ein Beispiel für einen Actuator im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Actuator:aecfb0bd-43b4-473a-9322-fe8df558e535",  
   "type": "Actuator",  
   "failPosition": {  
@@ -523,15 +460,11 @@ Hier ist ein Beispiel für einen Actuator im JSON-LD-Format in normalisierter Fo
 }  
 ```  
 </details>  
-
-#### Aktor NGSI-LD Schlüsselwerte Beispiel  
-
-Hier ist ein Beispiel für einen Actuator im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+#### Aktor NGSI-LD Schlüsselwerte Beispiel  
+Hier ist ein Beispiel für einen Actuator im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Actuator:306d626a-32fa-43a4-b9f0-ea70b87cf65a",  
   "type": "Actuator",  
   "failPosition": "back up",  
@@ -559,15 +492,11 @@ Hier ist ein Beispiel für einen Actuator im JSON-LD-Format als Key-Values. Dies
 }  
 ```  
 </details>  
-
-#### Aktuator NGSI-LD normalisiert Beispiel  
-
-Hier ist ein Beispiel für einen Actuator im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### Aktuator NGSI-LD normalisiert Beispiel  
+Hier ist ein Beispiel für einen Actuator im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Actuator:5b863181-8df8-445f-af71-9ac7b91390df",  
   "type": "Actuator",  
   "failPosition": {  
@@ -642,21 +571,12 @@ Hier ist ein Beispiel für einen Actuator im JSON-LD-Format in normalisierter Fo
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

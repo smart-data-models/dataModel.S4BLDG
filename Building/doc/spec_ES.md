@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Descripción global: **Un edificio es una estructura que da cobijo a sus ocupantes o contenidos y que se encuentra en un lugar determinado. El edificio también se utiliza para proporcionar un elemento básico dentro de la jerarquía de la estructura espacial para los componentes de un proyecto de construcción (junto con el sitio, el piso y el espacio).**  
-versión: 0.0.2  
+versión: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -307,7 +307,7 @@ Building:
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Building/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Building/schema.json    
   x-model-tags: SAREF Building    
-  x-version: 0.0.2    
+  x-version: 0.0.1    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -316,7 +316,7 @@ Building:
 <!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### Ejemplo de creación de valores clave NGSI-v2  
-He aquí un ejemplo de una construcción en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un Edificio en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -371,7 +371,7 @@ Building:
 ```  
 </details>  
 #### Ejemplo de creación de valores clave NGSI-LD  
-He aquí un ejemplo de una construcción en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de una Construcción en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  

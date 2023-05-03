@@ -11,7 +11,7 @@ info:
   description:  |
     A building represents a structure that provides shelter for its occupants or contents and stands in one place. The building is also used to provide a basic element within the spatial structure hierarchy for the components of a building project (together with site, storey, and space).
   title: Building
-  version: "0.0.2"
+  version: "0.0.1"
 openapi: "3.0.0"
 
 paths: 

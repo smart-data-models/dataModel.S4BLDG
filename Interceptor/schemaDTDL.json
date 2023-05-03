@@ -23,6 +23,22 @@
             "comment": "The geographic area where a service or offered item is provided"
         },
         {
+            "name": "coverLength",
+            "writable": true,
+            "displayName": "coverLength",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the cover of the oil interceptor. Usually measured in millimeters (mm)."
+        },
+        {
+            "name": "coverWidth",
+            "writable": true,
+            "displayName": "coverWidth",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The length measured along the x-axis in the local coordinate system of the cover of the oil interceptor. Usually measured in millimeters (mm)."
+        },
+        {
             "name": "dataProvider",
             "writable": true,
             "displayName": "dataProvider",
@@ -71,6 +87,14 @@
             "comment": "Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag."
         },
         {
+            "name": "inletConnectionSize",
+            "writable": true,
+            "displayName": "inletConnectionSize",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Size of the inlet connection. Usually measured in millimeters (mm)."
+        },
+        {
             "name": "isContainedInBuildingSpace",
             "writable": true,
             "displayName": "isContainedInBuildingSpace"
@@ -94,6 +118,38 @@
             "comment": "The name of this item."
         },
         {
+            "name": "nominalBodyDepth",
+            "writable": true,
+            "displayName": "nominalBodyDepth",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Nominal or quoted =length, measured along the z-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm)."
+        },
+        {
+            "name": "nominalBodyLength",
+            "writable": true,
+            "displayName": "nominalBodyLength",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Nominal or quoted length, measured along the x-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm)."
+        },
+        {
+            "name": "nominalBodyWidth",
+            "writable": true,
+            "displayName": "nominalBodyWidth",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Nominal or quoted length, measured along the y-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm)."
+        },
+        {
+            "name": "outletConnectionSize",
+            "writable": true,
+            "displayName": "outletConnectionSize",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Size of the outlet connection. Usually measured in millimeters (mm)."
+        },
+        {
             "name": "seeAlso",
             "writable": true,
             "displayName": "seeAlso"
@@ -105,6 +161,14 @@
             "@type": "Property",
             "schema": "string",
             "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "ventilatingPipeSize",
+            "writable": true,
+            "displayName": "ventilatingPipeSize",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Size of the ventilating pipe(s). Usually measured in millimeters (mm)."
         },
         {
             "@type": "Telemetry",
@@ -163,166 +227,6 @@
                 {
                     "name": "streetNr",
                     "schema": "string"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "coverLength",
-            "comment": "Property. The length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the cover of the oil interceptor. Usually measured in millimeters (mm).",
-            "displayName": "coverLength",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "coverWidth",
-            "comment": "Property. The length measured along the x-axis in the local coordinate system of the cover of the oil interceptor. Usually measured in millimeters (mm).",
-            "displayName": "coverWidth",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "inletConnectionSize",
-            "comment": "Property. Size of the inlet connection. Usually measured in millimeters (mm).",
-            "displayName": "inletConnectionSize",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalBodyDepth",
-            "comment": "Property. Nominal or quoted =length, measured along the z-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).",
-            "displayName": "nominalBodyDepth",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalBodyLength",
-            "comment": "Property. Nominal or quoted length, measured along the x-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).",
-            "displayName": "nominalBodyLength",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "nominalBodyWidth",
-            "comment": "Property. Nominal or quoted length, measured along the y-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm).",
-            "displayName": "nominalBodyWidth",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "outletConnectionSize",
-            "comment": "Property. Size of the outlet connection. Usually measured in millimeters (mm).",
-            "displayName": "outletConnectionSize",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
-                }
-            ]
-        },
-        {
-            "@type": "object",
-            "name": "ventilatingPipeSize",
-            "comment": "Property. Size of the ventilating pipe(s). Usually measured in millimeters (mm).",
-            "displayName": "ventilatingPipeSize",
-            "fields": [
-                {
-                    "name": "observedAt",
-                    "schema": "dateTime"
-                },
-                {
-                    "name": "unitCode",
-                    "schema": "string"
-                },
-                {
-                    "name": "value",
-                    "schema": "long"
                 }
             ]
         }

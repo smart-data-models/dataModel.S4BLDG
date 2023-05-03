@@ -15,7 +15,7 @@
 ##属性列表  
 
 <sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `evaporationCoolant[string]`: 属性。蒸发器中用于冷却剂的液体。  - `evaporationMediumType[string]`: 属性。ColdLiquid: 蒸发器使用液体类型的流体与制冷剂交换热量。冷空气：蒸发器使用空气与制冷剂进行热交换。  - `externalSurfaceArea[object]`: 属性。外表面积（包括主要和次要面积）。通常以平方米（m2）计算。  - `hasManufacturer[string]`: 属性。识别实体（例如，设备）的制造商的关系。该值应是一个字符串或一个带有语言标签的字符串。  - `hasModel[string]`: 属性。识别实体（例如，设备）的模型的关系。该值应是一个字符串或一个带有语言标签的字符串。  - `id[*]`: 实体的唯一标识符  - `internalRefrigerantVolume[object]`: 属性。蒸发器的内部容积（制冷剂侧）。通常以立方米（m3）为单位测量。  - `internalSurfaceArea[object]`: 属性。内表面积。通常以平方米（m2）计算。  - `internalWaterVolume[object]`: 属性。蒸发器的内部容积（水侧）。通常以立方米（m3）为单位测量。  - `isContainedInBuildingSpace[*]`: 关系。一个用于定义建筑物理空间的实体。一个建筑空间包含设备或建筑对象。(建筑空间)  - `isContainedInPhysicalObject[*]`: 关系。任何具有适当空间区域的物体。  (从DUL本体论中提取的定义）（PhysicalObject）。  - `isSubSystemOf[array]`: 关系。对该物理对象是其一部分的系统的引用。  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `nominalHeatTransferArea[object]`: 属性。与名义总传热系数有关的名义传热表面积。通常以平方米（m2）衡量。  - `nominalHeatTransferCoefficient[object]`: 属性。与名义传热面积相关的名义整体传热系数。通常以瓦特/平方米开尔文测量。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `refrigerantClass[string]`: 属性。压缩机使用的制冷剂类别。CFC：氯氟化碳。HCFC: 氢氯氟烃。HFC: 氢氟碳化物。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: 属性。它必须等于 "蒸发器"。  <!-- /30-PropertiesList -->  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `evaporationCoolant[string]`: 属性。蒸发器中用于冷却剂的液体。  - `evaporationMediumType[string]`: 属性。ColdLiquid: 蒸发器使用液体类型的流体与制冷剂交换热量。冷空气：蒸发器使用空气与制冷剂进行热交换。  - `externalSurfaceArea[number]`: 属性。外表面积（包括主要和次要面积）。通常以平方米（m2）计算。  - `hasManufacturer[string]`: 属性。识别实体（例如，设备）的制造商的关系。该值应是一个字符串或一个带有语言标签的字符串。  - `hasModel[string]`: 属性。识别实体（例如，设备）的模型的关系。该值应是一个字符串或一个带有语言标签的字符串。  - `id[*]`: 实体的唯一标识符  - `internalRefrigerantVolume[number]`: 属性。蒸发器的内部容积（制冷剂侧）。通常以立方米（m3）为单位测量。  - `internalSurfaceArea[number]`: 属性。内表面积。通常以平方米（m2）计算。  - `internalWaterVolume[number]`: 属性。蒸发器的内部容积（水侧）。通常以立方米（m3）为单位测量。  - `isContainedInBuildingSpace[*]`: 关系。一个用于定义建筑物理空间的实体。一个建筑空间包含设备或建筑对象。(建筑空间)  - `isContainedInPhysicalObject[*]`: 关系。任何具有适当空间区域的物体。  (从DUL本体论中提取的定义）（PhysicalObject）。  - `isSubSystemOf[array]`: 关系。对该物理对象是其一部分的系统的引用。  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `nominalHeatTransferArea[number]`: 属性。与名义总传热系数有关的名义传热表面积。通常以平方米（m2）衡量。  - `nominalHeatTransferCoefficient[number]`: 属性。与名义传热面积相关的名义整体传热系数。通常以瓦特/平方米开尔文测量。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `refrigerantClass[string]`: 属性。压缩机使用的制冷剂类别。CFC：氯氟化碳。HCFC: 氢氯氟烃。HFC: 氢氟碳化物。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: 属性。它必须等于 "蒸发器"。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -106,23 +106,8 @@ Evaporator:
       x-ngsi:    
         type: Property    
     externalSurfaceArea:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. External surface area (both primary and secondary area). Usually measured in square metre (m2).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: &evaporator_-_properties_-_internalrefrigerantvolume_-_properties    
-        observedAt:    
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).    
-          format: date-time    
-          type: string    
-        unitCode:    
-          description: Property. A relationship identifying the unit of measure used for a certain entity.    
-          type: string    
-        value:    
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'    
-          type: number    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     hasManufacturer:    
@@ -149,33 +134,18 @@ Evaporator:
       x-ngsi:    
         type: Property    
     internalRefrigerantVolume:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Internal volume of evaporator (refrigerant side). Usually measured in cubic metre (m3).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *evaporator_-_properties_-_internalrefrigerantvolume_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     internalSurfaceArea:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Internal surface area. Usually measured in square metre (m2).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *evaporator_-_properties_-_internalrefrigerantvolume_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     internalWaterVolume:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Internal volume of evaporator (water side). Usually measured in cubic metre (m3).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *evaporator_-_properties_-_internalrefrigerantvolume_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
@@ -355,23 +325,13 @@ Evaporator:
       x-ngsi:    
         type: Property    
     nominalHeatTransferArea:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Nominal heat transfer surface area associated with nominal overall heat transfer coefficient. Usually measured in square metre (m2).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *evaporator_-_properties_-_internalrefrigerantvolume_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     nominalHeatTransferCoefficient:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Nominal overall heat transfer coefficient associated with nominal heat transfer area. Usually measured in Watts/m2 Kelvin.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *evaporator_-_properties_-_internalrefrigerantvolume_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     owner:    

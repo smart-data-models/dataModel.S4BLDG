@@ -77,6 +77,18 @@ The following entity types are available:
 
 - [Outlet](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Outlet/README.md). An outlet is a device installed at a point to receive one or more inserted plugs for electrical power or communications. Power outlets are commonly connected within a junction box; data outlets may be directly connected to a wall. For power outlets sharing the same circuit within a junction box, the ports should indicate the logical wiring relationship to the enclosing junction box, even though they may be physically connected to a cable going to another outlet, switch, or fixture.
 
+- [ProtectiveDevice](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/ProtectiveDevice/README.md). A protective device breaks an electrical circuit when a stated electric current that passes through it is exceeded.  A protective device provides protection against electrical current only (not as a general protective device). It may be used to represent the complete set of elements including both the tripping unit and the breaking unit that provide the protection. This may be particularly useful at earlier stages of design where the approach to breaking the electrical supply may be determined but the method of tripping may not. Alternatively, this entity may be used to specifically represent the breaking unit alone (in which case the tripping unit will also be specifically identified). This entity is specific to dedicated protective devices and excludes electrical outlets that may have circuit protection.
+
+- [ProtectiveDeviceTrippingUnit](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/ProtectiveDeviceTrippingUnit/README.md). A protective device tripping unit breaks an electrical circuit at a separate breaking unit when a stated electric current that passes through the unit is exceeded.
+
+- [Pump](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Pump/README.md). A pump is a device which imparts mechanical work on fluids or slurries to move them through a channel or pipeline. A typical use of a pump is to circulate chilled water or heating hot water in a building services distribution system.
+
+- [SanitaryTerminal](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/SanitaryTerminal/README.md). A sanitary terminal is a fixed appliance or terminal usually supplied with water and used for drinking, cleaning or foul water disposal or that is an item of equipment directly used with such an appliance or terminal.
+
+- [ShadingDevice](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/ShadingDevice/README.md). Shading devices are purpose built devices to protect from the sunlight, from natural light, or screening them from view. Shading devices can form part of the facade or can be mounted inside the building, they can be fixed or operable.
+
+- [SolarDevice](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/SolarDevice/README.md). A solar device converts solar radiation into other energy such as electric current or thermal energy.
+
 
 
 ### Contributors

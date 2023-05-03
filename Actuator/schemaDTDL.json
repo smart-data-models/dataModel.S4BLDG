@@ -60,7 +60,7 @@
             "displayName": "failPosition",
             "@type": "Property",
             "schema": "string",
-            "comment": "Specifies the required fail-safe position of the actuator."
+            "comment": "Property. Specifies the required fail-safe position of the actuator."
         },
         {
             "name": "hasManufacturer",
@@ -68,7 +68,7 @@
             "displayName": "hasManufacturer",
             "@type": "Property",
             "schema": "string",
-            "comment": "A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag."
+            "comment": "Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag."
         },
         {
             "name": "hasModel",
@@ -76,7 +76,7 @@
             "displayName": "hasModel",
             "@type": "Property",
             "schema": "string",
-            "comment": "A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag."
+            "comment": "Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag."
         },
         {
             "name": "isContainedInBuildingSpace",
@@ -99,7 +99,7 @@
             "displayName": "manualOverride",
             "@type": "Property",
             "schema": "boolean",
-            "comment": "Identifies whether hand-operated operation is provided as an override (= TRUE) or not (= FALSE). Note that this value should be set to FALSE by default in the case of a Hand Operated Actuator."
+            "comment": "Property. Identifies whether hand-operated operation is provided as an override (= TRUE) or not (= FALSE). Note that this value should be set to FALSE by default in the case of a Hand Operated Actuator."
         },
         {
             "name": "name",
@@ -129,7 +129,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "A reference to a system(s) that this Physical Object is part of.",
+            "comment": "Relationship. A reference to a system(s) that this Physical Object is part of.",
             "displayName": "isSubSystemOf"
         },
         {

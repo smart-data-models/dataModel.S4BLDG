@@ -328,5 +328,5 @@ Alarm:
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Alarm/LICENSE.md
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Alarm/schema.json
-  x-model-tags: SAREF Alarm SMART DATA MODELS
+  x-model-tags: SAREF Alarm
   x-version: 0.0.1

@@ -7,7 +7,7 @@
 [文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Global description：**ランプは、電球や管などの人工光源です**。  
+Global description：**ランプは電球や管などの人工光源である**。  
 version: 0.0.  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
@@ -15,7 +15,7 @@
 ## プロパティ一覧  
 
 <sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `colorAppearance[string]`: 特性です。DIN規格とCIE規格では、人工光源は色の見え方で分類されています。人間の目にはすべて白色に見え、その違いは直接比較することによってのみ検出されます。視覚性能は、色の見え方の違いによって直接影響を受けることはありません。  - `colorRenderingIndex[number]`: 特性です。CRIは、光源が同じ色温度の完全な基準ランプと比較して、8つの標準色をどの程度演色するかを示します。CRIは1～100まであり、100は完全なレンダリング特性を表します。  - `colorTemperature[object]`: 特性。あらゆる放射線源の色温度は、その放射線源と同じ色度を持つ黒体放射体またはプランク放射体の温度（ケルビン単位）と定義されている。黒体放射体はすべての色度の放射を発することができないため、その値はおおよその色温度でしかないことが多い。一般的な人工光源の色温度は、3000K未満（温白色）から4000K（中間色）、5000K以上（昼光色）です。通常、ケルビン（K）単位で測定される。  - `contributedLuminousFlux[object]`: 特性。光束とは、光源から放出される光の量、すなわち放射束の測光指標である。光束は、インテリア全体、またはインテリアの一部（立体角の部分光束）について測定されます。他のすべての測光パラメータは、光束の導関数である。光束はルーメン（lm）単位で測定される。光束は、各ランプの公称値として与えられる。通常、ルーメン（lm、カンデラステラジアン）で測定される。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `id[*]`: エンティティの一意な識別子  - `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  - `isSubSystemOf[array]`: 関係。この物理オブジェクトが属するシステム（複数可）への参照。  - `lampBallastType[string]`: 特性。動作中の電流を制限してガス放電を安定させ、始動に必要な打撃電圧を供給するために使用されるタイプの安定器です。蛍光灯、コンパクト蛍光灯、高圧水銀灯、メタルハライドランプ、高圧ナトリウムランプなどの放電ランプを動作させるために必要な安定器です。磁気バラストは、自己誘導の原理で直列に接続されたランプに流れる電流を制限するチョークです。その結果得られる電流と電力は、ランプの効率的な動作に決定的な影響を与えます。ランプの種類によって、光束、色調、寿命などのランプ定格に適合するよう、特別に設計された安定器が必要です。蛍光灯用磁気安定器には、KVGコンベンショナル（EC-Aシリーズ）とVVG低損失安定器（EC-Bシリーズ）の2種類があります。低損失型安定器は効率が高いので、安定器の損失が少なく、熱負荷が小さい。電子式安定器は、蛍光灯を高周波（約35～40kHz）で点灯させるために使用されます。  - `lampCompensationType[string]`: 特性を示す。力率補正や電波抑制に使用される補償の形式を特定する。  - `lampMaintenanceFactor[object]`: 特性。ランプの減価償却、すなわち経年劣化や汚れによる照明器具の光出力の低下によるランプの光束の回復不能な損失。  - `lightEmitterNominalPower[object]`: 特性です。ライトエミッターの公称出力。通常、ワット（W、J/s）で測定される。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかとする。  - `name[string]`: この項目の名称です。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `spectrumMax[object]`: 特性です。放射線のスペクトルは、波長に関する放射線の組成を表す。例えば、人間の目に見える電磁放射線の部分としての光は、約380～780nm（1nm＝10m）の範囲の波長を持つ放射線である。対応する色の範囲は、紫から藍、青、緑、黄、橙、赤まで様々です。これらの色は連続スペクトルを形成しており、様々なスペクトルセクターが互いに融合しています。  - `spectrumMin[object]`: 特性です。放射線のスペクトルは、波長に関する放射線の組成を表す。例えば、人間の目に見える電磁放射線の部分としての光は、約380～780nm（1nm＝10m）の範囲の波長を持つ放射線である。対応する色の範囲は、紫から藍、青、緑、黄、橙、赤まで様々です。これらの色は連続スペクトルを形成しており、様々なスペクトルセクターが互いに融合しています。  - `type[string]`: プロパティを指定します。これは `Lamp` と等しくなければならない。  <!-- /30-PropertiesList -->  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `colorAppearance[string]`: 特性です。DIN規格とCIE規格では、人工光源は色の見え方で分類されています。人間の目にはすべて白色に見え、その違いは直接比較することによってのみ検出されます。視覚性能は、色の見え方の違いによって直接影響を受けることはありません。  - `colorRenderingIndex[number]`: 特性です。CRIは、光源が同じ色温度の完全な基準ランプと比較して、8つの標準色をどの程度演色するかを示します。CRIは1～100まであり、100は完全なレンダリング特性を表します。  - `colorTemperature[number]`: 特性。あらゆる放射線源の色温度は、その放射線源と同じ色度を持つ黒体放射体またはプランク放射体の温度（ケルビン単位）と定義されている。黒体放射体はすべての色度の放射を発することができないため、その値はおおよその色温度でしかないことが多い。一般的な人工光源の色温度は、3000K未満（温白色）から4000K（中間色）、5000K以上（昼光色）です。通常、ケルビン（K）単位で測定される。  - `contributedLuminousFlux[number]`: 特性。光束とは、光源から放出される光の量、すなわち放射束の測光指標である。光束は、インテリア全体、またはインテリアの一部（立体角の部分光束）について測定されます。他のすべての測光パラメータは、光束の導関数である。光束はルーメン（lm）単位で測定される。光束は、各ランプの公称値として与えられる。通常、ルーメン（lm、カンデラステラジアン）で測定される。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `id[*]`: エンティティの一意な識別子  - `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  - `isSubSystemOf[array]`: 関係。この物理オブジェクトが所属するシステム（複数可）への参照。  - `lampBallastType[string]`: 特性。動作中の電流を制限してガス放電を安定させ、始動に必要な打撃電圧を供給するために使用されるタイプの安定器です。蛍光灯、コンパクト蛍光灯、高圧水銀灯、メタルハライドランプ、高圧ナトリウムランプなどの放電ランプを動作させるために必要な安定器です。磁気バラストは、自己誘導の原理で直列に接続されたランプに流れる電流を制限するチョークです。その結果得られる電流と電力は、ランプの効率的な動作に決定的な影響を与えます。ランプの種類によって、光束、色調、寿命などのランプ定格に適合するよう、特別に設計された安定器が必要です。蛍光灯用磁気安定器には、KVGコンベンショナル（EC-Aシリーズ）とVVG低損失安定器（EC-Bシリーズ）の2種類があります。低損失型安定器は効率が高いので、安定器の損失が少なく、熱負荷が小さい。電子式安定器は、蛍光灯を高周波（約35～40kHz）で点灯させるために使用されます。  - `lampCompensationType[string]`: 特性を示す。力率補正や電波抑制に使用される補償の形式を特定する。  - `lampMaintenanceFactor[number]`: 特性。ランプの減価償却、すなわち経年劣化や汚れによる照明器具の光出力の低下による、ランプの光束の回復不能な損失。  - `lightEmitterNominalPower[number]`: 特性です。ライトエミッターの公称出力。通常、ワット（W、J/s）で測定される。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `name[string]`: この項目の名称です。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `spectrumMax[number]`: 特性です。放射線のスペクトルは、波長に関する放射線の組成を表す。例えば、人間の目に見える電磁放射線の部分としての光は、約380～780nm（1nm＝10m）の範囲の波長を持つ放射線である。対応する色の範囲は、紫から藍、青、緑、黄、橙、赤まで様々です。これらの色は連続スペクトルを形成しており、様々なスペクトルセクターが互いに融合しています。  - `spectrumMin[number]`: 特性です。放射線のスペクトルは、波長に関する放射線の組成を表す。例えば、人間の目に見える電磁放射線の部分としての光は、約380～780nm（1nm＝10m）の範囲の波長を持つ放射線である。対応する色の範囲は、紫から藍、青、緑、黄、橙、赤まで様々です。これらの色は連続スペクトルを形成しており、様々なスペクトルセクターが互いに融合しています。  - `type[string]`: プロパティを指定します。これは `Lamp` と等しくなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -84,33 +84,13 @@ Lamp:
       x-ngsi:    
         type: Property    
     colorTemperature:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. The color temperature of any source of radiation is defined as the temperature (in Kelvin) of a black-body or Planckian radiator whose radiation has the same chromaticity as the source of radiation. Often the values are only approximate color temperatures as the black-body radiator cannot emit radiation of every chromaticity value. The color temperatures of the commonest artificial light sources range from less than 3000K (warm white) to 4000K (intermediate) and over 5000K (daylight). Usually measured in degrees Kelvin (K).    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: &lamp_-_properties_-_contributedluminousflux_-_properties    
-        observedAt:    
-          description: Property. A relationship stating the timestamp of an entity (e.g. a measurement).    
-          format: date-time    
-          type: string    
-        unitCode:    
-          description: Property. A relationship identifying the unit of measure used for a certain entity.    
-          type: string    
-        value:    
-          description: 'Property. A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes.'    
-          type: number    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     contributedLuminousFlux:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Luminous flux is a photometric measure of radiant flux, i.e. the volume of light emitted from a light source. Luminous flux is measured either for the interior as a whole or for a part of the interior (partial luminous flux for a solid angle). All other photometric parameters are derivatives of luminous flux. Luminous flux is measured in lumens (lm). The luminous flux is given as a nominal value for each lamp. Usually measured in Lumen (lm, Candela Steradian).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *lamp_-_properties_-_contributedluminousflux_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     dataProvider:    
@@ -187,23 +167,13 @@ Lamp:
       x-ngsi:    
         type: Property    
     lampMaintenanceFactor:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: Property. Non recoverable losses of luminous flux of a lamp due to lamp depreciation i.e. the decreasing of light output of a luminaire due to aging and dirt.    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *lamp_-_properties_-_contributedluminousflux_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     lightEmitterNominalPower:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. Light emitter nominal power. Usually measured in Watts (W, J/s).'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *lamp_-_properties_-_contributedluminousflux_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     location:    
@@ -390,23 +360,13 @@ Lamp:
       x-ngsi:    
         type: Property    
     spectrumMax:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. The spectrum of radiation describes its composition with regard to wavelength. Light, for example, as the portion of electromagnetic radiation that is visible to the human eye, is radiation with wavelengths in the range of approx. 380 to 780 nm (1 nm = 10 m). The corresponding range of colours varies from violet to indigo, blue, green, yellow, orange, and red. These colours form a continuous spectrum, in which the various spectral sectors merge into each other.'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *lamp_-_properties_-_contributedluminousflux_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     spectrumMin:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/Measurement    
-      derivedFrom: "https://saref.etsi.org/core/v3.1.1/#saref:Measurement"    
       description: 'Property. The spectrum of radiation describes its composition with regard to wavelength. Light, for example, as the portion of electromagnetic radiation that is visible to the human eye, is radiation with wavelengths in the range of approx. 380 to 780 nm (1 nm = 10 m). The corresponding range of colours varies from violet to indigo, blue, green, yellow, orange, and red. These colours form a continuous spectrum, in which the various spectral sectors merge into each other.'    
-      license: https://opensource.org/licenses/BSD-3-Clause    
-      properties: *lamp_-_properties_-_contributedluminousflux_-_properties    
-      title: Smart data models - Measurement schema    
-      type: object    
+      type: number    
       x-ngsi:    
         type: Property    
     type:    

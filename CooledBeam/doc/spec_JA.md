@@ -1,101 +1,33 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティCooledBeam（クールドビーム  
+========================<!-- /10-Header -->  
+<!-- 15-License -->  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/CooledBeam/LICENSE.md)  
+[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Global description：**クールドビーム（またはチルドビーム）とは、通常、空間の上方に露出したフィン付きチューブに冷水などの流体を循環させて空気を冷却するための装置である。通常、天井付近の頭上に設置され、対流を利用して、自然に上昇する暖かい空気のヒートシンクとして機能することにより、その下の空間を冷却することができます。冷やされた空気は自然に床に戻り、再びこのサイクルが始まるのです**。  
+バージョン：0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-エンティティCooledBeam（クールドビーム  
-========================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## プロパティ一覧  
 
-[オープンライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/CooledBeam/LICENSE.md)  
-
-[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-
-Global description：**クールドビーム（またはチルドビーム）とは、通常、空間の上方に露出したフィン付きチューブに冷水などの流体を循環させ、空気を冷却するために用いられる装置である。通常、天井付近の頭上に設置され、対流を利用して、自然に上昇する暖かい空気のヒートシンクとして機能することにより、その下の空間を冷却することができます。冷やされた空気は自然に床に戻り、再びこのサイクルが始まるのです**。  
-
-バージョン：0.0.2  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## プロパティ一覧  
-
-
-<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)
-- `alternateName[string]`: このアイテムの別称  
-- `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `coilLength[number]`: 特性です。コイルの長さ。通常、ミリメートル（mm）単位で測定される。  
-- `coilWidth[number]`: 特性です。コイルの幅。通常、ミリメートル（mm）単位で測定される  
-- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  
-- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
-- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
-- `description[string]`: このアイテムの説明  
-- `finishColor[string]`: 特性です。クールドビームの仕上げ色。  
-- `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  
-- `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  
-- `id[*]`: エンティティの一意な識別子  
-- `integratedLightingType[string]`: 特性です。クールドビームに内蔵された照明。  
-- `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  
-- `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  
-- `isFreeHanging[boolean]`: 物件を教えてください。フリーハンギングタイプ（仮天井に取り付けない）ですか？  
-- `isSubSystemOf[array]`: 関係。この物理オブジェクトが属するシステム（複数可）への参照。  
-- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  
-- `name[string]`: この項目の名称です。  
-- `nominalCoolingCapacity[number]`: 特性です。公称冷却能力。通常、ワット（W、J/s）単位で測定される。  
-- `nominalHeatingCapacity[number]`: 特性です。公称加熱能力。通常、ワット（W、J/s）単位で測定される。  
-- `nominalReturnWaterTemperatureCooling[number]`: 特性を示す。公称還水温（公称冷却能力を指す）。通常、ケルビン（K）単位で測定される。  
-- `nominalReturnWaterTemperatureHeating[number]`: 特性を示す。公称還水温（公称暖房能力を指す）。通常、ケルビン（K）単位で測定される。  
-- `nominalSorroundingHumidityCooling[number]`: 特性です。公称周囲湿度（公称冷却能力を指す）。通常、ケルビン（K）単位で測定される。  
-- `nominalSorroundingTemperatureCooling[number]`: 特性。公称周囲温度（公称冷却能力を指す）。通常、ケルビン（K）単位で測定される。  
-- `nominalSorroundingTemperatureHeating[number]`: 特性。公称周囲温度（公称暖房能力を指す）。通常、ケルビン（K）単位で測定される。  
-- `nominalSupplyWaterTemperatureCooling[number]`: 特性を示す。公称供給水温（公称冷却能力を指す）。通常、ケルビン（K）単位で測定される。  
-- `nominalSupplyWaterTemperatureHeating[number]`: プロパティ。公称供給水温（公称暖房能力を指す）。通常、ケルビン（K）単位で測定される。  
-- `nominalWaterFlowCooling[number]`: 特性。公称水流（公称冷却能力を指す）。通常、m3/sで測定される。  
-- `nominalWaterFlowHeating[number]`: 特性です。公称水流（公称暖房能力を指す）。通常、m3/sで測定される。  
-- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  
-- `pipeConnectionEnum[string]`: 特性です。冷却された梁にパイプを接続する方法。  
-- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  
-- `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  
-- `type[string]`: プロパティです。CooledBeam`と等しくなければならない。  
-- `waterFlowControlSystemType[string]`: プロパティです。工場装着の水流制御システム。  
-- `waterPressureMax[number]`: プロパティ許容される水回路の使用圧力範囲。通常、パスカル（Pa、N/m2）で測定する。  
-- `waterPressureMin[number]`: プロパティ許容される水回路の使用圧力範囲。通常、パスカル（Pa、N/m2）で測定する。  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-必須プロパティ  
-- `id`  
-- `type`  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## プロパティのデータモデル記述  
-
-アルファベット順（クリックで詳細表示）  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `coilLength[number]`: 特性です。コイルの長さ。通常、ミリメートル（mm）単位で測定される。  - `coilWidth[number]`: 特性です。コイルの幅。通常、ミリメートル（mm）単位で測定される  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `finishColor[string]`: 特性です。クールドビームの仕上げ色。  - `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `id[*]`: エンティティの一意な識別子  - `integratedLightingType[string]`: 特性です。クールドビームに内蔵された照明。  - `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  - `isFreeHanging[boolean]`: 物件を教えてください。フリーハンギングタイプ（仮天井に取り付けない）ですか？  - `isSubSystemOf[array]`: 関係。この物理オブジェクトが属するシステム（複数可）への参照。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `name[string]`: この項目の名称です。  - `nominalCoolingCapacity[number]`: 特性です。公称冷却能力。通常、ワット（W、J/s）単位で測定される。  - `nominalHeatingCapacity[number]`: 特性です。公称加熱能力。通常、ワット（W、J/s）単位で測定される。  - `nominalReturnWaterTemperatureCooling[number]`: 特性を示す。公称還水温（公称冷却能力を指す）。通常、ケルビン（K）単位で測定される。  - `nominalReturnWaterTemperatureHeating[number]`: 特性を示す。公称還水温（公称暖房能力を指す）。通常、ケルビン（K）単位で測定される。  - `nominalSorroundingHumidityCooling[number]`: 特性です。公称周囲湿度（公称冷却能力を指す）。通常、ケルビン（K）単位で測定される。  - `nominalSorroundingTemperatureCooling[number]`: 特性。公称周囲温度（公称冷却能力を指す）。通常、ケルビン（K）単位で測定される。  - `nominalSorroundingTemperatureHeating[number]`: 特性。公称周囲温度（公称暖房能力を指す）。通常、ケルビン（K）単位で測定される。  - `nominalSupplyWaterTemperatureCooling[number]`: 特性を示す。公称供給水温（公称冷却能力を指す）。通常、ケルビン（K）単位で測定される。  - `nominalSupplyWaterTemperatureHeating[number]`: プロパティ。公称供給水温（公称暖房能力を指す）。通常、ケルビン（K）単位で測定される。  - `nominalWaterFlowCooling[number]`: 特性です。公称水流（公称冷却能力を指す）。通常、m3/sで測定される。  - `nominalWaterFlowHeating[number]`: 特性です。公称水流（公称暖房能力を指す）。通常、m3/sで測定される。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `pipeConnectionEnum[string]`: 特性です。冷却された梁にパイプを接続する方法。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: プロパティです。CooledBeam`と等しくなければならない。  - `waterFlowControlSystemType[string]`: プロパティです。工場装着の水流制御システム。  - `waterPressureMax[number]`: プロパティ許容される水回路の使用圧力範囲。通常、パスカル（Pa、N/m2）で測定する。  - `waterPressureMin[number]`: プロパティ許容される水回路の使用圧力範囲。通常、パスカル（Pa、N/m2）で測定する。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必須プロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 CooledBeam:    
   description: 'A cooled beam (or chilled beam) is a device typically used to cool air by circulating a fluid such as chilled water through exposed finned tubes above a space. Typically mounted overhead near or within a ceiling, the cooled beam uses convection to cool the space below it by acting as a heat sink for the naturally rising warm air of the space. Once cooled, the air naturally drops back to the floor where the cycle begins again.'    
   properties:    
@@ -503,28 +435,19 @@ CooledBeam:
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/CooledBeam/LICENSE.md    
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/CooledBeam/schema.json    
   x-model-tags: SAREF CooledBeam    
-  x-version: 0.0.2    
+  x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## ペイロードの例  
-
-#### CooledBeam NGSI-v2 キー値例  
-
-CooledBeamをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## ペイロードの例  
+#### CooledBeam NGSI-v2 キー値例  
+CooledBeamをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:CooledBeam:82040ca8-778f-478d-a8fd-28485704919f",  
   "type": "CooledBeam",  
   "coilLength": 0.12136965337189098,  
@@ -566,15 +489,11 @@ CooledBeamをJSON-LD形式でkey-valuesとした例を示します。これは�
 }  
 ```  
 </details>  
-
-#### CooledBeam NGSI-v2 正規化例  
-
-CooledBeamをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### CooledBeam NGSI-v2 正規化例  
+CooledBeamをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:CooledBeam:38dcdd25-ae94-441c-8409-218ec91e3006",  
   "type": "CooledBeam",  
   "coilLength": {  
@@ -721,15 +640,11 @@ CooledBeamをJSON-LD形式で正規化した例を示します。これはオプ
 }  
 ```  
 </details>  
-
-#### CooledBeam NGSI-LD キー値例  
-
-CooledBeamをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### CooledBeam NGSI-LD キー値例  
+CooledBeamをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:CooledBeam:82040ca8-778f-478d-a8fd-28485704919f",  
   "type": "CooledBeam",  
   "coilLength": 0.12136965337189098,  
@@ -775,15 +690,11 @@ CooledBeamをJSON-LD形式でkey-valuesとした例を示します。これは�
 }  
 ```  
 </details>  
-
-#### CooledBeam NGSI-LD 正規化例  
-
-CooledBeamをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### CooledBeam NGSI-LD 正規化例  
+CooledBeamをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:CooledBeam:baa66543-6434-4e28-8e85-20b2b260d404",  
   "type": "CooledBeam",  
   "coilLength": {  
@@ -960,21 +871,12 @@ CooledBeamをJSON-LD形式で正規化した例を示します。これはオプ
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
