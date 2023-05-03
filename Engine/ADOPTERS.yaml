@@ -1,4 +1,4 @@
-description: This is a compilation list of the current adopters of the data model Engine of the Subject dataModel.S4BLDG. All fields are non mandatory. More info at https://smart-data-models.github.io/data-models/templates/dataModel/CURRENT_ADOPTERS.yaml
+description: This is a compilation list of the current adopters of the data model Engine of the Subject dataModel.S4BLDG. 
 currentAdopters:
 -
  adopter: KMD A/S

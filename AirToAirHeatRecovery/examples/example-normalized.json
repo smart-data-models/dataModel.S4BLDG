@@ -58,26 +58,26 @@
     }
   },
   "isContainedInBuildingSpace": {
-    "type": "Relationship",
+    "type": "URL",
     "value": "urn:ngsi-ld:BuildingSpace:2058c38a-eb2e-4001-af3f-9a93effd41ac"
   },
   "isContainedInPhysicalObject": {
-    "type": "Relationship",
+    "type": "URL",
     "value": "urn:ngsi-ld:PhysicalObject:ea1b1b2c-cb04-429d-bf2c-ca99e7f3f005"
   },
   "isSubSystemOf": {
     "type": "array",
     "value": [
       {
-        "type": "Relationship",
+        "type": "URL",
         "value": "urn:ngsi-ld:System:123d10ff-2c3a-40f4-9fd0-07851a7d7a3c"
       },
       {
-        "type": "Relationship",
+        "type": "URL",
         "value": "urn:ngsi-ld:System:90a762d4-7eed-4d5a-8a0d-a4676773917f"
       },
       {
-        "type": "Relationship",
+        "type": "URL",
         "value": "urn:ngsi-ld:System:b9899a7a-dc77-43a1-a0df-5a4134af3004"
       }
     ]

@@ -6,26 +6,26 @@
     "value": "Creative"
   },
   "isContainedInBuildingSpace": {
-    "type": "Relationship",
+    "type": "URL",
     "value": "urn:ngsi-ld:BuildingSpace:86af140b-763f-4bd0-93cc-91a0d601ad28"
   },
   "isContainedInPhysicalObject": {
-    "type": "Relationship",
+    "type": "URL",
     "value": "urn:ngsi-ld:PhysicalObject:925b1db4-c39f-4a17-94db-7914d7eb703e"
   },
   "isSubSystemOf": {
     "type": "array",
     "value": [
       {
-        "type": "Relationship",
+        "type": "URL",
         "value": "urn:ngsi-ld:System:f5f4b44d-9071-4234-b20a-56cb3e28aa26"
       },
       {
-        "type": "Relationship",
+        "type": "URL",
         "value": "urn:ngsi-ld:System:0686ff8c-1c6e-4a06-a955-4e3f17bbe9ee"
       },
       {
-        "type": "Relationship",
+        "type": "URL",
         "value": "urn:ngsi-ld:System:5e7341dd-71a3-445c-9623-98331d97c002"
       }
     ]

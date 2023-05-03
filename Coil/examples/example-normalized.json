@@ -38,26 +38,26 @@
     "value": "Buckinghamshire"
   },
   "isContainedInBuildingSpace": {
-    "type": "Relationship",
+    "type": "URL",
     "value": "urn:ngsi-ld:BuildingSpace:1070b255-7508-4019-ba0a-1ce8a03cf3b1"
   },
   "isContainedInPhysicalObject": {
-    "type": "Relationship",
+    "type": "URL",
     "value": "urn:ngsi-ld:PhysicalObject:cef12274-adeb-41a5-aec1-8e254593bb26"
   },
   "isSubSystemOf": {
     "type": "array",
     "value": [
       {
-        "type": "Relationship",
+        "type": "URL",
         "value": "urn:ngsi-ld:System:65b917e6-ec39-4e2e-bce1-a52a52c176bc"
       },
       {
-        "type": "Relationship",
+        "type": "URL",
         "value": "urn:ngsi-ld:System:61834f7f-655f-47f1-828c-755a25e7b026"
       },
       {
-        "type": "Relationship",
+        "type": "URL",
         "value": "urn:ngsi-ld:System:ab77fbe9-a323-477c-81bf-a9923abdf8ea"
       }
     ]

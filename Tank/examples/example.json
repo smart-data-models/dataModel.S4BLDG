@@ -1,0 +1,33 @@
+{
+    "id": "urn:ngsi-ld:Tank:7a5293bf-87b8-4768-8c25-56bcbfa91649",
+    "type": "Tank",
+    "accessType": "Auto Loan Account",
+    "effectiveCapacity": 0.6627329008534851,
+    "endShapeType": "Union",
+    "firstCurvatureRadius": 0.6799132713266423,
+    "nominalDepth": 0.07530609187652448,
+    "nominalLengthOrDiameter": 0.1950493997985394,
+    "nominalVolumetricCapacity": 0.6494794060427406,
+    "nominalWidthOrDiameter": 0.2734692629974923,
+    "numberOfSections": 0.3094855572354859,
+    "operatingWeight": 0.3055837938759739,
+    "patternType": "Investment Account",
+    "secondCurvatureRadius": 0.0019846058153857316,
+    "storageType": "Investor",
+    "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:ffcd7e11-7c74-45f3-8f5a-3310ababddc8",
+    "isContainedInPhysicalObject": "urn:ngsi-ld:PhysicalObject:c2540316-a0c2-4363-93b7-e49ab5ed3b2f",
+    "isSubSystemOf": [
+        "urn:ngsi-ld:System:aae7e0b6-0256-4c58-a3ee-4989bdc205da",
+        "urn:ngsi-ld:System:857551fc-8a05-4052-9269-8193f148ff2c",
+        "urn:ngsi-ld:System:e4e88c0a-d78a-4bfd-a76b-af72e518a66e"
+    ],
+    "hasManufacturer": "Tank Company Inc.",
+    "hasModel": "Tank 0.1.2",
+    "dateCreated": "2023-01-26T12:03:34Z",
+    "dateModified": "2023-01-25T16:27:50Z",
+    "source": "Import",
+    "name": "Tank",
+    "alternateName": "Tank type 2",
+    "description": "Tank of limited Tank types",
+    "dataProvider": "IFC file"
+}
