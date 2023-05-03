@@ -7,16 +7,18 @@
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Description globale : **Les chauffages d'appoint utilisent une combinaison de rayonnement et/ou de convection naturelle à l'aide d'une source de chaleur telle que l'électricité, la vapeur ou l'eau chaude pour chauffer un espace ou une zone limitée. Les radiateurs, les convecteurs, les plinthes et les tubes à ailettes sont des exemples d'appareils de chauffage.  UnitaryEquipment doit être utilisé pour les unités conditionnées qui combinent le chauffage, le refroidissement et/ou la déshumidification ; Coil doit être utilisé pour les planchers chauffants à serpentin**.  
+version : 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-<!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `bodyMass[number]`: Propriété. Masse corporelle totale de l'appareil de chauffage. Généralement mesurée en kilogrammes (kg) ou en grammes (g).  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `energySource[string]`: Propriété. La source d'énergie. Enumération définissant la source d'énergie ou le combustible brûlé pour produire de la chaleur.  - `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  - `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  - `heatTransferDimension[string]`: Propriété. Indique comment la chaleur est transmise en fonction de la forme de l'appareil de chauffage.  - `heatTransferMedium[string]`: Propriété. Enumération définissant le fluide caloporteur, le cas échéant.  - `id[*]`: Identifiant unique de l'entité  - `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  - `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `numberOfPanels[number]`: Propriété. Nombre de panneaux.  - `numberOfSections[number]`: Propriété. Nombre de sections utilisées.  - `outputCapacity[number]`: Propriété. Puissance calorifique nominale totale indiquée par le fabricant. Généralement mesurée en watts (W, J/s).  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `placementType[string]`: Propriété. Indique comment le dispositif est conçu pour être placé.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `temperatureClassification[string]`: Propriété. Enumération définissant la classification de la température de la surface du radiateur. basse température - la température de la surface est relativement basse, généralement chauffée par de l'eau chaude ou de l'électricité. haute température - la température de la surface est relativement élevée, généralement chauffée par du gaz ou de la vapeur.  - `thermalEfficiency[number]`: Propriété. L'efficacité thermique globale est définie comme la production brute d'énergie du dispositif de transfert de chaleur divisée par l'apport d'énergie.  - `thermalMassHeatCapacity[number]`: Propriété. Produit de la masse des composants et de la chaleur spécifique.  - `type[string]`: Propriété. Elle doit être égale à `SpaceHeater`.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
-- Aucune propriété requise  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
@@ -398,13 +400,318 @@ SpaceHeater:
 ## Exemples de charges utiles  
 #### SpaceHeater Valeurs clés de l'INS-v2 Exemple  
 Voici un exemple de SpaceHeater au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:SpaceHeater:53d2376a-08be-43df-8614-5b506356b56b",  
+    "type": "SpaceHeater",  
+    "bodyMass": 0.2211394720882921,  
+    "energySource": "Research",  
+    "heatTransferDimension": "Sleek Rubber Chicken",  
+    "heatTransferMedium": "calculating",  
+    "numberOfPanels": 0.9912166099910465,  
+    "numberOfSections": 0.10463526586778538,  
+    "outputCapacity": 0.6425343578878625,  
+    "placementType": "auxiliary",  
+    "temperatureClassification": "haptic",  
+    "thermalEfficiency": 0.996207265881601,  
+    "thermalMassHeatCapacity": 0.42035461371680216,  
+    "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:a23ba52c-ee89-44f3-8146-cc5642b8a5d4",  
+    "isContainedInPhysicalObject": "urn:ngsi-ld:PhysicalObject:da56307c-a927-4d61-bc78-329cf0c45486",  
+    "isSubSystemOf": [  
+        "urn:ngsi-ld:System:8c588da8-ae9d-4339-b35e-3f621435ba77",  
+        "urn:ngsi-ld:System:75045902-8a40-4a47-91ed-b55c98c26a56",  
+        "urn:ngsi-ld:System:59e00885-77e1-4d66-9c7c-c3d0b2be5b30"  
+    ],  
+    "hasManufacturer": "SpaceHeater Company Inc.",  
+    "hasModel": "SpaceHeater 0.1.2",  
+    "dateCreated": "2023-01-26T11:00:53Z",  
+    "dateModified": "2023-01-25T20:46:44Z",  
+    "source": "Import",  
+    "name": "SpaceHeater",  
+    "alternateName": "SpaceHeater type 2",  
+    "description": "SpaceHeater of limited SpaceHeater types",  
+    "dataProvider": "IFC file"  
+}  
+```  
+</details>  
 #### SpaceHeater NGSI-v2 normalisé Exemple  
 Voici un exemple de SpaceHeater au format JSON-LD tel que normalisé. Ce format est compatible avec l'INSG-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:SpaceHeater:b256e328-b21f-4f37-bcb4-d78364993e79",  
+  "type": "SpaceHeater",  
+  "bodyMass": 0.7643146073425459,  
+  "energySource": {  
+    "type": "Text",  
+    "value": "Facilitator"  
+  },  
+  "heatTransferDimension": {  
+    "type": "Text",  
+    "value": "program"  
+  },  
+  "heatTransferMedium": {  
+    "type": "Text",  
+    "value": "Assurance"  
+  },  
+  "numberOfPanels": {  
+    "type": "Float",  
+    "value": 0.8127498709428745  
+  },  
+  "numberOfSections": {  
+    "type": "Float",  
+    "value": 0.8692658014070345  
+  },  
+  "outputCapacity": {  
+    "type": "Measurement",  
+    "value": 0.2717042496203792  
+  },  
+  "placementType": {  
+    "type": "Text",  
+    "value": "back up"  
+  },  
+  "temperatureClassification": {  
+    "type": "Text",  
+    "value": "SMTP"  
+  },  
+  "thermalEfficiency": {  
+    "type": "Measurement",  
+    "value": 0.16328303516805232  
+  },  
+  "thermalMassHeatCapacity": {  
+    "type": "Measurement",  
+    "value": 0.17753659327247795  
+  },  
+  "isContainedInBuildingSpace": {  
+    "type": "URL",  
+    "value": "urn:ngsi-ld:BuildingSpace:c1f57310-b1ad-4a70-bdca-70f74bbcc002"  
+  },  
+  "isContainedInPhysicalObject": {  
+    "type": "URL",  
+    "value": "urn:ngsi-ld:PhysicalObject:e22ae82c-83a1-4ed9-b1f8-eeced3ba17d9"  
+  },  
+  "isSubSystemOf": {  
+    "type": "array",  
+    "value": [  
+      {  
+        "type": "URL",  
+        "value": "urn:ngsi-ld:System:6f519e2b-416a-4b2a-af7b-56974a5d00df"  
+      },  
+      {  
+        "type": "URL",  
+        "value": "urn:ngsi-ld:System:16199b91-8c55-4645-8c14-536d1dff0fcc"  
+      },  
+      {  
+        "type": "URL",  
+        "value": "urn:ngsi-ld:System:5526ed19-a6fa-4e22-a8bd-71a1027a9b02"  
+      }  
+    ]  
+  },  
+  "hasManufacturer": {  
+    "type": "Text",  
+    "value": "SpaceHeater Company Inc."  
+  },  
+  "hasModel": {  
+    "type": "Text",  
+    "value": "SpaceHeater 0.1.2"  
+  },  
+  "dateCreated": {  
+    "type": "DateTime",  
+    "value": "2023-01-26T01:19:34.4200755+01:00"  
+  },  
+  "dateModified": {  
+    "type": "DateTime",  
+    "value": "2023-01-26T00:26:07.2902986+01:00"  
+  },  
+  "source": {  
+    "type": "Text",  
+    "value": "Import"  
+  },  
+  "name": {  
+    "type": "Text",  
+    "value": "SpaceHeater"  
+  },  
+  "alternateName": {  
+    "type": "Text",  
+    "value": "SpaceHeater type 2"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "SpaceHeater of limited SpaceHeater types"  
+  },  
+  "dataProvider": {  
+    "type": "Text",  
+    "value": "IFC file"  
+  }  
+}  
+```  
+</details>  
 #### SpaceHeater Valeurs clés NGSI-LD Exemple  
 Voici un exemple de SpaceHeater au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:SpaceHeater:53d2376a-08be-43df-8614-5b506356b56b",  
+  "type": "SpaceHeater",  
+  "bodyMass": 0.2211394720882921,  
+  "energySource": "Research",  
+  "heatTransferDimension": "Sleek Rubber Chicken",  
+  "heatTransferMedium": "calculating",  
+  "numberOfPanels": 0.9912166099910465,  
+  "numberOfSections": 0.10463526586778538,  
+  "outputCapacity": 0.6425343578878625,  
+  "placementType": "auxiliary",  
+  "temperatureClassification": "haptic",  
+  "thermalEfficiency": 0.996207265881601,  
+  "thermalMassHeatCapacity": 0.42035461371680216,  
+  "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:a23ba52c-ee89-44f3-8146-cc5642b8a5d4",  
+  "isContainedInPhysicalObject": "urn:ngsi-ld:PhysicalObject:da56307c-a927-4d61-bc78-329cf0c45486",  
+  "isSubSystemOf": [  
+    "urn:ngsi-ld:System:8c588da8-ae9d-4339-b35e-3f621435ba77",  
+    "urn:ngsi-ld:System:75045902-8a40-4a47-91ed-b55c98c26a56",  
+    "urn:ngsi-ld:System:59e00885-77e1-4d66-9c7c-c3d0b2be5b30"  
+  ],  
+  "hasManufacturer": "SpaceHeater Company Inc.",  
+  "hasModel": "SpaceHeater 0.1.2",  
+  "dateCreated": "2023-01-26T11:00:53Z",  
+  "dateModified": "2023-01-25T20:46:44Z",  
+  "source": "Import",  
+  "name": "SpaceHeater",  
+  "alternateName": "SpaceHeater type 2",  
+  "description": "SpaceHeater of limited SpaceHeater types",  
+  "dataProvider": "IFC file",  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+</details>  
 #### SpaceHeater NGSI-LD normalisé Exemple  
 Voici un exemple de SpaceHeater au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-<!-- /80-Examples -->  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:SpaceHeater:61e1adc2-8b00-43d5-89ba-40afbd26cda5",  
+  "type": "SpaceHeater",  
+  "bodyMass": {  
+    "type": "Property",  
+    "unitCode": "g",  
+    "observedAt": "2023-01-26T04:40:44Z",  
+    "value": 0.40152893437379167  
+  },  
+  "energySource": {  
+    "type": "Property",  
+    "value": "groupware"  
+  },  
+  "heatTransferDimension": {  
+    "type": "Property",  
+    "value": "Licensed Frozen Bike"  
+  },  
+  "heatTransferMedium": {  
+    "type": "Property",  
+    "value": "Pakistan Rupee"  
+  },  
+  "numberOfPanels": {  
+    "type": "Property",  
+    "value": 0.13243335736611006  
+  },  
+  "numberOfSections": {  
+    "type": "Property",  
+    "value": 0.9440399239258307  
+  },  
+  "outputCapacity": {  
+    "type": "Property",  
+    "unitCode": "J/s",  
+    "observedAt": "2023-01-26T05:12:20Z",  
+    "value": 0.38330998929377036  
+  },  
+  "placementType": {  
+    "type": "Property",  
+    "value": "Way"  
+  },  
+  "temperatureClassification": {  
+    "type": "Property",  
+    "value": "Kip"  
+  },  
+  "thermalEfficiency": {  
+    "type": "Property",  
+    "unitCode": "NA",  
+    "observedAt": "2023-01-25T15:23:27Z",  
+    "value": 0.8451012126787633  
+  },  
+  "thermalMassHeatCapacity": {  
+    "type": "Property",  
+    "unitCode": "NA",  
+    "observedAt": "2023-01-25T22:19:20Z",  
+    "value": 0.7853573438622519  
+  },  
+  "isContainedInBuildingSpace": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:BuildingSpace:6018650a-68e3-465a-acb8-e51269656682"  
+  },  
+  "isContainedInPhysicalObject": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:PhysicalObject:1bf687c2-f166-4d7b-82ea-e6bf6b5ccd78"  
+  },  
+  "isSubSystemOf": [  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:a538c5b3-c04a-4d42-8cc7-045a50e3b61b"  
+    },  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:8d2af757-8dde-4c47-ade4-b6fe0a649d95"  
+    },  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:6b0fbbf7-519a-4971-b6be-70fbc4a5eadd"  
+    }  
+  ],  
+  "hasManufacturer": {  
+    "type": "Property",  
+    "value": "SpaceHeater Company Inc."  
+  },  
+  "hasModel": {  
+    "type": "Property",  
+    "value": "SpaceHeater 0.1.2"  
+  },  
+  "dateCreated": {  
+    "type": "Property",  
+    "value": "2023-01-26T05:11:00Z"  
+  },  
+  "dateModified": {  
+    "type": "Property",  
+    "value": "2023-01-26T02:18:58Z"  
+  },  
+  "source": {  
+    "type": "Property",  
+    "value": "Import"  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "SpaceHeater"  
+  },  
+  "alternateName": {  
+    "type": "Property",  
+    "value": "SpaceHeater type 2"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "SpaceHeater of limited SpaceHeater types"  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "IFC file"  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
