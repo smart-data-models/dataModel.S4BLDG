@@ -7,16 +7,18 @@
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Description globale : **Un élément de transport est une généralisation de tous les objets liés au transport qui déplacent des personnes, des animaux ou des marchandises à l'intérieur d'un bâtiment ou d'un complexe de bâtiments. Le TransportElement définit l'occurrence d'un élément de transport. **  
+version : 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-<!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `capacityPeople[number]`: Propriété. Capacité de l'élément de transport mesurée en nombre de personnes.  - `capacityWeight[number]`: Propriété. Capacité de l'élément de transport mesurée en poids. Généralement mesurée en kilogrammes (kg) ou en grammes (g).  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `fireExit[boolean]`: Propriété. Indique si cet objet est conçu pour servir de sortie en cas d'incendie (VRAI) ou non (FAUX). Indique si l'élément de transport (dans le cas d'un ascenseur, par exemple) est conçu pour servir de sortie en cas d'incendie.  - `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  - `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  - `id[*]`: Identifiant unique de l'entité  - `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  - `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Property. Elle doit être égale à `TransportElement`.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
-- Aucune propriété requise  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
@@ -358,13 +360,235 @@ TransportElement:
 ## Exemples de charges utiles  
 #### TransportElement Valeurs clés NGSI-v2 Exemple  
 Voici un exemple d'un TransportElement au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:TransportElement:e72ac644-7a22-454a-8ed2-c4e54ca2501d",  
+    "type": "TransportElement",  
+    "capacityPeople": 0.23443039312764635,  
+    "capacityWeight": 0.40551628180906485,  
+    "fireExit": true,  
+    "hasManufacturer": "TransportElement Company Inc.",  
+    "hasModel": "TransportElement 0.1.2",  
+    "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:81a9bb19-243f-4649-935b-0ae6528ececa",  
+    "isContainedInPhysicalObject": "urn:ngsi-ld:PhysicalObject:fe7970af-8d3e-4326-bff2-a96eea69a63e",  
+    "isSubSystemOf": [  
+        "urn:ngsi-ld:System:30e83dfe-1606-4a0a-aba8-7e746aedc0c3",  
+        "urn:ngsi-ld:System:9d185a4a-6a17-484d-8d2d-7f00ba505654",  
+        "urn:ngsi-ld:System:82857819-a62d-4a0a-a35a-f4c65432e7ce"  
+    ],  
+    "dateCreated": "2023-01-25T19:06:08Z",  
+    "dateModified": "2023-01-26T09:33:14Z",  
+    "source": "Import",  
+    "name": "TransportElement",  
+    "alternateName": "TransportElement type 2",  
+    "description": "TransportElement of limited TransportElement types",  
+    "dataProvider": "IFC file"  
+}  
+```  
+</details>  
 #### TransportElement NGSI-v2 normalisé Exemple  
 Voici un exemple d'un TransportElement au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:TransportElement:86c91687-d960-46b2-8501-d5d43dad2a19",  
+  "type": "TransportElement",  
+  "capacityPeople": {  
+    "type": "Float",  
+    "value": 0.7375119078545989  
+  },  
+  "capacityWeight": {  
+    "type": "Measurement",  
+    "value": 0.756067388290955  
+  },  
+  "fireExit": {  
+    "type": "Boolean",  
+    "value": false  
+  },  
+  "hasManufacturer": {  
+    "type": "Text",  
+    "value": "TransportElement Company Inc."  
+  },  
+  "hasModel": {  
+    "type": "Text",  
+    "value": "TransportElement 0.1.2"  
+  },  
+  "isContainedInBuildingSpace": {  
+    "type": "URL",  
+    "value": "urn:ngsi-ld:BuildingSpace:2077a126-e349-4d90-b4a7-4c420f5dda0c"  
+  },  
+  "isContainedInPhysicalObject": {  
+    "type": "URL",  
+    "value": "urn:ngsi-ld:PhysicalObject:58349766-03b7-45af-8cb2-8c5ad687e820"  
+  },  
+  "isSubSystemOf": {  
+    "type": "array",  
+    "value": [  
+      {  
+        "type": "URL",  
+        "value": "urn:ngsi-ld:System:257774d5-03f1-44db-89e2-cef1eded6cae"  
+      },  
+      {  
+        "type": "URL",  
+        "value": "urn:ngsi-ld:System:8c1d9aeb-f72d-4149-b53f-690f804bcc64"  
+      },  
+      {  
+        "type": "URL",  
+        "value": "urn:ngsi-ld:System:7f82d919-d573-4cf4-bbbc-a1ceed235fdb"  
+      }  
+    ]  
+  },  
+  "dateCreated": {  
+    "type": "DateTime",  
+    "value": "2023-01-25T15:31:17.4196497+01:00"  
+  },  
+  "dateModified": {  
+    "type": "DateTime",  
+    "value": "2023-01-26T05:31:38.1235944+01:00"  
+  },  
+  "source": {  
+    "type": "Text",  
+    "value": "Import"  
+  },  
+  "name": {  
+    "type": "Text",  
+    "value": "TransportElement"  
+  },  
+  "alternateName": {  
+    "type": "Text",  
+    "value": "TransportElement type 2"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "TransportElement of limited TransportElement types"  
+  },  
+  "dataProvider": {  
+    "type": "Text",  
+    "value": "IFC file"  
+  }  
+}  
+```  
+</details>  
 #### TransportElement Valeurs clés NGSI-LD Exemple  
 Voici un exemple d'un TransportElement au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:TransportElement:e72ac644-7a22-454a-8ed2-c4e54ca2501d",  
+  "type": "TransportElement",  
+  "capacityPeople": 0.23443039312764635,  
+  "capacityWeight": 0.40551628180906485,  
+  "fireExit": true,  
+  "hasManufacturer": "TransportElement Company Inc.",  
+  "hasModel": "TransportElement 0.1.2",  
+  "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:81a9bb19-243f-4649-935b-0ae6528ececa",  
+  "isContainedInPhysicalObject": "urn:ngsi-ld:PhysicalObject:fe7970af-8d3e-4326-bff2-a96eea69a63e",  
+  "isSubSystemOf": [  
+    "urn:ngsi-ld:System:30e83dfe-1606-4a0a-aba8-7e746aedc0c3",  
+    "urn:ngsi-ld:System:9d185a4a-6a17-484d-8d2d-7f00ba505654",  
+    "urn:ngsi-ld:System:82857819-a62d-4a0a-a35a-f4c65432e7ce"  
+  ],  
+  "dateCreated": "2023-01-25T19:06:08Z",  
+  "dateModified": "2023-01-26T09:33:14Z",  
+  "source": "Import",  
+  "name": "TransportElement",  
+  "alternateName": "TransportElement type 2",  
+  "description": "TransportElement of limited TransportElement types",  
+  "dataProvider": "IFC file",  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+</details>  
 #### TransportElement NGSI-LD normalisé Exemple  
 Voici un exemple d'un TransportElement au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-<!-- /80-Examples -->  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:TransportElement:c41e2acc-4b47-4703-a669-2d70e355da7c",  
+  "type": "TransportElement",  
+  "capacityPeople": {  
+    "type": "Property",  
+    "value": 0.6165672857973306  
+  },  
+  "capacityWeight": {  
+    "type": "Property",  
+    "unitCode": "g",  
+    "observedAt": "2023-01-26T09:13:00Z",  
+    "value": 0.20941132111490557  
+  },  
+  "fireExit": {  
+    "type": "Property",  
+    "value": true  
+  },  
+  "hasManufacturer": {  
+    "type": "Property",  
+    "value": "TransportElement Company Inc."  
+  },  
+  "hasModel": {  
+    "type": "Property",  
+    "value": "TransportElement 0.1.2"  
+  },  
+  "isContainedInBuildingSpace": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:BuildingSpace:aa3fe628-ef96-4bf6-9fd7-c3ea6250d82a"  
+  },  
+  "isContainedInPhysicalObject": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:PhysicalObject:c07479d7-3b83-4a0d-82ce-63f76a9f0633"  
+  },  
+  "isSubSystemOf": [  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:73fd8be2-d2ed-4de5-bff8-2cf0e74348ce"  
+    },  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:b92b21cf-fb79-4f9f-b83f-e5f3cb0d54ea"  
+    },  
+    {  
+      "type": "Relationship",  
+      "object": "urn:ngsi-ld:System:54de7679-42e2-40bb-b735-e09188b1d7d6"  
+    }  
+  ],  
+  "dateCreated": {  
+    "type": "Property",  
+    "value": "2023-01-25T17:08:38Z"  
+  },  
+  "dateModified": {  
+    "type": "Property",  
+    "value": "2023-01-26T09:55:44Z"  
+  },  
+  "source": {  
+    "type": "Property",  
+    "value": "Import"  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "TransportElement"  
+  },  
+  "alternateName": {  
+    "type": "Property",  
+    "value": "TransportElement type 2"  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "TransportElement of limited TransportElement types"  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "IFC file"  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
