@@ -1,0 +1,3 @@
+/* (Beta) Export of data model SwitchingDevice of the subject dataModel.S4BLDG for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE SwitchingDevice_type AS ENUM ('SwitchingDevice');
+CREATE TABLE SwitchingDevice (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, hasLock text, hasManufacturer text, hasModel text, id text, isContainedInBuildingSpace json, isContainedInPhysicalObject json, isIlluminated text, isSubSystemOf json, legend text, location json, name text, numberOfGangs text, owner json, seeAlso json, source text, switchFunction text, type SwitchingDevice_type);
