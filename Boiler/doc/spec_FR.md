@@ -15,7 +15,7 @@
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `energySource[string]`: Propriété. La source d'énergie. Enumération définissant la source d'énergie ou le combustible brûlé pour produire de la chaleur.  - `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  - `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  - `heatTransferSurfaceArea`:   - `id[*]`: Identifiant unique de l'entité  - `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  - `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  - `isWaterStorageHeater[boolean]`: Propriété. Cette propriété permet de déterminer si la chaudière dispose d'une capacité de stockage (VRAI). Si FAUX, la chaudière n'a pas de capacité de stockage, comme un chauffe-eau instantané.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `nominalEnergyConsumption`:   - `nominalPartLoadRatio`:   - `operatingMode[string]`: Propriété. Identifie le mode de fonctionnement de la chaudière.  - `outletTemperatureMax`:   - `outletTemperatureMin`:   - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `pressureRating`:   - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Propriété. Il doit être égal à `Boiler`.  - `waterInletTemperatureMax`:   - `waterInletTemperatureMin`:   - `waterStorageCapacity`:   <!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `energySource[string]`: Propriété. La source d'énergie. Enumération définissant la source d'énergie ou le combustible brûlé pour produire de la chaleur.  - `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  - `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  - `heatTransferSurfaceArea[number]`: Propriété. Surface totale de transfert de chaleur du récipient. Généralement mesurée en mètres carrés (m2). Unités : "m2  - `id[*]`: Identifiant unique de l'entité  - `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  - `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  - `isWaterStorageHeater[boolean]`: Propriété. Cette propriété permet de déterminer si la chaudière dispose d'une capacité de stockage (VRAI). Si FAUX, la chaudière n'a pas de capacité de stockage, comme un chauffe-eau instantané.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `nominalEnergyConsumption[number]`: Propriété. Taux nominal de consommation de combustible nécessaire pour produire la chaleur totale de la chaudière. Généralement mesuré en watts (W, J/s). Unités : "W  - `nominalPartLoadRatio[number]`: Propriété. Plage de rapport de charge partielle admissible.  - `operatingMode[string]`: Propriété. Identifie le mode de fonctionnement de la chaudière.  - `outletTemperatureMax[number]`: Propriété. Température de sortie autorisée de l'eau ou de la vapeur. Généralement mesurée en degrés Kelvin (K). Unités : "ºK  - `outletTemperatureMin[number]`: Propriété. Température de sortie autorisée de l'eau ou de la vapeur. Généralement mesurée en degrés Kelvin (K). Unités : "ºK  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `pressureRating[number]`: Propriété. Pression nominale de la chaudière telle qu'elle est évaluée par l'organisme compétent. Généralement mesurée en Pascals (Pa, N/m2). Unités : "Pa  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Propriété. Il doit être égal à `Boiler`.  - `waterInletTemperatureMax[number]`: Propriété. Plage de température admissible à l'entrée de l'eau. Généralement mesurée en degrés Kelvin (K). Unités : "ºK  - `waterInletTemperatureMin[number]`: Propriété. Plage de température admissible à l'entrée de l'eau. Généralement mesurée en degrés Kelvin (K). Unités : "ºK  - `waterStorageCapacity[number]`: Propriété. Capacité de stockage de l'eau. Généralement mesurée en mètre cube (m3). Unités : "ºm3  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -111,121 +111,37 @@ Boiler:
       x-ngsi:    
         type: Property    
     heatTransferSurfaceArea:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/commons    
-      $schema: "http://json-schema.org/schema#"    
-      definitions: &boiler_-_properties_-_nominalenergyconsumption_-_definitions    
-        Bounds:    
-          description: Property. Represents a box in a 3D space.    
-          properties:    
-            max:    
-              description: Property. Represents a point in a 3D space.    
-              properties: &boiler_-_properties_-_heattransfersurfacearea_-_definitions_-_bounds_-_properties_-_min_-_properties    
-                type:    
-                  description: Property. Property. NGSI-LD Entity Type.    
-                  enum:    
-                    - Point    
-                  type: string    
-                x:    
-                  description: Property. Coordinate X of the point.    
-                  type: number    
-                y:    
-                  description: Property. Coordinate Y of the point.    
-                  type: number    
-                z:    
-                  description: Property. Coordinate Z of the point.    
-                  type: number    
-              type: object    
-            min:    
-              description: Property. Represents a point in a 3D space.    
-              properties: *boiler_-_properties_-_heattransfersurfacearea_-_definitions_-_bounds_-_properties_-_min_-_properties    
-              type: object    
-            type:    
-              description: Property. Property. NGSI-LD Entity Type.    
-              enum:    
-                - Bounds    
-              type: string    
-        Measurement:    
-          description: Property. Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement.    
-          type: number    
-        PhysicalObject:    
-          allOf:    
-            - properties:    
-                isContainedInBuildingSpace:    
-                  anyOf: &properties_-_iscontainedinphysicalobject_-_anyof    
-                    - description: Property. Identifier format of any NGSI entity    
-                      maxLength: 256    
-                      minLength: 1    
-                      pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-                      type: string    
-                    - description: Property. Identifier format of any NGSI entity    
-                      format: uri    
-                      type: string    
-                  description: Property. Unique identifier of the entity    
-                isContainedInPhysicalObject:    
-                  anyOf: *properties_-_iscontainedinphysicalobject_-_anyof    
-                  description: Property. Unique identifier of the entity    
-                isSubSystemOf:    
-                  description: Relationship. A reference to a system(s) that this Physical Object is part of.    
-                  items:    
-                    anyOf: *properties_-_iscontainedinphysicalobject_-_anyof    
-                    description: Property. Unique identifier of the entity    
-                  type: array    
-                type:    
-                  description: Property. It must be equal to `PhysicalObject`.    
-                  enum:    
-                    - PhysicalObject    
-                  type: string    
-          description: Any Object that has a proper space region.  (Definition extracted from DUL ontology)    
-          type: object    
-        Point:    
-          description: Property. Represents a point in a 3D space.    
-          properties: *boiler_-_properties_-_heattransfersurfacearea_-_definitions_-_bounds_-_properties_-_min_-_properties    
-          type: object    
-        Predictions:    
-          allOf:    
-            - properties:    
-                author:    
-                  description: Property. A sequence of characters identifying the provider of the harmonised data entity.    
-                  type: string    
-                isForPhysicalObject:    
-                  anyOf: *properties_-_iscontainedinphysicalobject_-_anyof    
-                  description: Property. Unique identifier of the entity    
-                measurementName:    
-                  description: 'Property. Name of the measurement on Physical Object, for which those Predictions are created.'    
-                  type: string    
-                measurementPredictions:    
-                  description: 'Relationship. List of predictions, usually with the future dates in a form of measurements. Measured in i.e. m3, hPa, K'    
-                  items:    
-                    description: Property. Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement.    
-                    type: number    
-                  type: array    
-                type:    
-                  description: Property. It must be equal to `Predictions`.    
-                  enum:    
-                    - Predictions    
-                  type: string    
-          description: Contains a list of predictions for a specific Measurement of a Physical Object.    
-          type: object    
-      title: Common definitions for SAREF for buildings    
+      description: 'Property. Total heat transfer area of the vessel. Usually measured in square metre (m2). Units:''m2'''    
+      type: number    
+      x-ngsi:    
+        type: Property    
     id:    
-      anyOf: *properties_-_iscontainedinphysicalobject_-_anyof    
+      anyOf: &boiler_-_properties_-_iscontainedinbuildingspace_-_anyof    
+        - description: Property. Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: Property. Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
-      anyOf: *properties_-_iscontainedinphysicalobject_-_anyof    
+      anyOf: *boiler_-_properties_-_iscontainedinbuildingspace_-_anyof    
       description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
       x-ngsi:    
         type: Property    
     isContainedInPhysicalObject:    
-      anyOf: *properties_-_iscontainedinphysicalobject_-_anyof    
+      anyOf: *boiler_-_properties_-_iscontainedinbuildingspace_-_anyof    
       description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
       x-ngsi:    
         type: Property    
     isSubSystemOf:    
       description: Relationship. A reference to a system(s) that this Physical Object is part of.    
       items:    
-        anyOf: *properties_-_iscontainedinphysicalobject_-_anyof    
+        anyOf: *boiler_-_properties_-_iscontainedinbuildingspace_-_anyof    
         description: Property. Unique identifier of the entity    
       type: array    
       x-ngsi:    
@@ -394,43 +310,43 @@ Boiler:
       x-ngsi:    
         type: Property    
     nominalEnergyConsumption:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/commons    
-      $schema: "http://json-schema.org/schema#"    
-      definitions: *boiler_-_properties_-_nominalenergyconsumption_-_definitions    
-      title: Common definitions for SAREF for buildings    
+      description: 'Property. Nominal fuel consumption rate required to produce the total boiler heat output. Usually measured in Watts (W, J/s). Units:''W'''    
+      type: number    
+      x-ngsi:    
+        type: Property    
     nominalPartLoadRatio:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/commons    
-      $schema: "http://json-schema.org/schema#"    
-      definitions: *boiler_-_properties_-_nominalenergyconsumption_-_definitions    
-      title: Common definitions for SAREF for buildings    
+      description: Property. Allowable part load ratio range.    
+      type: number    
+      x-ngsi:    
+        type: Property    
     operatingMode:    
       description: Property. Identifies the operating mode of the boiler.    
       type: string    
       x-ngsi:    
         type: Property    
     outletTemperatureMax:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/commons    
-      $schema: "http://json-schema.org/schema#"    
-      definitions: *boiler_-_properties_-_nominalenergyconsumption_-_definitions    
-      title: Common definitions for SAREF for buildings    
+      description: 'Property. Allowable outlet temperature of either the water or the steam. Usually measured in degrees Kelvin (K). Units:''ºK'''    
+      type: number    
+      x-ngsi:    
+        type: Property    
     outletTemperatureMin:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/commons    
-      $schema: "http://json-schema.org/schema#"    
-      definitions: *boiler_-_properties_-_nominalenergyconsumption_-_definitions    
-      title: Common definitions for SAREF for buildings    
+      description: 'Property. Allowable outlet temperature of either the water or the steam. Usually measured in degrees Kelvin (K). Units:''ºK'''    
+      type: number    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *properties_-_iscontainedinphysicalobject_-_anyof    
+        anyOf: *boiler_-_properties_-_iscontainedinbuildingspace_-_anyof    
         description: Property. Unique identifier of the entity    
       type: array    
       x-ngsi:    
         type: Property    
     pressureRating:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/commons    
-      $schema: "http://json-schema.org/schema#"    
-      definitions: *boiler_-_properties_-_nominalenergyconsumption_-_definitions    
-      title: Common definitions for SAREF for buildings    
+      description: 'Property. Nominal pressure rating of the boiler as rated by the agency having jurisdiction. Usually measured in Pascals (Pa, N/m2). Units:''Pa'''    
+      type: number    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
       oneOf:    
@@ -456,20 +372,20 @@ Boiler:
       x-ngsi:    
         type: Property    
     waterInletTemperatureMax:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/commons    
-      $schema: "http://json-schema.org/schema#"    
-      definitions: *boiler_-_properties_-_nominalenergyconsumption_-_definitions    
-      title: Common definitions for SAREF for buildings    
+      description: 'Property. Allowable water inlet temperature range. Usually measured in degrees Kelvin (K). Units:''ºK'''    
+      type: number    
+      x-ngsi:    
+        type: Property    
     waterInletTemperatureMin:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/commons    
-      $schema: "http://json-schema.org/schema#"    
-      definitions: *boiler_-_properties_-_nominalenergyconsumption_-_definitions    
-      title: Common definitions for SAREF for buildings    
+      description: 'Property. Allowable water inlet temperature range. Usually measured in degrees Kelvin (K). Units:''ºK'''    
+      type: number    
+      x-ngsi:    
+        type: Property    
     waterStorageCapacity:    
-      $id: https://smart-data-models.github.com/dataModel.SAREF/commons    
-      $schema: "http://json-schema.org/schema#"    
-      definitions: *boiler_-_properties_-_nominalenergyconsumption_-_definitions    
-      title: Common definitions for SAREF for buildings    
+      description: 'Property. Water storage capacity. Usually measured in cubic metre (m3). Units:''ºm3'''    
+      type: number    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
