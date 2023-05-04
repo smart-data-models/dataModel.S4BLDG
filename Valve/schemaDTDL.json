@@ -1,0 +1,234 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Valve;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart data models - Valve schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/Valve/schema.json",
+    "description": "A valve is used in a building services piping distribution system to control or modulate the flow of the fluid.",
+    "displayName": "Valve",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "closeOffRating",
+            "writable": true,
+            "displayName": "closeOffRating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Close off rating. Usually measured in Pascals (Pa, N/m2)."
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "flowCoefficient",
+            "writable": true,
+            "displayName": "flowCoefficient",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. Flow coefficient (the quantity of fluid that passes through a fully open valve at unit pressure drop), typically expressed as the Kv or Cv value for the valve."
+        },
+        {
+            "name": "hasManufacturer",
+            "writable": true,
+            "displayName": "hasManufacturer",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag."
+        },
+        {
+            "name": "hasModel",
+            "writable": true,
+            "displayName": "hasModel",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag."
+        },
+        {
+            "name": "isContainedInBuildingSpace",
+            "writable": true,
+            "displayName": "isContainedInBuildingSpace"
+        },
+        {
+            "name": "isContainedInPhysicalObject",
+            "writable": true,
+            "displayName": "isContainedInPhysicalObject"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "size",
+            "writable": true,
+            "displayName": "size",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The size of the connection to the valve (or to each connection for faucets, mixing valves, etc.). Usually measured in millimeters (mm)."
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "testPressure",
+            "writable": true,
+            "displayName": "testPressure",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The maximum pressure to which the valve has been subjected under test. Usually measured in Pascals (Pa, N/m2)."
+        },
+        {
+            "name": "valveMechanism",
+            "writable": true,
+            "displayName": "valveMechanism",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. The mechanism by which the valve function is achieved where: BALL: Valve that has a ported ball that can be turned relative to the body seat ports. BUTTERFLY: Valve in which a streamlined disc pivots about a diametric axis. CONFIGUREDGATE: Screwdown valve in which the closing gate is shaped in a configured manner to have a more precise control of pressure and flow change across the valve. GLAND: Valve with a tapered seating, in which a rotatable plug is retained by means of a gland and gland packi"
+        },
+        {
+            "name": "valveOperation",
+            "writable": true,
+            "displayName": "valveOperation",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. The method of valve operation where: DROPWEIGHT: A valve that is closed by the action of a weighted lever being released, the weight normally being prevented from dropping by being held by a wire, the closure normally being made by the action of heat on a fusible link in the wire FLOAT: A valve that is opened and closed by the action of a float that rises and falls with water level. The float may be a ball attached to a lever or other mechanism HYDRAULIC: A valve that is opened and closed by hydra"
+        },
+        {
+            "name": "valvePattern",
+            "writable": true,
+            "displayName": "valvePattern",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. The configuration of the ports of a valve according to either the linear route taken by a fluid flowing through the valve or by the number of ports where: SINGLEPORT: Valve that has a single entry port from the system that it serves, the exit port being to the surrounding environment. ANGLED_2_PORT: Valve in which the direction of flow is changed through 90 degrees. STRAIGHT_2_PORT: Valve in which the flow is straight through. STRAIGHT_3_PORT: Valve with three separate ports. CROSSOVER_4_PORT: Val"
+        },
+        {
+            "name": "workingPressure",
+            "writable": true,
+            "displayName": "workingPressure",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Property. The normally expected maximum working pressure of the valve. Usually measured in Pascals (Pa, N/m2)."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "isSubSystemOf",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Relationship. A reference to a system(s) that this Physical Object is part of.",
+            "displayName": "isSubSystemOf"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
