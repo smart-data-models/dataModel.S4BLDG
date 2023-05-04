@@ -89,6 +89,24 @@ The following entity types are available:
 
 - [SolarDevice](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/SolarDevice/README.md). A solar device converts solar radiation into other energy such as electric current or thermal energy.
 
+- [SpaceHeater](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/SpaceHeater/README.md). Space heaters utilize a combination of radiation and/or natural convection using a heating source such as electricity, steam or hot water to heat a limited space or area. Examples of space heaters include radiators, convectors, baseboard and finned-tube heaters.  UnitaryEquipment should be used for packaged units supporting a combination of heating, cooling, and/or dehumidification; Coil should be used for coil-based floor heating.
+
+- [SwitchingDevice](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/SwitchingDevice/README.md). A switch is used in a cable distribution system (electrical circuit) to control or modulate the flow of electricity.  Switches include those used for electrical power, communications, audio-visual, or other distribution system types as determined by the available ports.
+
+- [Tank](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Tank/README.md). A tank is a vessel or container in which a fluid or gas is stored for later use.
+
+- [Transformer](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Transformer/README.md). A transformer is an inductive stationary device that transfers electrical energy from one circuit to another.  Transformer is used to transform electric power; conversion of electric signals for other purposes is handled at other entities: Controller converts arbitrary signals, AudioVisualAppliance converts signals for audio or video streams, and CommunicationsAppliance converts signals for data or other communications usage.
+
+- [TransportElement](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/TransportElement/README.md). A transport element is a generalization of all transport related objects that move people, animals or goods within a building or building complex. The TransportElement defines the occurrence of a transport element. 
+
+- [TubeBundle](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/TubeBundle/README.md). A tube bundle is a device consisting of tubes and bundles of tubes used for heat transfer and contained typically within other energy conversion devices, such as a chiller or coil.
+
+- [UnitaryControlElement](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/UnitaryControlElement/README.md). A unitary control element combines a number of control components into a single product, such as a thermostat or humidistat.  A unitary control element provides a housing for an aggregation of control or electrical distribution elements that, in combination, perform a singular (unitary) purpose. Each item in the aggregation may have its own geometric representation and location.
+
+- [Valve](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Valve/README.md). A valve is used in a building services piping distribution system to control or modulate the flow of the fluid.
+
+- [VibrationIsolator](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/VibrationIsolator/README.md). A vibration isolator is a device used to minimize the effects of vibration transmissibility in a building.
+
 
 
 ### Contributors
