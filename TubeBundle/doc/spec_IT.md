@@ -7,16 +7,18 @@
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Descrizione globale: **Un fascio tubiero è un dispositivo costituito da tubi e fasci di tubi utilizzato per il trasferimento di calore e contenuto tipicamente all'interno di altri dispositivi di conversione dell'energia, come un refrigeratore o una serpentina.  
+versione: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-<!-- /30-PropertiesList -->  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `foulingFactor[number]`: Proprietà. Fattore di sporcizia dei tubi nel fascio di tubi. Di solito si misura in m2 Kelvin/Watt.  - `hasManufacturer[string]`: Proprietà. Una relazione che identifica il produttore di un'entità (ad esempio, un dispositivo). Il valore dovrebbe essere una stringa o una stringa con un tag di lingua.  - `hasModel[string]`: Proprietà. Una relazione che identifica il modello di un'entità (ad esempio, un dispositivo). Il valore dovrebbe essere una stringa o una stringa con un tag di lingua.  - `hasTurbulator[boolean]`: Proprietà. TRUE se il tubo ha un turbolatore, FALSE se non ce l'ha.  - `horizontalSpacing[number]`: Proprietà. Spaziatura orizzontale tra i tubi del fascio di tubi. Di solito viene misurata in millimetri (mm).  - `id[*]`: Identificatore univoco dell'entità  - `inLineRowSpacing[number]`: Proprietà. Spaziatura tra le file di tubi in linea. Solitamente misurata in millimetri (mm).  - `insideDiameter[number]`: Proprietà. Diametro interno effettivo del tubo nel fascio di tubi. Di solito viene misurato in millimetri (mm).  - `isContainedInBuildingSpace[*]`: Relazione. Un'entità utilizzata per definire gli spazi fisici dell'edificio. Uno spazio dell'edificio contiene dispositivi o oggetti dell'edificio. (Spazio edificio)  - `isContainedInPhysicalObject[*]`: Relazione. Qualsiasi oggetto che abbia una regione spaziale appropriata.  (Definizione estratta dall'ontologia DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relazione. Un riferimento a uno o più sistemi di cui questo Oggetto fisico fa parte.  - `length[number]`: Proprietà. La lunghezza finita del dispositivo. Di solito viene misurata in millimetri (mm).  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `nominalDiameter[number]`: Proprietà. Diametro nominale o larghezza dei tubi nel fascio di tubi. Di solito viene misurato in millimetri (mm).  - `numberOfCircuits[number]`: Proprietà. Numero di circuiti di tubi fluidi in parallelo.  - `numberOfRows[number]`: Proprietà. Numero di file di tubi nel fascio di tubi.  - `outsideDiameter[number]`: Proprietà. Diametro esterno effettivo del tubo nel fascio di tubi. Di solito viene misurato in millimetri (mm).  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `staggeredRowSpacing[number]`: Proprietà. Spaziatura tra le file di tubi sfalsati. Solitamente misurata in millimetri (mm).  - `thermalConductivity[number]`: Proprietà. Fattore di sporcizia dei tubi nel fascio di tubi. Di solito si misura in m2 Kelvin/Watt.  - `type[string]`: Proprietà. Deve essere uguale a `TubeBundle`.  - `verticalSpacing[number]`: Proprietà. Spaziatura verticale tra i tubi del fascio tubiero, solitamente misurata in millimetri (mm).  - `volumen[number]`: Proprietà. Volume totale del fluido nei tubi e nelle loro testate. Di solito viene misurato in metri cubi (m3).  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- Nessuna proprietà richiesta  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
@@ -24,6 +26,388 @@
 Ordinati in ordine alfabetico (clicca per i dettagli)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
+TubeBundle:    
+  description: 'A tube bundle is a device consisting of tubes and bundles of tubes used for heat transfer and contained typically within other energy conversion devices, such as a chiller or coil.'    
+  properties:    
+    address:    
+      description: The mailing address    
+      properties:    
+        addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          type: string    
+        addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          type: string    
+        addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          type: string    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          type: string    
+        postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          type: string    
+        postalCode:    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          type: string    
+        streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          type: string    
+        streetNr:    
+          description: Number identifying a specific property on a public street.    
+          type: string    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/address    
+        type: Property    
+    alternateName:    
+      description: An alternative name for this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    areaServed:    
+      description: The geographic area where a service or offered item is provided    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    dataProvider:    
+      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateCreated:    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dateModified:    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    description:    
+      description: A description of this item    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    foulingFactor:    
+      description: Property. Fouling factor of the tubes in the tube bundle. Usually measured in m2 Kelvin/Watt.    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    hasManufacturer:    
+      description: 'Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    hasModel:    
+      description: 'Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    hasTurbulator:    
+      description: 'Property. TRUE if the tube has a turbulator, FALSE if it does not.'    
+      type: boolean    
+      x-ngsi:    
+        type: Property    
+    horizontalSpacing:    
+      description: Property. Horizontal spacing between tubes in the tube bundle. Usually measured in millimeters (mm).    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    id:    
+      anyOf: &tubebundle_-_properties_-_iscontainedinbuildingspace_-_anyof    
+        - description: Property. Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: Property. Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+      description: Unique identifier of the entity    
+      x-ngsi:    
+        type: Property    
+    inLineRowSpacing:    
+      description: Property. In-line tube row spacing. Usually measured in millimeters (mm).    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    insideDiameter:    
+      description: Property. Actual inner diameter of the tube in the tube bundle. Usually measured in millimeters (mm).    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    isContainedInBuildingSpace:    
+      anyOf: *tubebundle_-_properties_-_iscontainedinbuildingspace_-_anyof    
+      description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
+      x-ngsi:    
+        type: Property    
+    isContainedInPhysicalObject:    
+      anyOf: *tubebundle_-_properties_-_iscontainedinbuildingspace_-_anyof    
+      description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
+      x-ngsi:    
+        type: Property    
+    isSubSystemOf:    
+      description: Relationship. A reference to a system(s) that this Physical Object is part of.    
+      items:    
+        anyOf: *tubebundle_-_properties_-_iscontainedinbuildingspace_-_anyof    
+        description: Property. Unique identifier of the entity    
+      type: array    
+      x-ngsi:    
+        type: Relationship    
+    length:    
+      description: Property. The finished length of the device. Usually measured in millimeters (mm).    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    location:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: GeoProperty. Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+      x-ngsi:    
+        type: GeoProperty    
+    name:    
+      description: The name of this item.    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    nominalDiameter:    
+      description: Property. Nominal diameter or width of the tubes in the tube bundle. Usually measured in millimeters (mm).    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    numberOfCircuits:    
+      description: Property. Number of parallel fluid tube circuits.    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    numberOfRows:    
+      description: Property. Number of tube rows in the tube bundle assembly.    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    outsideDiameter:    
+      description: Property. Actual outside diameter of the tube in the tube bundle. Usually measured in millimeters (mm).    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    owner:    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
+      items:    
+        anyOf: *tubebundle_-_properties_-_iscontainedinbuildingspace_-_anyof    
+        description: Property. Unique identifier of the entity    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    seeAlso:    
+      description: list of uri pointing to additional resources about the item    
+      oneOf:    
+        - items:    
+            format: uri    
+            type: string    
+          minItems: 1    
+          type: array    
+        - format: uri    
+          type: string    
+      x-ngsi:    
+        type: Property    
+    source:    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    staggeredRowSpacing:    
+      description: Property. Staggered tube row spacing. Usually measured in millimeters (mm).    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    thermalConductivity:    
+      description: Property. Fouling factor of the tubes in the tube bundle. Usually measured in m2 Kelvin/Watt.    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    type:    
+      description: Property. It must be equal to `TubeBundle`.    
+      enum:    
+        - TubeBundle    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    verticalSpacing:    
+      description: Property. Vertical spacing between tubes in the tube bundle.Usually measured in millimeters (mm).    
+      type: number    
+      x-ngsi:    
+        type: Property    
+    volumen:    
+      description: Property. Total volume of fluid in the tubes and their headers. Usually measured in cubic metre (m3).    
+      type: number    
+      x-ngsi:    
+        type: Property    
+  required:    
+    - id    
+    - type    
+  type: object    
+  x-derived-from: "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:TubeBundle"    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/TubeBundle/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/TubeBundle/schema.json    
+  x-model-tags: SAREF TubeBundle    
+  x-version: 0.0.1    
+```  
+</details>    
 <!-- /60-ModelYaml -->  
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
