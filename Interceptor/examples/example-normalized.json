@@ -4,7 +4,6 @@
   "coverLength": {
     "type": "Measurement",
     "value":  0.44339547398234425
-    }
   },
   "coverWidth": {
     "type": "Measurement",
@@ -18,28 +17,23 @@
   },
   "nominalBodyDepth": {
     "type": "Measurement",
-    "value":  0.29190715678427104
-    
+    "value":  0.29190715678427104 
   },
   "nominalBodyLength": {
     "type": "Measurement",
-    "value":  0.3879109279352648
-    
+    "value":  0.3879109279352648  
   },
   "nominalBodyWidth": {
     "type": "Measurement",
-    "value":  0.41258224275422206
-    
+    "value":  0.41258224275422206 
   },
   "outletConnectionSize": {
     "type": "Measurement",
     "value": 0.45113395263374134
-    }
   },
   "ventilatingPipeSize": {
     "type": "Measurement",
     "value": 0.9955414515835173
-    }
   },
   "isContainedInBuildingSpace": {
     "type": "URI",
