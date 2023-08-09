@@ -3,9 +3,7 @@
   "type": "BuildingSpace",
   "airVolume": {
     "type": "Measurement",
-    "value": {
-      0.9064782098814886
-    }
+    "value": 0.9064782098814886
   },
   "bounds": {
     "type": "Bounds",
