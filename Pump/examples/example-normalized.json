@@ -3,48 +3,39 @@
   "type": "Pump",
   "connectionSize": {
     "type": "Measurement",
-    "value":  0.8537944550916271
-
+    "value": 0.8537944550916271
   },
   "flowResistanceMax": {
     "type": "Measurement",
-    "value":  0.934151218696693
-
+    "value": 0.934151218696693
   },
   "flowResistanceMin": {
     "type": "Measurement",
-    "value": { 0.5798733223282941
-
+    "value": 0.5798733223282941
   },
   "netPositiveSuctionHead": {
     "type": "Measurement",
-    "value": { 0.9236791362464654
-
+    "value": 0.9236791362464654
   },
   "nomminalRotationSpeed": {
     "type": "Measurement",
     "value": 0.9434212309119704
-
   },
   "operationTemperatureMax": {
     "type": "Measurement",
     "value": 0.40126909555034673
-
   },
   "operationTemperatureMin": {
     "type": "Measurement",
     "value": 0.49855896547412504
-
   },
   "pumpFlowRateMax": {
     "type": "Measurement",
     "value": 0.8126244460338075
-
   },
   "pumpFlowRateMin": {
     "type": "Measurement",
     "value":  0.4387979987462379
-
   },
   "isContainedInBuildingSpace": {
     "type": "URL",
