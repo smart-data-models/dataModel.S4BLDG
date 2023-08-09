@@ -3,8 +3,7 @@
   "type": "ElectricGenerator",
   "electricGeneratorEfficiency": {
     "type": "Measurement",
-    "value":  0.7817008930557607
-    }
+    "value": 0.7817008930557607
   },
   "powerOutputMax": {
     "type": "Measurement",
