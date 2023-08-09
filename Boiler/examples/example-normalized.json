@@ -32,7 +32,6 @@
   "outletTemperatureMin": {
     "type": "Measurement",
     "value":
-    :
     0.5096152218274909
   },
   "pressureRating": {
