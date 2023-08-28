@@ -5,23 +5,23 @@
   "definitions": {
     "Measurement": {
       "type": "number",
-      "description": "Property. Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."
+      "description": "Property. Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement"
     },
     "Bounds": {
       "type": "object",
-      "description": "Property. Represents a box in a 3D space.",
+      "description": "Property. Represents a box in a 3D space",
       "properties": {
         "max": {
           "$ref": "#/definitions/Point",
-          "description": "Property. The maximal point of the box."
+          "description": "Property. The maximal point of the box"
         },
         "min": {
           "$ref": "#/definitions/Point",
-          "description": "Property. The minimal point of the box."
+          "description": "Property. The minimal point of the box"
         },
         "type": {
           "type": "string",
-          "description": "Property. Property. NGSI-LD Entity Type.",
+          "description": "Property. Property. NGSI-LD Entity Type",
           "enum": [
             "Bounds"
           ]
@@ -30,45 +30,45 @@
     },
     "Point": {
       "type": "object",
-      "description": "Property. Represents a point in a 3D space.",
+      "description": "Property. Represents a point in a 3D space",
       "properties": {
         "type": {
           "type": "string",
-          "description": "Property. Property. NGSI-LD Entity Type.",
+          "description": "Property. Property. NGSI-LD Entity Type",
           "enum": [
             "Point"
           ]
         },
         "x": {
           "type": "number",
-          "description": "Property. Coordinate X of the point."
+          "description": "Property. Coordinate X of the point"
         },
         "y": {
           "type": "number",
-          "description": "Property. Coordinate Y of the point."
+          "description": "Property. Coordinate Y of the point"
         },
         "z": {
           "type": "number",
-          "description": "Property. Coordinate Z of the point."
+          "description": "Property. Coordinate Z of the point"
         }
       }
     },
     "Predictions": {
       "type": "object",
-      "description": "Contains a list of predictions for a specific Measurement of a Physical Object.",
+      "description": "Contains a list of predictions for a specific Measurement of a Physical Object",
       "allOf": [
         {
           "properties": {
             "type": {
               "type": "string",
-              "description": "Property. It must be equal to `Predictions`.",
+              "description": "Property. It must be equal to `Predictions`",
               "enum": [
                 "Predictions"
               ]
             },
             "author": {
               "type": "string",
-              "description": "Property. A sequence of characters identifying the provider of the harmonised data entity."
+              "description": "Property. A sequence of characters identifying the provider of the harmonised data entity"
             },
             "isForPhysicalObject": {
               "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType",
@@ -76,14 +76,14 @@
             },
             "measurementName": {
               "type": "string",
-              "description": "Property. Name of the measurement on Physical Object, for which those Predictions are created."
+              "description": "Property. Name of the measurement on Physical Object, for which those Predictions are created"
             },
             "measurementPredictions": {
               "type": "array",
               "description": "Relationship. List of predictions, usually with the future dates in a form of measurements. Measured in i.e. m3, hPa, K",
               "items": {
                 "$ref": "#/definitions/Measurement",
-                "description": "Property. Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."
+                "description": "Property. Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement"
               }
             }
           }
@@ -98,7 +98,7 @@
           "properties": {
             "type": {
               "type": "string",
-              "description": "Property. It must be equal to `PhysicalObject`.",
+              "description": "Property. It must be equal to `PhysicalObject`",
               "enum": [
                 "PhysicalObject"
               ]
@@ -113,7 +113,7 @@
             },
             "isSubSystemOf": {
               "type": "array",
-              "description": "Relationship. A reference to a system(s) that this Physical Object is part of.",
+              "description": "Relationship. A reference to a system(s) that this Physical Object is part of",
               "items": {
                 "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType",
                 "description": "Relationship. The class of systems, i.e., systems virtually isolated from the environment, whose behaviour and interactions with the environment are modeled. Systems can be connected to other systems. Connected systems interact in some ways. Systems can also have subsystems. Properties of subsystems somehow contribute to the properties of the supersystem. (System)"
