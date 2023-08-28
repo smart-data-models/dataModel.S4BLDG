@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://smart-data-models.github.com/dataModel.SAREF/commons",
+  "$id": "https://smart-data-models.github.io/dataModel.S4BLDG/S4BLDG-schema.json",
   "title": "Common definitions for SAREF for buildings",
   "definitions": {
     "Measurement": {
