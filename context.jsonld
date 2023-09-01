@@ -54,6 +54,9 @@
         "VibrationIsolator": "https://smartdatamodels.org/dataModel.S4BLDG/VibrationIsolator",
         "accessType": "https://smartdatamodels.org/dataModel.S4BLDG/accessType",
         "address": "https://smartdatamodels.org/address",
+        "addressCountry": "https://smartdatamodels.org/addressCountry",
+        "addressLocality": "https://smartdatamodels.org/addressLocality",
+        "addressRegion": "https://smartdatamodels.org/addressRegion",
         "airFlowRateMax": "https://smartdatamodels.org/dataModel.S4BLDG/airFlowRateMax",
         "airFlowRateMin": "https://smartdatamodels.org/dataModel.S4BLDG/airFlowRateMin",
         "airVolume": "https://smartdatamodels.org/dataModel.S4BLDG/airVolume",
@@ -95,6 +98,7 @@
         "dateCreated": "https://smartdatamodels.org/dateCreated",
         "dateModified": "https://smartdatamodels.org/dateModified",
         "description": "http://purl.org/dc/terms/description",
+        "district": "https://smartdatamodels.org/district",
         "effectiveCapacity": "https://smartdatamodels.org/dataModel.S4BLDG/effectiveCapacity",
         "electricGeneratorEfficiency": "https://smartdatamodels.org/dataModel.S4BLDG/electricGeneratorEfficiency",
         "electricMotorEfficiency": "https://smartdatamodels.org/dataModel.S4BLDG/electricMotorEfficiency",
@@ -177,8 +181,16 @@
         "location": "ngsi-ld:location",
         "lockedRotorCurrent": "https://smartdatamodels.org/dataModel.S4BLDG/lockedRotorCurrent",
         "manualOverride": "https://smartdatamodels.org/dataModel.S4BLDG/manualOverride",
+        "max": {
+            "@container": "@list",
+            "@id": "ngsi-ld:max"
+        },
         "mechanicalOperated": "https://smartdatamodels.org/dataModel.S4BLDG/mechanicalOperated",
         "mediaSource": "https://smartdatamodels.org/dataModel.S4BLDG/mediaSource",
+        "min": {
+            "@container": "@list",
+            "@id": "ngsi-ld:min"
+        },
         "motorDriveType": "https://smartdatamodels.org/dataModel.S4BLDG/motorDriveType",
         "motorEnclosureType": "https://smartdatamodels.org/dataModel.S4BLDG/motorEnclosureType",
         "name": "https://smartdatamodels.org/name",
@@ -260,6 +272,8 @@
         "patternType": "https://smartdatamodels.org/dataModel.S4BLDG/patternType",
         "pipeConnectionEnum": "https://smartdatamodels.org/dataModel.S4BLDG/pipeConnectionEnum",
         "placementType": "https://smartdatamodels.org/dataModel.S4BLDG/placementType",
+        "postOfficeBoxNumber": "https://smartdatamodels.org/postOfficeBoxNumber",
+        "postalCode": "https://smartdatamodels.org/postalCode",
         "powerOutputMax": "https://smartdatamodels.org/dataModel.S4BLDG/powerOutputMax",
         "powerSource": "https://smartdatamodels.org/dataModel.S4BLDG/powerSource",
         "pressureRating": "https://smartdatamodels.org/dataModel.S4BLDG/pressureRating",
@@ -298,6 +312,8 @@
         "startCurrentFactor": "https://smartdatamodels.org/dataModel.S4BLDG/startCurrentFactor",
         "startingTime": "https://smartdatamodels.org/dataModel.S4BLDG/startingTime",
         "storageType": "https://smartdatamodels.org/dataModel.S4BLDG/storageType",
+        "streetAddress": "https://smartdatamodels.org/streetAddress",
+        "streetNr": "https://smartdatamodels.org/streetNr",
         "supportedWeightMax": "https://smartdatamodels.org/dataModel.S4BLDG/supportedWeightMax",
         "switchFunction": "https://smartdatamodels.org/dataModel.S4BLDG/switchFunction",
         "teTime": "https://smartdatamodels.org/dataModel.S4BLDG/teTime",
@@ -329,6 +345,9 @@
         "weight": "https://smartdatamodels.org/dataModel.S4BLDG/weight",
         "workingPressure": "https://smartdatamodels.org/dataModel.S4BLDG/workingPressure",
         "workingPressureMax": "https://smartdatamodels.org/dataModel.S4BLDG/workingPressureMax",
-        "workingPressureMin": "https://smartdatamodels.org/dataModel.S4BLDG/workingPressureMin"
+        "workingPressureMin": "https://smartdatamodels.org/dataModel.S4BLDG/workingPressureMin",
+        "x": "https://smartdatamodels.org/dataModel.S4BLDG/x",
+        "y": "https://smartdatamodels.org/dataModel.S4BLDG/y",
+        "z": "https://smartdatamodels.org/dataModel.S4BLDG/z"
     }
 }
