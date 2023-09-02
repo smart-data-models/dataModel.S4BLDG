@@ -78,7 +78,7 @@ BuildingSpace:
           properties:
             type:
               description: NGSI-LD Entity Type
-              enum: &buildingspace_-_properties_-_bounds_-_properties_-_min_-_properties_-_type_-_enum
+              enum:
                 - Point
               type: string
               x-ngsi:
@@ -106,7 +106,8 @@ BuildingSpace:
           properties:
             type:
               description: NGSI-LD Entity Type
-              enum: *buildingspace_-_properties_-_bounds_-_properties_-_min_-_properties_-_type_-_enum
+              enum:
+                - Point
               type: string
               x-ngsi:
                 type: Property
