@@ -1,144 +1,117 @@
 CooledBeam:
-
-  description: A cooled beam (or chilled beam) is a device typically used to cool air by circulating a fluid such as chilled water through exposed finned tubes above a space. Typically mounted overhead near or within a ceiling, the cooled beam uses convection to cool the space below it by acting as a heat sink for the naturally rising warm air of the space. Once cooled, the air naturally drops back to the floor where the cycle begins again.
-
+  description: 'A cooled beam (or chilled beam) is a device typically used to cool air by circulating a fluid such as chilled water through exposed finned tubes above a space. Typically mounted overhead near or within a ceiling, the cooled beam uses convection to cool the space below it by acting as a heat sink for the naturally rising warm air of the space. Once cooled, the air naturally drops back to the floor where the cycle begins again.'
   properties:
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     coilLength:
       description: Length of coil. Usually measured in millimeters (mm)
       type: number
       x-ngsi:
         type: Property
-
     coilWidth:
       description: Width of coil. Usually measured in millimeters (mm
       type: number
       x-ngsi:
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     finishColor:
       description: Finish color for cooled beam
       type: string
       x-ngsi:
         type: Property
-
     hasManufacturer:
-      description: A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag
+      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'
       type: string
       x-ngsi:
         type: Property
-
     hasModel:
-      description: A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag
+      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'
       type: string
       x-ngsi:
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -156,13 +129,11 @@ CooledBeam:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     integratedLightingType:
       description: Integrated lighting in cooled beam
       type: string
       x-ngsi:
         type: Property
-
     isContainedInBuildingSpace:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -180,7 +151,6 @@ CooledBeam:
       description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)
       x-ngsi:
         type: Property
-
     isContainedInPhysicalObject:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -198,13 +168,11 @@ CooledBeam:
       description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)
       x-ngsi:
         type: Property
-
     isFreeHanging:
-      description: Is it free hanging type (not mounted in a false ceiling)?
+      description: 'Is it free hanging type (not mounted in a false ceiling)?'
       type: boolean
       x-ngsi:
         type: Property
-
     isSubSystemOf:
       description: A reference to a system(s) that this Physical Object is part of
       items:
@@ -227,13 +195,9 @@ CooledBeam:
       type: array
       x-ngsi:
         type: Relationship
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -257,7 +221,6 @@ CooledBeam:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -284,7 +247,6 @@ CooledBeam:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -313,7 +275,6 @@ CooledBeam:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -339,7 +300,6 @@ CooledBeam:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -368,7 +328,6 @@ CooledBeam:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -399,82 +358,68 @@ CooledBeam:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     nominalCoolingCapacity:
-      description: Nominal cooling capacity. Usually measured in Watts (W, J/s)
+      description: 'Nominal cooling capacity. Usually measured in Watts (W, J/s)'
       type: number
       x-ngsi:
         type: Property
-
     nominalHeatingCapacity:
-      description: Nominal heating capacity. Usually measured in Watts (W, J/s)
+      description: 'Nominal heating capacity. Usually measured in Watts (W, J/s)'
       type: number
       x-ngsi:
         type: Property
-
     nominalReturnWaterTemperatureCooling:
       description: Nominal return water temperature (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K)
       type: number
       x-ngsi:
         type: Property
-
     nominalReturnWaterTemperatureHeating:
       description: Nominal return water temperature (refers to nominal heating capacity). Usually measured in degrees Kelvin (K)
       type: number
       x-ngsi:
         type: Property
-
     nominalSorroundingHumidityCooling:
       description: Nominal surrounding humidity (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K)
       type: number
       x-ngsi:
         type: Property
-
     nominalSorroundingTemperatureCooling:
       description: Nominal surrounding temperature (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K)
       type: number
       x-ngsi:
         type: Property
-
     nominalSorroundingTemperatureHeating:
       description: Nominal surrounding temperature (refers to nominal heating capacity). Usually measured in degrees Kelvin (K)
       type: number
       x-ngsi:
         type: Property
-
     nominalSupplyWaterTemperatureCooling:
       description: Nominal supply water temperature (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K)
       type: number
       x-ngsi:
         type: Property
-
     nominalSupplyWaterTemperatureHeating:
       description: Nominal supply water temperature (refers to nominal heating capacity). Usually measured in degrees Kelvin (K)
       type: number
       x-ngsi:
         type: Property
-
     nominalWaterFlowCooling:
       description: Nominal water flow (refers to nominal cooling capacity). Usually measured in m3/s
       type: number
       x-ngsi:
         type: Property
-
     nominalWaterFlowHeating:
       description: Nominal water flow (refers to nominal heating capacity). Usually measured in m3/s
       type: number
       x-ngsi:
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -497,13 +442,11 @@ CooledBeam:
       type: array
       x-ngsi:
         type: Property
-
     pipeConnectionEnum:
       description: The manner in which the pipe connection is made to the cooled beam
       type: string
       x-ngsi:
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -516,13 +459,11 @@ CooledBeam:
           type: string
       x-ngsi:
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     type:
       description: It must be equal to `CooledBeam`
       enum:
@@ -530,39 +471,28 @@ CooledBeam:
       type: string
       x-ngsi:
         type: Property
-
     waterFlowControlSystemType:
       description: Factory fitted waterflow control system
       type: string
       x-ngsi:
         type: Property
-
     waterPressureMax:
-      description: Allowable water circuit working pressure range. Usually measured in Pascals (Pa, N/m2)
+      description: 'Allowable water circuit working pressure range. Usually measured in Pascals (Pa, N/m2)'
       type: number
       x-ngsi:
         type: Property
-
     waterPressureMin:
-      description: Allowable water circuit working pressure range. Usually measured in Pascals (Pa, N/m2)
+      description: 'Allowable water circuit working pressure range. Usually measured in Pascals (Pa, N/m2)'
       type: number
       x-ngsi:
         type: Property
-
   required:
     - id
     - type
-
   type: object
-
-  x-derived-from: https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:CooledBeam
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:CooledBeam"
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/CooledBeam/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/CooledBeam/schema.json
-
   x-model-tags: SAREF CooledBeam
-
   x-version: 0.0.1
