@@ -1,144 +1,117 @@
 ElectricMotor:
-
   description: An electric motor is an engine that is a machine for converting electrical energy into mechanical energy.
-
   properties:
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     electricMotorEfficiency:
       description: The ratio of output capacity to intake capacity
       type: number
       x-ngsi:
         type: Property
-
     frameSize:
       description: Designation of the frame size according to the named range of frame sizes designated at the place of use or according to a given standard
       type: string
       x-ngsi:
         type: Property
-
     hasManufacturer:
-      description: A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag
+      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'
       type: string
       x-ngsi:
         type: Property
-
     hasModel:
-      description: A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag
+      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'
       type: string
       x-ngsi:
         type: Property
-
     hasPartWinding:
       description: 'Indication of whether the motor is single speed, i.e. has a single winding (= FALSE) or multi-speed i.e.has part winding (= TRUE) '
       type: boolean
       x-ngsi:
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -156,7 +129,6 @@ ElectricMotor:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     isContainedInBuildingSpace:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -174,7 +146,6 @@ ElectricMotor:
       description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)
       x-ngsi:
         type: Property
-
     isContainedInPhysicalObject:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -192,13 +163,11 @@ ElectricMotor:
       description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)
       x-ngsi:
         type: Property
-
     isGuarded:
       description: Indication of whether the motor enclosure is guarded (= TRUE) or not (= FALSE)
       type: boolean
       x-ngsi:
         type: Property
-
     isSubSystemOf:
       description: A reference to a system(s) that this Physical Object is part of
       items:
@@ -221,13 +190,9 @@ ElectricMotor:
       type: array
       x-ngsi:
         type: Relationship
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -251,7 +216,6 @@ ElectricMotor:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -278,7 +242,6 @@ ElectricMotor:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -307,7 +270,6 @@ ElectricMotor:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -333,7 +295,6 @@ ElectricMotor:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -362,7 +323,6 @@ ElectricMotor:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -393,28 +353,23 @@ ElectricMotor:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     lockedRotorCurrent:
       description: Input current when a motor armature is energized but not rotating. Usually measured in Ampere (A)
       type: number
       x-ngsi:
         type: Property
-
     motorEnclosureType:
       description: A list of the available types of motor enclosure from which that required may be selected
       type: string
       x-ngsi:
         type: Property
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -437,13 +392,11 @@ ElectricMotor:
       type: array
       x-ngsi:
         type: Property
-
     powerOutputMax:
-      description: The maximum output power rating of the engine. Usually measured in Watts (W, J/s)
+      description: 'The maximum output power rating of the engine. Usually measured in Watts (W, J/s)'
       type: number
       x-ngsi:
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -456,31 +409,26 @@ ElectricMotor:
           type: string
       x-ngsi:
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     startCurrentFactor:
       description: IEC. Start current factor defines how large the peek starting current will become on the engine. StartCurrentFactor is multiplied to NominalCurrent and we get the start current
       type: number
       x-ngsi:
         type: Property
-
     startingTime:
-      description: The time (in s) needed for the motor to reach its rated speed with its driven equipment attached, starting from standstill and at the nominal voltage applied at its terminals
+      description: 'The time (in s) needed for the motor to reach its rated speed with its driven equipment attached, starting from standstill and at the nominal voltage applied at its terminals'
       type: number
       x-ngsi:
         type: Property
-
     teTime:
       description: The maximum time (in s) at which the motor could run with locked rotor when the motor is used in an EX-environment. The time indicates that a protective device should trip before this time when the starting current of the motor is slowing through the device
       type: number
       x-ngsi:
         type: Property
-
     type:
       description: It must be equal to `ElectricMotor`
       enum:
@@ -488,21 +436,13 @@ ElectricMotor:
       type: string
       x-ngsi:
         type: Property
-
   required:
     - id
     - type
-
   type: object
-
-  x-derived-from: https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:ElectricMotor
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:ElectricMotor"
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/ElectricMotor/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/ElectricMotor/schema.json
-
   x-model-tags: SAREF ElectricMotor
-
   x-version: 0.0.1
