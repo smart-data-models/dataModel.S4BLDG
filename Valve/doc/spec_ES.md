@@ -15,7 +15,14 @@
 ## Lista de propiedades  
 
 <sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
-- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `closeOffRating[number]`: Propiedad. Índice de cierre. Suele medirse en pascales (Pa, N/m2).  - `dataProvider[string]`: Secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Descripción de este artículo  - `flowCoefficient[number]`: Propiedad. Coeficiente de caudal (cantidad de fluido que pasa a través de una válvula totalmente abierta con una caída de presión unitaria), expresado normalmente como el valor Kv o Cv de la válvula.  - `hasManufacturer[string]`: Propiedad. Relación que identifica al fabricante de una entidad (por ejemplo, un dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  - `hasModel[string]`: Propiedad. Relación que identifica el modelo de una entidad (por ejemplo, dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma.  - `id[*]`: Identificador único de la entidad  - `isContainedInBuildingSpace[*]`: Relación. Entidad utilizada para definir los espacios físicos del edificio. Un espacio del edificio contiene dispositivos u objetos del edificio. (Espacio del edificio)  - `isContainedInPhysicalObject[*]`: Relación. Cualquier Objeto que tiene una región espacial propia.  (Definición extraída de la ontología DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relación. Referencia a uno o varios sistemas de los que forma parte este objeto físico.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `size[number]`: Propiedad. Tamaño de la conexión a la válvula (o a cada conexión en el caso de grifos, válvulas mezcladoras, etc.). Suele medirse en milímetros (mm).  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `testPressure[number]`: Propiedad. Presión máxima a la que se ha sometido la válvula durante la prueba. Suele medirse en pascales (Pa, N/m2).  - `type[string]`: Propiedad. Debe ser igual a `Valve`.  - `valveMechanism[string]`: Propiedad. Mecanismo mediante el cual se consigue la función de la válvula donde: BOLA: Válvula que tiene una bola con puertos que puede girar con respecto a los puertos del asiento del cuerpo. MARIPOSA: Válvula en la que un disco aerodinámico pivota alrededor de un eje diametral. CONFIGURADA: Válvula en la que la compuerta de cierre tiene una forma configurada para tener un control más preciso del cambio de presión y caudal a través de la válvula. GLANDULA: Válvula con asiento cónico, en la que un obturador giratorio se retiene por medio de un prensaestopas y una empaquetadura de prensaestopas. GLOBO: Válvula de husillo que tiene un cuerpo esférico. TAPÓN LUBRICADO: Válvula de obturador en la que se inyecta un lubricante a presión entre la cara del obturador y el cuerpo. AGUJA: Válvula para regular el caudal en o desde una tubería, en la que un cono delgado se desplaza a lo largo del eje del caudal para cerrar contra un asiento cónico fijo. PARALELA: Válvula roscada que tiene una placa mecanizada que se desliza en ranuras formadas para formar un sello. OBTURADOR: Válvula que tiene un obturador con puertos que se puede girar con respecto a los puertos del asiento del cuerpo. WEDGEGATE: Válvula de husillo que tiene una placa en forma de cuña que encaja en guías cónicas para formar un sello.  - `valveOperation[string]`: Propiedad. Método de funcionamiento de una válvula: FLOTADOR: Válvula que se abre y cierra por la acción de un flotador que sube y baja con el nivel del agua. El flotador puede ser una bola unida a una palanca u otro mecanismo. El flotador puede ser una bola unida a una palanca u otro mecanismo HIDRÁULICA: Válvula que se abre y cierra mediante accionamiento hidráulico PALANCA: Una válvula que se abre y se cierra por la acción de una palanca que gira la compuerta dentro de la válvula. ESCUDO: Válvula que requiere el uso de una llave especial de escudo para su apertura y cierre, estando el mecanismo de accionamiento protegido por una cubierta durante el funcionamiento normal. MOTORIZADA: Una válvula que se abre y se cierra por la acción de un motor eléctrico sobre un actuador NEUMÁTICA: Una válvula que se abre y se cierra por actuación neumática SOLENOIDE: Válvula que normalmente se mantiene abierta por un campo magnético en una bobina que actúa sobre la compuerta, pero que se cierra inmediatamente si se elimina la corriente eléctrica que genera el campo magnético. MUELLE: Válvula que normalmente se mantiene en su posición por la presión de un muelle sobre una placa, pero que puede abrirse si la presión del fluido es suficiente para vencer la presión del muelle. TERMOSTATICA: Válvula en la que los orificios se abren o cierran para mantener una temperatura predeterminada requerida. RUEDA: Válvula que se abre y se cierra por la acción de una rueda que mueve la compuerta dentro de la válvula.  - `valvePattern[string]`: Propiedad. Configuración de los orificios de una válvula en función del recorrido lineal de un fluido que circula a través de la válvula o del número de orificios por los que circula: SINGLEPORT: Válvula que tiene un único puerto de entrada desde el sistema al que sirve, siendo el puerto de salida hacia el entorno circundante. ANGLED_2_PORT: Válvula en la que la dirección del flujo cambia 90 grados. PUERTO_2_ RECTO: Válvula en la que el flujo es recto. 3 puertos rectos: Válvula con tres puertos separados. CROSSOVER_4_PORT: Válvula con 4 orificios separados.  - `workingPressure[number]`: Propiedad. Presión máxima de trabajo normalmente prevista de la válvula. Suele medirse en pascales (Pa, N/m2).  <!-- /30-PropertiesList -->  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, gestiona el gobierno local    
+	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `closeOffRating[number]`: Índice de cierre. Suele medirse en pascales (Pa, N/m2).  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `flowCoefficient[number]`: Coeficiente de caudal (cantidad de fluido que pasa a través de una válvula totalmente abierta con una caída de presión unitaria), expresado normalmente como el valor Kv o Cv de la válvula.  - `hasManufacturer[string]`: Relación que identifica al fabricante de una entidad (por ejemplo, un dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma  - `hasModel[string]`: Relación que identifica el modelo de una entidad (por ejemplo, un dispositivo). Se espera que el valor sea una cadena o una cadena con etiqueta de idioma  - `id[*]`: Identificador único de la entidad  - `isContainedInBuildingSpace[*]`: Entidad utilizada para definir los espacios físicos del edificio. Un espacio del edificio contiene dispositivos u objetos del edificio. (Espacio del edificio)  - `isContainedInPhysicalObject[*]`: Cualquier Objeto que tiene una región espacial propia.  (Definición extraída de la ontología DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Referencia al sistema o sistemas de los que forma parte este objeto físico.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `size[number]`: El tamaño de la conexión a la válvula (o a cada conexión para grifos, válvulas mezcladoras, etc.). Suele medirse en milímetros (mm).  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `testPressure[number]`: La presión máxima a la que se ha sometido la válvula durante la prueba. Suele medirse en pascales (Pa, N/m2).  - `type[string]`: Debe ser igual a `Valve`.  - `valveMechanism[string]`: Mecanismo mediante el cual se consigue la función de la válvula donde: BOLA: Válvula que tiene una bola con puertos que puede girar con respecto a los puertos del asiento del cuerpo. MARIPOSA: Válvula en la que un disco aerodinámico pivota alrededor de un eje diametral. CONFIGURADA: Válvula en la que la compuerta de cierre tiene una forma configurada para tener un control más preciso del cambio de presión y caudal a través de la válvula. GLANDULA: Válvula con asiento cónico, en la que un obturador giratorio se retiene por medio de un prensaestopas y una empaquetadura de prensaestopas. GLOBO: Válvula de husillo que tiene un cuerpo esférico. TAPÓN LUBRICADO: Válvula de obturador en la que se inyecta un lubricante a presión entre la cara del obturador y el cuerpo. AGUJA: Válvula para regular el caudal en o desde una tubería, en la que un cono delgado se desplaza a lo largo del eje del caudal para cerrar contra un asiento cónico fijo. PARALELA: Válvula roscada que tiene una placa mecanizada que se desliza en ranuras formadas para formar un sello. OBTURADOR: Válvula que tiene un obturador con puertos que se puede girar con respecto a los puertos del asiento del cuerpo. WEDGEGATE: Válvula de rosca que tiene una placa en forma de cuña que encaja en guías cónicas para formar un sello.  - `valveOperation[string]`: Método de funcionamiento de una válvula: FLOTADOR: Válvula que se abre y cierra por la acción de un flotador que sube y baja con el nivel del agua. El flotador puede ser una bola unida a una palanca u otro mecanismo. El flotador puede ser una bola unida a una palanca u otro mecanismo HIDRÁULICA: Válvula que se abre y cierra mediante accionamiento hidráulico PALANCA: Una válvula que se abre y se cierra por la acción de una palanca que gira la compuerta dentro de la válvula. ESCUDO: Válvula que requiere el uso de una llave especial de escudo para su apertura y cierre, estando el mecanismo de accionamiento protegido por una cubierta durante el funcionamiento normal. MOTORIZADA: Una válvula que se abre y se cierra por la acción de un motor eléctrico sobre un actuador NEUMÁTICA: Una válvula que se abre y se cierra por actuación neumática SOLENOIDE: Válvula que normalmente se mantiene abierta por un campo magnético en una bobina que actúa sobre la compuerta, pero que se cierra inmediatamente si se elimina la corriente eléctrica que genera el campo magnético. MUELLE: Válvula que normalmente se mantiene en su posición por la presión de un muelle sobre una placa, pero que puede abrirse si la presión del fluido es suficiente para vencer la presión del muelle. TERMOSTATICA: Válvula en la que los orificios se abren o cierran para mantener una temperatura predeterminada requerida. RUEDA: Válvula que se abre y se cierra por la acción de una rueda que mueve la compuerta dentro de la válvula.  - `valvePattern[string]`: Configuración de los orificios de una válvula en función del recorrido lineal de un fluido a través de la válvula o del número de orificios: PUERTO ÚNICO: Válvula que tiene un único puerto de entrada desde el sistema al que sirve, siendo el puerto de salida hacia el entorno circundante. ANGLED_2_PORT: Válvula en la que la dirección del flujo cambia 90 grados. PUERTO_2_ RECTO: Válvula en la que el flujo es recto. 3 puertos rectos: Válvula con tres puertos separados. CROSSOVER_4_PORT: Válvula con 4 puertos separados.  - `workingPressure[number]`: La presión máxima de trabajo normalmente esperada de la válvula. Normalmente se mide en pascales (Pa, N/m2).  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -35,29 +42,51 @@ Valve:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -74,23 +103,23 @@ Valve:
         model: https://schema.org/Text    
         type: Property    
     closeOffRating:    
-      description: 'Property. Close off rating. Usually measured in Pascals (Pa, N/m2).'    
+      description: 'Close off rating. Usually measured in Pascals (Pa, N/m2)'    
       type: number    
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -101,55 +130,97 @@ Valve:
       x-ngsi:    
         type: Property    
     flowCoefficient:    
-      description: 'Property. Flow coefficient (the quantity of fluid that passes through a fully open valve at unit pressure drop), typically expressed as the Kv or Cv value for the valve.'    
+      description: 'Flow coefficient (the quantity of fluid that passes through a fully open valve at unit pressure drop), typically expressed as the Kv or Cv value for the valve'    
       type: number    
       x-ngsi:    
         type: Property    
     hasManufacturer:    
-      description: 'Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     hasModel:    
-      description: 'Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &valve_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
-      anyOf: *valve_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
       x-ngsi:    
         type: Property    
     isContainedInPhysicalObject:    
-      anyOf: *valve_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
       x-ngsi:    
         type: Property    
     isSubSystemOf:    
-      description: Relationship. A reference to a system(s) that this Physical Object is part of.    
+      description: A reference to a system(s) that this Physical Object is part of    
       items:    
-        anyOf: *valve_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Relationship    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -170,7 +241,9 @@ Valve:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -194,7 +267,9 @@ Valve:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -220,7 +295,9 @@ Valve:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -243,7 +320,9 @@ Valve:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -269,7 +348,9 @@ Valve:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -297,18 +378,34 @@ Valve:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *valve_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -325,44 +422,44 @@ Valve:
       x-ngsi:    
         type: Property    
     size:    
-      description: 'Property. The size of the connection to the valve (or to each connection for faucets, mixing valves, etc.). Usually measured in millimeters (mm).'    
+      description: 'The size of the connection to the valve (or to each connection for faucets, mixing valves, etc.). Usually measured in millimeters (mm)'    
       type: number    
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     testPressure:    
-      description: 'Property. The maximum pressure to which the valve has been subjected under test. Usually measured in Pascals (Pa, N/m2).'    
+      description: 'The maximum pressure to which the valve has been subjected under test. Usually measured in Pascals (Pa, N/m2)'    
       type: number    
       x-ngsi:    
         type: Property    
     type:    
-      description: Property. It must be equal to `Valve`.    
+      description: It must be equal to `Valve`    
       enum:    
         - Valve    
       type: string    
       x-ngsi:    
         type: Property    
     valveMechanism:    
-      description: 'Property. The mechanism by which the valve function is achieved where: BALL: Valve that has a ported ball that can be turned relative to the body seat ports. BUTTERFLY: Valve in which a streamlined disc pivots about a diametric axis. CONFIGUREDGATE: Screwdown valve in which the closing gate is shaped in a configured manner to have a more precise control of pressure and flow change across the valve. GLAND: Valve with a tapered seating, in which a rotatable plug is retained by means of a gland and gland packing. GLOBE: Screwdown valve that has a spherical body. LUBRICATEDPLUG: Plug valve in which a lubricant is injected under pressure between the plug face and the body. NEEDLE: Valve for regulating the flow in or from a pipe, in which a slender cone moves along the axis of flow to close against a fixed conical seat. PARALLELSLIDE: Screwdown valve that has a machined plate that slides in formed grooves to form a seal. PLUG: Valve that has a ported plug that can be turned relative to the body seat ports. WEDGEGATE: Screwdown valve that has a wedge shaped plate fitting into tapered guides to form a seal.'    
+      description: 'The mechanism by which the valve function is achieved where: BALL: Valve that has a ported ball that can be turned relative to the body seat ports. BUTTERFLY: Valve in which a streamlined disc pivots about a diametric axis. CONFIGUREDGATE: Screwdown valve in which the closing gate is shaped in a configured manner to have a more precise control of pressure and flow change across the valve. GLAND: Valve with a tapered seating, in which a rotatable plug is retained by means of a gland and gland packing. GLOBE: Screwdown valve that has a spherical body. LUBRICATEDPLUG: Plug valve in which a lubricant is injected under pressure between the plug face and the body. NEEDLE: Valve for regulating the flow in or from a pipe, in which a slender cone moves along the axis of flow to close against a fixed conical seat. PARALLELSLIDE: Screwdown valve that has a machined plate that slides in formed grooves to form a seal. PLUG: Valve that has a ported plug that can be turned relative to the body seat ports. WEDGEGATE: Screwdown valve that has a wedge shaped plate fitting into tapered guides to form a seal'    
       type: string    
       x-ngsi:    
         type: Property    
     valveOperation:    
-      description: 'Property. The method of valve operation where: DROPWEIGHT: A valve that is closed by the action of a weighted lever being released, the weight normally being prevented from dropping by being held by a wire, the closure normally being made by the action of heat on a fusible link in the wire FLOAT: A valve that is opened and closed by the action of a float that rises and falls with water level. The float may be a ball attached to a lever or other mechanism HYDRAULIC: A valve that is opened and closed by hydraulic actuation LEVER: A valve that is opened and closed by the action of a lever rotating the gate within the valve. LOCKSHIELD: A valve that requires the use of a special lockshield key for opening and closing, the operating mechanism being protected by a shroud during normal operation. MOTORIZED: A valve that is opened and closed by the action of an electric motor on an actuator PNEUMATIC: A valve that is opened and closed by pneumatic actuation SOLENOID: A valve that is normally held open by a magnetic field in a coil acting on the gate but that is closed immediately if the electrical current generating the magnetic field is removed. SPRING: A valve that is normally held in position by the pressure of a spring on a plate but that may be caused to open if the pressure of the fluid is sufficient to overcome the spring pressure. THERMOSTATIC: A valve in which the ports are opened or closed to maintain a required predetermined temperature. WHEEL: A valve that is opened and closed by the action of a wheel moving the gate within the valve.'    
+      description: 'The method of valve operation where: DROPWEIGHT: A valve that is closed by the action of a weighted lever being released, the weight normally being prevented from dropping by being held by a wire, the closure normally being made by the action of heat on a fusible link in the wire FLOAT: A valve that is opened and closed by the action of a float that rises and falls with water level. The float may be a ball attached to a lever or other mechanism HYDRAULIC: A valve that is opened and closed by hydraulic actuation LEVER: A valve that is opened and closed by the action of a lever rotating the gate within the valve. LOCKSHIELD: A valve that requires the use of a special lockshield key for opening and closing, the operating mechanism being protected by a shroud during normal operation. MOTORIZED: A valve that is opened and closed by the action of an electric motor on an actuator PNEUMATIC: A valve that is opened and closed by pneumatic actuation SOLENOID: A valve that is normally held open by a magnetic field in a coil acting on the gate but that is closed immediately if the electrical current generating the magnetic field is removed. SPRING: A valve that is normally held in position by the pressure of a spring on a plate but that may be caused to open if the pressure of the fluid is sufficient to overcome the spring pressure. THERMOSTATIC: A valve in which the ports are opened or closed to maintain a required predetermined temperature. WHEEL: A valve that is opened and closed by the action of a wheel moving the gate within the valve'    
       type: string    
       x-ngsi:    
         type: Property    
     valvePattern:    
-      description: 'Property. The configuration of the ports of a valve according to either the linear route taken by a fluid flowing through the valve or by the number of ports where: SINGLEPORT: Valve that has a single entry port from the system that it serves, the exit port being to the surrounding environment. ANGLED_2_PORT: Valve in which the direction of flow is changed through 90 degrees. STRAIGHT_2_PORT: Valve in which the flow is straight through. STRAIGHT_3_PORT: Valve with three separate ports. CROSSOVER_4_PORT: Valve with 4 separate ports.'    
+      description: 'The configuration of the ports of a valve according to either the linear route taken by a fluid flowing through the valve or by the number of ports where: SINGLEPORT: Valve that has a single entry port from the system that it serves, the exit port being to the surrounding environment. ANGLED_2_PORT: Valve in which the direction of flow is changed through 90 degrees. STRAIGHT_2_PORT: Valve in which the flow is straight through. STRAIGHT_3_PORT: Valve with three separate ports. CROSSOVER_4_PORT: Valve with 4 separate ports'    
       type: string    
       x-ngsi:    
         type: Property    
     workingPressure:    
-      description: 'Property. The normally expected maximum working pressure of the valve. Usually measured in Pascals (Pa, N/m2).'    
+      description: 'The normally expected maximum working pressure of the valve. Usually measured in Pascals (Pa, N/m2)'    
       type: number    
       x-ngsi:    
         type: Property    
