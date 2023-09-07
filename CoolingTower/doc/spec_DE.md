@@ -15,7 +15,14 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `ambientDesignDryBulbTemperature[number]`: Eigenschaft. Trockenkugeltemperatur der Umgebung, die für die Auswahl des Kühlturms verwendet wird. Wird normalerweise in Grad Kelvin (K) gemessen.  - `ambientDesignWetBulbTemperature[number]`: Eigenschaft. Feuchtkugeltemperatur der Umgebung, die für die Auswahl des Kühlturms verwendet wird. Wird normalerweise in Grad Kelvin (K) gemessen.  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `basinReserveVolume[number]`: Eigenschaft. Volumen zwischen Betriebs- und Überlaufniveau im Kühlturmbecken. Wird normalerweise in Kubikmetern (m3) gemessen.  - `capacityControl[string]`: Eigentum. FanCycling: Der Lüfter wird zur Steuerung der Leistung ein- und ausgeschaltet. TwoSpeedFan: Der Lüfter wird zur Steuerung der Leistung zwischen niedriger und hoher Drehzahl umgeschaltet. VariableSpeedFan: Die Gebläsedrehzahl wird zur Steuerung der Leistung variiert. DämpferSteuerung: Die Dämpfer modulieren den Luftstrom zur Steuerung der Leistung. BypassVentilSteuerung: Das Bypass-Ventil moduliert den Wasserdurchfluss, um die Leistung zu steuern. MehrereSerienPumpen: Ein- und Ausschalten von Pumpen mehrerer Serien zur Steuerung der Leistung. ZweistufigePumpe: Umschalten zwischen hoher/niedriger Pumpendrehzahl zur Steuerung der Leistung. VariableSpeedPump: Variiert die Pumpendrehzahl zur Steuerung der Leistung.  - `circuitType[string]`: Eigenschaft. OffenerKreislauf: Das Wasser wird direkt der Kühlatmosphäre ausgesetzt. Geschlossener Kreislauf: Die Flüssigkeit ist durch einen Wärmetauscher von der Atmosphäre getrennt. Nass: Der Luftstrom oder die Wärmeaustauschfläche wird durch Verdunstung gekühlt. Trocken: Keine Verdunstung in den Luftstrom. Trocken-Nass: Eine Kombination aus einem Trockenturm und einem Nassturm.  - `controlStrategy[string]`: Eigenschaft. FixedExitingWaterTemp: Die Leistung wird so gesteuert, dass eine feste Wasseraustrittstemperatur eingehalten wird. WetBulbTempReset: Der Sollwert wird auf der Grundlage der Feuchtkugeltemperatur zurückgesetzt.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `flowArrangement[string]`: Eigenschaft. CounterFlow: Luft- und Wasserstrom fließen in unterschiedliche Richtungen. CrossFlow: Luft- und Wasserstrom fließen senkrecht zueinander. ParallelFlow: Luft- und Wasserstrom fließen in die gleiche Richtung.  - `hasManufacturer[string]`: Eigenschaft. Eine Beziehung, die den Hersteller einer Entität (z. B. eines Geräts) identifiziert. Der Wert sollte eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen sein.  - `hasModel[string]`: Eigenschaft. Eine Beziehung, die das Modell einer Entität (z. B. eines Geräts) identifiziert. Als Wert wird eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen erwartet.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `isContainedInBuildingSpace[*]`: Beziehung. Eine Einheit, die zur Definition der physischen Räume des Gebäudes verwendet wird. Ein Gebäudebereich enthält Geräte oder Gebäudeobjekte. (GebäudeRaum)  - `isContainedInPhysicalObject[*]`: Verwandtschaft. Jedes Objekt, das eine eigene Raumregion hat.  (Definition aus der DUL Ontologie) (PhysicalObject)  - `isSubSystemOf[array]`: Beziehung. Ein Verweis auf ein oder mehrere Systeme, zu denen dieses physische Objekt gehört.  - `liftElevationDifference[number]`: Eigenschaft. Höhenunterschied zwischen dem Sumpf des Kühlturms und dem oberen Ende des Turms. Wird normalerweise in Millimetern (mm) gemessen.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `nominalCapacity[number]`: Eigenschaft. Nennleistung. Wird normalerweise in Watt (W, J/s) gemessen.  - `numberOfCells[number]`: Eigenschaft. Anzahl der Zellen in einer Kühlturmeinheit.  - `operationTemperatureMax[number]`: Eigenschaft. Zulässiger Temperaturbereich der Betriebsumgebung (Luft, Flüssigkeit). Wird normalerweise in Grad Kelvin (K) gemessen.  - `operationTemperatureMin[number]`: Eigenschaft. Zulässiger Temperaturbereich der Betriebsumgebung (Luft, Flüssigkeit). Wird normalerweise in Grad Kelvin (K) gemessen.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `sprayType[string]`: Eigenschaft. Sprühgefüllt: Wasser wird in den Luftstrom gespritzt. SplashTypeFill: Wasser fließt in Kaskaden über aufeinanderfolgende Reihen von Spritzbalken. FilmTypeFill: Wasser fließt in einer dünnen Schicht über eng beieinander liegende Blätter.  - `type[string]`: Eigenschaft. Sie muss gleich `CoolingTower` sein.  - `waterRequirement[number]`: Eigenschaft. Nachspeisewasserbedarf. Wird normalerweise in m3/s gemessen.  <!-- /30-PropertiesList -->  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `ambientDesignDryBulbTemperature[number]`: Trockenkugeltemperatur der Umgebung, die für die Auswahl des Kühlturms verwendet wird. Wird normalerweise in Grad Kelvin (K) gemessen.  - `ambientDesignWetBulbTemperature[number]`: Feuchtkugeltemperatur der Umgebung, die für die Auswahl des Kühlturms verwendet wird. Wird normalerweise in Grad Kelvin (K) gemessen.  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `basinReserveVolume[number]`: Volumen zwischen Betriebs- und Überlaufniveau im Kühlturmbecken. Wird normalerweise in Kubikmeter (m3) gemessen.  - `capacityControl[string]`: FanCycling: Der Lüfter wird zur Steuerung der Leistung ein- und ausgeschaltet. TwoSpeedFan: Der Lüfter wird zwischen niedriger und hoher Geschwindigkeit umgeschaltet, um den Betrieb zu steuern. VariableSpeedFan: Die Lüfterdrehzahl wird zur Steuerung der Leistung variiert. DämpferSteuerung: Die Dämpfer modulieren den Luftstrom zur Steuerung der Leistung. BypassVentilSteuerung: Das Bypass-Ventil moduliert den Wasserdurchfluss, um die Leistung zu steuern. MehrereSerienPumpen: Ein- und Ausschalten von Pumpen mehrerer Serien zur Steuerung der Leistung. ZweistufigePumpe: Umschalten zwischen hoher/niedriger Pumpendrehzahl zur Steuerung der Leistung. VariableSpeedPump: Variiert die Pumpendrehzahl zur Steuerung der Leistung.  - `circuitType[string]`: OffenerKreislauf: Das Wasser wird direkt der Kühlatmosphäre ausgesetzt. Geschlossener Kreislauf: Die Flüssigkeit ist durch einen Wärmetauscher von der Atmosphäre getrennt. Nass: Der Luftstrom oder die Wärmeaustauschfläche wird durch Verdunstung gekühlt. Trocken: Keine Verdunstung in den Luftstrom. Trocken-Nass: Eine Kombination aus einem Trockenturm und einem Nassturm  - `controlStrategy[string]`: FixedExitingWaterTemp: Die Leistung wird so gesteuert, dass eine feste Wasseraustrittstemperatur eingehalten wird. WetBulbTempReset: Der Sollwert wird auf der Grundlage der Feuchtkugeltemperatur zurückgesetzt.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `flowArrangement[string]`: CounterFlow: Luft- und Wasserstrom strömen in unterschiedliche Richtungen. CrossFlow: Luft- und Wasserstrom fließen senkrecht zueinander. ParallelFlow: Luft- und Wasserstrom fließen in die gleiche Richtung.  - `hasManufacturer[string]`: Eine Beziehung zur Identifizierung des Herstellers einer Entität (z. B. eines Geräts). Der Wert sollte eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen sein  - `hasModel[string]`: Eine Beziehung, die das Modell einer Entität (z. B. eines Geräts) identifiziert. Als Wert wird eine Zeichenkette oder eine Zeichenkette mit Sprach-Tag erwartet  - `id[*]`: Eindeutiger Bezeichner der Entität  - `isContainedInBuildingSpace[*]`: Eine Einheit, die zur Definition der physischen Räume des Gebäudes verwendet wird. Ein Gebäudebereich enthält Geräte oder Gebäudeobjekte. (GebäudeRaum)  - `isContainedInPhysicalObject[*]`: Jedes Objekt, das eine eigene Raumregion hat.  (Definition entnommen aus der DUL-Ontologie) (PhysicalObject)  - `isSubSystemOf[array]`: Ein Verweis auf ein oder mehrere Systeme, zu denen dieses physische Objekt gehört  - `liftElevationDifference[number]`: Höhenunterschied zwischen dem Sumpf des Kühlturms und dem oberen Ende des Turms. Normalerweise in Millimetern (mm) gemessen.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `nominalCapacity[number]`: Nennleistung. Wird normalerweise in Watt (W, J/s) gemessen.  - `numberOfCells[number]`: Anzahl der Zellen in einer Kühlturmeinheit  - `operationTemperatureMax[number]`: Zulässiger Temperaturbereich der Betriebsumgebung (Luft, Flüssigkeit). Gewöhnlich gemessen in Grad Kelvin (K)  - `operationTemperatureMin[number]`: Zulässiger Temperaturbereich der Betriebsumgebung (Luft, Flüssigkeit). Gewöhnlich gemessen in Grad Kelvin (K)  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `sprayType[string]`: SprayFilled: Wasser wird in den Luftstrom gesprüht. SplashTypeFill: Wasser fließt in Kaskaden über aufeinanderfolgende Reihen von Spritzbalken. FilmTypeFill: Wasser fließt in einer dünnen Schicht über eng beieinander liegende Blätter.  - `type[string]`: Er muss gleich `CoolingTower` sein  - `waterRequirement[number]`: Nachspeisewasserbedarf. Üblicherweise gemessen in m3/s  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -35,29 +42,51 @@ CoolingTower:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -68,12 +97,12 @@ CoolingTower:
       x-ngsi:    
         type: Property    
     ambientDesignDryBulbTemperature:    
-      description: Property. Ambient design dry bulb temperature used for selecting the cooling tower. Usually measured in degrees Kelvin (K).    
+      description: Ambient design dry bulb temperature used for selecting the cooling tower. Usually measured in degrees Kelvin (K)    
       type: number    
       x-ngsi:    
         type: Property    
     ambientDesignWetBulbTemperature:    
-      description: Property. Ambient design wet bulb temperature used for selecting the cooling tower. Usually measured in degrees Kelvin (K).    
+      description: Ambient design wet bulb temperature used for selecting the cooling tower. Usually measured in degrees Kelvin (K)    
       type: number    
       x-ngsi:    
         type: Property    
@@ -84,38 +113,38 @@ CoolingTower:
         model: https://schema.org/Text    
         type: Property    
     basinReserveVolume:    
-      description: Property. Volume between operating and overflow levels in cooling tower basin. Usually measured in cubic metre (m3).    
+      description: Volume between operating and overflow levels in cooling tower basin. Usually measured in cubic metre (m3)    
       type: number    
       x-ngsi:    
         type: Property    
     capacityControl:    
-      description: 'Property. FanCycling: Fan is cycled on and off to control duty. TwoSpeedFan: Fan is switched between low and high speed to control duty. VariableSpeedFan: Fan speed is varied to control duty. DampersControl: Dampers modulate the air flow to control duty. BypassValveControl: Bypass valve modulates the water flow to control duty. MultipleSeriesPumps: Turn on/off multiple series pump to control duty. TwoSpeedPump: Switch between high/low pump speed to control duty. VariableSpeedPump: vary pump speed to control duty.'    
+      description: 'FanCycling: Fan is cycled on and off to control duty. TwoSpeedFan: Fan is switched between low and high speed to control duty. VariableSpeedFan: Fan speed is varied to control duty. DampersControl: Dampers modulate the air flow to control duty. BypassValveControl: Bypass valve modulates the water flow to control duty. MultipleSeriesPumps: Turn on/off multiple series pump to control duty. TwoSpeedPump: Switch between high/low pump speed to control duty. VariableSpeedPump: vary pump speed to control duty'    
       type: string    
       x-ngsi:    
         type: Property    
     circuitType:    
-      description: 'Property. OpenCircuit: Exposes water directly to the cooling atmosphere. CloseCircuit: The fluid is separated from the atmosphere by a heat exchanger. Wet: The air stream or the heat exchange surface is evaporatively cooled. Dry: No evaporation into the air stream. DryWet: A combination of a dry tower and a wet tower.'    
+      description: 'OpenCircuit: Exposes water directly to the cooling atmosphere. CloseCircuit: The fluid is separated from the atmosphere by a heat exchanger. Wet: The air stream or the heat exchange surface is evaporatively cooled. Dry: No evaporation into the air stream. DryWet: A combination of a dry tower and a wet tower'    
       type: string    
       x-ngsi:    
         type: Property    
     controlStrategy:    
-      description: 'Property. FixedExitingWaterTemp: The capacity is controlled to maintain a fixed exiting water temperature. WetBulbTempReset: The set-point is reset based on the wet-bulb temperature.'    
+      description: 'FixedExitingWaterTemp: The capacity is controlled to maintain a fixed exiting water temperature. WetBulbTempReset: The set-point is reset based on the wet-bulb temperature'    
       type: string    
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -126,60 +155,102 @@ CoolingTower:
       x-ngsi:    
         type: Property    
     flowArrangement:    
-      description: 'Property. CounterFlow: Air and water flow enter in different directions. CrossFlow: Air and water flow are perpendicular. ParallelFlow: air and water flow enter in same directions.'    
+      description: 'CounterFlow: Air and water flow enter in different directions. CrossFlow: Air and water flow are perpendicular. ParallelFlow: air and water flow enter in same directions'    
       type: string    
       x-ngsi:    
         type: Property    
     hasManufacturer:    
-      description: 'Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     hasModel:    
-      description: 'Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &coolingtower_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
-      anyOf: *coolingtower_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
       x-ngsi:    
         type: Property    
     isContainedInPhysicalObject:    
-      anyOf: *coolingtower_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
       x-ngsi:    
         type: Property    
     isSubSystemOf:    
-      description: Relationship. A reference to a system(s) that this Physical Object is part of.    
+      description: A reference to a system(s) that this Physical Object is part of    
       items:    
-        anyOf: *coolingtower_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Relationship    
     liftElevationDifference:    
-      description: Property. Elevation difference between cooling tower sump and the top of the tower. Usually measured in millimeters (mm).    
+      description: Elevation difference between cooling tower sump and the top of the tower. Usually measured in millimeters (mm)    
       type: number    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -200,7 +271,9 @@ CoolingTower:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -224,7 +297,9 @@ CoolingTower:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -250,7 +325,9 @@ CoolingTower:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -273,7 +350,9 @@ CoolingTower:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -299,7 +378,9 @@ CoolingTower:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -327,38 +408,54 @@ CoolingTower:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     nominalCapacity:    
-      description: 'Property. Nominal capacity. Usually measured in Watts (W, J/s).'    
+      description: 'Nominal capacity. Usually measured in Watts (W, J/s)'    
       type: number    
       x-ngsi:    
         type: Property    
     numberOfCells:    
-      description: Property. Number of cells in one cooling tower unit.    
+      description: Number of cells in one cooling tower unit    
       type: number    
       x-ngsi:    
         type: Property    
     operationTemperatureMax:    
-      description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
+      description: 'Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)'    
       type: number    
       x-ngsi:    
         type: Property    
     operationTemperatureMin:    
-      description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
+      description: 'Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)'    
       type: number    
       x-ngsi:    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *coolingtower_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -375,24 +472,24 @@ CoolingTower:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     sprayType:    
-      description: 'Property. SprayFilled: Water is sprayed into airflow. SplashTypeFill: water cascades over successive rows of splash bars. FilmTypeFill: water flows in a thin layer over closely spaced sheets.'    
+      description: 'SprayFilled: Water is sprayed into airflow. SplashTypeFill: water cascades over successive rows of splash bars. FilmTypeFill: water flows in a thin layer over closely spaced sheets'    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: Property. It must be equal to `CoolingTower`.    
+      description: It must be equal to `CoolingTower`    
       enum:    
         - CoolingTower    
       type: string    
       x-ngsi:    
         type: Property    
     waterRequirement:    
-      description: Property. Make-up water requirement. Usually measured in m3/s.    
+      description: Make-up water requirement. Usually measured in m3/s    
       type: number    
       x-ngsi:    
         type: Property    
@@ -454,7 +551,7 @@ CoolingTower:
 ```  
 </details>  
 #### CoolingTower NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für einen CoolingTower im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen CoolingTower im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
