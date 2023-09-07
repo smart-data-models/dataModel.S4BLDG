@@ -15,7 +15,14 @@
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `colorAppearance[string]`: Propriété. Dans les normes DIN et CIE, les sources de lumière artificielle sont classées en fonction de leur apparence chromatique. Pour l'œil humain, elles semblent toutes blanches et la différence ne peut être détectée que par comparaison directe. La performance visuelle n'est pas directement affectée par les différences d'apparence des couleurs.  - `colorRenderingIndex[number]`: Propriété. L'IRC indique dans quelle mesure une source lumineuse rend huit couleurs standard par rapport à une lampe de référence parfaite ayant la même température de couleur. L'échelle de l'IRC va de 1 à 100, 100 représentant des propriétés de rendu parfaites.  - `colorTemperature[number]`: Propriété. La température de couleur d'une source de rayonnement est définie comme la température (en Kelvin) d'un corps noir ou d'un radiateur de Planck dont le rayonnement a la même chromaticité que la source de rayonnement. Souvent, les valeurs ne sont que des températures de couleur approximatives, car le radiateur à corps noir ne peut pas émettre un rayonnement de toutes les valeurs chromatiques. Les températures de couleur des sources de lumière artificielle les plus courantes vont de moins de 3 000 K (blanc chaud) à 4 000 K (intermédiaire) et plus de 5 000 K (lumière du jour). Elle est généralement mesurée en degrés Kelvin (K).  - `contributedLuminousFlux[number]`: Propriété. Le flux lumineux est une mesure photométrique du flux radiant, c'est-à-dire du volume de lumière émis par une source lumineuse. Le flux lumineux est mesuré soit pour l'ensemble de l'intérieur, soit pour une partie de l'intérieur (flux lumineux partiel pour un angle plein). Tous les autres paramètres photométriques sont des dérivés du flux lumineux. Le flux lumineux est mesuré en lumens (lm). Le flux lumineux est donné comme valeur nominale pour chaque lampe. Il est généralement mesuré en lumen (lm, Candela Steradian).  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `hasManufacturer[string]`: Propriété. Une relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une étiquette de langue.  - `hasModel[string]`: Propriété. Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue.  - `id[*]`: Identifiant unique de l'entité  - `isContainedInBuildingSpace[*]`: Relations. Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des appareils ou des objets de bâtiment. (Espace Bâtiment)  - `isContainedInPhysicalObject[*]`: Relation. Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Relation. Référence à un ou plusieurs systèmes dont cet objet physique fait partie.  - `lampBallastType[string]`: Propriété. Le type de ballast utilisé pour stabiliser la décharge de gaz en limitant le courant pendant le fonctionnement et pour fournir la tension d'amorçage nécessaire au démarrage. Les ballasts sont nécessaires pour faire fonctionner les lampes à décharge telles que les lampes fluorescentes, les lampes fluorescentes compactes, les lampes au mercure à haute pression, les lampes aux halogénures métalliques et les lampes au sodium à haute pression. Les ballasts magnétiques sont des selfs qui limitent le courant passant à travers une lampe connectée en série selon le principe de l'auto-induction. Le courant et la puissance résultants sont déterminants pour le fonctionnement efficace de la lampe. Un ballast spécialement conçu est nécessaire pour chaque type de lampe afin de respecter les caractéristiques de la lampe en termes de flux lumineux, d'apparence des couleurs et de durée de vie. Les deux types de ballasts magnétiques pour lampes fluorescentes sont les ballasts conventionnels KVG (série EC-A) et les ballasts à faibles pertes VVG (série EC-B). Les ballasts à faibles pertes ont un rendement plus élevé, ce qui signifie des pertes de ballast réduites et une charge thermique plus faible. Les ballasts électroniques sont utilisés pour faire fonctionner les lampes fluorescentes à des fréquences élevées (environ 35 - 40 kHz).  - `lampCompensationType[string]`: Propriété. Identifie la forme de compensation utilisée pour la correction du facteur de puissance et la suppression des ondes radio.  - `lampMaintenanceFactor[number]`: Propriété. Pertes non récupérables de flux lumineux d'une lampe dues à la dépréciation de la lampe, c'est-à-dire la diminution du rendement lumineux d'un luminaire en raison du vieillissement et de la saleté.  - `lightEmitterNominalPower[number]`: Propriété. Puissance nominale de l'émetteur de lumière. Généralement mesurée en watts (W, J/s).  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `spectrumMax[number]`: Propriété. Le spectre d'un rayonnement décrit sa composition en fonction de la longueur d'onde. La lumière, par exemple, en tant que partie du rayonnement électromagnétique visible par l'œil humain, est un rayonnement dont les longueurs d'onde se situent entre 380 et 780 nm environ (1 nm = 10 m). La gamme de couleurs correspondante va du violet à l'indigo, en passant par le bleu, le vert, le jaune, l'orange et le rouge. Ces couleurs forment un spectre continu, dans lequel les différents secteurs spectraux se fondent les uns dans les autres.  - `spectrumMin[number]`: Propriété. Le spectre d'un rayonnement décrit sa composition en fonction de la longueur d'onde. La lumière, par exemple, en tant que partie du rayonnement électromagnétique visible par l'œil humain, est un rayonnement dont les longueurs d'onde se situent entre 380 et 780 nm environ (1 nm = 10 m). La gamme de couleurs correspondante va du violet à l'indigo, en passant par le bleu, le vert, le jaune, l'orange et le rouge. Ces couleurs forment un spectre continu, dans lequel les différents secteurs spectraux se fondent les uns dans les autres.  - `type[string]`: Propriété. Elle doit être égale à `Lamp`.  <!-- /30-PropertiesList -->  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse postale et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La région dans laquelle se trouve la localité et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
+	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `colorAppearance[string]`: Dans les normes DIN et CIE, les sources de lumière artificielle sont classées en fonction de leur apparence chromatique. Pour l'œil humain, elles semblent toutes blanches et la différence ne peut être détectée que par comparaison directe. La performance visuelle n'est pas directement affectée par les différences d'apparence des couleurs  - `colorRenderingIndex[number]`: L'IRC indique dans quelle mesure une source lumineuse rend huit couleurs standard par rapport à une lampe de référence parfaite ayant la même température de couleur. L'échelle de l'IRC va de 1 à 100, 100 représentant des propriétés de rendu parfaites.  - `colorTemperature[number]`: La température de couleur d'une source de rayonnement est définie comme la température (en Kelvin) d'un corps noir ou d'un radiateur de Planck dont le rayonnement a la même chromaticité que la source de rayonnement. Souvent, les valeurs ne sont que des températures de couleur approximatives, car le radiateur à corps noir ne peut pas émettre un rayonnement de toutes les valeurs chromatiques. Les températures de couleur des sources de lumière artificielle les plus courantes vont de moins de 3 000 K (blanc chaud) à 4 000 K (intermédiaire) et plus de 5 000 K (lumière du jour). Elle est généralement mesurée en degrés Kelvin (K).  - `contributedLuminousFlux[number]`: Le flux lumineux est une mesure photométrique du flux radiant, c'est-à-dire du volume de lumière émis par une source lumineuse. Le flux lumineux est mesuré soit pour l'ensemble de l'intérieur, soit pour une partie de l'intérieur (flux lumineux partiel pour un angle plein). Tous les autres paramètres photométriques sont des dérivés du flux lumineux. Le flux lumineux est mesuré en lumens (lm). Le flux lumineux est donné comme valeur nominale pour chaque lampe. Généralement mesuré en lumen (lm, Candela Steradian)  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `hasManufacturer[string]`: Relation identifiant le fabricant d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise linguistique  - `hasModel[string]`: Une relation identifiant le modèle d'une entité (par exemple, un appareil). La valeur doit être une chaîne de caractères ou une chaîne de caractères avec une balise de langue  - `id[*]`: Identifiant unique de l'entité  - `isContainedInBuildingSpace[*]`: Entité utilisée pour définir les espaces physiques du bâtiment. Un espace de bâtiment contient des dispositifs ou des objets de bâtiment. (Espace Bâtiment)  - `isContainedInPhysicalObject[*]`: Tout objet qui possède une région spatiale propre.  (Définition extraite de l'ontologie DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Référence au(x) système(s) dont cet objet physique fait partie  - `lampBallastType[string]`: Le type de ballast utilisé pour stabiliser la décharge de gaz en limitant le courant pendant le fonctionnement et pour fournir la tension d'amorçage nécessaire au démarrage. Les ballasts sont nécessaires pour faire fonctionner les lampes à décharge telles que les lampes fluorescentes, les lampes fluorescentes compactes, les lampes au mercure à haute pression, les lampes aux halogénures métalliques et les lampes au sodium à haute pression. Les ballasts magnétiques sont des selfs qui limitent le courant passant à travers une lampe connectée en série selon le principe de l'auto-induction. Le courant et la puissance résultants sont déterminants pour le fonctionnement efficace de la lampe. Un ballast spécialement conçu est nécessaire pour chaque type de lampe afin de respecter les caractéristiques de la lampe en termes de flux lumineux, d'apparence des couleurs et de durée de vie. Les deux types de ballasts magnétiques pour lampes fluorescentes sont les ballasts conventionnels KVG (série EC-A) et les ballasts à faibles pertes VVG (série EC-B). Les ballasts à faibles pertes ont un rendement plus élevé, ce qui signifie des pertes de ballast réduites et une charge thermique plus faible. Les ballasts électroniques sont utilisés pour faire fonctionner les lampes fluorescentes à des fréquences élevées (environ 35 - 40 kHz).  - `lampCompensationType[string]`: Identifie la forme de compensation utilisée pour la correction du facteur de puissance et la suppression des ondes radio.  - `lampMaintenanceFactor[number]`: Pertes non récupérables de flux lumineux d'une lampe dues à la dépréciation de la lampe, c'est-à-dire la diminution du rendement lumineux d'un luminaire due au vieillissement et à la saleté.  - `lightEmitterNominalPower[number]`: Puissance nominale de l'émetteur de lumière. Généralement mesurée en watts (W, J/s).  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `spectrumMax[number]`: Le spectre d'un rayonnement décrit sa composition en fonction de la longueur d'onde. La lumière, par exemple, en tant que partie du rayonnement électromagnétique visible par l'œil humain, est un rayonnement dont les longueurs d'onde se situent entre 380 et 780 nm environ (1 nm = 10 m). La gamme de couleurs correspondante va du violet à l'indigo, en passant par le bleu, le vert, le jaune, l'orange et le rouge. Ces couleurs forment un spectre continu, dans lequel les différents secteurs spectraux se fondent les uns dans les autres  - `spectrumMin[number]`: Le spectre d'un rayonnement décrit sa composition en fonction de la longueur d'onde. La lumière, par exemple, en tant que partie du rayonnement électromagnétique visible par l'œil humain, est un rayonnement dont les longueurs d'onde se situent entre 380 et 780 nm environ (1 nm = 10 m). La gamme de couleurs correspondante va du violet à l'indigo, en passant par le bleu, le vert, le jaune, l'orange et le rouge. Ces couleurs forment un spectre continu, dans lequel les différents secteurs spectraux se fondent les uns dans les autres  - `type[string]`: Il doit être égal à `Lamp`  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -35,29 +42,51 @@ Lamp:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -74,38 +103,38 @@ Lamp:
         model: https://schema.org/Text    
         type: Property    
     colorAppearance:    
-      description: 'Property. In both the DIN and CIE standards, artificial light sources are classified in terms of their color appearance. To the human eye they all appear to be white the difference can only be detected by direct comparison. Visual performance is not directly affected by differences in color appearance.'    
+      description: 'In both the DIN and CIE standards, artificial light sources are classified in terms of their color appearance. To the human eye they all appear to be white the difference can only be detected by direct comparison. Visual performance is not directly affected by differences in color appearance'    
       type: string    
       x-ngsi:    
         type: Property    
     colorRenderingIndex:    
-      description: 'Property. The CRI indicates how well a light source renders eight standard colors compared to perfect reference lamp with the same color temperature. The CRI scale ranges from 1 to 100, with 100 representing perfect rendering properties.'    
+      description: 'The CRI indicates how well a light source renders eight standard colors compared to perfect reference lamp with the same color temperature. The CRI scale ranges from 1 to 100, with 100 representing perfect rendering properties'    
       type: number    
       x-ngsi:    
         type: Property    
     colorTemperature:    
-      description: Property. The color temperature of any source of radiation is defined as the temperature (in Kelvin) of a black-body or Planckian radiator whose radiation has the same chromaticity as the source of radiation. Often the values are only approximate color temperatures as the black-body radiator cannot emit radiation of every chromaticity value. The color temperatures of the commonest artificial light sources range from less than 3000K (warm white) to 4000K (intermediate) and over 5000K (daylight). Usually measured in degrees Kelvin (K).    
+      description: The color temperature of any source of radiation is defined as the temperature (in Kelvin) of a black-body or Planckian radiator whose radiation has the same chromaticity as the source of radiation. Often the values are only approximate color temperatures as the black-body radiator cannot emit radiation of every chromaticity value. The color temperatures of the commonest artificial light sources range from less than 3000K (warm white) to 4000K (intermediate) and over 5000K (daylight). Usually measured in degrees Kelvin (K)    
       type: number    
       x-ngsi:    
         type: Property    
     contributedLuminousFlux:    
-      description: 'Property. Luminous flux is a photometric measure of radiant flux, i.e. the volume of light emitted from a light source. Luminous flux is measured either for the interior as a whole or for a part of the interior (partial luminous flux for a solid angle). All other photometric parameters are derivatives of luminous flux. Luminous flux is measured in lumens (lm). The luminous flux is given as a nominal value for each lamp. Usually measured in Lumen (lm, Candela Steradian).'    
+      description: 'Luminous flux is a photometric measure of radiant flux, i.e. the volume of light emitted from a light source. Luminous flux is measured either for the interior as a whole or for a part of the interior (partial luminous flux for a solid angle). All other photometric parameters are derivatives of luminous flux. Luminous flux is measured in lumens (lm). The luminous flux is given as a nominal value for each lamp. Usually measured in Lumen (lm, Candela Steradian)'    
       type: number    
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -116,70 +145,112 @@ Lamp:
       x-ngsi:    
         type: Property    
     hasManufacturer:    
-      description: 'Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     hasModel:    
-      description: 'Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &lamp_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
-      anyOf: *lamp_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
       x-ngsi:    
         type: Property    
     isContainedInPhysicalObject:    
-      anyOf: *lamp_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
       x-ngsi:    
         type: Property    
     isSubSystemOf:    
-      description: Relationship. A reference to a system(s) that this Physical Object is part of.    
+      description: A reference to a system(s) that this Physical Object is part of    
       items:    
-        anyOf: *lamp_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Relationship    
     lampBallastType:    
-      description: 'Property. The type of ballast used to stabilise gas discharge by limiting the current during operation and to deliver the necessary striking voltage for starting. Ballasts are needed to operate Discharge Lamps such as Fluorescent, Compact Fluorescent, High-pressure Mercury, Metal Halide and High-pressure Sodium Lamps. Magnetic ballasts are chokes which limit the current passing through a lamp connected in series on the principle of self-induction. The resultant current and power are decisive for the efficient operation of the lamp. A specially designed ballast is required for every type of lamp to comply with lamp rating in terms of Luminous Flux, Color Appearance and service life. The two types of magnetic ballasts for fluorescent lamps are KVG Conventional (EC-A series) and VVG Low-loss ballasts (EC-B series). Low-loss ballasts have a higher efficiency, which means reduced ballast losses and a lower thermal load. Electronic ballasts are used to run fluorescent lamps at high frequencies (approx. 35 - 40 kHz).'    
+      description: 'The type of ballast used to stabilise gas discharge by limiting the current during operation and to deliver the necessary striking voltage for starting. Ballasts are needed to operate Discharge Lamps such as Fluorescent, Compact Fluorescent, High-pressure Mercury, Metal Halide and High-pressure Sodium Lamps. Magnetic ballasts are chokes which limit the current passing through a lamp connected in series on the principle of self-induction. The resultant current and power are decisive for the efficient operation of the lamp. A specially designed ballast is required for every type of lamp to comply with lamp rating in terms of Luminous Flux, Color Appearance and service life. The two types of magnetic ballasts for fluorescent lamps are KVG Conventional (EC-A series) and VVG Low-loss ballasts (EC-B series). Low-loss ballasts have a higher efficiency, which means reduced ballast losses and a lower thermal load. Electronic ballasts are used to run fluorescent lamps at high frequencies (approx. 35 - 40 kHz)'    
       type: string    
       x-ngsi:    
         type: Property    
     lampCompensationType:    
-      description: Property. Identifies the form of compensation used for power factor correction and radio suppression.    
+      description: Identifies the form of compensation used for power factor correction and radio suppression    
       type: string    
       x-ngsi:    
         type: Property    
     lampMaintenanceFactor:    
-      description: Property. Non recoverable losses of luminous flux of a lamp due to lamp depreciation i.e. the decreasing of light output of a luminaire due to aging and dirt.    
+      description: Non recoverable losses of luminous flux of a lamp due to lamp depreciation i.e. the decreasing of light output of a luminaire due to aging and dirt    
       type: number    
       x-ngsi:    
         type: Property    
     lightEmitterNominalPower:    
-      description: 'Property. Light emitter nominal power. Usually measured in Watts (W, J/s).'    
+      description: 'Light emitter nominal power. Usually measured in Watts (W, J/s)'    
       type: number    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -200,7 +271,9 @@ Lamp:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -224,7 +297,9 @@ Lamp:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -250,7 +325,9 @@ Lamp:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -273,7 +350,9 @@ Lamp:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -299,7 +378,9 @@ Lamp:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -327,18 +408,34 @@ Lamp:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *lamp_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -355,22 +452,22 @@ Lamp:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     spectrumMax:    
-      description: 'Property. The spectrum of radiation describes its composition with regard to wavelength. Light, for example, as the portion of electromagnetic radiation that is visible to the human eye, is radiation with wavelengths in the range of approx. 380 to 780 nm (1 nm = 10 m). The corresponding range of colours varies from violet to indigo, blue, green, yellow, orange, and red. These colours form a continuous spectrum, in which the various spectral sectors merge into each other.'    
+      description: 'The spectrum of radiation describes its composition with regard to wavelength. Light, for example, as the portion of electromagnetic radiation that is visible to the human eye, is radiation with wavelengths in the range of approx. 380 to 780 nm (1 nm = 10 m). The corresponding range of colours varies from violet to indigo, blue, green, yellow, orange, and red. These colours form a continuous spectrum, in which the various spectral sectors merge into each other'    
       type: number    
       x-ngsi:    
         type: Property    
     spectrumMin:    
-      description: 'Property. The spectrum of radiation describes its composition with regard to wavelength. Light, for example, as the portion of electromagnetic radiation that is visible to the human eye, is radiation with wavelengths in the range of approx. 380 to 780 nm (1 nm = 10 m). The corresponding range of colours varies from violet to indigo, blue, green, yellow, orange, and red. These colours form a continuous spectrum, in which the various spectral sectors merge into each other.'    
+      description: 'The spectrum of radiation describes its composition with regard to wavelength. Light, for example, as the portion of electromagnetic radiation that is visible to the human eye, is radiation with wavelengths in the range of approx. 380 to 780 nm (1 nm = 10 m). The corresponding range of colours varies from violet to indigo, blue, green, yellow, orange, and red. These colours form a continuous spectrum, in which the various spectral sectors merge into each other'    
       type: number    
       x-ngsi:    
         type: Property    
     type:    
-      description: Property. It must be equal to `Lamp`.    
+      description: It must be equal to `Lamp`    
       enum:    
         - Lamp    
       type: string    
