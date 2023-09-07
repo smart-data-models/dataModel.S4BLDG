@@ -3,19 +3,26 @@
 エンティティフィルター  
 ===========<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Filter/LICENSE.md)  
-[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Filter/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述です：**フィルターとは、液体や気体から粒子状物質や気体状物質を除去するために使用される装置である**。  
-バージョン：0.0.1  
+グローバルな説明**フィルターとは、流体や気体から粒子状物質や気体状物質を除去するための装置である。  
+バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `finalResistance[number]`: 特性。交換が必要な場合のフィルター流体抵抗（すなわち、ASHRAE規格52.1に従ってフィルターの交換が必要な場合の、フィルターを横切る最大空気流量での圧力損失）。通常パスカル（Pa、N/m2）で測定される。  - `fluidFlowRateMax[number]`: プロパティ供給可能な流体流量の可能な範囲。通常、m3/sで測定される。  - `fluidFlowRateMin[number]`: プロパティ供給可能な流体流量の可能な範囲。通常、m3/sで測定される。  - `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `id[*]`: エンティティの一意な識別子  - `initialResistance[number]`: 特性。初期新品フィルタ流体抵抗（すなわち、ASHRAE規格52.1に従ってフィルタが新品であるときの、フィルタを横切る最大空気流量での圧力損失）。通常、パスカル（Pa、N/m2）で測定される。  - `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  - `isSubSystemOf[array]`: 関係。この物理オブジェクトが所属するシステム（複数可）への参照。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかとする。  - `name[string]`: この項目の名称です。  - `nominalFilterFaceVelocity[number]`: 特性です。フィルター面の速度。通常、m/sで測定される。  - `nominalFlowRate[number]`: 特性を示す。フィルタを通過する公称流体流量。通常、m3/sで測定される。  - `nominalMediaSurfaceVelocity[number]`: 特性。メディア表面での平均流体速度。通常、m/sで測定される。  - `nominalParticleGeometricMeanDiameter[number]`: 特性。公称効率に関連する粒子の幾何平均直径。通常、ミリメートル（mm）単位で測定される。  - `nominalParticleGeometricStandardDeviation[number]`: 特性。公称効率に関連する粒子の幾何学的標準偏差。  - `nominalPressureDrop[number]`: 特性です。フィルターにかかる総圧力損失。通常、パスカル（Pa、N/m2）で測定される。  - `operationTemperatureMax[number]`: 特性を示す。許容される動作周囲（空気、液体）温度範囲。通常、ケルビン（K）単位で測定される。  - `operationTemperatureMin[number]`: 特性を示す。許容される動作周囲（空気、液体）温度範囲。通常、ケルビン（K）単位で測定される。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: プロパティを指定します。これは `Filter` と等しくなければならない。  - `weight[number]`: 特性です。デバイスの重量を表します。通常、キログラム（kg）またはグラム（g）で測定される。  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `finalResistance[number]`: 交換が必要な場合のフィルター流体抵抗（すなわち、ASHRAE規格52.1によるフィルター交換が必要な場合のフィルターを横切る最大空気流量における圧力損失）。通常はパスカル（Pa、N/m2）で測定される。  - `fluidFlowRateMax[number]`: 送出可能な流体流量の範囲。通常m3/s単位  - `fluidFlowRateMin[number]`: 送出可能な流体流量の範囲。通常m3/s単位  - `hasManufacturer[string]`: エンティティ（デバイスなど）の製造者を特定する関係。値は文字列または言語タグを持つ文字列であることが期待される。  - `hasModel[string]`: エンティティ（デバイスなど）のモデルを識別する関係。値は、文字列または言語タグを持つ文字列であることが期待される。  - `id[*]`: エンティティの一意識別子  - `initialResistance[number]`: 初期新品フィルター流体抵抗（すなわち、ASHRAE規格52.1によるフィルター新品時のフィルターを横切る最大空気流量における圧力損失）。通常パスカル（Pa、N/m2）で測定される。  - `isContainedInBuildingSpace[*]`: 建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースには、デバイスまたはビルディングオブジェクトが含まれる。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 適切な空間領域を持つオブジェクト。  (DUL オントロジーより定義） （PhysicalObject）  - `isSubSystemOf[array]`: この物理オブジェクトが属するシステムへの参照。  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `nominalFilterFaceVelocity[number]`: フィルター面速度。通常m/sで測定される。  - `nominalFlowRate[number]`: フィルターを通過する流体の公称流量。通常m3/s単位。  - `nominalMediaSurfaceVelocity[number]`: 媒体表面での平均流速。通常m/s単位で測定される。  - `nominalParticleGeometricMeanDiameter[number]`: 公称効率に関連する粒子の幾何平均直径。通常はミリメートル（mm）単位で測定される。  - `nominalParticleGeometricStandardDeviation[number]`: 公称効率に関連する粒子の幾何学的標準偏差。  - `nominalPressureDrop[number]`: フィルターを横切る総圧力損失。通常パスカル（Pa、N/m2）で測定される。  - `operationTemperatureMax[number]`: 許容動作周囲（空気、液体）温度範囲。通常、単位はケルビン（K）。  - `operationTemperatureMin[number]`: 許容動作周囲（空気、液体）温度範囲。通常、単位はケルビン（K）。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `type[string]`: これは `Filter` と等しくなければならない。  - `weight[number]`: 装置の重量。通常、キログラム（kg）またはグラム（g）で測定される。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -35,29 +42,51 @@ Filter:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -74,18 +103,18 @@ Filter:
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -96,70 +125,112 @@ Filter:
       x-ngsi:    
         type: Property    
     finalResistance:    
-      description: 'Property. Filter fluid resistance when replacement is required (i.e., Pressure drop at the maximum air flowrate across the filter when the filter needs replacement per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2).'    
+      description: 'Filter fluid resistance when replacement is required (i.e., Pressure drop at the maximum air flowrate across the filter when the filter needs replacement per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2)'    
       type: number    
       x-ngsi:    
         type: Property    
     fluidFlowRateMax:    
-      description: Property. Possible range of fluid flowrate that can be delivered. Usually measured in m3/s.    
+      description: Possible range of fluid flowrate that can be delivered. Usually measured in m3/s    
       type: number    
       x-ngsi:    
         type: Property    
     fluidFlowRateMin:    
-      description: Property. Possible range of fluid flowrate that can be delivered. Usually measured in m3/s.    
+      description: Possible range of fluid flowrate that can be delivered. Usually measured in m3/s    
       type: number    
       x-ngsi:    
         type: Property    
     hasManufacturer:    
-      description: 'Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     hasModel:    
-      description: 'Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &filter_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     initialResistance:    
-      description: 'Property. Initial new filter fluid resistance (i.e., pressure drop at the maximum air flowrate across the filter when the filter is new per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2).'    
+      description: 'Initial new filter fluid resistance (i.e., pressure drop at the maximum air flowrate across the filter when the filter is new per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2)'    
       type: number    
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
-      anyOf: *filter_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
       x-ngsi:    
         type: Property    
     isContainedInPhysicalObject:    
-      anyOf: *filter_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
       x-ngsi:    
         type: Property    
     isSubSystemOf:    
-      description: Relationship. A reference to a system(s) that this Physical Object is part of.    
+      description: A reference to a system(s) that this Physical Object is part of    
       items:    
-        anyOf: *filter_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Relationship    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -180,7 +251,9 @@ Filter:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -204,7 +277,9 @@ Filter:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -230,7 +305,9 @@ Filter:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -253,7 +330,9 @@ Filter:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -279,7 +358,9 @@ Filter:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -307,58 +388,74 @@ Filter:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     nominalFilterFaceVelocity:    
-      description: Property. Filter face velocity. Usually measured in m/s.    
+      description: Filter face velocity. Usually measured in m/s    
       type: number    
       x-ngsi:    
         type: Property    
     nominalFlowRate:    
-      description: Property. Nominal fluid flow rate through the filter. Usually measured in m3/s.    
+      description: Nominal fluid flow rate through the filter. Usually measured in m3/s    
       type: number    
       x-ngsi:    
         type: Property    
     nominalMediaSurfaceVelocity:    
-      description: Property. Average fluid velocity at the media surface. Usually measured in m/s.    
+      description: Average fluid velocity at the media surface. Usually measured in m/s    
       type: number    
       x-ngsi:    
         type: Property    
     nominalParticleGeometricMeanDiameter:    
-      description: Property. Particle geometric mean diameter associated with nominal efficiency. Usually measured in millimeters (mm).    
+      description: Particle geometric mean diameter associated with nominal efficiency. Usually measured in millimeters (mm)    
       type: number    
       x-ngsi:    
         type: Property    
     nominalParticleGeometricStandardDeviation:    
-      description: 'Property. Particle geometric standard deviation associated with nominal efficiency. '    
+      description: 'Particle geometric standard deviation associated with nominal efficiency. '    
       type: number    
       x-ngsi:    
         type: Property    
     nominalPressureDrop:    
-      description: 'Property. Total pressure drop across the filter. Usually measured in Pascals (Pa, N/m2).'    
+      description: 'Total pressure drop across the filter. Usually measured in Pascals (Pa, N/m2)'    
       type: number    
       x-ngsi:    
         type: Property    
     operationTemperatureMax:    
-      description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
+      description: 'Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)'    
       type: number    
       x-ngsi:    
         type: Property    
     operationTemperatureMin:    
-      description: 'Property. Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K).'    
+      description: 'Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)'    
       type: number    
       x-ngsi:    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *filter_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -375,19 +472,19 @@ Filter:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: Property. It must be equal to `Filter`.    
+      description: It must be equal to `Filter`    
       enum:    
         - Filter    
       type: string    
       x-ngsi:    
         type: Property    
     weight:    
-      description: Property. The weight of the device. Usually measured in kilograms (kg) or grams (g).    
+      description: The weight of the device. Usually measured in kilograms (kg) or grams (g)    
       type: number    
       x-ngsi:    
         type: Property    
@@ -408,8 +505,8 @@ Filter:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### NGSI-v2キーバリューのフィルタリング例  
-ここでは、FilterをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### NGSI-v2 キー値のフィルタリング 例  
+以下は、JSON-LD形式のFilterをkey-valuesとした例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -447,7 +544,7 @@ Filter:
 }  
 ```  
 </details>  
-#### Filter NGSI-v2 正規化例  
+#### フィルタ NGSI-v2 正規化例  
 以下は、正規化されたJSON-LD形式のFilterの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
@@ -571,7 +668,7 @@ Filter:
 ```  
 </details>  
 #### NGSI-LD キー値のフィルタリング 例  
-ここでは、FilterをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、JSON-LD形式のFilterをkey-valuesとした例である。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -613,8 +710,8 @@ Filter:
 }  
 ```  
 </details>  
-#### フィルター NGSI-LD 正規化例  
-ここでは、FilterをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### フィルタ NGSI-LD 正規化例  
+以下は、正規化されたJSON-LD形式のFilterの例である。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -766,7 +863,7 @@ Filter:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
