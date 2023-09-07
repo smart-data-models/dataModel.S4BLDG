@@ -3,19 +3,26 @@
 エンティティトランスフォーマー  
 ===============<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Transformer/LICENSE.md)  
-[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Transformer/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな説明です：**トランスフォーマーは、ある回路から別の回路へ電気エネルギーを伝達する誘導性静止装置です。  トランスフォーマーは電力を変換するために使用され、他の目的のための電気信号の変換は他のエンティティで処理されます：コントローラーは任意の信号を変換し、AudioVisualApplianceはオーディオまたはビデオストリーム用の信号を変換し、CommunicationsApplianceはデータまたはその他の通信用途の信号を変換する。  
-バージョン：0.0.1  
+グローバルな説明**変圧器は、ある回路から別の回路へ電気エネルギーを伝達する誘導性の静止装置である。  変圧器は電力を変換するために使用され、他の目的のための電気信号の変換は他のエンティティで処理される：Controllerは任意の信号を変換し、AudioVisualApplianceはオーディオまたはビデオストリームの信号を変換し、CommunicationsApplianceはデータまたはその他の通信用途の信号を変換する。  
+バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `apparentPowerMax[number]`: 特性。最大皮相電力／容量をVA（ボルトアンペア）単位で表す。通常、ワット（W、J/s）で測定される。  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasManufacturer[string]`: プロパティ。エンティティ（例：デバイス）の製造者を特定する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `hasModel[string]`: プロパティです。エンティティ（例：デバイス）のモデルを識別する関係。値は、文字列または言語タグ付き文字列であることが期待される。  - `id[*]`: エンティティの一意な識別子  - `imaginaryImpedanceRatio[number]`: 特性。変圧器の零相インピーダンスの虚部と正相インピーダンスの虚部（すなわち短絡電圧の虚部）の比。N導体を含む三相変圧器に使用される。  - `isContainedInBuildingSpace[*]`: 関係。建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースは、デバイスまたはビルディングオブジェクトを含む。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 関係です。適切な空間領域を持つあらゆるオブジェクト。  (DULオントロジーから抽出した定義）（PhysicalObject)  - `isNeutralPrimaryTerminalAvailable[boolean]`: 特性を示す。一次巻線の中性点を端子として利用できるか（＝TRUE）、できないか（＝FALSE）の表示。  - `isNeutralSecondaryTerminalAvailable[boolean]`: 特性を示す。二次巻線の中性点を端子として利用できるか（＝TRUE）、できないか（＝FALSE）の表示。  - `isSubSystemOf[array]`: 関係。この物理オブジェクトが属するシステム（複数可）への参照。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `name[string]`: この項目の名称です。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `primaryApparentPower[number]`: 特性です。変圧され、一次側でトランスに流れるVA（ボルトアンペア）単位の電力。通常、ワット（W、J/s）で測定される。  - `primaryCurrent[number]`: 特性です。変圧しようとする電流で、一次側で変圧器に流れ込むもの。通常、アンペア（A）単位で測定される。  - `primaryFrequency[number]`: 特性です。変圧しようとする周波数で、一次側でトランスに流れるもの。通常、サイクル/sまたはヘルツ（Hz）で測定される。  - `primaryVoltage[number]`: 特性です。変圧しようとする電圧で、一次側で変圧器に流れるもの。通常、ボルト（V、W/A）単位で測定される。  - `realImpedanceRatio[number]`: 特性。変圧器の零相インピーダンスの実部と正相インピーダンスの実部（すなわち短絡電圧の実部）の比をいう。N導体を含む三相変圧器に使用される。  - `secondaryApparentPower[number]`: 特性です。変圧器から二次側に出ている、変圧されたVA（ボルトアンペア）単位の電力です。通常、ワット（W、J/s）で測定される。  - `secondaryCurrent[number]`: 特性です。変圧器から二次側に流出する、変圧された電流のことです。通常、アンペア（A）単位で測定する。  - `secondaryCurrentType[string]`: 特性を示す。トランス出力から生じる可能性のある二次電流タイプのリスト。  - `secondaryFrequency[number]`: 特性です。変圧器から二次側に流出する、変圧された周波数。通常、サイクル/sまたはヘルツ（Hz）で測定される。  - `secondaryVoltage[number]`: 特性です。変圧器から二次側で変圧されて流れ出ている電圧。通常、ボルト（V、W/A）単位で測定される。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `transformerVectorGroup[string]`: プロパティ。その要求されたものを設定することができる変圧器の可能なベクトルグループのリスト。列挙リストの値は、最初の文字が一次巻線の接続方法、2番目の文字が二次巻線の接続方法、数字が一次側から二次側への電圧と電流の回転を30度の倍数で表す標準国際コードに従う。D：巻線がデルタ結線されていることを意味します。Y: 巻線がスター結線であることを意味します。Z：巻線がジグザグ接続（トランスの低リアクタンスを実現する特別なスタート接続）であることを意味します。この接続は、三相トランスにのみ関連します。  - `type[string]`: プロパティを指定します。Transformer`と等しくなければならない。  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: この項目の別名  - `apparentPowerMax[number]`: 最大皮相電力／容量をVA（ボルトアンペア）で表す。通常はワット（W、J/s）で測定される。  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `hasManufacturer[string]`: エンティティ（デバイスなど）の製造者を特定する関係。値は文字列または言語タグを持つ文字列であることが期待される。  - `hasModel[string]`: エンティティ（デバイスなど）のモデルを識別する関係。値は、文字列または言語タグを持つ文字列であることが期待される。  - `id[*]`: エンティティの一意識別子  - `imaginaryImpedanceRatio[number]`: 変圧器の零相インピーダンスの虚部と正相インピーダンスの虚部（すなわち短絡電圧の虚部）の比。N導体を含む三相変圧器に使用される。  - `isContainedInBuildingSpace[*]`: 建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースには、デバイスまたはビルディングオブジェクトが含まれる。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 適切な空間領域を持つオブジェクト。  (DUL オントロジーより定義） （PhysicalObject）  - `isNeutralPrimaryTerminalAvailable[boolean]`: 一次巻線の中性点が端子として利用可能かどうかの表示 (=TRUE) または利用可能でないかどうかの表示 (= FALSE)  - `isNeutralSecondaryTerminalAvailable[boolean]`: 二次巻線の中性点が端子として利用可能であるか（＝TRUE）、そうでないか（＝FALSE）を示す。  - `isSubSystemOf[array]`: この物理オブジェクトが属するシステムへの参照。  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `primaryApparentPower[number]`: 変圧され、一次側トランスに流れ込むVA（ボルトアンペア）単位の電力。通常はワット（W、J/s）で測定される。  - `primaryCurrent[number]`: 変圧されようとする電流で、一次側で変圧器に流れ込むもの。通常、アンペア（A）で測定される。  - `primaryFrequency[number]`: 変圧される周波数で、一次側のトランスに流れる。通常、サイクル/秒またはヘルツ（Hz）で測定される。  - `primaryVoltage[number]`: 変圧されようとしている電圧で、一次側で変圧器に流れる。通常、単位はボルト（V、W/A）。  - `realImpedanceRatio[number]`: 変圧器の零相インピーダンスの実部と正相インピーダンスの実部（すなわち短絡電圧の実部）の比。N導体を含む三相変圧器に使用される。  - `secondaryApparentPower[number]`: 変圧器から二次側に流出する、変圧されたVA（ボルトアンペア）単位の電力。通常はワット（W、J/s）で測定される。  - `secondaryCurrent[number]`: 変圧器から二次側に流出する電流。通常はアンペア（A）で測定される。  - `secondaryCurrentType[string]`: トランス出力から発生する可能性のある二次電流タイプのリスト  - `secondaryFrequency[number]`: 変圧器から二次側に流出する周波数。通常、サイクル/秒またはヘルツ（Hz）で測定される。  - `secondaryVoltage[number]`: 変圧器から二次側に流出する電圧。通常、単位はボルト（V、W/A）。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `transformerVectorGroup[string]`: 変圧器に設定可能なベクトルグループのリスト。列挙リストの値は、最初の文字が一次巻線の接続方法を、2 番目の文字が二次巻線の接続方法を表し、数字が一次側から二次側への電圧と電流の回転を 30 度の倍数で表す標準国際コードに従う。D: 巻線がデルタ結線されていることを意味する。Y: 巻線がスター結線であることを示します。Z: 巻線がジグザグ結線(変圧器の低リアクタンスを実現する特殊なスタート結線)であることを意味する。接続性は三相変圧器のみに関係する。  - `type[string]`: これは `Transformer` と等しくなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -35,29 +42,51 @@ Transformer:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -68,7 +97,7 @@ Transformer:
       x-ngsi:    
         type: Property    
     apparentPowerMax:    
-      description: 'Property. Maximum apparent power/capacity in VA (volt ampere). Usually measured in Watts (W, J/s).'    
+      description: 'Maximum apparent power/capacity in VA (volt ampere). Usually measured in Watts (W, J/s)'    
       type: number    
       x-ngsi:    
         type: Property    
@@ -79,18 +108,18 @@ Transformer:
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -101,65 +130,107 @@ Transformer:
       x-ngsi:    
         type: Property    
     hasManufacturer:    
-      description: 'Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     hasModel:    
-      description: 'Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &transformer_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     imaginaryImpedanceRatio:    
-      description: Property. The ratio between the imaginary part of the zero sequence impedance and the imaginary part of the positive impedance (i.e. imaginary part of the short-circuit voltage) of the transformer. Used for three-phase transformer which includes a N-conductor.    
+      description: The ratio between the imaginary part of the zero sequence impedance and the imaginary part of the positive impedance (i.e. imaginary part of the short-circuit voltage) of the transformer. Used for three-phase transformer which includes a N-conductor    
       type: number    
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
-      anyOf: *transformer_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
       x-ngsi:    
         type: Property    
     isContainedInPhysicalObject:    
-      anyOf: *transformer_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
       x-ngsi:    
         type: Property    
     isNeutralPrimaryTerminalAvailable:    
-      description: Property. An indication of whether the neutral point of the primary winding is available as a terminal (=TRUE) or not (= FALSE).    
+      description: An indication of whether the neutral point of the primary winding is available as a terminal (=TRUE) or not (= FALSE)    
       type: boolean    
       x-ngsi:    
         type: Property    
     isNeutralSecondaryTerminalAvailable:    
-      description: Property. An indication of whether the neutral point of the secondary winding is available as a terminal (=TRUE) or not (= FALSE).    
+      description: An indication of whether the neutral point of the secondary winding is available as a terminal (=TRUE) or not (= FALSE)    
       type: boolean    
       x-ngsi:    
         type: Property    
     isSubSystemOf:    
-      description: Relationship. A reference to a system(s) that this Physical Object is part of.    
+      description: A reference to a system(s) that this Physical Object is part of    
       items:    
-        anyOf: *transformer_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Relationship    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -180,7 +251,9 @@ Transformer:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -204,7 +277,9 @@ Transformer:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -230,7 +305,9 @@ Transformer:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -253,7 +330,9 @@ Transformer:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -279,7 +358,9 @@ Transformer:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -307,68 +388,84 @@ Transformer:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *transformer_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     primaryApparentPower:    
-      description: 'Property. The power in VA (volt ampere) that has been transformed and that runs into the transformer on the primary side. Usually measured in Watts (W, J/s).'    
+      description: 'The power in VA (volt ampere) that has been transformed and that runs into the transformer on the primary side. Usually measured in Watts (W, J/s)'    
       type: number    
       x-ngsi:    
         type: Property    
     primaryCurrent:    
-      description: Property. The current that is going to be transformed and that runs into the transformer on the primary side. Usually measured in Ampere (A).    
+      description: The current that is going to be transformed and that runs into the transformer on the primary side. Usually measured in Ampere (A)    
       type: number    
       x-ngsi:    
         type: Property    
     primaryFrequency:    
-      description: Property. The frequency that is going to be transformed and that runs into the transformer on the primary side. Usually measured in cycles/s or Hertz (Hz).    
+      description: The frequency that is going to be transformed and that runs into the transformer on the primary side. Usually measured in cycles/s or Hertz (Hz)    
       type: number    
       x-ngsi:    
         type: Property    
     primaryVoltage:    
-      description: 'Property. The voltage that is going to be transformed and that runs into the transformer on the primary side. Usually measured in Volts (V, W/A).'    
+      description: 'The voltage that is going to be transformed and that runs into the transformer on the primary side. Usually measured in Volts (V, W/A)'    
       type: number    
       x-ngsi:    
         type: Property    
     realImpedanceRatio:    
-      description: Property. The ratio between the real part of the zero sequence impedance and the real part of the positive impedance (i.e. real part of the short-circuit voltage) of the transformer. Used for three-phase transformer which includes a N-conductor.    
+      description: The ratio between the real part of the zero sequence impedance and the real part of the positive impedance (i.e. real part of the short-circuit voltage) of the transformer. Used for three-phase transformer which includes a N-conductor    
       type: number    
       x-ngsi:    
         type: Property    
     secondaryApparentPower:    
-      description: 'Property. The power in VA (volt ampere) that has been transformed and is running out of the transformer on the secondary side. Usually measured in Watts (W, J/s).'    
+      description: 'The power in VA (volt ampere) that has been transformed and is running out of the transformer on the secondary side. Usually measured in Watts (W, J/s)'    
       type: number    
       x-ngsi:    
         type: Property    
     secondaryCurrent:    
-      description: Property. The current that has been transformed and is running out of the transformer on the secondary side. Usually measured in Ampere (A).    
+      description: The current that has been transformed and is running out of the transformer on the secondary side. Usually measured in Ampere (A)    
       type: number    
       x-ngsi:    
         type: Property    
     secondaryCurrentType:    
-      description: Property. A list of the secondary current types that can result from transformer output.    
+      description: A list of the secondary current types that can result from transformer output    
       type: string    
       x-ngsi:    
         type: Property    
     secondaryFrequency:    
-      description: Property. The frequency that has been transformed and is running out of the transformer on the secondary side. Usually measured in cycles/s or Hertz (Hz).    
+      description: The frequency that has been transformed and is running out of the transformer on the secondary side. Usually measured in cycles/s or Hertz (Hz)    
       type: number    
       x-ngsi:    
         type: Property    
     secondaryVoltage:    
-      description: 'Property. The voltage that has been transformed and is running out of the transformer on the secondary side. Usually measured in Volts (V, W/A).'    
+      description: 'The voltage that has been transformed and is running out of the transformer on the secondary side. Usually measured in Volts (V, W/A)'    
       type: number    
       x-ngsi:    
         type: Property    
@@ -385,17 +482,17 @@ Transformer:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     transformerVectorGroup:    
-      description: 'Property. List of the possible vector groups for the transformer from which that required may be set. Values in the enumeration list follow a standard international code where the first letter describes how the primary windings are connected, the second letter describes how the secondary windings are connected, and the numbers describe the rotation of voltages and currents from the primary to the secondary side in multiples of 30 degrees. D: means that the windings are delta-connected. Y: means that the windings are star-connected. Z: means that the windings are zig-zag connected (a special start-connected providing low reactance of the transformer). The connectivity is only relevant for three-phase transformers.'    
+      description: 'List of the possible vector groups for the transformer from which that required may be set. Values in the enumeration list follow a standard international code where the first letter describes how the primary windings are connected, the second letter describes how the secondary windings are connected, and the numbers describe the rotation of voltages and currents from the primary to the secondary side in multiples of 30 degrees. D: means that the windings are delta-connected. Y: means that the windings are star-connected. Z: means that the windings are zig-zag connected (a special start-connected providing low reactance of the transformer). The connectivity is only relevant for three-phase transformers'    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: Property. It must be equal to `Transformer`.    
+      description: It must be equal to `Transformer`    
       enum:    
         - Transformer    
       type: string    
@@ -418,8 +515,8 @@ Transformer:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### Transformer NGSI-v2 キーバリューの例  
-ここでは、TransformerをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### トランスフォーマ NGSI-v2 キー値の例  
+JSON-LD形式のTransformerのkey-valuesの例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -459,8 +556,8 @@ Transformer:
 }  
 ```  
 </details>  
-#### トランスフォーマー NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のTransformerの例を示す。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 変換器 NGSI-v2 正規化例  
+以下は、正規化されたJSON-LDフォーマットのTransformerの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -590,8 +687,8 @@ Transformer:
 }  
 ```  
 </details>  
-#### トランスフォーマー NGSI-LD キー値例  
-ここでは、TransformerをJSON-LD形式でkey-valuesとした例を紹介します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### トランスフォーマ NGSI-LD キー値の例  
+JSON-LD形式のTransformerのkey-valuesの例である。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -636,7 +733,7 @@ Transformer:
 ```  
 </details>  
 #### 変換器 NGSI-LD 正規化例  
-ここでは、JSON-LD形式のTransformerを正規化した例を示します。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LDフォーマットのTransformerの例である。これは、オプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -792,7 +889,7 @@ Transformer:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
