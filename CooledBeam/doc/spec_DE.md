@@ -15,7 +15,14 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `coilLength[number]`: Eigenschaft. Länge der Spule. Wird normalerweise in Millimetern (mm) gemessen.  - `coilWidth[number]`: Eigenschaft. Breite der Spule. Normalerweise in Millimetern (mm) gemessen.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `finishColor[string]`: Eigenschaft. Farbe des Finishs für gekühlte Balken.  - `hasManufacturer[string]`: Eigenschaft. Eine Beziehung, die den Hersteller einer Entität (z. B. eines Geräts) identifiziert. Der Wert sollte eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen sein.  - `hasModel[string]`: Eigenschaft. Eine Beziehung, die das Modell einer Entität (z. B. eines Geräts) identifiziert. Als Wert wird eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen erwartet.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `integratedLightingType[string]`: Eigenschaft. Integrierte Beleuchtung im gekühlten Strahl.  - `isContainedInBuildingSpace[*]`: Beziehung. Eine Einheit, die zur Definition der physischen Räume des Gebäudes verwendet wird. Ein Gebäudebereich enthält Geräte oder Gebäudeobjekte. (GebäudeRaum)  - `isContainedInPhysicalObject[*]`: Verwandtschaft. Jedes Objekt, das eine eigene Raumregion hat.  (Definition entnommen aus der DUL-Ontologie) (PhysicalObject)  - `isFreeHanging[boolean]`: Eigenschaft. Handelt es sich um einen frei hängenden Typ (nicht in einer Zwischendecke montiert)?  - `isSubSystemOf[array]`: Beziehung. Ein Verweis auf ein oder mehrere Systeme, zu denen dieses physische Objekt gehört.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `nominalCoolingCapacity[number]`: Eigenschaft. Nominale Kühlleistung. Wird normalerweise in Watt (W, J/s) gemessen.  - `nominalHeatingCapacity[number]`: Eigenschaft. Nominale Heizleistung. Wird normalerweise in Watt (W, J/s) gemessen.  - `nominalReturnWaterTemperatureCooling[number]`: Eigenschaft. Nenntemperatur des Rücklaufwassers (bezieht sich auf die Nennkühlleistung). Wird normalerweise in Grad Kelvin (K) gemessen.  - `nominalReturnWaterTemperatureHeating[number]`: Eigenschaft. Nenntemperatur des Rücklaufwassers (bezieht sich auf die Nennheizleistung). Wird normalerweise in Grad Kelvin (K) gemessen.  - `nominalSorroundingHumidityCooling[number]`: Eigenschaft. Nominale Umgebungsfeuchte (bezieht sich auf die nominale Kühlleistung). Wird normalerweise in Grad Kelvin (K) gemessen.  - `nominalSorroundingTemperatureCooling[number]`: Eigenschaft. Nominale Umgebungstemperatur (bezieht sich auf die nominale Kühlleistung). Wird normalerweise in Grad Kelvin (K) gemessen.  - `nominalSorroundingTemperatureHeating[number]`: Eigenschaft. Nominale Umgebungstemperatur (bezieht sich auf die nominale Heizleistung). Wird normalerweise in Grad Kelvin (K) gemessen.  - `nominalSupplyWaterTemperatureCooling[number]`: Eigenschaft. Nominale Vorlaufwassertemperatur (bezieht sich auf die nominale Kühlleistung). Wird normalerweise in Grad Kelvin (K) gemessen.  - `nominalSupplyWaterTemperatureHeating[number]`: Eigenschaft. Nominale Vorlaufwassertemperatur (bezieht sich auf die nominale Heizleistung). Wird normalerweise in Grad Kelvin (K) gemessen.  - `nominalWaterFlowCooling[number]`: Eigenschaft. Nennwasserdurchfluss (bezieht sich auf die Nennkühlleistung). Wird normalerweise in m3/s gemessen.  - `nominalWaterFlowHeating[number]`: Eigenschaft. Nennwasserdurchfluss (bezieht sich auf die Nennheizleistung). Wird normalerweise in m3/s gemessen.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pipeConnectionEnum[string]`: Eigenschaft. Die Art und Weise, in der die Rohrverbindung mit dem gekühlten Träger hergestellt wird.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: Eigenschaft. Sie muss gleich `CooledBeam` sein.  - `waterFlowControlSystemType[string]`: Eigenschaft. Werkseitig eingebautes Wasserflusskontrollsystem.  - `waterPressureMax[number]`: Eigenschaft. Zulässiger Betriebsdruckbereich des Wasserkreislaufs. Wird normalerweise in Pascal (Pa, N/m2) gemessen.  - `waterPressureMin[number]`: Eigenschaft. Zulässiger Betriebsdruckbereich des Wasserkreislaufs. Wird normalerweise in Pascal (Pa, N/m2) gemessen.  <!-- /30-PropertiesList -->  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Lande liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `coilLength[number]`: Länge der Spule. Normalerweise in Millimetern (mm) gemessen.  - `coilWidth[number]`: Breite der Spule. Normalerweise in Millimetern (mm) gemessen.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `finishColor[string]`: Oberflächenfarbe für gekühlten Balken  - `hasManufacturer[string]`: Eine Beziehung zur Identifizierung des Herstellers einer Entität (z. B. eines Geräts). Der Wert sollte eine Zeichenkette oder eine Zeichenkette mit Sprachkennzeichen sein  - `hasModel[string]`: Eine Beziehung, die das Modell einer Entität (z. B. eines Geräts) identifiziert. Als Wert wird eine Zeichenkette oder eine Zeichenkette mit Sprach-Tag erwartet  - `id[*]`: Eindeutiger Bezeichner der Entität  - `integratedLightingType[string]`: Integrierte Beleuchtung im gekühlten Strahl  - `isContainedInBuildingSpace[*]`: Eine Einheit, die zur Definition der physischen Räume des Gebäudes verwendet wird. Ein Gebäudebereich enthält Geräte oder Gebäudeobjekte. (GebäudeRaum)  - `isContainedInPhysicalObject[*]`: Jedes Objekt, das eine eigene Raumregion hat.  (Definition entnommen aus der DUL-Ontologie) (PhysicalObject)  - `isFreeHanging[boolean]`: Handelt es sich um einen frei hängenden Typ (nicht in einer Zwischendecke montiert)?  - `isSubSystemOf[array]`: Ein Verweis auf ein oder mehrere Systeme, zu denen dieses physische Objekt gehört  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `nominalCoolingCapacity[number]`: Nominale Kühlleistung. Wird normalerweise in Watt (W, J/s) gemessen.  - `nominalHeatingCapacity[number]`: Nominale Heizleistung. Wird normalerweise in Watt (W, J/s) gemessen.  - `nominalReturnWaterTemperatureCooling[number]`: Nenntemperatur des Rücklaufwassers (bezieht sich auf die Nennkühlleistung). Normalerweise gemessen in Grad Kelvin (K)  - `nominalReturnWaterTemperatureHeating[number]`: Nenntemperatur des Rücklaufwassers (bezieht sich auf die Nennheizleistung). Wird normalerweise in Grad Kelvin (K) gemessen.  - `nominalSorroundingHumidityCooling[number]`: Nominale Umgebungsfeuchte (bezieht sich auf die nominale Kühlleistung). Üblicherweise gemessen in Grad Kelvin (K)  - `nominalSorroundingTemperatureCooling[number]`: Nominale Umgebungstemperatur (bezieht sich auf die nominale Kühlleistung). Wird normalerweise in Grad Kelvin (K) gemessen.  - `nominalSorroundingTemperatureHeating[number]`: Nenn-Umgebungstemperatur (bezieht sich auf die Nenn-Heizleistung). Wird normalerweise in Grad Kelvin (K) gemessen.  - `nominalSupplyWaterTemperatureCooling[number]`: Nominale Vorlaufwassertemperatur (bezieht sich auf die nominale Kühlleistung). Wird normalerweise in Grad Kelvin (K) gemessen.  - `nominalSupplyWaterTemperatureHeating[number]`: Nenntemperatur des Vorlaufwassers (bezieht sich auf die Nennheizleistung). Wird normalerweise in Grad Kelvin (K) gemessen.  - `nominalWaterFlowCooling[number]`: Nennwasserdurchfluss (bezieht sich auf die Nennkühlleistung). Üblicherweise gemessen in m3/s  - `nominalWaterFlowHeating[number]`: Nennwasserdurchfluss (bezieht sich auf die Nennheizleistung). Üblicherweise gemessen in m3/s  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pipeConnectionEnum[string]`: Die Art und Weise, wie das Rohr an den gekühlten Balken angeschlossen wird  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type[string]`: Er muss gleich `CooledBeam` sein  - `waterFlowControlSystemType[string]`: Werkseitig eingebautes Wasserdurchflusskontrollsystem  - `waterPressureMax[number]`: Zulässiger Betriebsdruckbereich des Wasserkreislaufs. Üblicherweise gemessen in Pascal (Pa, N/m2)  - `waterPressureMin[number]`: Zulässiger Betriebsdruckbereich des Wasserkreislaufs. Üblicherweise gemessen in Pascal (Pa, N/m2)  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -35,29 +42,51 @@ CooledBeam:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -74,28 +103,28 @@ CooledBeam:
         model: https://schema.org/Text    
         type: Property    
     coilLength:    
-      description: Property. Length of coil. Usually measured in millimeters (mm).    
+      description: Length of coil. Usually measured in millimeters (mm)    
       type: number    
       x-ngsi:    
         type: Property    
     coilWidth:    
-      description: Property. Width of coil. Usually measured in millimeters (mm    
+      description: Width of coil. Usually measured in millimeters (mm    
       type: number    
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -106,65 +135,107 @@ CooledBeam:
       x-ngsi:    
         type: Property    
     finishColor:    
-      description: Property. Finish color for cooled beam.    
+      description: Finish color for cooled beam    
       type: string    
       x-ngsi:    
         type: Property    
     hasManufacturer:    
-      description: 'Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     hasModel:    
-      description: 'Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &cooledbeam_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     integratedLightingType:    
-      description: Property. Integrated lighting in cooled beam.    
+      description: Integrated lighting in cooled beam    
       type: string    
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
-      anyOf: *cooledbeam_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
       x-ngsi:    
         type: Property    
     isContainedInPhysicalObject:    
-      anyOf: *cooledbeam_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
       x-ngsi:    
         type: Property    
     isFreeHanging:    
-      description: 'Property. Is it free hanging type (not mounted in a false ceiling)?'    
+      description: 'Is it free hanging type (not mounted in a false ceiling)?'    
       type: boolean    
       x-ngsi:    
         type: Property    
     isSubSystemOf:    
-      description: Relationship. A reference to a system(s) that this Physical Object is part of.    
+      description: A reference to a system(s) that this Physical Object is part of    
       items:    
-        anyOf: *cooledbeam_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Relationship    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -185,7 +256,9 @@ CooledBeam:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -209,7 +282,9 @@ CooledBeam:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -235,7 +310,9 @@ CooledBeam:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -258,7 +335,9 @@ CooledBeam:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -284,7 +363,9 @@ CooledBeam:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -312,78 +393,94 @@ CooledBeam:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     nominalCoolingCapacity:    
-      description: 'Property. Nominal cooling capacity. Usually measured in Watts (W, J/s).'    
+      description: 'Nominal cooling capacity. Usually measured in Watts (W, J/s)'    
       type: number    
       x-ngsi:    
         type: Property    
     nominalHeatingCapacity:    
-      description: 'Property. Nominal heating capacity. Usually measured in Watts (W, J/s).'    
+      description: 'Nominal heating capacity. Usually measured in Watts (W, J/s)'    
       type: number    
       x-ngsi:    
         type: Property    
     nominalReturnWaterTemperatureCooling:    
-      description: Property. Nominal return water temperature (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K).    
+      description: Nominal return water temperature (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K)    
       type: number    
       x-ngsi:    
         type: Property    
     nominalReturnWaterTemperatureHeating:    
-      description: Property. Nominal return water temperature (refers to nominal heating capacity). Usually measured in degrees Kelvin (K).    
+      description: Nominal return water temperature (refers to nominal heating capacity). Usually measured in degrees Kelvin (K)    
       type: number    
       x-ngsi:    
         type: Property    
     nominalSorroundingHumidityCooling:    
-      description: Property. Nominal surrounding humidity (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K).    
+      description: Nominal surrounding humidity (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K)    
       type: number    
       x-ngsi:    
         type: Property    
     nominalSorroundingTemperatureCooling:    
-      description: Property. Nominal surrounding temperature (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K).    
+      description: Nominal surrounding temperature (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K)    
       type: number    
       x-ngsi:    
         type: Property    
     nominalSorroundingTemperatureHeating:    
-      description: Property. Nominal surrounding temperature (refers to nominal heating capacity). Usually measured in degrees Kelvin (K).    
+      description: Nominal surrounding temperature (refers to nominal heating capacity). Usually measured in degrees Kelvin (K)    
       type: number    
       x-ngsi:    
         type: Property    
     nominalSupplyWaterTemperatureCooling:    
-      description: Property. Nominal supply water temperature (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K).    
+      description: Nominal supply water temperature (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K)    
       type: number    
       x-ngsi:    
         type: Property    
     nominalSupplyWaterTemperatureHeating:    
-      description: Property. Nominal supply water temperature (refers to nominal heating capacity). Usually measured in degrees Kelvin (K).    
+      description: Nominal supply water temperature (refers to nominal heating capacity). Usually measured in degrees Kelvin (K)    
       type: number    
       x-ngsi:    
         type: Property    
     nominalWaterFlowCooling:    
-      description: Property. Nominal water flow (refers to nominal cooling capacity). Usually measured in m3/s.    
+      description: Nominal water flow (refers to nominal cooling capacity). Usually measured in m3/s    
       type: number    
       x-ngsi:    
         type: Property    
     nominalWaterFlowHeating:    
-      description: Property. Nominal water flow (refers to nominal heating capacity). Usually measured in m3/s.    
+      description: Nominal water flow (refers to nominal heating capacity). Usually measured in m3/s    
       type: number    
       x-ngsi:    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *cooledbeam_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     pipeConnectionEnum:    
-      description: Property. The manner in which the pipe connection is made to the cooled beam.    
+      description: The manner in which the pipe connection is made to the cooled beam    
       type: string    
       x-ngsi:    
         type: Property    
@@ -400,29 +497,29 @@ CooledBeam:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: Property. It must be equal to `CooledBeam`.    
+      description: It must be equal to `CooledBeam`    
       enum:    
         - CooledBeam    
       type: string    
       x-ngsi:    
         type: Property    
     waterFlowControlSystemType:    
-      description: Property. Factory fitted waterflow control system.    
+      description: Factory fitted waterflow control system    
       type: string    
       x-ngsi:    
         type: Property    
     waterPressureMax:    
-      description: 'Property. Allowable water circuit working pressure range. Usually measured in Pascals (Pa, N/m2).'    
+      description: 'Allowable water circuit working pressure range. Usually measured in Pascals (Pa, N/m2)'    
       type: number    
       x-ngsi:    
         type: Property    
     waterPressureMin:    
-      description: 'Property. Allowable water circuit working pressure range. Usually measured in Pascals (Pa, N/m2).'    
+      description: 'Allowable water circuit working pressure range. Usually measured in Pascals (Pa, N/m2)'    
       type: number    
       x-ngsi:    
         type: Property    
