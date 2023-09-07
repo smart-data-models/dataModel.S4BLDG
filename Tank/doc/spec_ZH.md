@@ -1,29 +1,36 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体：坦克  
-=====<!-- /10-Header -->  
+单位：Tank坦克  
+=========<!-- /10-Header -->  
 <!-- 15-License -->  
 [开放许可](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Tank/LICENSE.md)  
 [文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-全球描述：**罐子是一种储存液体或气体的容器，供以后使用。  
-版本：0.0.1  
+全球描述：**储罐是储存液体或气体以供日后使用的容器。  
+版本： 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-##属性列表  
+## 属性列表  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `accessType[string]`: 属性。定义了可以指定的储罐的通道（或盖）的类型。请注意，盖板一般是为矩形储罐指定的。对于圆柱形储罐，通常会通过人孔进入。  - `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `effectiveCapacity[number]`: 属性。罐体的总有效或实际体积容量。通常以立方米（m3）为计量单位。  - `endShapeType[string]`: 属性。定义了可用于预制罐的端部形状的类型。读取这些枚举值的惯例是，对于垂直圆柱体，第一个值是底部，第二个是顶部对于水平圆柱体，读取的顺序应该是从左到右。对于矛状罐体，应使用UNSET值。  - `firstCurvatureRadius[number]`: 属性。FirstCurvatureRadius应该被定义为基础或左边的曲率半径值。通常以毫米（mm）为单位测量。  - `hasManufacturer[string]`: 属性。识别实体（例如，设备）的制造商的关系。该值应是一个字符串或一个带有语言标签的字符串。  - `hasModel[string]`: 属性。识别实体（例如，设备）的模型的关系。该值应是一个字符串或一个带有语言标签的字符串。  - `id[*]`: 实体的唯一标识符  - `isContainedInBuildingSpace[*]`: 关系。一个用于定义建筑物理空间的实体。一个建筑空间包含设备或建筑对象。(建筑空间)  - `isContainedInPhysicalObject[*]`: 关系。任何具有适当空间区域的物体。  (从DUL本体论中提取的定义）（PhysicalObject）。  - `isSubSystemOf[array]`: 关系。对该物理对象是其一部分的系统的引用。  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `nominalDepth[number]`: 属性。罐体的名义深度。注：对于水平圆柱形罐体不需要。通常以毫米（mm）为单位测量。  - `nominalLengthOrDiameter[number]`: 属性。公称长度，或在垂直圆柱形罐体的情况下，罐体的公称直径。通常以毫米（mm）为单位测量。  - `nominalVolumetricCapacity[number]`: 属性。储罐的总标称或设计体积容量。通常以立方米（m3）计算。  - `nominalWidthOrDiameter[number]`: 属性。标称宽度，如果是水平圆柱形罐体，则为罐体的标称直径。注：垂直圆柱形罐体不要求。通常以毫米（mm）为单位测量。  - `numberOfSections[number]`: 财产。使用的节数。  - `operatingWeight[number]`: 财产。罐体的工作重量，包括其所有的内容。通常以公斤（kg）或克（g）为单位。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `patternType[string]`: 属性。定义了可以指定的图案（或坦克的形状）的类型。  - `secondCurvatureRadius[number]`: 属性。SecondCurvatureRadius应定义为顶部或右侧的曲率半径值。通常以毫米（mm）为单位测量。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 提供实体数据原始来源的一连串字符，作为一个URL。建议为源提供者的完全合格域名，或源对象的URL。  - `storageType[string]`: 属性。定义了打算储存的一般材料类别。  - `type[string]`: 属性。它必须等于`Tank'。  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
+- `accessType[string]`: 定义可指定的储罐通道（或盖子）类型。需要注意的是，盖子一般用于矩形储罐。对于圆柱形储罐，通常通过人孔进入  - `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `effectiveCapacity[number]`: 罐体的总有效容积或实际容积。通常以立方米（m3）为单位。  - `endShapeType[string]`: 定义可用于预制储罐的端部形状类型。读取这些枚举值的惯例是：对于立式圆柱体，第一个值是底面，第二个值是顶面；对于卧式圆柱体，读取顺序应从左至右。对于球形容器，应使用 UNSET 值。  - `firstCurvatureRadius[number]`: FirstCurvatureRadius 应定义为基准或左侧曲率半径值。通常以毫米（mm）为单位  - `hasManufacturer[string]`: 标识实体（如设备）制造商的关系。该值应为字符串或带有语言标记的字符串。  - `hasModel[string]`: 标识实体（如设备）模型的关系。该值应是字符串或带有语言标记的字符串  - `id[*]`: 实体的唯一标识符  - `isContainedInBuildingSpace[*]`: 用于定义楼宇物理空间的实体。建筑空间包含设备或建筑对象。(建筑空间）  - `isContainedInPhysicalObject[*]`: 任何具有适当空间区域的物体。  (从 DUL 本体中提取的定义）（物理对象）  - `isSubSystemOf[array]`: 该物理对象所属系统的引用  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `nominalDepth[number]`: 罐体的标称深度。注：卧式圆柱形罐体不需要。通常以毫米 (mm) 为单位。  - `nominalLengthOrDiameter[number]`: 罐体的公称长度，如果是立式圆柱形罐体，则是罐体的公称直径。通常以毫米（mm）为单位。  - `nominalVolumetricCapacity[number]`: 罐体的总公称容积或设计容积。通常以立方米（m3）为单位。  - `nominalWidthOrDiameter[number]`: 公称宽度，如为卧式圆柱形罐体，则为罐体的公称直径。注：立式圆柱形罐体不需要。通常以毫米 (mm) 为单位。  - `numberOfSections[number]`: 使用科室数量  - `operatingWeight[number]`: 包括所有内装物在内的罐体工作重量。通常以公斤（kg）或克（g）为单位。  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `patternType[string]`: 定义可指定的图案类型（或水槽形状  - `secondCurvatureRadius[number]`: SecondCurvatureRadius 应定义为顶部或右侧曲率半径值。通常以毫米（mm）为单位  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `storageType[string]`: 定义要储存的一般材料类别  - `type[string]`: 必须等于 `Tank`  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
+## 属性的数据模型描述  
+按字母顺序排列（点击查看详情）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -32,7 +39,7 @@ Tank:
   description: A tank is a vessel or container in which a fluid or gas is stored for later use.    
   properties:    
     accessType:    
-      description: 'Property. Defines the types of access (or cover) to a tank that may be specified. Note that covers are generally specified for rectangular tanks. For cylindrical tanks, access will normally be via a manhole.'    
+      description: 'Defines the types of access (or cover) to a tank that may be specified. Note that covers are generally specified for rectangular tanks. For cylindrical tanks, access will normally be via a manhole'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -40,29 +47,51 @@ Tank:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -79,18 +108,18 @@ Tank:
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -101,65 +130,107 @@ Tank:
       x-ngsi:    
         type: Property    
     effectiveCapacity:    
-      description: Property. The total effective or actual volumetric capacity of the tank. Usually measured in cubic metre (m3).B3    
+      description: The total effective or actual volumetric capacity of the tank. Usually measured in cubic metre (m3).B3    
       type: number    
       x-ngsi:    
         type: Property    
     endShapeType:    
-      description: 'Property. Defines the types of end shapes that can be used for preformed tanks. The convention for reading these enumerated values is that for a vertical cylinder, the first value is the base and the second is the top for a horizontal cylinder, the order of reading should be left to right. For a speherical tank, the value UNSET should be used.B5'    
+      description: 'Defines the types of end shapes that can be used for preformed tanks. The convention for reading these enumerated values is that for a vertical cylinder, the first value is the base and the second is the top for a horizontal cylinder, the order of reading should be left to right. For a speherical tank, the value UNSET should be used.B5'    
       type: string    
       x-ngsi:    
         type: Property    
     firstCurvatureRadius:    
-      description: Property. FirstCurvatureRadius should be defined as the base or left side radius of curvature value. Usually measured in millimeters (mm).    
+      description: FirstCurvatureRadius should be defined as the base or left side radius of curvature value. Usually measured in millimeters (mm)    
       type: number    
       x-ngsi:    
         type: Property    
     hasManufacturer:    
-      description: 'Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     hasModel:    
-      description: 'Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &tank_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
-      anyOf: *tank_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
       x-ngsi:    
         type: Property    
     isContainedInPhysicalObject:    
-      anyOf: *tank_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
       x-ngsi:    
         type: Property    
     isSubSystemOf:    
-      description: Relationship. A reference to a system(s) that this Physical Object is part of.    
+      description: A reference to a system(s) that this Physical Object is part of    
       items:    
-        anyOf: *tank_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Relationship    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -180,7 +251,9 @@ Tank:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -204,7 +277,9 @@ Tank:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -230,7 +305,9 @@ Tank:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -253,7 +330,9 @@ Tank:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -279,7 +358,9 @@ Tank:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -307,58 +388,74 @@ Tank:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     nominalDepth:    
-      description: 'Property. The nominal depth of the tank. Note: Not required for a horizontal cylindrical tank. Usually measured in millimeters (mm).'    
+      description: 'The nominal depth of the tank. Note: Not required for a horizontal cylindrical tank. Usually measured in millimeters (mm)'    
       type: number    
       x-ngsi:    
         type: Property    
     nominalLengthOrDiameter:    
-      description: 'Property. The nominal length or, in the case of a vertical cylindrical tank, the nominal diameter of the tank. Usually measured in millimeters (mm).'    
+      description: 'The nominal length or, in the case of a vertical cylindrical tank, the nominal diameter of the tank. Usually measured in millimeters (mm)'    
       type: number    
       x-ngsi:    
         type: Property    
     nominalVolumetricCapacity:    
-      description: Property. The total nominal or design volumetric capacity of the tank. Usually measured in cubic metre (m3).    
+      description: The total nominal or design volumetric capacity of the tank. Usually measured in cubic metre (m3)    
       type: number    
       x-ngsi:    
         type: Property    
     nominalWidthOrDiameter:    
-      description: 'Property. The nominal width or, in the case of a horizontal cylindrical tank, the nominal diameter of the tank. Note: Not required for a vertical cylindrical tank. Usually measured in millimeters (mm).'    
+      description: 'The nominal width or, in the case of a horizontal cylindrical tank, the nominal diameter of the tank. Note: Not required for a vertical cylindrical tank. Usually measured in millimeters (mm)'    
       type: number    
       x-ngsi:    
         type: Property    
     numberOfSections:    
-      description: Property. Number of sections used.    
+      description: Number of sections used    
       type: number    
       x-ngsi:    
         type: Property    
     operatingWeight:    
-      description: Property. Operating weight of the tank including all of its contents. Usually measured in kilograms (kg) or grams (g).    
+      description: Operating weight of the tank including all of its contents. Usually measured in kilograms (kg) or grams (g)    
       type: number    
       x-ngsi:    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *tank_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     patternType:    
-      description: Property. Defines the types of pattern (or shape of a tank that may be specified.    
+      description: Defines the types of pattern (or shape of a tank that may be specified    
       type: string    
       x-ngsi:    
         type: Property    
     secondCurvatureRadius:    
-      description: Property. SecondCurvatureRadius should be defined as the top or right side radius of curvature value. Usually measured in millimeters (mm).    
+      description: SecondCurvatureRadius should be defined as the top or right side radius of curvature value. Usually measured in millimeters (mm)    
       type: number    
       x-ngsi:    
         type: Property    
@@ -375,17 +472,17 @@ Tank:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     storageType:    
-      description: Property. Defines the general material category intended to be stored.    
+      description: Defines the general material category intended to be stored    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: Property. It must be equal to `Tank`.    
+      description: It must be equal to `Tank`    
       enum:    
         - Tank    
       type: string    
@@ -407,9 +504,9 @@ Tank:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-#### Tank NGSI-v2关键值示例  
-这里有一个JSON-LD格式的Tank作为key-values的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+## 有效载荷示例  
+#### 坦克 NGSI-v2 键值示例  
+下面是一个以 JSON-LD 格式作为键值的 Tank 示例。当使用 `options=keyValues` 时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -447,8 +544,8 @@ Tank:
 }  
 ```  
 </details>  
-#### Tank NGSI-v2归一化实例  
-这里有一个JSON-LD格式的Tank规范化的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+#### 储罐 NGSI-v2 标准化示例  
+下面是一个规范化 JSON-LD 格式 Tank 的示例。在不使用选项的情况下，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -570,8 +667,8 @@ Tank:
 }  
 ```  
 </details>  
-#### Tank NGSI-LD关键值示例  
-这里有一个JSON-LD格式的Tank作为key-values的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+#### 储罐 NGSI-LD 键值示例  
+下面是一个以 JSON-LD 格式作为键值的 Tank 示例。当使用 `options=keyValues` 时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -613,8 +710,8 @@ Tank:
 }  
 ```  
 </details>  
-#### 坦克NGSI-LD正常化的例子  
-这里有一个JSON-LD格式的Tank规范化的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+#### 储罐 NGSI-LD 标准化示例  
+下面是一个规范化 JSON-LD 格式 Tank 的示例。在不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -756,7 +853,7 @@ Tank:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)，获取如何处理幅度单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
