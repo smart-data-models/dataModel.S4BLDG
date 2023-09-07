@@ -1,83 +1,40 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: Misuratore di flusso  
+============================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/FlowMeter/LICENSE.md)  
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Un flussometro è un dispositivo utilizzato per misurare la portata di un sistema.  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-Entità: Misuratore di flusso  
-============================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## Elenco delle proprietà  
 
-[Licenza aperta](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/FlowMeter/LICENSE.md)  
-
-[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-
-Descrizione globale: **Un flussometro è un dispositivo utilizzato per misurare la portata di un sistema.  
-
-versione: 0.0.1  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## Elenco delle proprietà  
-
-
-<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)
-- `alternateName[string]`: Un nome alternativo per questa voce  
-- `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  
-- `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  
-- `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  
-- `description[string]`: Descrizione dell'articolo  
-- `hasManufacturer[string]`: Proprietà. Una relazione che identifica il produttore di un'entità (ad esempio, un dispositivo). Il valore dovrebbe essere una stringa o una stringa con un tag di lingua.  
-- `hasModel[string]`: Proprietà. Una relazione che identifica il modello di un'entità (ad esempio, un dispositivo). Il valore dovrebbe essere una stringa o una stringa con un tag di lingua.  
-- `id[*]`: Identificatore univoco dell'entità  
-- `isContainedInBuildingSpace[*]`: Relazione. Un'entità utilizzata per definire gli spazi fisici dell'edificio. Uno spazio dell'edificio contiene dispositivi o oggetti dell'edificio. (Spazio edificio)  
-- `isContainedInPhysicalObject[*]`: Relazione. Qualsiasi oggetto che abbia una regione spaziale appropriata.  (Definizione estratta dall'ontologia DUL) (PhysicalObject)  
-- `isSubSystemOf[array]`: Relazione. Un riferimento a uno o più sistemi di cui questo Oggetto fisico fa parte.  
-- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  
-- `name[string]`: Il nome di questo elemento.  
-- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  
-- `readOutType[string]`: Proprietà. Indicazione della forma che assume la lettura del contatore. Nel caso di una lettura a quadrante, questa può comprendere più quadranti che forniscono una lettura cumulativa e/o un odometro meccanico.  
-- `remoteReading[boolean]`: Proprietà. Indica se il contatore dispone di una connessione per la lettura a distanza attraverso il collegamento di un dispositivo di comunicazione (impostare TRUE) o meno (impostare FALSE).  
-- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  
-- `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  
-- `type[string]`: Proprietà. Deve essere uguale a `FlowMeter`.  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-Proprietà richieste  
-- `id`  
-- `type`  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## Modello di dati descrizione delle proprietà  
-
-Ordinati in ordine alfabetico (clicca per i dettagli)  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `hasManufacturer[string]`: Una relazione che identifica il produttore di un'entità (ad esempio, un dispositivo). Si prevede che il valore sia una stringa o una stringa con tag linguistico  - `hasModel[string]`: Una relazione che identifica il modello di un'entità (ad esempio, un dispositivo). Il valore dovrebbe essere una stringa o una stringa con tag lingua  - `id[*]`: Identificatore univoco dell'entità  - `isContainedInBuildingSpace[*]`: Entità utilizzata per definire gli spazi fisici dell'edificio. Uno spazio dell'edificio contiene dispositivi o oggetti dell'edificio. (Spazio edificio)  - `isContainedInPhysicalObject[*]`: Qualsiasi oggetto che abbia una regione spaziale propria.  (Definizione estratta dall'ontologia DUL) (PhysicalObject)  - `isSubSystemOf[array]`: Un riferimento a uno o più sistemi di cui l'oggetto fisico fa parte.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `readOutType[string]`: Indicazione della forma che assume la lettura del contatore. Nel caso di una lettura a quadrante, questa può comprendere più quadranti che forniscono una lettura cumulativa e/o un odometro meccanico.  - `remoteReading[boolean]`: Indica se il contatore dispone di una connessione per la lettura a distanza attraverso il collegamento di un dispositivo di comunicazione (impostare TRUE) o meno (impostare FALSE).  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Deve essere uguale a `FlowMeter`.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Proprietà richieste  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
+Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 FlowMeter:    
   description: A flow meter is a device that is used to measure the flow rate in a system.    
   properties:    
@@ -85,29 +42,51 @@ FlowMeter:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -124,18 +103,18 @@ FlowMeter:
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -146,50 +125,92 @@ FlowMeter:
       x-ngsi:    
         type: Property    
     hasManufacturer:    
-      description: 'Property. A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     hasModel:    
-      description: 'Property. A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag.'    
+      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &flowmeter_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     isContainedInBuildingSpace:    
-      anyOf: *flowmeter_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
       x-ngsi:    
         type: Property    
     isContainedInPhysicalObject:    
-      anyOf: *flowmeter_-_properties_-_iscontainedinbuildingspace_-_anyof    
-      description: Relationship. Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
       x-ngsi:    
         type: Property    
     isSubSystemOf:    
-      description: Relationship. A reference to a system(s) that this Physical Object is part of.    
+      description: A reference to a system(s) that this Physical Object is part of    
       items:    
-        anyOf: *flowmeter_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Relationship    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -210,7 +231,9 @@ FlowMeter:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -234,7 +257,9 @@ FlowMeter:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -260,7 +285,9 @@ FlowMeter:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -283,7 +310,9 @@ FlowMeter:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -309,7 +338,9 @@ FlowMeter:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -337,28 +368,44 @@ FlowMeter:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *flowmeter_-_properties_-_iscontainedinbuildingspace_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     readOutType:    
-      description: 'Property. Indication of the form that readout from the meter takes. In the case of a dial read out, this may comprise multiple dials that give a cumulative reading and/or a mechanical odometer.'    
+      description: 'Indication of the form that readout from the meter takes. In the case of a dial read out, this may comprise multiple dials that give a cumulative reading and/or a mechanical odometer'    
       type: string    
       x-ngsi:    
         type: Property    
     remoteReading:    
-      description: Property. Indicates whether the meter has a connection for remote reading through connection of a communication device (set TRUE) or not (set FALSE).    
+      description: Indicates whether the meter has a connection for remote reading through connection of a communication device (set TRUE) or not (set FALSE)    
       type: boolean    
       x-ngsi:    
         type: Property    
@@ -375,12 +422,12 @@ FlowMeter:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: Property. It must be equal to `FlowMeter`.    
+      description: It must be equal to `FlowMeter`    
       enum:    
         - FlowMeter    
       type: string    
@@ -398,25 +445,16 @@ FlowMeter:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## Esempi di payload  
-
-#### FlowMeter NGSI-v2 Esempio di valori chiave  
-
-Ecco un esempio di flussometro in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### FlowMeter NGSI-v2 Esempio di valori chiave  
+Ecco un esempio di flussometro in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:FlowMeter:f1914d35-f81f-4a4f-a4e9-a6ff04daf648",  
   "type": "FlowMeter",  
   "readOutType": "reboot",  
@@ -440,15 +478,11 @@ Ecco un esempio di flussometro in formato JSON-LD come valori-chiave. Questo è 
 }  
 ```  
 </details>  
-
-#### FlowMeter NGSI-v2 normalizzato Esempio  
-
-Ecco un esempio di FlowMeter in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+#### FlowMeter NGSI-v2 normalizzato Esempio  
+Ecco un esempio di FlowMeter in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:FlowMeter:838aaf6d-ea3e-4ea2-9576-0aec60a2cdfc",  
   "type": "FlowMeter",  
   "readOutType": {  
@@ -523,15 +557,11 @@ Ecco un esempio di FlowMeter in formato JSON-LD normalizzato. Questo è compatib
 }  
 ```  
 </details>  
-
-#### FlowMeter NGSI-LD valori-chiave Esempio  
-
-Ecco un esempio di flussometro in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+#### FlowMeter NGSI-LD valori-chiave Esempio  
+Ecco un esempio di flussometro in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:FlowMeter:80e2aa80-f309-4039-8a6d-e39445aa1d72",  
   "type": "FlowMeter",  
   "readOutType": "Spain",  
@@ -559,15 +589,11 @@ Ecco un esempio di flussometro in formato JSON-LD come valori-chiave. Questo è 
 }  
 ```  
 </details>  
-
-#### Flussimetro NGSI-LD normalizzato Esempio  
-
-Ecco un esempio di FlowMeter in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+#### Flussometro NGSI-LD normalizzato Esempio  
+Ecco un esempio di FlowMeter in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:FlowMeter:fc7e5dc8-7e06-4327-a444-5b6832467810",  
   "type": "FlowMeter",  
   "readOutType": {  
@@ -642,21 +668,12 @@ Ecco un esempio di FlowMeter in formato JSON-LD normalizzato. Questo è compatib
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
