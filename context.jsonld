@@ -69,6 +69,10 @@
         "arrangement": "https://smartdatamodels.org/dataModel.S4BLDG/arrangement",
         "audioVolume": "https://smartdatamodels.org/dataModel.S4BLDG/audioVolume",
         "basinReserveVolume": "https://smartdatamodels.org/dataModel.S4BLDG/basinReserveVolume",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "bladeAction": "https://smartdatamodels.org/dataModel.S4BLDG/bladeAction",
         "bladeEdge": "https://smartdatamodels.org/dataModel.S4BLDG/bladeEdge",
         "bladeShape": "https://smartdatamodels.org/dataModel.S4BLDG/bladeShape",
@@ -92,6 +96,10 @@
         "contributedLuminousFlux": "https://smartdatamodels.org/dataModel.S4BLDG/contributedLuminousFlux",
         "controlStrategy": "https://smartdatamodels.org/dataModel.S4BLDG/controlStrategy",
         "controllingProperty": "https://smartdatamodels.org/dataModel.S4BLDG/controllingProperty",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "coverLength": "https://smartdatamodels.org/dataModel.S4BLDG/coverLength",
         "coverWidth": "https://smartdatamodels.org/dataModel.S4BLDG/coverWidth",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
