@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Controller of the subject dataModel.S4BLDG for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE controllingProperty_type AS ENUM ('temperature', 'CO2');CREATE TYPE Controller_type AS ENUM ('Controller');
-CREATE TABLE Controller (address json, alternateName text, areaServed text, controllingProperty controllingProperty_type, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, hasManufacturer text, hasModel text, id text, isContainedInBuildingSpace json, isContainedInPhysicalObject json, isSubSystemOf json, location json, name text, owner json, seeAlso json, source text, type Controller_type);
+/* (Beta) Export of data model Controller of the subject dataModel.S4BLDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE controllingProperty_type AS ENUM ('temperature','CO2');CREATE TYPE Controller_type AS ENUM ('Controller');
+CREATE TABLE Controller (address JSON, alternateName TEXT, areaServed TEXT, controllingProperty controllingProperty_type, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, hasManufacturer TEXT, hasModel TEXT, isSubSystemOf JSON, name TEXT, owner JSON, source TEXT, type Controller_type);
