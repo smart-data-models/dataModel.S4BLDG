@@ -1,3 +1,3 @@
-/* (Beta) Export of data model HeatExchanger of the subject dataModel.S4BLDG for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model HeatExchanger of the subject dataModel.S4BLDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE HeatExchanger_type AS ENUM ('HeatExchanger');
-CREATE TABLE HeatExchanger (address json, alternateName text, areaServed text, arrangement text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, hasManufacturer text, hasModel text, id text, isContainedInBuildingSpace json, isContainedInPhysicalObject json, isSubSystemOf json, location json, name text, owner json, seeAlso json, source text, type HeatExchanger_type);
+CREATE TABLE HeatExchanger (address JSON, alternateName TEXT, areaServed TEXT, arrangement TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, hasManufacturer TEXT, hasModel TEXT, isSubSystemOf JSON, name TEXT, owner JSON, source TEXT, type HeatExchanger_type);
