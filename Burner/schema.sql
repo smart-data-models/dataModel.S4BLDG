@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Burner of the subject dataModel.S4BLDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Burner_type AS ENUM ('Burner');
+CREATE TABLE Burner (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, energySource TEXT, hasManufacturer TEXT, hasModel TEXT, isSubSystemOf JSON, name TEXT, owner JSON, source TEXT, type Burner_type);
