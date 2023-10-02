@@ -1,3 +1,3 @@
-/* (Beta) Export of data model MedicalDevice of the subject dataModel.S4BLDG for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model MedicalDevice of the subject dataModel.S4BLDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE MedicalDevice_type AS ENUM ('MedicalDevice');
-CREATE TABLE MedicalDevice (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, hasManufacturer text, hasModel text, id text, isContainedInBuildingSpace json, isContainedInPhysicalObject json, isSubSystemOf json, location json, name text, owner json, seeAlso json, source text, type MedicalDevice_type);
+CREATE TABLE MedicalDevice (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, hasManufacturer TEXT, hasModel TEXT, isSubSystemOf JSON, name TEXT, owner JSON, source TEXT, type MedicalDevice_type);
