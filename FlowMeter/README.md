@@ -32,13 +32,13 @@ Link to the [example](https://smart-data-models.github.io/dataModel.S4BLDG/FlowM
 
 Link to the [example](https://smart-data-models.github.io/dataModel.S4BLDG/FlowMeter/examples/example-normalized.jsonld) (normalized) for NGSI-LD
 
-Link to the [example](https://smart-data-models.github.io/dataModel.S4BLDG/FlowMeter/examples/example.json.csv) (keyvalues) for NGSI v2 in CSV format
+Link to the [example](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/FlowMeter/examples/example.json.csv) (keyvalues) for NGSI v2 in CSV format
 
-Link to the [example](https://smart-data-models.github.io/dataModel.S4BLDG/FlowMeter/examples/example.jsonld.csv) (keyvalues) for NGSI-LD in CSV format
+Link to the [example](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/FlowMeter/examples/example.jsonld.csv) (keyvalues) for NGSI-LD in CSV format
 
-Link to the [example](https://smart-data-models.github.io/dataModel.S4BLDG/FlowMeter/examples/example-normalized.json.csv) (normalized) for NGSI-V2 in CSV format
+Link to the [example](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/FlowMeter/examples/example-normalized.json.csv) (normalized) for NGSI-V2 in CSV format
 
-Link to the [example](https://smart-data-models.github.io/dataModel.S4BLDG/FlowMeter/examples/example-normalized.jsonld.csv) (normalized) for NGSI-LD in CSV format
+Link to the [example](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/FlowMeter/examples/example-normalized.jsonld.csv) (normalized) for NGSI-LD in CSV format
 ### Dynamic Examples generation
 
 Link to the [Generator](https://smartdatamodels.org/extra/ngsi-ld_generator.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/FlowMeter/schema.json&email=info@smartdatamodels.org) of NGSI-LD normalized payloads compliant with this data model. Refresh for new values
@@ -48,7 +48,7 @@ Link to the [Generator](https://smartdatamodels.org/extra/ngsi-ld_generator_keyv
 Link to the [Generator](https://smartdatamodels.org/extra/geojson_features_generator.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.S4BLDG/master/FlowMeter/schema.json&email=info@smartdatamodels.org) of geojson feature format payloads compliant with this data model. Refresh for new values
 ### PostgreSQL schema
 
-Link to the [PostgreSQL schema](https://smart-data-models.github.io/dataModel.S4BLDG/FlowMeter/schema.sql) of this data model
+Link to the [PostgreSQL schema](https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/FlowMeter/schema.sql) of this data model
 ### Contribution
 
  If you have any issue on this data model you can raise an [issue](https://github.com/smart-data-models/dataModel.S4BLDG/issues)  or contribute with a [PR](https://github.com/smart-data-models/dataModel.S4BLDG/pulls)
