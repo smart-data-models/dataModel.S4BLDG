@@ -1,3 +1,3 @@
 /* (Beta) Export of data model Actuator of the subject dataModel.S4BLDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Actuator_type AS ENUM ('Actuator');
-CREATE TABLE Actuator (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, failPosition TEXT, hasManufacturer TEXT, hasModel TEXT, isSubSystemOf JSON, manualOverride BOOLEAN, name TEXT, owner JSON, source TEXT, type Actuator_type);
+CREATE TABLE Actuator (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, failPosition TEXT, hasManufacturer TEXT, hasModel TEXT, id TEXT PRIMARY KEY, isSubSystemOf JSON, location JSON, manualOverride BOOLEAN, name TEXT, owner JSON, seeAlso JSON, source TEXT, type Actuator_type);
