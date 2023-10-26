@@ -1,3 +1,3 @@
 /* (Beta) Export of data model ProtectiveDevice of the subject dataModel.S4BLDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ProtectiveDevice_type AS ENUM ('ProtectiveDevice');
-CREATE TABLE ProtectiveDevice (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, hasManufacturer TEXT, hasModel TEXT, isSubSystemOf JSON, name TEXT, owner JSON, source TEXT, type ProtectiveDevice_type);
+CREATE TABLE ProtectiveDevice (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, hasManufacturer TEXT, hasModel TEXT, id TEXT PRIMARY KEY, isSubSystemOf JSON, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type ProtectiveDevice_type);
