@@ -1,3 +1,3 @@
 /* (Beta) Export of data model Outlet of the subject dataModel.S4BLDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Outlet_type AS ENUM ('Outlet');
-CREATE TABLE Outlet (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, hasManufacturer TEXT, hasModel TEXT, isPluggableOutlet BOOLEAN, isSubSystemOf JSON, name TEXT, numberOsSockets NUMERIC, owner JSON, source TEXT, type Outlet_type);
+CREATE TABLE Outlet (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, hasManufacturer TEXT, hasModel TEXT, id TEXT PRIMARY KEY, isPluggableOutlet BOOLEAN, isSubSystemOf JSON, location JSON, name TEXT, numberOsSockets NUMERIC, owner JSON, seeAlso JSON, source TEXT, type Outlet_type);
