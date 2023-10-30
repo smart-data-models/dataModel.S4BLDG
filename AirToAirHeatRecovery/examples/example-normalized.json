@@ -10,52 +10,28 @@
     "value": "Future"
   },
   "operationTemperatureMax": {
-    "type": "Measurement",
-    "value": {
-      "unitCode": "K",
-      "observedAt": "2023-01-26T07:59:34Z",
-      "value": 0.9053685058368695
-    }
+    "type": "Number",
+    "value": 0.9053685058368695
   },
   "operationTemperatureMin": {
-    "type": "Measurement",
-    "value": {
-      "unitCode": "K",
-      "observedAt": "2023-01-26T08:16:23Z",
-      "value": 0.0225751895192714
-    }
+    "type": "Number",
+    "value": 0.0225751895192714
   },
   "primaryAirFlowRateMax": {
-    "type": "Measurement",
-    "value": {
-      "unitCode": "m3/s",
-      "observedAt": "2023-01-25T19:33:24Z",
-      "value": 0.6828734611896666
-    }
+    "type": "Number",
+    "value": 0.6828734611896666
   },
   "primaryAirFlowRateMin": {
-    "type": "Measurement",
-    "value": {
-      "unitCode": "m3/s",
-      "observedAt": "2023-01-25T22:42:55Z",
-      "value": 0.48874342661652126
-    }
+    "type": "Number",
+    "value": 0.48874342661652126
   },
   "secondaryAirFlowRateMax": {
-    "type": "Measurement",
-    "value": {
-      "unitCode": "N/m2",
-      "observedAt": "2023-01-26T11:44:17Z",
-      "value": 0.36804021603434756
-    }
+    "type": "Number",
+    "value": 0.36804021603434756
   },
   "secondaryAirFlowRateMin": {
-    "type": "Measurement",
-    "value": {
-      "unitCode": "N/m2",
-      "observedAt": "2023-01-26T01:16:14Z",
-      "value": 0.28401066550404996
-    }
+    "type": "Number",
+    "value": 0.28401066550404996
   },
   "isContainedInBuildingSpace": {
     "type": "URL",
