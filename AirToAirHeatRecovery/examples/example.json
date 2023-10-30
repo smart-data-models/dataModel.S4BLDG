@@ -3,36 +3,12 @@
   "type": "AirToAirHeatRecovery",
   "hasDefrost": false,
   "heatTransferTypeEnum": "24/7",
-  "operationTemperatureMax": {
-    "unitCode": "K",
-    "observedAt": "2023-01-26T04:36:47Z",
-    "value": 0.8198825347384565
-  },
-  "operationTemperatureMin": {
-    "unitCode": "K",
-    "observedAt": "2023-01-25T14:46:06Z",
-    "value": 0.505815040579818
-  },
-  "primaryAirFlowRateMax": {
-    "unitCode": "m3/s",
-    "observedAt": "2023-01-25T20:09:42Z",
-    "value": 0.2511282384018223
-  },
-  "primaryAirFlowRateMin": {
-    "unitCode": "m3/s",
-    "observedAt": "2023-01-25T23:44:23Z",
-    "value": 0.8540184208518826
-  },
-  "secondaryAirFlowRateMax": {
-    "unitCode": "N/m2",
-    "observedAt": "2023-01-26T11:38:58Z",
-    "value": 0.913617698002923
-  },
-  "secondaryAirFlowRateMin": {
-    "unitCode": "N/m2",
-    "observedAt": "2023-01-25T17:25:01Z",
-    "value": 0.17456040773539583
-  },
+  "operationTemperatureMax": 0.8198825347384565,
+  "operationTemperatureMin": 0.505815040579818,
+  "primaryAirFlowRateMax": 0.2511282384018223,
+  "primaryAirFlowRateMin": 0.8540184208518826,
+  "secondaryAirFlowRateMax": 0.913617698002923,
+  "secondaryAirFlowRateMin": 0.17456040773539583,
   "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:018e6821-b097-4029-9cbb-207ae7e5ddca",
   "isContainedInPhysicalObject": "urn:ngsi-ld:PhysicalObject:ad795f1c-0754-4877-acc2-2dcc3b337edd",
   "isSubSystemOf": [
