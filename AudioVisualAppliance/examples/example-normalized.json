@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:AudioVisualAppliance:9fa87e19-45b4-4d9e-bde2-1a97fd680d44",
   "type": "AudioVisualAppliance",
   "audioVolume": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.7152710089989837
   },
   "mediaSource": {
@@ -10,28 +10,19 @@
     "value": "deliver"
   },
   "isContainedInBuildingSpace": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:395ad84f-d596-466e-95d5-eabc54236844"
   },
   "isContainedInPhysicalObject": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:9034fa54-28a8-4537-82d0-4c500204f2ac"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:acd641b3-a81b-4fbb-9435-3ac2910349f3"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:2f600c38-4896-445a-8781-d52bffbbd8dc"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:03fca7e3-0791-4fed-976c-8392d39e187d"
-      }
+      "urn:ngsi-ld:System:acd641b3-a81b-4fbb-9435-3ac2910349f3",
+      "urn:ngsi-ld:System:2f600c38-4896-445a-8781-d52bffbbd8dc",
+      "urn:ngsi-ld:System:03fca7e3-0791-4fed-976c-8392d39e187d"
     ]
   },
   "hasManufacturer": {
