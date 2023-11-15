@@ -10,28 +10,19 @@
     "value": false
   },
   "isContainedInBuildingSpace": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:2acb9221-64a7-4d25-b38e-cf2521fe6b17"
   },
   "isContainedInPhysicalObject": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:0de814dd-30b0-45a4-891a-46642e50e718"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:e7bdaf31-1036-4bb0-b8d4-418e9637f3dc"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:20d4c669-0193-4696-a18b-43670e910dc1"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:44bd2cba-a5e7-49b6-8cd2-588ee52380bc"
-      }
+      "urn:ngsi-ld:System:e7bdaf31-1036-4bb0-b8d4-418e9637f3dc",
+      "urn:ngsi-ld:System:20d4c669-0193-4696-a18b-43670e910dc1",
+      "urn:ngsi-ld:System:44bd2cba-a5e7-49b6-8cd2-588ee52380bc"
     ]
   },
   "hasManufacturer": {
