@@ -2,28 +2,19 @@
   "id": "urn:ngsi-ld:MedicalDevice:4e232c3a-cd85-4ccd-b303-4b9786f47801",
   "type": "MedicalDevice",
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:2aed2533-8f4f-46d3-b9c9-355b37d214e9"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:76f6c375-6555-4111-a923-9d36d7c749d1"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:85dced1b-044a-42d1-ba10-020135e71870"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:c7da0f75-8179-406d-b93a-6ddb0e62d155"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:8aa8219f-1d6d-45d1-ab6e-67d6841a71a7"
-      }
+      "urn:ngsi-ld:System:85dced1b-044a-42d1-ba10-020135e71870",
+      "urn:ngsi-ld:System:c7da0f75-8179-406d-b93a-6ddb0e62d155",
+      "urn:ngsi-ld:System:8aa8219f-1d6d-45d1-ab6e-67d6841a71a7"
     ]
   },
   "hasManufacturer": {
