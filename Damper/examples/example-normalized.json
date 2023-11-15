@@ -2,9 +2,8 @@
   "id": "urn:ngsi-ld:Damper:30830dab-6aa5-4dd1-9e48-d6ac7e24e4bf",
   "type": "Damper",
   "airFlowRateMax": {
-    "type": "Measurement",
-    "value":  0.13813389168852752
-
+    "type": "Number",
+    "value": 0.13813389168852752
   },
   "bladeAction": {
     "type": "Text",
@@ -19,108 +18,87 @@
     "value": "Human"
   },
   "bladeThickness": {
-    "type": "Measurement",
-    "value":  0.35230461364031296
-
+    "type": "Number",
+    "value": 0.35230461364031296
   },
   "closeOffRating": {
-    "type": "Measurement",
-    "value":  0.171775838539866
-
+    "type": "Number",
+    "value": 0.171775838539866
   },
   "faceArea": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.4212393478883142
-
   },
   "frameDepth": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.8035081586701794
-
   },
   "frameThickness": {
-    "type": "Measurement",
-    "value":  0.28946308913206176
-
+    "type": "Number",
+    "value": 0.28946308913206176
   },
   "frameType": {
     "type": "Text",
     "value": "Balanced"
   },
   "leakageFullyClosed": {
-    "type": "Measurement",
-    "value":  0.44075236436472953
-
+    "type": "Number",
+    "value": 0.44075236436472953
   },
   "nominalAirFlowRate": {
-    "type": "Measurement",
-    "value":0.47305378645729657
-
+    "type": "Number",
+    "value": 0.47305378645729657
   },
   "numberOfBlades": {
-    "type": "Float",
+    "type": "Number",
     "value": 0.8083872561368712
   },
   "openPressureDrop": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.9106213284285767
-
   },
   "operation": {
     "type": "Text",
     "value": "Handcrafted Concrete Computer"
   },
   "operationMode": {
-    "type": "DamperOperationMode",
+    "type": "Text",
     "value": "supply"
   },
   "operationTemperatureMax": {
-    "type": "Measurement",
-    "value":  0.87576324331876
-
+    "type": "Number",
+    "value": 0.87576324331876
   },
   "operationTemperatureMin": {
-    "type": "Measurement",
-    "value":  0.3952529455728351
-
+    "type": "Number",
+    "value": 0.3952529455728351
   },
   "orientation": {
     "type": "Text",
     "value": "Mozambique"
   },
   "temperatureRating": {
-    "type": "Measurement",
-    "value":  0.43326401348250587
-
+    "type": "Number",
+    "value": 0.43326401348250587
   },
   "workingPressureMax": {
-    "type": "Measurement",
-    "value":  0.2695729035947665
-
+    "type": "Number",
+    "value": 0.2695729035947665
   },
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:f19ff450-12f4-472a-985e-40b163530ccd"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:ee6c23f3-7261-4807-b3e3-703588646f02"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:a8f8f637-52c0-491d-890e-2806ffbdc6cd"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:7f5f939e-9a41-4ca6-95ff-4ece8ffec42c"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:ff7924ea-c532-40c9-a1ac-449c76216073"
-      }
+      "urn:ngsi-ld:System:a8f8f637-52c0-491d-890e-2806ffbdc6cd",
+      "urn:ngsi-ld:System:7f5f939e-9a41-4ca6-95ff-4ece8ffec42c",
+      "urn:ngsi-ld:System:ff7924ea-c532-40c9-a1ac-449c76216073"
     ]
   },
   "hasManufacturer": {
