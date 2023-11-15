@@ -6,18 +6,16 @@
     "value": "intranet"
   },
   "colorRenderingIndex": {
-    "type": "Float",
+    "type": "Number",
     "value": 0.9381317485666679
   },
   "colorTemperature": {
-    "type": "Measurement",
-    "value":  0.162971670454518
-    
+    "type": "Number",
+    "value": 0.162971670454518
   },
   "contributedLuminousFlux": {
-    "type": "Measurement",
-    "value":  0.9333222274075583
-    
+    "type": "Number",
+    "value": 0.9333222274075583
   },
   "lampBallastType": {
     "type": "Text",
@@ -28,48 +26,35 @@
     "value": "Web"
   },
   "lampMaintenanceFactor": {
-    "type": "Measurement",
-    "value":  0.7734465932124935
-    
+    "type": "Number",
+    "value": 0.7734465932124935
   },
   "lightEmitterNominalPower": {
-    "type": "Measurement",
-    "value":  0.34992609812300746
-    
+    "type": "Number",
+    "value": 0.34992609812300746
   },
   "spectrumMax": {
-    "type": "Measurement",
-    "value":  0.7513509645742688
-    
+    "type": "Number",
+    "value": 0.7513509645742688
   },
   "spectrumMin": {
-    "type": "Measurement",
-    "value":  0.6531361967308142
-    
+    "type": "Number",
+    "value": 0.6531361967308142
   },
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:7f2b0435-7136-42aa-a3f5-14d718fe167b"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:870d927a-894d-443c-8202-a3f85d8010eb"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:21b3835c-564a-4b0c-9dc3-0f0e67489ad0"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:dfe58786-fa48-479c-97a9-09656f1751df"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:392b7d40-d54f-4e86-946f-7c89af254076"
-      }
+      "urn:ngsi-ld:System:21b3835c-564a-4b0c-9dc3-0f0e67489ad0",
+      "urn:ngsi-ld:System:dfe58786-fa48-479c-97a9-09656f1751df",
+      "urn:ngsi-ld:System:392b7d40-d54f-4e86-946f-7c89af254076"
     ]
   },
   "hasManufacturer": {
