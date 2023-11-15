@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:TubeBundle:75ab66ce-2623-41a5-884f-ed9b90bde563",
   "type": "TubeBundle",
   "foulingFactor": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.10691025901902518
   },
   "hasTurbulator": {
@@ -10,76 +10,67 @@
     "value": false
   },
   "horizontalSpacing": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.5021481278695225
   },
   "inLineRowSpacing": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.7015738944986649
   },
   "insideDiameter": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.47609748066140833
   },
   "length": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.6920310151935178
   },
   "nominalDiameter": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.7019643160884628
   },
   "numberOfCircuits": {
-    "type": "Float",
+    "type": "Number",
     "value": 0.2146661280911759
   },
   "numberOfRows": {
-    "type": "Float",
+    "type": "Number",
     "value": 0.7182471012018697
   },
   "outsideDiameter": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.41939698462727526
   },
   "staggeredRowSpacing": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.39127220946141616
   },
   "thermalConductivity": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.9507857927588059
   },
   "verticalSpacing": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.08491295072422345
   },
   "volumen": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.16253433369725145
   },
   "isContainedInBuildingSpace": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:e03ce9ef-23a6-4ad9-a533-a960cec73dbe"
   },
   "isContainedInPhysicalObject": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:1c71e6d7-68ef-4a8d-9fde-985758f88344"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:c9a9c176-b562-42b7-ad80-cc8db2093faa"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:63e522a0-7de4-4bd9-9f94-094efdf565dc"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:0eebd7dc-010a-4f91-a4d1-da8b2a153b7b"
-      }
+      "urn:ngsi-ld:System:c9a9c176-b562-42b7-ad80-cc8db2093faa",
+      "urn:ngsi-ld:System:63e522a0-7de4-4bd9-9f94-094efdf565dc",
+      "urn:ngsi-ld:System:0eebd7dc-010a-4f91-a4d1-da8b2a153b7b"
     ]
   },
   "hasManufacturer": {
