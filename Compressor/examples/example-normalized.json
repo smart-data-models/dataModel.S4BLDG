@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:Compressor:5286e31e-5c79-4133-93c4-07c1f3574128",
   "type": "Compressor",
   "compressorSpeed": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.6951462722377054
   },
   "hasHotGasBypass": {
@@ -10,27 +10,27 @@
     "value": true
   },
   "idealCapacity": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.3445800754974827
   },
   "idealShaftPower": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.8311250404203112
   },
   "impellerDiameter": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.868808285450986
   },
   "nominalCapacity": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.9287385861700207
   },
   "partLoadRatioMax": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.38901369640969274
   },
   "partLoadRatioMin": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.9657934764992187
   },
   "powerSource": {
@@ -42,28 +42,19 @@
     "value": "Fresh"
   },
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:91df3ba9-787a-4ebb-9be6-ae4c05263de1"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:e9909895-084e-4023-9a5a-001322f825f9"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:7ebaae6c-b549-4610-8df4-9c28cebe42a9"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:cedc316a-3057-4f0b-9800-db9757c47286"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:b64d7a83-9d09-405a-82dc-e2dc92ba7ae5"
-      }
+      "urn:ngsi-ld:System:7ebaae6c-b549-4610-8df4-9c28cebe42a9",
+      "urn:ngsi-ld:System:cedc316a-3057-4f0b-9800-db9757c47286",
+      "urn:ngsi-ld:System:b64d7a83-9d09-405a-82dc-e2dc92ba7ae5"
     ]
   },
   "hasManufacturer": {
