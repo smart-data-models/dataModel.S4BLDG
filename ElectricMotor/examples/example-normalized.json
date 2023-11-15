@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:ElectricMotor:024aea5d-c781-4d5e-9b57-92672c75663d",
   "type": "ElectricMotor",
   "electricMotorEfficiency": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.14465653517328592
   },
   "frameSize": {
@@ -18,57 +18,43 @@
     "value": false
   },
   "lockedRotorCurrent": {
-    "type": "Measurement",
-    "value":  0.7069578753062778
-
+    "type": "Number",
+    "value": 0.7069578753062778
   },
   "motorEnclosureType": {
     "type": "Text",
     "value": "Cambridgeshire"
   },
   "powerOutputMax": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.925424003891414
-
   },
   "startCurrentFactor": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.27335468276078645
-
   },
   "startingTime": {
-    "type": "Measurement",
-    "value":  0.8955138694697009
-
+    "type": "Number",
+    "value": 0.8955138694697009
   },
   "teTime": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.024805742901409134
-
   },
   "isContainedInBuildingSpace": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:dec2fd4f-2093-4779-b571-841bac3ec419"
   },
   "isContainedInPhysicalObject": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:42195e3f-cdb8-4603-952f-d9f52d9749ed"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:08a8c968-420c-464d-8458-784dd721cfbe"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:92362fba-3ddd-47af-a985-de2caf90f298"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:3033fd90-5610-490c-8b39-6f98c962af41"
-      }
+      "urn:ngsi-ld:System:08a8c968-420c-464d-8458-784dd721cfbe",
+      "urn:ngsi-ld:System:92362fba-3ddd-47af-a985-de2caf90f298",
+      "urn:ngsi-ld:System:3033fd90-5610-490c-8b39-6f98c962af41"
     ]
   },
   "hasManufacturer": {
