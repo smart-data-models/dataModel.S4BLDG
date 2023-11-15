@@ -2,93 +2,71 @@
   "id": "urn:ngsi-ld:Filter:8e80455c-7f89-462c-b1f0-b84c6ac5e5cb",
   "type": "Filter",
   "finalResistance": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.25563353322549653
-
   },
   "fluidFlowRateMax": {
-    "type": "Measurement",
-    "value":0.7441450852967011
-
+    "type": "Number",
+    "value": 0.7441450852967011
   },
   "fluidFlowRateMin": {
-    "type": "Measurement",
-    "value":  0.32563792639259326
-
+    "type": "Number",
+    "value": 0.32563792639259326
   },
   "initialResistance": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.41032135281652493
-
   },
   "nominalFilterFaceVelocity": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.829815297358211
-
   },
   "nominalFlowRate": {
-    "type": "Measurement",
-    "value":  0.569423507213339
-
+    "type": "Number",
+    "value": 0.569423507213339
   },
   "nominalMediaSurfaceVelocity": {
-    "type": "Measurement",
-    "value":  0.6085640129416107
-
+    "type": "Number",
+    "value": 0.6085640129416107
   },
   "nominalParticleGeometricMeanDiameter": {
-    "type": "Measurement",
-    "value":  0.9736709365602062
-
+    "type": "Number",
+    "value": 0.9736709365602062
   },
   "nominalParticleGeometricStandardDeviation": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.5284993250186989
-
   },
   "nominalPressureDrop": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.4856470985811685
-
   },
   "operationTemperatureMax": {
-    "type": "Measurement",
-    "value":  0.04450158146401939
-
+    "type": "Number",
+    "value": 0.04450158146401939
   },
   "operationTemperatureMin": {
-    "type": "Measurement",
-    "value":  0.28211808830531604
-
+    "type": "Number",
+    "value": 0.28211808830531604
   },
   "weight": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.5157014658259989
-
   },
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:4468726f-7faa-4e8e-802e-337b7d4e2c38"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:a263b3b0-a5d7-4e38-a95f-75dd868ea6aa"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:118a0d61-bba3-416e-a770-5ac45dfb66e7"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:a7ba30cc-d8f3-423d-a1d6-284c130befee"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:38485bc5-5ff4-49f1-b6fb-65b815b05795"
-      }
+      "urn:ngsi-ld:System:118a0d61-bba3-416e-a770-5ac45dfb66e7",
+      "urn:ngsi-ld:System:a7ba30cc-d8f3-423d-a1d6-284c130befee",
+      "urn:ngsi-ld:System:38485bc5-5ff4-49f1-b6fb-65b815b05795"
     ]
   },
   "hasManufacturer": {
