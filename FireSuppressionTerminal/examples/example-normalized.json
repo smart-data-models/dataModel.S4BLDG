@@ -2,28 +2,19 @@
   "id": "urn:ngsi-ld:FireSuppressionTerminal:f45acb30-c282-460f-95b0-5c14d69923d9",
   "type": "FireSuppressionTerminal",
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:45f2a673-b419-4a10-bfda-16623713dc37"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:75c6b864-e882-4b7d-8794-8936df8f7deb"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:99be813e-a877-4b55-aa0b-7bf449c3f3ea"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:8358c738-4053-4787-b9a8-d3b98d95e1e9"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:116d5ed2-34ca-4b99-8ea3-d6fea2d6acea"
-      }
+      "urn:ngsi-ld:System:99be813e-a877-4b55-aa0b-7bf449c3f3ea",
+      "urn:ngsi-ld:System:8358c738-4053-4787-b9a8-d3b98d95e1e9",
+      "urn:ngsi-ld:System:116d5ed2-34ca-4b99-8ea3-d6fea2d6acea"
     ]
   },
   "hasManufacturer": {
