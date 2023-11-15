@@ -2,50 +2,31 @@
   "id": "urn:ngsi-ld:ElectricGenerator:df5482f2-2064-41b6-a02c-161a40308684",
   "type": "ElectricGenerator",
   "electricGeneratorEfficiency": {
-    "type": "Measurement",
-    "value": {
-      "value": 0.7817008930557607
-    }
+    "type": "Number",
+    "value": 0.7817008930557607
   },
   "powerOutputMax": {
-    "type": "Measurement",
-    "value": {
-      "unitCode": "J/s",
-      "observedAt": "2023-01-25T15:08:28Z",
-      "value": 0.31633906719735727
-    }
+    "type": "Number",
+    "value": 0.31633906719735727
   },
   "startCurrentFactor": {
-    "type": "Measurement",
-    "value": {
-      "unitCode": "NA",
-      "observedAt": "2023-01-25T17:36:06Z",
-      "value": 0.08027164488059058
-    }
+    "type": "Number",
+    "value": 0.08027164488059058
   },
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:8ee7d12a-279b-441b-bfe1-63af7f5ae31c"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:d49eeb87-a925-46eb-aa1f-6f87bf4a73fb"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:fd638070-ab04-46c2-9e01-ea8a7c2f1676"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:dcd1c3ca-8309-4e52-bc04-430656f0717d"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:95b25770-5b81-427b-b0aa-88d4d13dadb0"
-      }
+      "urn:ngsi-ld:System:fd638070-ab04-46c2-9e01-ea8a7c2f1676",
+      "urn:ngsi-ld:System:dcd1c3ca-8309-4e52-bc04-430656f0717d",
+      "urn:ngsi-ld:System:95b25770-5b81-427b-b0aa-88d4d13dadb0"
     ]
   },
   "hasManufacturer": {
