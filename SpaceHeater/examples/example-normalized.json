@@ -1,7 +1,10 @@
 {
   "id": "urn:ngsi-ld:SpaceHeater:b256e328-b21f-4f37-bcb4-d78364993e79",
   "type": "SpaceHeater",
-  "bodyMass": 0.7643146073425459,
+  "bodyMass": {
+    "type": "Number",
+    "value": 0.7643146073425459
+  },
   "energySource": {
     "type": "Text",
     "value": "Facilitator"
@@ -15,15 +18,15 @@
     "value": "Assurance"
   },
   "numberOfPanels": {
-    "type": "Float",
+    "type": "Number",
     "value": 0.8127498709428745
   },
   "numberOfSections": {
-    "type": "Float",
+    "type": "Number",
     "value": 0.8692658014070345
   },
   "outputCapacity": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.2717042496203792
   },
   "placementType": {
@@ -35,36 +38,27 @@
     "value": "SMTP"
   },
   "thermalEfficiency": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.16328303516805232
   },
   "thermalMassHeatCapacity": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.17753659327247795
   },
   "isContainedInBuildingSpace": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:c1f57310-b1ad-4a70-bdca-70f74bbcc002"
   },
   "isContainedInPhysicalObject": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:e22ae82c-83a1-4ed9-b1f8-eeced3ba17d9"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:6f519e2b-416a-4b2a-af7b-56974a5d00df"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:16199b91-8c55-4645-8c14-536d1dff0fcc"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:5526ed19-a6fa-4e22-a8bd-71a1027a9b02"
-      }
+      "urn:ngsi-ld:System:6f519e2b-416a-4b2a-af7b-56974a5d00df",
+      "urn:ngsi-ld:System:16199b91-8c55-4645-8c14-536d1dff0fcc",
+      "urn:ngsi-ld:System:5526ed19-a6fa-4e22-a8bd-71a1027a9b02"
     ]
   },
   "hasManufacturer": {
