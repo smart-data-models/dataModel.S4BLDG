@@ -2,15 +2,15 @@
   "id": "urn:ngsi-ld:CoolingTower:7995c5cf-c8c3-4e42-92db-6dd840796eae",
   "type": "CoolingTower",
   "ambientDesignDryBulbTemperature": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.36789185492213194
   },
   "ambientDesignWetBulbTemperature": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.1490037569659941
   },
   "basinReserveVolume": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.9142388286093716
   },
   "capacityControl": {
@@ -30,23 +30,23 @@
     "value": "access"
   },
   "liftElevationDifference": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.6134421322995507
   },
   "nominalCapacity": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.14285208313177855
   },
   "numberOfCells": {
-    "type": "Float",
+    "type": "Number",
     "value": 0.9307947920697038
   },
   "operationTemperatureMax": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.33271163839338236
   },
   "operationTemperatureMin": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.8346930607066967
   },
   "sprayType": {
@@ -54,32 +54,23 @@
     "value": "synthesizing"
   },
   "waterRequirement": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.6749365729986966
   },
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:e1c9dc03-9887-49df-9577-a24218339c39"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:d6e1c0cc-a656-4343-8572-21de93d365ba"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:972d1b4b-ab6d-474c-a742-c75822d6c7b8"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:8c7d509c-66b4-4504-ad2e-d7ec82146ba2"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:42d552ca-9fdd-4838-804e-41f34d6f61f7"
-      }
+      "urn:ngsi-ld:System:972d1b4b-ab6d-474c-a742-c75822d6c7b8",
+      "urn:ngsi-ld:System:8c7d509c-66b4-4504-ad2e-d7ec82146ba2",
+      "urn:ngsi-ld:System:42d552ca-9fdd-4838-804e-41f34d6f61f7"
     ]
   },
   "hasManufacturer": {
