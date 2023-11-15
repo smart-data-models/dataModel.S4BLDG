@@ -10,72 +10,55 @@
     "value": "hard drive"
   },
   "nominalAirFlowRate": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.3551507592337234
-
   },
   "nominalPowerRate": {
-    "type": "Measurement",
-    "value":  0.49309444253514245
-
+    "type": "Number",
+    "value": 0.49309444253514245
   },
   "nominalRotationSpeed": {
-    "type": "Measurement",
-    "value":0.07199495596164263
-
+    "type": "Number",
+    "value": 0.07199495596164263
   },
   "nominalStaticPressure": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.024615829657942068
-
   },
   "nominalTotalPressure": {
-    "type": "Measurement",
-    "value":  0.3030820859504
-
+    "type": "Number",
+    "value": 0.3030820859504
   },
   "operationalRiterial": {
-    "type": "Measurement",
-    "value":  0.21730931831819922
-
+    "type": "Number",
+    "value": 0.21730931831819922
   },
   "operationMode": {
-    "type": "FanOperationMode",
+    "type": "Text",
     "value": "supply"
   },
   "operationTemperatureMax": {
-    "type": "Measurement",
-    "value":0.6593703010837063
-
+    "type": "Number",
+    "value": 0.6593703010837063
   },
   "operationTemperatureMin": {
-    "type": "Measurement",
-    "value":  0.23220611636698574
-
+    "type": "Number",
+    "value": 0.23220611636698574
   },
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:179a46d2-4adc-49bc-81ad-55bf8d570c04"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:1324382c-8a0d-4481-b501-20ced593647d"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:7bb675a4-c933-494f-9e7a-1ad7777c40c3"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:2122d54b-df0b-490a-8d2c-9611433a6950"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:bb112446-5445-482a-aacc-ca87dc610bd5"
-      }
+      "urn:ngsi-ld:System:7bb675a4-c933-494f-9e7a-1ad7777c40c3",
+      "urn:ngsi-ld:System:2122d54b-df0b-490a-8d2c-9611433a6950",
+      "urn:ngsi-ld:System:bb112446-5445-482a-aacc-ca87dc610bd5"
     ]
   },
   "hasManufacturer": {
