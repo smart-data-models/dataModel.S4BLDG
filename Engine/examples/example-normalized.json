@@ -6,28 +6,19 @@
     "value": "Hawaii"
   },
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:792684e8-942d-4214-bca3-9d802f65a141"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:8176de9a-8d4e-4707-a9c5-3faafd8bbf8d"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:57c03356-7a77-4c24-be6d-b9d1ea1c1755"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:0b84294f-39b9-4558-9821-f8703526d872"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:5067611d-d388-4815-b3e0-aac745f9d11b"
-      }
+      "urn:ngsi-ld:System:57c03356-7a77-4c24-be6d-b9d1ea1c1755",
+      "urn:ngsi-ld:System:0b84294f-39b9-4558-9821-f8703526d872",
+      "urn:ngsi-ld:System:5067611d-d388-4815-b3e0-aac745f9d11b"
     ]
   },
   "hasManufacturer": {
