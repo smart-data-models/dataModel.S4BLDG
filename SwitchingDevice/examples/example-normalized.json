@@ -14,7 +14,7 @@
     "value": "azure"
   },
   "numberOfGangs": {
-    "type": "Float",
+    "type": "Number",
     "value": 0.7570991778458094
   },
   "switchFunction": {
@@ -22,28 +22,19 @@
     "value": "Pennsylvania"
   },
   "isContainedInBuildingSpace": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:fd192f21-f024-44c0-a65e-f4c6496b90db"
   },
   "isContainedInPhysicalObject": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:12cc4e62-5aae-40e4-8ec3-cf7d03428278"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:39fdf781-f35a-4371-a82b-12e07350d2f9"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:637cc212-2eeb-4b81-abb9-5a9004e2c306"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:f2b36833-fcb4-42c0-9f65-dbecee562bfc"
-      }
+      "urn:ngsi-ld:System:39fdf781-f35a-4371-a82b-12e07350d2f9",
+      "urn:ngsi-ld:System:637cc212-2eeb-4b81-abb9-5a9004e2c306",
+      "urn:ngsi-ld:System:f2b36833-fcb4-42c0-9f65-dbecee562bfc"
     ]
   },
   "hasManufacturer": {
