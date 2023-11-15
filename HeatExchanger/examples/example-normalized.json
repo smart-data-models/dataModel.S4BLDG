@@ -6,28 +6,19 @@
     "value": "Assistant"
   },
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:9ef5478c-5f5f-4d2c-81b3-5cb9317ee70f"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:d8a9c2c6-a3e9-414d-a8ac-a69f959d7b70"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:cce1367c-262f-41d6-88ca-6d3032cfb193"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:90db3c34-a2b8-4511-89cb-353fd855fce4"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:3bbddac3-223b-449d-884e-1cc4d04eeb79"
-      }
+      "urn:ngsi-ld:System:cce1367c-262f-41d6-88ca-6d3032cfb193",
+      "urn:ngsi-ld:System:90db3c34-a2b8-4511-89cb-353fd855fce4",
+      "urn:ngsi-ld:System:3bbddac3-223b-449d-884e-1cc4d04eeb79"
     ]
   },
   "hasManufacturer": {
