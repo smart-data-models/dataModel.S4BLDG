@@ -6,84 +6,67 @@
     "value": "Benin"
   },
   "effectiveCapacity": {
-    "type": "Measurement",
-    "value":  0.34988329549654584
-
+    "type": "Number",
+    "value": 0.34988329549654584
   },
   "endShapeType": {
     "type": "Text",
     "value": "Lari"
   },
   "firstCurvatureRadius": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.9159778495815387
-
   },
   "nominalDepth": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.8630341610754986
-
   },
   "nominalLengthOrDiameter": {
-    "type": "Measurement",
-    "value":  0.8867523503955448
-
+    "type": "Number",
+    "value": 0.8867523503955448
   },
   "nominalVolumetricCapacity": {
-    "type": "Measurement",
-    "value":  0.27704062609207425
-
+    "type": "Number",
+    "value": 0.27704062609207425
   },
   "nominalWidthOrDiameter": {
-    "type": "Measurement",
-    "value":  0.6770082270929979
-
+    "type": "Number",
+    "value": 0.6770082270929979
   },
   "numberOfSections": {
-    "type": "Float",
+    "type": "Number",
     "value": 0.7169194499582789
   },
   "operatingWeight": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.23947734710245394
-
   },
   "patternType": {
     "type": "Text",
     "value": "Ergonomic Cotton Ball"
   },
   "secondCurvatureRadius": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.11478790270153483
-
   },
   "storageType": {
     "type": "Text",
     "value": "gold"
   },
   "isContainedInBuildingSpace": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:431e892c-1029-409d-b7b8-b9cad9a0a9e5"
   },
   "isContainedInPhysicalObject": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:fd304ea2-572f-4b66-b8ad-d9d84c870fa1"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:b3336716-b468-40f1-be04-9f7ffedcc418"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:05bac9cd-2c56-4046-a70a-b2415e810f43"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:2344579c-27b3-4c5d-9db3-0fd9b46fb7e7"
-      }
+      "urn:ngsi-ld:System:b3336716-b468-40f1-be04-9f7ffedcc418",
+      "urn:ngsi-ld:System:05bac9cd-2c56-4046-a70a-b2415e810f43",
+      "urn:ngsi-ld:System:2344579c-27b3-4c5d-9db3-0fd9b46fb7e7"
     ]
   },
   "hasManufacturer": {
