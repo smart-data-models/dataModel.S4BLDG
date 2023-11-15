@@ -18,48 +18,39 @@
     "value": "program"
   },
   "solarReflectance": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.23462582512353236
   },
   "solarTransmittance": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.569468324137257
   },
   "thermalTransmittance": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.315308180363743
   },
   "visibleLightReflectance": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.6167477347282538
   },
   "visibleLightTransmittance": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.27849116636487137
   },
   "isContainedInBuildingSpace": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:6d6d4b35-2d0f-4590-bd7d-1e5cdc1d71fe"
   },
   "isContainedInPhysicalObject": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:ff501e6f-1fbf-4dd4-9537-b3b6668f156b"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:6d7f1004-c306-4d6b-8b95-d661e62087df"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:9eedb406-9b0a-466e-99bf-d8b4721af694"
-      },
-      {
-        "type": "URL",
-        "value": "urn:ngsi-ld:System:c485e374-da84-4bff-8a79-7d35bdcd0dab"
-      }
+      "urn:ngsi-ld:System:6d7f1004-c306-4d6b-8b95-d661e62087df",
+      "urn:ngsi-ld:System:9eedb406-9b0a-466e-99bf-d8b4721af694",
+      "urn:ngsi-ld:System:c485e374-da84-4bff-8a79-7d35bdcd0dab"
     ]
   },
   "hasManufacturer": {
