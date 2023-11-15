@@ -2,14 +2,12 @@
   "id": "urn:ngsi-ld:CooledBeam:38dcdd25-ae94-441c-8409-218ec91e3006",
   "type": "CooledBeam",
   "coilLength": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.4277226249853211
-
   },
   "coilWidth": {
-    "type": "Measurement",
-    "value":0.6183775851562611
-
+    "type": "Number",
+    "value": 0.6183775851562611
   },
   "finishColor": {
     "type": "Text",
@@ -24,59 +22,48 @@
     "value": false
   },
   "nominalCoolingCapacity": {
-    "type": "Measurement",
-    "value":0.45857043485420457
-
+    "type": "Number",
+    "value": 0.45857043485420457
   },
   "nominalHeatingCapacity": {
-    "type": "Measurement",
-    "value":  0.37812382267356337
-
+    "type": "Number",
+    "value": 0.37812382267356337
   },
   "nominalReturnWaterTemperatureCooling": {
-    "type": "Measurement",
-    "value":  0.973742767691913
-
+    "type": "Number",
+    "value": 0.973742767691913
   },
   "nominalReturnWaterTemperatureHeating": {
-    "type": "Measurement",
-    "value":  0.6848085584395665
-
+    "type": "Number",
+    "value": 0.6848085584395665
   },
   "nominalSorroundingHumidityCooling": {
-    "type": "Measurement",
-    "value":  0.4100986776385609
-
+    "type": "Number",
+    "value": 0.4100986776385609
   },
   "nominalSorroundingTemperatureCooling": {
-    "type": "Measurement",
-    "value":  0.039909771141081074
-
+    "type": "Number",
+    "value": 0.039909771141081074
   },
   "nominalSorroundingTemperatureHeating": {
-    "type": "Measurement",
-    "value":  0.3023923557796515
-
+    "type": "Number",
+    "value": 0.3023923557796515
   },
   "nominalSupplyWaterTemperatureCooling": {
-    "type": "Measurement",
-    "value":  0.7562940127899793
-
+    "type": "Number",
+    "value": 0.7562940127899793
   },
   "nominalSupplyWaterTemperatureHeating": {
-    "type": "Measurement",
-    "value":  0.31198678394809454
-
+    "type": "Number",
+    "value": 0.31198678394809454
   },
   "nominalWaterFlowCooling": {
-    "type": "Measurement",
-    "value":  0.40924277893308847
-
+    "type": "Number",
+    "value": 0.40924277893308847
   },
   "nominalWaterFlowHeating": {
-    "type": "Measurement",
-    "value":  0.9345939456733873
-
+    "type": "Number",
+    "value": 0.9345939456733873
   },
   "pipeConnectionEnum": {
     "type": "Text",
@@ -87,38 +74,27 @@
     "value": "Interactions"
   },
   "waterPressureMax": {
-    "type": "Measurement",
-    "value":  0.07837257218461391
-
+    "type": "Number",
+    "value": 0.07837257218461391
   },
   "waterPressureMin": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.03742669539477306
-
   },
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:3e03fe30-3728-4867-ab51-b147c2d3e63b"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:cfd9df05-18b1-44f4-b1ee-da55226255e9"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:a4b0cda0-b373-4ae9-b2c7-e2cff5429e1e"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:216f6f83-8bd1-456f-9bed-36dbec41a3aa"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:d19ccffa-f134-46fc-8f9f-77656bb91649"
-      }
+      "urn:ngsi-ld:System:a4b0cda0-b373-4ae9-b2c7-e2cff5429e1e",
+      "urn:ngsi-ld:System:216f6f83-8bd1-456f-9bed-36dbec41a3aa",
+      "urn:ngsi-ld:System:d19ccffa-f134-46fc-8f9f-77656bb91649"
     ]
   },
   "hasManufacturer": {
