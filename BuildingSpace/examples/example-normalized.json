@@ -2,45 +2,21 @@
   "id": "urn:ngsi-ld:BuildingSpace:f341006e-3556-4699-8959-19edf7079bac",
   "type": "BuildingSpace",
   "airVolume": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.9064782098814886
   },
   "bounds": {
-    "type": "Bounds",
+    "type": "StructuredValue",
     "value": {
       "max": {
-        "type": "Point",
-        "value": {
-          "x": {
-            "type": "Float",
-            "value": 0.3435432568091691
-          },
-          "y": {
-            "type": "Float",
-            "value": 0.24905296319042758
-          },
-          "z": {
-            "type": "Float",
-            "value": 0.2845520466135202
-          }
-        }
+        "x": 0.3435432568091691,
+        "y": 0.24905296319042758,
+        "z": 0.2845520466135202
       },
       "min": {
-        "type": "Point",
-        "value": {
-          "x": {
-            "type": "Float",
-            "value": 0.4907878164155083
-          },
-          "y": {
-            "type": "Float",
-            "value": 0.24758694946836612
-          },
-          "z": {
-            "type": "Float",
-            "value": 0.5473795276532545
-          }
-        }
+        "x": 0.4907878164155083,
+        "y": 0.24758694946836612,
+        "z": 0.5473795276532545
       }
     }
   },
@@ -49,11 +25,11 @@
     "value": "OpeningElement"
   },
   "isSpaceOfBuilding": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:Building:f61515c6-7ae8-497f-a5a0-a109d69c8ad9"
   },
   "isSpaceOfBuildingSpace": {
-    "type": "URL",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:af38bc5d-cc8e-456b-933b-6f49a5a4347b"
   },
   "dateCreated": {
