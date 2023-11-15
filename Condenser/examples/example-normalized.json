@@ -2,27 +2,27 @@
   "id": "urn:ngsi-ld:Condenser:e22782fc-5392-4dd2-b891-29b5fbf683cd",
   "type": "Condenser",
   "externalSurfaceArea": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.1255332761606085
   },
   "internalRefrigerantVolume": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.5305579766612258
   },
   "internalSurfaceArea": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.7094627719374283
   },
   "internalWaterVolume": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.3123303218703414
   },
   "nominalHeatTransferArea": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.4444793909507544
   },
   "nominalHeatTransferCoefficient": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.6428769642448905
   },
   "refrigerantClass": {
@@ -30,28 +30,19 @@
     "value": "Ergonomic Fresh Pants"
   },
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:ae10b0d7-9929-45cc-bf0c-3e3ab5380c1a"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:a3e1362f-7a17-46e9-a997-fd763290b5a2"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:47267553-d21a-42f8-b1b9-b24ec529e8ad"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:878dd196-c9af-43d7-8d36-344fa19ca56f"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:366cc386-314f-4591-9f3f-4099890c74e7"
-      }
+      "urn:ngsi-ld:System:47267553-d21a-42f8-b1b9-b24ec529e8ad",
+      "urn:ngsi-ld:System:878dd196-c9af-43d7-8d36-344fa19ca56f",
+      "urn:ngsi-ld:System:366cc386-314f-4591-9f3f-4099890c74e7"
     ]
   },
   "hasManufacturer": {
