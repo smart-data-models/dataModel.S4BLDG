@@ -2,43 +2,31 @@
   "id": "urn:ngsi-ld:ElectricFlowStorageDevice:4596f0a6-514a-4513-a666-3b9ade359305",
   "type": "ElectricFlowStorageDevice",
   "nominalFrequency": {
-    "type": "Measurement",
-    "value":  0.42581504045433194
-    
+    "type": "Number",
+    "value": 0.42581504045433194
   },
   "nominalSupplyVoltage": {
-    "type": "Measurement",
-    "value":  0.025200397292739596
-    
+    "type": "Number",
+    "value": 0.025200397292739596
   },
   "nominalSupplyVoltageMin": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.05204546916613961
-    
   },
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:235bfb6d-5039-45ea-95f9-094db1283634"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:9b54ca95-3f90-4be8-b32a-b585f8a9f867"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:0292e70d-da07-4d14-b8d8-c81c27c44683"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:6dce885f-2c53-414b-b0b2-9f2b88f0376d"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:a52f7099-5638-4b97-98c6-d24acc53edc6"
-      }
+      "urn:ngsi-ld:System:0292e70d-da07-4d14-b8d8-c81c27c44683",
+      "urn:ngsi-ld:System:6dce885f-2c53-414b-b0b2-9f2b88f0376d",
+      "urn:ngsi-ld:System:a52f7099-5638-4b97-98c6-d24acc53edc6"
     ]
   },
   "hasManufacturer": {
