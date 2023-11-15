@@ -2,62 +2,51 @@
   "id": "urn:ngsi-ld:Interceptor:e45ced8f-6d99-4b1e-a32b-d9e525d9429f",
   "type": "Interceptor",
   "coverLength": {
-    "type": "Measurement",
-    "value":  0.44339547398234425
+    "type": "Number",
+    "value": 0.44339547398234425
   },
   "coverWidth": {
-    "type": "Measurement",
-    "value":0.8009891082993085
-    
+    "type": "Number",
+    "value": 0.8009891082993085
   },
   "inletConnectionSize": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.041004126787857476
-    
   },
   "nominalBodyDepth": {
-    "type": "Measurement",
-    "value":  0.29190715678427104 
+    "type": "Number",
+    "value": 0.29190715678427104
   },
   "nominalBodyLength": {
-    "type": "Measurement",
-    "value":  0.3879109279352648  
+    "type": "Number",
+    "value": 0.3879109279352648
   },
   "nominalBodyWidth": {
-    "type": "Measurement",
-    "value":  0.41258224275422206 
+    "type": "Number",
+    "value": 0.41258224275422206
   },
   "outletConnectionSize": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.45113395263374134
   },
   "ventilatingPipeSize": {
-    "type": "Measurement",
+    "type": "Number",
     "value": 0.9955414515835173
   },
   "isContainedInBuildingSpace": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:BuildingSpace:6e19661e-cc0d-40a9-a678-77eb09dbec66"
   },
   "isContainedInPhysicalObject": {
-    "type": "URI",
+    "type": "Text",
     "value": "urn:ngsi-ld:PhysicalObject:ab4d138b-d0c3-4d88-96fa-9326f23e5946"
   },
   "isSubSystemOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:284ae13c-0f10-4ade-bde1-84335db0e9c3"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:01933b47-4ff0-4a28-a3c1-ccda5080a98d"
-      },
-      {
-        "type": "URI",
-        "value": "urn:ngsi-ld:System:e0b79043-7cc6-45b0-a28a-8368751e98b8"
-      }
+      "urn:ngsi-ld:System:284ae13c-0f10-4ade-bde1-84335db0e9c3",
+      "urn:ngsi-ld:System:01933b47-4ff0-4a28-a3c1-ccda5080a98d",
+      "urn:ngsi-ld:System:e0b79043-7cc6-45b0-a28a-8368751e98b8"
     ]
   },
   "hasManufacturer": {
