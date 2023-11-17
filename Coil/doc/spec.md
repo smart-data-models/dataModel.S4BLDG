@@ -1,496 +1,494 @@
-<!-- 10-Header -->  
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entity: Coil  
-============<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Coil/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Global description: **A coil is a device used to provide heat transfer between non-mixing media. A common example is a cooling coil, which utilizes a finned coil in which circulates chilled water, antifreeze, or refrigerant that is used to remove heat from air moving across the surface of the coil. A coil may be used either for heating or cooling purposes by placing a series of tubes (the coil) carrying a heating or cooling fluid into an airstream. The coil may be constructed from tubes bundled in a serpentine form or from finned tubes that give a extended heat transfer surface.  Coils may also be used for non-airflow cases such as embedded in a floor slab.**  
-version: 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
-
-## List of properties  
-
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
-	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `airFlowRateMax[number]`: Maximum allowable air flow rate. Usually measured in m3/s  - `airFlowRateMin[number]`: Minimum allowable air flow rate. Usually measured in m3/s  - `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `hasManufacturer[string]`: A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag  - `hasModel[string]`: A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag  - `id[*]`: Unique identifier of the entity  - `isContainedInBuildingSpace[*]`: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)  - `isContainedInPhysicalObject[*]`: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)  - `isSubSystemOf[array]`: A reference to a system(s) that this Physical Object is part of  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item  - `nominalLatentCapacity[number]`: Nominal latent capacity. Usually measured in Watts (W, J/s)  - `nominalSensibleCapacity[number]`: Nominal sensible capacity. Usually measured in Watts (W, J/s)  - `nominalUa[number]`: Nominal UA value  - `operationMode[string]`: Operation mode of this coil  - `operationTemperatureMax[number]`: Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)  - `operationTemperatureMin[number]`: Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `placementType[string]`: Indicates how the device is designed to be placed  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `type[string]`: It must be equal to `Coil`  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Required properties  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Data Model description of properties  
-Sorted alphabetically (click for details)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
-<details><summary><strong>full yaml details</strong></summary>    
-```yaml  
-Coil:    
-  description: 'A coil is a device used to provide heat transfer between non-mixing media. A common example is a cooling coil, which utilizes a finned coil in which circulates chilled water, antifreeze, or refrigerant that is used to remove heat from air moving across the surface of the coil. A coil may be used either for heating or cooling purposes by placing a series of tubes (the coil) carrying a heating or cooling fluid into an airstream. The coil may be constructed from tubes bundled in a serpentine form or from finned tubes that give a extended heat transfer surface.  Coils may also be used for non-airflow cases such as embedded in a floor slab.'    
-  properties:    
-    address:    
-      description: The mailing address    
-      properties:    
-        addressCountry:    
-          description: 'The country. For example, Spain'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/addressCountry    
-            type: Property    
-        addressLocality:    
-          description: 'The locality in which the street address is, and which is in the region'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/addressLocality    
-            type: Property    
-        addressRegion:    
-          description: 'The region in which the locality is, and which is in the country'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/addressRegion    
-            type: Property    
-        district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
-          type: string    
-          x-ngsi:    
-            type: Property    
-        postOfficeBoxNumber:    
-          description: 'The post office box number for PO box addresses. For example, 03578'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/postOfficeBoxNumber    
-            type: Property    
-        postalCode:    
-          description: 'The postal code. For example, 24004'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/https://schema.org/postalCode    
-            type: Property    
-        streetAddress:    
-          description: The street address    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/streetAddress    
-            type: Property    
-        streetNr:    
-          description: Number identifying a specific property on a public street    
-          type: string    
-          x-ngsi:    
-            type: Property    
-      type: object    
-      x-ngsi:    
-        model: https://schema.org/address    
-        type: Property    
-    airFlowRateMax:    
-      description: Maximum allowable air flow rate. Usually measured in m3/s    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    airFlowRateMin:    
-      description: Minimum allowable air flow rate. Usually measured in m3/s    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    alternateName:    
-      description: An alternative name for this item    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    areaServed:    
-      description: The geographic area where a service or offered item is provided    
-      type: string    
-      x-ngsi:    
-        model: https://schema.org/Text    
-        type: Property    
-    dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    description:    
-      description: A description of this item    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    hasManufacturer:    
-      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    hasModel:    
-      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    id:    
-      anyOf:    
-        - description: Identifier format of any NGSI entity    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-          x-ngsi:    
-            type: Property    
-        - description: Identifier format of any NGSI entity    
-          format: uri    
-          type: string    
-          x-ngsi:    
-            type: Property    
-      description: Unique identifier of the entity    
-      x-ngsi:    
-        type: Property    
-    isContainedInBuildingSpace:    
-      anyOf:    
-        - description: Identifier format of any NGSI entity    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-          x-ngsi:    
-            type: Property    
-        - description: Identifier format of any NGSI entity    
-          format: uri    
-          type: string    
-          x-ngsi:    
-            type: Property    
-      description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
-      x-ngsi:    
-        type: Property    
-    isContainedInPhysicalObject:    
-      anyOf:    
-        - description: Identifier format of any NGSI entity    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-          x-ngsi:    
-            type: Property    
-        - description: Identifier format of any NGSI entity    
-          format: uri    
-          type: string    
-          x-ngsi:    
-            type: Property    
-      description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
-      x-ngsi:    
-        type: Property    
-    isSubSystemOf:    
-      description: A reference to a system(s) that this Physical Object is part of    
-      items:    
-        anyOf:    
-          - description: Identifier format of any NGSI entity    
-            maxLength: 256    
-            minLength: 1    
-            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-            type: string    
-            x-ngsi:    
-              type: Property    
-          - description: Identifier format of any NGSI entity    
-            format: uri    
-            type: string    
-            x-ngsi:    
-              type: Property    
-        description: Unique identifier of the entity    
-        x-ngsi:    
-          type: Property    
-      type: array    
-      x-ngsi:    
-        type: Relationship    
-    location:    
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
-      oneOf:    
-        - description: Geojson reference to the item. Point    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                type: number    
-              minItems: 2    
-              type: array    
-            type:    
-              enum:    
-                - Point    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON Point    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. LineString    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  type: number    
-                minItems: 2    
-                type: array    
-              minItems: 2    
-              type: array    
-            type:    
-              enum:    
-                - LineString    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON LineString    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. Polygon    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                minItems: 4    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - Polygon    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON Polygon    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. MultiPoint    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  type: number    
-                minItems: 2    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiPoint    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON MultiPoint    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. MultiLineString    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                minItems: 2    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiLineString    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON MultiLineString    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. MultiLineString    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    items:    
-                      type: number    
-                    minItems: 2    
-                    type: array    
-                  minItems: 4    
-                  type: array    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiPolygon    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON MultiPolygon    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-      x-ngsi:    
-        type: GeoProperty    
-    name:    
-      description: The name of this item    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    nominalLatentCapacity:    
-      description: 'Nominal latent capacity. Usually measured in Watts (W, J/s)'    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    nominalSensibleCapacity:    
-      description: 'Nominal sensible capacity. Usually measured in Watts (W, J/s)'    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    nominalUa:    
-      description: Nominal UA value    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    operationMode:    
-      description: Operation mode of this coil    
-      enum:    
-        - cooling    
-        - heating    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    operationTemperatureMax:    
-      description: 'Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)'    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    operationTemperatureMin:    
-      description: 'Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)'    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    owner:    
-      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
-      items:    
-        anyOf:    
-          - description: Identifier format of any NGSI entity    
-            maxLength: 256    
-            minLength: 1    
-            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-            type: string    
-            x-ngsi:    
-              type: Property    
-          - description: Identifier format of any NGSI entity    
-            format: uri    
-            type: string    
-            x-ngsi:    
-              type: Property    
-        description: Unique identifier of the entity    
-        x-ngsi:    
-          type: Property    
-      type: array    
-      x-ngsi:    
-        type: Property    
-    placementType:    
-      description: Indicates how the device is designed to be placed    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    seeAlso:    
-      description: list of uri pointing to additional resources about the item    
-      oneOf:    
-        - items:    
-            format: uri    
-            type: string    
-          minItems: 1    
-          type: array    
-        - format: uri    
-          type: string    
-      x-ngsi:    
-        type: Property    
-    source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    type:    
-      description: It must be equal to `Coil`    
-      enum:    
-        - Coil    
-      type: string    
-      x-ngsi:    
-        type: Property    
-  required:    
-    - id    
-    - type    
-  type: object    
-  x-derived-from: "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:Coil"    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
-  x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Coil/LICENSE.md    
-  x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Coil/schema.json    
-  x-model-tags: SAREF Coil    
-  x-version: 0.0.1    
-```  
-</details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Example payloads    
-#### Coil NGSI-v2 key-values Example    
-Here is an example of a Coil in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
-<details><summary><strong>show/hide example</strong></summary>    
+<!-- 10-Header -->    
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)    
+Entity: Coil    
+============<!-- /10-Header -->    
+<!-- 15-License -->    
+[Open License](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Coil/LICENSE.md)    
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
+<!-- /15-License -->    
+<!-- 20-Description -->    
+Global description: **A coil is a device used to provide heat transfer between non-mixing media. A common example is a cooling coil, which utilizes a finned coil in which circulates chilled water, antifreeze, or refrigerant that is used to remove heat from air moving across the surface of the coil. A coil may be used either for heating or cooling purposes by placing a series of tubes (the coil) carrying a heating or cooling fluid into an airstream. The coil may be constructed from tubes bundled in a serpentine form or from finned tubes that give a extended heat transfer surface.  Coils may also be used for non-airflow cases such as embedded in a floor slab.**    
+version: 0.0.1    
+<!-- /20-Description -->    
+<!-- 30-PropertiesList -->    
+## List of properties    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>    
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government      
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
+- `airFlowRateMax[number]`: Maximum allowable air flow rate. Usually measured in m3/s  - `airFlowRateMin[number]`: Minimum allowable air flow rate. Usually measured in m3/s  - `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `hasManufacturer[string]`: A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag  - `hasModel[string]`: A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag  - `id[*]`: Unique identifier of the entity  - `isContainedInBuildingSpace[*]`: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)  - `isContainedInPhysicalObject[*]`: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)  - `isSubSystemOf[array]`: A reference to a system(s) that this Physical Object is part of  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item  - `nominalLatentCapacity[number]`: Nominal latent capacity. Usually measured in Watts (W, J/s)  - `nominalSensibleCapacity[number]`: Nominal sensible capacity. Usually measured in Watts (W, J/s)  - `nominalUa[number]`: Nominal UA value  - `operationMode[string]`: Operation mode of this coil  - `operationTemperatureMax[number]`: Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)  - `operationTemperatureMin[number]`: Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `placementType[string]`: Indicates how the device is designed to be placed  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `type[string]`: It must be equal to `Coil`  <!-- /30-PropertiesList -->    
+<!-- 35-RequiredProperties -->    
+Required properties    
+- `id`  - `type`  <!-- /35-RequiredProperties -->    
+<!-- 40-RequiredProperties -->    
+<!-- /40-RequiredProperties -->    
+<!-- 50-DataModelHeader -->    
+## Data Model description of properties    
+Sorted alphabetically (click for details)    
+<!-- /50-DataModelHeader -->    
+<!-- 60-ModelYaml -->    
+<details><summary><strong>full yaml details</strong></summary>      
+```yaml    
+Coil:      
+  description: 'A coil is a device used to provide heat transfer between non-mixing media. A common example is a cooling coil, which utilizes a finned coil in which circulates chilled water, antifreeze, or refrigerant that is used to remove heat from air moving across the surface of the coil. A coil may be used either for heating or cooling purposes by placing a series of tubes (the coil) carrying a heating or cooling fluid into an airstream. The coil may be constructed from tubes bundled in a serpentine form or from finned tubes that give a extended heat transfer surface.  Coils may also be used for non-airflow cases such as embedded in a floor slab.'      
+  properties:      
+    address:      
+      description: The mailing address      
+      properties:      
+        addressCountry:      
+          description: 'The country. For example, Spain'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/addressCountry      
+            type: Property      
+        addressLocality:      
+          description: 'The locality in which the street address is, and which is in the region'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/addressLocality      
+            type: Property      
+        addressRegion:      
+          description: 'The region in which the locality is, and which is in the country'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/addressRegion      
+            type: Property      
+        district:      
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'      
+          type: string      
+          x-ngsi:      
+            type: Property      
+        postOfficeBoxNumber:      
+          description: 'The post office box number for PO box addresses. For example, 03578'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/postOfficeBoxNumber      
+            type: Property      
+        postalCode:      
+          description: 'The postal code. For example, 24004'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/https://schema.org/postalCode      
+            type: Property      
+        streetAddress:      
+          description: The street address      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/streetAddress      
+            type: Property      
+        streetNr:      
+          description: Number identifying a specific property on a public street      
+          type: string      
+          x-ngsi:      
+            type: Property      
+      type: object      
+      x-ngsi:      
+        model: https://schema.org/address      
+        type: Property      
+    airFlowRateMax:      
+      description: Maximum allowable air flow rate. Usually measured in m3/s      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    airFlowRateMin:      
+      description: Minimum allowable air flow rate. Usually measured in m3/s      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    alternateName:      
+      description: An alternative name for this item      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    areaServed:      
+      description: The geographic area where a service or offered item is provided      
+      type: string      
+      x-ngsi:      
+        model: https://schema.org/Text      
+        type: Property      
+    dataProvider:      
+      description: A sequence of characters identifying the provider of the harmonised data entity      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    dateCreated:      
+      description: Entity creation timestamp. This will usually be allocated by the storage platform      
+      format: date-time      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    dateModified:      
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform      
+      format: date-time      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    description:      
+      description: A description of this item      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    hasManufacturer:      
+      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    hasModel:      
+      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    id:      
+      anyOf:      
+        - description: Identifier format of any NGSI entity      
+          maxLength: 256      
+          minLength: 1      
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+          type: string      
+          x-ngsi:      
+            type: Property      
+        - description: Identifier format of any NGSI entity      
+          format: uri      
+          type: string      
+          x-ngsi:      
+            type: Property      
+      description: Unique identifier of the entity      
+      x-ngsi:      
+        type: Property      
+    isContainedInBuildingSpace:      
+      anyOf:      
+        - description: Identifier format of any NGSI entity      
+          maxLength: 256      
+          minLength: 1      
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+          type: string      
+          x-ngsi:      
+            type: Property      
+        - description: Identifier format of any NGSI entity      
+          format: uri      
+          type: string      
+          x-ngsi:      
+            type: Property      
+      description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)      
+      x-ngsi:      
+        type: Property      
+    isContainedInPhysicalObject:      
+      anyOf:      
+        - description: Identifier format of any NGSI entity      
+          maxLength: 256      
+          minLength: 1      
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+          type: string      
+          x-ngsi:      
+            type: Property      
+        - description: Identifier format of any NGSI entity      
+          format: uri      
+          type: string      
+          x-ngsi:      
+            type: Property      
+      description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)      
+      x-ngsi:      
+        type: Property      
+    isSubSystemOf:      
+      description: A reference to a system(s) that this Physical Object is part of      
+      items:      
+        anyOf:      
+          - description: Identifier format of any NGSI entity      
+            maxLength: 256      
+            minLength: 1      
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+            type: string      
+            x-ngsi:      
+              type: Property      
+          - description: Identifier format of any NGSI entity      
+            format: uri      
+            type: string      
+            x-ngsi:      
+              type: Property      
+        description: Unique identifier of the entity      
+        x-ngsi:      
+          type: Property      
+      type: array      
+      x-ngsi:      
+        type: Relationship      
+    location:      
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'      
+      oneOf:      
+        - description: Geojson reference to the item. Point      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                type: number      
+              minItems: 2      
+              type: array      
+            type:      
+              enum:      
+                - Point      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON Point      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. LineString      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  type: number      
+                minItems: 2      
+                type: array      
+              minItems: 2      
+              type: array      
+            type:      
+              enum:      
+                - LineString      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON LineString      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. Polygon      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  items:      
+                    type: number      
+                  minItems: 2      
+                  type: array      
+                minItems: 4      
+                type: array      
+              type: array      
+            type:      
+              enum:      
+                - Polygon      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON Polygon      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. MultiPoint      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  type: number      
+                minItems: 2      
+                type: array      
+              type: array      
+            type:      
+              enum:      
+                - MultiPoint      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON MultiPoint      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. MultiLineString      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  items:      
+                    type: number      
+                  minItems: 2      
+                  type: array      
+                minItems: 2      
+                type: array      
+              type: array      
+            type:      
+              enum:      
+                - MultiLineString      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON MultiLineString      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. MultiLineString      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  items:      
+                    items:      
+                      type: number      
+                    minItems: 2      
+                    type: array      
+                  minItems: 4      
+                  type: array      
+                type: array      
+              type: array      
+            type:      
+              enum:      
+                - MultiPolygon      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON MultiPolygon      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+      x-ngsi:      
+        type: GeoProperty      
+    name:      
+      description: The name of this item      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    nominalLatentCapacity:      
+      description: 'Nominal latent capacity. Usually measured in Watts (W, J/s)'      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    nominalSensibleCapacity:      
+      description: 'Nominal sensible capacity. Usually measured in Watts (W, J/s)'      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    nominalUa:      
+      description: Nominal UA value      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    operationMode:      
+      description: Operation mode of this coil      
+      enum:      
+        - cooling      
+        - heating      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    operationTemperatureMax:      
+      description: 'Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)'      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    operationTemperatureMin:      
+      description: 'Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)'      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    owner:      
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)      
+      items:      
+        anyOf:      
+          - description: Identifier format of any NGSI entity      
+            maxLength: 256      
+            minLength: 1      
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+            type: string      
+            x-ngsi:      
+              type: Property      
+          - description: Identifier format of any NGSI entity      
+            format: uri      
+            type: string      
+            x-ngsi:      
+              type: Property      
+        description: Unique identifier of the entity      
+        x-ngsi:      
+          type: Property      
+      type: array      
+      x-ngsi:      
+        type: Property      
+    placementType:      
+      description: Indicates how the device is designed to be placed      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    seeAlso:      
+      description: list of uri pointing to additional resources about the item      
+      oneOf:      
+        - items:      
+            format: uri      
+            type: string      
+          minItems: 1      
+          type: array      
+        - format: uri      
+          type: string      
+      x-ngsi:      
+        type: Property      
+    source:      
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    type:      
+      description: It must be equal to `Coil`      
+      enum:      
+        - Coil      
+      type: string      
+      x-ngsi:      
+        type: Property      
+  required:      
+    - id      
+    - type      
+  type: object      
+  x-derived-from: "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:Coil"      
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'      
+  x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Coil/LICENSE.md      
+  x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Coil/schema.json      
+  x-model-tags: SAREF Coil      
+  x-version: 0.0.1      
+```    
+</details>      
+<!-- /60-ModelYaml -->    
+<!-- 70-MiddleNotes -->    
+<!-- /70-MiddleNotes -->    
+<!-- 80-Examples -->    
+## Example payloads      
+#### Coil NGSI-v2 key-values Example      
+Here is an example of a Coil in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.    
+<details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
   "id": "urn:ngsi-ld:Coil:180d0665-9242-42c6-b336-d7edcf8fc3b5",  
@@ -523,10 +521,10 @@ Coil:
     "dataProvider": "IFC file"  
   }  
 ```  
-</details>  
-#### Coil NGSI-v2 normalized Example    
-Here is an example of a Coil in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
-<details><summary><strong>show/hide example</strong></summary>    
+</details>    
+#### Coil NGSI-v2 normalized Example      
+Here is an example of a Coil in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.    
+<details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
   "id": "urn:ngsi-ld:Coil:13d40aef-8b95-4cb2-af1e-483e4c874941",  
@@ -630,10 +628,10 @@ Coil:
   }  
 }  
 ```  
-</details>  
-#### Coil NGSI-LD key-values Example    
-Here is an example of a Coil in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
-<details><summary><strong>show/hide example</strong></summary>    
+</details>    
+#### Coil NGSI-LD key-values Example      
+Here is an example of a Coil in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.    
+<details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
   "id": "urn:ngsi-ld:Coil:180d0665-9242-42c6-b336-d7edcf8fc3b5",  
@@ -670,10 +668,10 @@ Coil:
     ]  
   }  
 ```  
-</details>  
-#### Coil NGSI-LD normalized Example    
-Here is an example of a Coil in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-<details><summary><strong>show/hide example</strong></summary>    
+</details>    
+#### Coil NGSI-LD normalized Example      
+Here is an example of a Coil in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.    
+<details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
   "id": "urn:ngsi-ld:Coil:fcc6fa4b-fa43-42de-af7d-c8be6efda789",  
@@ -792,12 +790,12 @@ Coil:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
----  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+</details><!-- /80-Examples -->    
+<!-- 90-FooterNotes -->    
+<!-- /90-FooterNotes -->    
+<!-- 95-Units -->    
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units    
+<!-- /95-Units -->    
+<!-- 97-LastFooter -->    
+---    
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->    
