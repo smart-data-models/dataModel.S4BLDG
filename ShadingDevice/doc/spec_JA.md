@@ -1,528 +1,526 @@
-<!-- 10-Header -->  
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティシェーディングデバイス  
-=================<!-- /10-Header -->  
-<!-- 15-License -->  
-[オープン・ライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/ShadingDevice/LICENSE.md)  
-[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-グローバルな説明**遮光装置は、太陽光や自然光から保護したり、視界から遮蔽したりする目的で作られた装置である。遮光装置は、ファサードの一部を形成することも、建物内部に取り付けることもでき、固定式であることも、操作可能であることもある**。  
-バージョン: 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
-
-## プロパティのリスト  
-
-<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
-	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `hasManufacturer[string]`: エンティティ（デバイスなど）の製造者を特定する関係。値は文字列または言語タグを持つ文字列であることが期待される。  - `hasModel[string]`: エンティティ（デバイスなど）のモデルを識別する関係。値は、文字列または言語タグを持つ文字列であることが期待される。  - `id[*]`: エンティティの一意識別子  - `isContainedInBuildingSpace[*]`: 建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースには、デバイスまたはビルディングオブジェクトが含まれる。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 適切な空間領域を持つオブジェクト。  (DUL オントロジーより定義） （PhysicalObject）  - `isExternal[boolean]`: エレメントが外部で使用されるように設計されているか（TRUE）、そうでないか（FALSE）を示す。(TRUE)の場合、それは外部エレメントであり、建物の外側に面している。  - `isSubSystemOf[array]`: この物理オブジェクトが属するシステムへの参照。  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `mechanicalOperated[boolean]`: エレメントが機械的に操作されるか（TRUE）、手動で操作されるか（FALSE）を示す。  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `roughness[string]`: サーフェスの垂直方向の偏差を示す指標。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `shadingDeviceType[string]`: 遮光装置の種類を指定する  - `solarReflectance[number]`: (Rsol）：遮光システムによって反射される入射日射量の割合（_eともいう）。以下の式に注意。 Asol + Rsol + Tsol = 1  - `solarTransmittance[number]`: (Tsol) 遮光システムを直接通過する入射日射量の比率（_eともいう）。以下の式に注意。 Asol + Rsol + Tsol = 1  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `thermalTransmittance[number]`: エネルギーが体内を伝わる速度。通常、ワット/m2ケルビンで測定される。  - `type[string]`: これは `ShadingDevice` と等しくなければならない。  - `visibleLightReflectance[number]`: 垂直入射でグレージングによって反射される可視光の割合。単位のない値。  - `visibleLightTransmittance[number]`: 垂直入射で遮光板を通過する可視光の割合。単位のない値。  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-必須プロパティ  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## プロパティのデータモデル記述  
-アルファベット順（クリックで詳細表示）  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
-<details><summary><strong>full yaml details</strong></summary>    
-```yaml  
-ShadingDevice:    
-  description: 'Shading devices are purpose built devices to protect from the sunlight, from natural light, or screening them from view. Shading devices can form part of the facade or can be mounted inside the building, they can be fixed or operable.'    
-  properties:    
-    address:    
-      description: The mailing address    
-      properties:    
-        addressCountry:    
-          description: 'The country. For example, Spain'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/addressCountry    
-            type: Property    
-        addressLocality:    
-          description: 'The locality in which the street address is, and which is in the region'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/addressLocality    
-            type: Property    
-        addressRegion:    
-          description: 'The region in which the locality is, and which is in the country'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/addressRegion    
-            type: Property    
-        district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
-          type: string    
-          x-ngsi:    
-            type: Property    
-        postOfficeBoxNumber:    
-          description: 'The post office box number for PO box addresses. For example, 03578'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/postOfficeBoxNumber    
-            type: Property    
-        postalCode:    
-          description: 'The postal code. For example, 24004'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/https://schema.org/postalCode    
-            type: Property    
-        streetAddress:    
-          description: The street address    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/streetAddress    
-            type: Property    
-        streetNr:    
-          description: Number identifying a specific property on a public street    
-          type: string    
-          x-ngsi:    
-            type: Property    
-      type: object    
-      x-ngsi:    
-        model: https://schema.org/address    
-        type: Property    
-    alternateName:    
-      description: An alternative name for this item    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    areaServed:    
-      description: The geographic area where a service or offered item is provided    
-      type: string    
-      x-ngsi:    
-        model: https://schema.org/Text    
-        type: Property    
-    dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    description:    
-      description: A description of this item    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    hasManufacturer:    
-      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    hasModel:    
-      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    id:    
-      anyOf:    
-        - description: Identifier format of any NGSI entity    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-          x-ngsi:    
-            type: Property    
-        - description: Identifier format of any NGSI entity    
-          format: uri    
-          type: string    
-          x-ngsi:    
-            type: Property    
-      description: Unique identifier of the entity    
-      x-ngsi:    
-        type: Property    
-    isContainedInBuildingSpace:    
-      anyOf:    
-        - description: Identifier format of any NGSI entity    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-          x-ngsi:    
-            type: Property    
-        - description: Identifier format of any NGSI entity    
-          format: uri    
-          type: string    
-          x-ngsi:    
-            type: Property    
-      description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
-      x-ngsi:    
-        type: Property    
-    isContainedInPhysicalObject:    
-      anyOf:    
-        - description: Identifier format of any NGSI entity    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-          x-ngsi:    
-            type: Property    
-        - description: Identifier format of any NGSI entity    
-          format: uri    
-          type: string    
-          x-ngsi:    
-            type: Property    
-      description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
-      x-ngsi:    
-        type: Property    
-    isExternal:    
-      description: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building    
-      type: boolean    
-      x-ngsi:    
-        type: Property    
-    isSubSystemOf:    
-      description: A reference to a system(s) that this Physical Object is part of    
-      items:    
-        anyOf:    
-          - description: Identifier format of any NGSI entity    
-            maxLength: 256    
-            minLength: 1    
-            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-            type: string    
-            x-ngsi:    
-              type: Property    
-          - description: Identifier format of any NGSI entity    
-            format: uri    
-            type: string    
-            x-ngsi:    
-              type: Property    
-        description: Unique identifier of the entity    
-        x-ngsi:    
-          type: Property    
-      type: array    
-      x-ngsi:    
-        type: Relationship    
-    location:    
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
-      oneOf:    
-        - description: Geojson reference to the item. Point    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                type: number    
-              minItems: 2    
-              type: array    
-            type:    
-              enum:    
-                - Point    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON Point    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. LineString    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  type: number    
-                minItems: 2    
-                type: array    
-              minItems: 2    
-              type: array    
-            type:    
-              enum:    
-                - LineString    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON LineString    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. Polygon    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                minItems: 4    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - Polygon    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON Polygon    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. MultiPoint    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  type: number    
-                minItems: 2    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiPoint    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON MultiPoint    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. MultiLineString    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                minItems: 2    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiLineString    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON MultiLineString    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. MultiLineString    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    items:    
-                      type: number    
-                    minItems: 2    
-                    type: array    
-                  minItems: 4    
-                  type: array    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiPolygon    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON MultiPolygon    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-      x-ngsi:    
-        type: GeoProperty    
-    mechanicalOperated:    
-      description: 'Indication whether the element is operated machanically (TRUE) or not, i.e. manually (FALSE)'    
-      type: boolean    
-      x-ngsi:    
-        type: Property    
-    name:    
-      description: The name of this item    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    owner:    
-      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
-      items:    
-        anyOf:    
-          - description: Identifier format of any NGSI entity    
-            maxLength: 256    
-            minLength: 1    
-            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-            type: string    
-            x-ngsi:    
-              type: Property    
-          - description: Identifier format of any NGSI entity    
-            format: uri    
-            type: string    
-            x-ngsi:    
-              type: Property    
-        description: Unique identifier of the entity    
-        x-ngsi:    
-          type: Property    
-      type: array    
-      x-ngsi:    
-        type: Property    
-    roughness:    
-      description: A measure of the vertical deviations of the surface    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    seeAlso:    
-      description: list of uri pointing to additional resources about the item    
-      oneOf:    
-        - items:    
-            format: uri    
-            type: string    
-          minItems: 1    
-          type: array    
-        - format: uri    
-          type: string    
-      x-ngsi:    
-        type: Property    
-    shadingDeviceType:    
-      description: Specifies the type of shading device    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    solarReflectance:    
-      description: '(Rsol): The ratio of incident solar radiation that is reflected by a shading system (also named _e). Note the following equation Asol + Rsol + Tsol = 1'    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    solarTransmittance:    
-      description: (Tsol) The ratio of incident solar radiation that directly passes through a shading system (also named _e). Note the following equation Asol + Rsol + Tsol = 1    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    thermalTransmittance:    
-      description: Rate at which energy is transmitted through a body. Usually measured in Watts/m2 Kelvin    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    type:    
-      description: It must be equal to `ShadingDevice`    
-      enum:    
-        - ShadingDevice    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    visibleLightReflectance:    
-      description: Fraction of the visible light that is reflected by the glazing at normal incidence. It is a value without unit    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    visibleLightTransmittance:    
-      description: Fraction of the visible light that passes the shading system at normal incidence. It is a value without unit    
-      type: number    
-      x-ngsi:    
-        type: Property    
-  required:    
-    - id    
-    - type    
-  type: object    
-  x-derived-from: "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:ShadingDevice"    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
-  x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/ShadingDevice/LICENSE.md    
-  x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/ShadingDevice/schema.json    
-  x-model-tags: SAREF ShadingDevice    
-  x-version: 0.0.1    
-```  
-</details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ペイロードの例  
-#### ShadingDevice NGSI-v2 キー値の例  
-JSON-LD形式のShadingDeviceのkey-valuesの例です。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
-<details><summary><strong>show/hide example</strong></summary>    
+<!-- 10-Header -->    
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)    
+エンティティシェーディングデバイス    
+=================<!-- /10-Header -->    
+<!-- 15-License -->    
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/ShadingDevice/LICENSE.md)    
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
+<!-- /15-License -->    
+<!-- 20-Description -->    
+グローバルな説明**遮光装置は、太陽光や自然光から保護したり、視界から遮蔽したりする目的で作られた装置である。遮光装置は、ファサードの一部を形成することも、建物内部に取り付けることもでき、固定式であることも、操作可能であることもある**。    
+バージョン: 0.0.1    
+<!-- /20-Description -->    
+<!-- 30-PropertiesList -->    
+## プロパティのリスト    
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。    
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。      
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `hasManufacturer[string]`: エンティティ（デバイスなど）の製造者を特定する関係。値は文字列または言語タグを持つ文字列であることが期待される。  - `hasModel[string]`: エンティティ（デバイスなど）のモデルを識別する関係。値は、文字列または言語タグを持つ文字列であることが期待される。  - `id[*]`: エンティティの一意識別子  - `isContainedInBuildingSpace[*]`: 建物の物理的空間を定義するために使用されるエンティティ。ビルディングスペースには、デバイスまたはビルディングオブジェクトが含まれる。(ビルディングスペース)  - `isContainedInPhysicalObject[*]`: 適切な空間領域を持つオブジェクト。  (DUL オントロジーより定義） （PhysicalObject）  - `isExternal[boolean]`: エレメントが外部で使用されるように設計されているか（TRUE）、そうでないか（FALSE）を示す。(TRUE)の場合、それは外部エレメントであり、建物の外側に面している。  - `isSubSystemOf[array]`: この物理オブジェクトが属するシステムへの参照。  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `mechanicalOperated[boolean]`: エレメントが機械的に操作されるか（TRUE）、手動で操作されるか（FALSE）を示す。  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `roughness[string]`: サーフェスの垂直方向の偏差を示す指標。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `shadingDeviceType[string]`: 遮光装置の種類を指定する  - `solarReflectance[number]`: (Rsol）：遮光システムによって反射される入射日射量の割合（_eともいう）。以下の式に注意。 Asol + Rsol + Tsol = 1  - `solarTransmittance[number]`: (Tsol) 遮光システムを直接通過する入射日射量の比率（_eともいう）。以下の式に注意。 Asol + Rsol + Tsol = 1  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `thermalTransmittance[number]`: エネルギーが体内を伝わる速度。通常、ワット/m2ケルビンで測定される。  - `type[string]`: これは `ShadingDevice` と等しくなければならない。  - `visibleLightReflectance[number]`: 垂直入射でグレージングによって反射される可視光の割合。単位のない値。  - `visibleLightTransmittance[number]`: 垂直入射で遮光板を通過する可視光の割合。単位のない値。  <!-- /30-PropertiesList -->    
+<!-- 35-RequiredProperties -->    
+必須プロパティ    
+- `id`  - `type`  <!-- /35-RequiredProperties -->    
+<!-- 40-RequiredProperties -->    
+<!-- /40-RequiredProperties -->    
+<!-- 50-DataModelHeader -->    
+## プロパティのデータモデル記述    
+アルファベット順（クリックで詳細表示）    
+<!-- /50-DataModelHeader -->    
+<!-- 60-ModelYaml -->    
+<details><summary><strong>full yaml details</strong></summary>      
+```yaml    
+ShadingDevice:      
+  description: 'Shading devices are purpose built devices to protect from the sunlight, from natural light, or screening them from view. Shading devices can form part of the facade or can be mounted inside the building, they can be fixed or operable.'      
+  properties:      
+    address:      
+      description: The mailing address      
+      properties:      
+        addressCountry:      
+          description: 'The country. For example, Spain'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/addressCountry      
+            type: Property      
+        addressLocality:      
+          description: 'The locality in which the street address is, and which is in the region'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/addressLocality      
+            type: Property      
+        addressRegion:      
+          description: 'The region in which the locality is, and which is in the country'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/addressRegion      
+            type: Property      
+        district:      
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'      
+          type: string      
+          x-ngsi:      
+            type: Property      
+        postOfficeBoxNumber:      
+          description: 'The post office box number for PO box addresses. For example, 03578'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/postOfficeBoxNumber      
+            type: Property      
+        postalCode:      
+          description: 'The postal code. For example, 24004'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/https://schema.org/postalCode      
+            type: Property      
+        streetAddress:      
+          description: The street address      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/streetAddress      
+            type: Property      
+        streetNr:      
+          description: Number identifying a specific property on a public street      
+          type: string      
+          x-ngsi:      
+            type: Property      
+      type: object      
+      x-ngsi:      
+        model: https://schema.org/address      
+        type: Property      
+    alternateName:      
+      description: An alternative name for this item      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    areaServed:      
+      description: The geographic area where a service or offered item is provided      
+      type: string      
+      x-ngsi:      
+        model: https://schema.org/Text      
+        type: Property      
+    dataProvider:      
+      description: A sequence of characters identifying the provider of the harmonised data entity      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    dateCreated:      
+      description: Entity creation timestamp. This will usually be allocated by the storage platform      
+      format: date-time      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    dateModified:      
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform      
+      format: date-time      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    description:      
+      description: A description of this item      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    hasManufacturer:      
+      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    hasModel:      
+      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    id:      
+      anyOf:      
+        - description: Identifier format of any NGSI entity      
+          maxLength: 256      
+          minLength: 1      
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+          type: string      
+          x-ngsi:      
+            type: Property      
+        - description: Identifier format of any NGSI entity      
+          format: uri      
+          type: string      
+          x-ngsi:      
+            type: Property      
+      description: Unique identifier of the entity      
+      x-ngsi:      
+        type: Property      
+    isContainedInBuildingSpace:      
+      anyOf:      
+        - description: Identifier format of any NGSI entity      
+          maxLength: 256      
+          minLength: 1      
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+          type: string      
+          x-ngsi:      
+            type: Property      
+        - description: Identifier format of any NGSI entity      
+          format: uri      
+          type: string      
+          x-ngsi:      
+            type: Property      
+      description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)      
+      x-ngsi:      
+        type: Property      
+    isContainedInPhysicalObject:      
+      anyOf:      
+        - description: Identifier format of any NGSI entity      
+          maxLength: 256      
+          minLength: 1      
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+          type: string      
+          x-ngsi:      
+            type: Property      
+        - description: Identifier format of any NGSI entity      
+          format: uri      
+          type: string      
+          x-ngsi:      
+            type: Property      
+      description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)      
+      x-ngsi:      
+        type: Property      
+    isExternal:      
+      description: Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building      
+      type: boolean      
+      x-ngsi:      
+        type: Property      
+    isSubSystemOf:      
+      description: A reference to a system(s) that this Physical Object is part of      
+      items:      
+        anyOf:      
+          - description: Identifier format of any NGSI entity      
+            maxLength: 256      
+            minLength: 1      
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+            type: string      
+            x-ngsi:      
+              type: Property      
+          - description: Identifier format of any NGSI entity      
+            format: uri      
+            type: string      
+            x-ngsi:      
+              type: Property      
+        description: Unique identifier of the entity      
+        x-ngsi:      
+          type: Property      
+      type: array      
+      x-ngsi:      
+        type: Relationship      
+    location:      
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'      
+      oneOf:      
+        - description: Geojson reference to the item. Point      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                type: number      
+              minItems: 2      
+              type: array      
+            type:      
+              enum:      
+                - Point      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON Point      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. LineString      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  type: number      
+                minItems: 2      
+                type: array      
+              minItems: 2      
+              type: array      
+            type:      
+              enum:      
+                - LineString      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON LineString      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. Polygon      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  items:      
+                    type: number      
+                  minItems: 2      
+                  type: array      
+                minItems: 4      
+                type: array      
+              type: array      
+            type:      
+              enum:      
+                - Polygon      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON Polygon      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. MultiPoint      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  type: number      
+                minItems: 2      
+                type: array      
+              type: array      
+            type:      
+              enum:      
+                - MultiPoint      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON MultiPoint      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. MultiLineString      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  items:      
+                    type: number      
+                  minItems: 2      
+                  type: array      
+                minItems: 2      
+                type: array      
+              type: array      
+            type:      
+              enum:      
+                - MultiLineString      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON MultiLineString      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. MultiLineString      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  items:      
+                    items:      
+                      type: number      
+                    minItems: 2      
+                    type: array      
+                  minItems: 4      
+                  type: array      
+                type: array      
+              type: array      
+            type:      
+              enum:      
+                - MultiPolygon      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON MultiPolygon      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+      x-ngsi:      
+        type: GeoProperty      
+    mechanicalOperated:      
+      description: 'Indication whether the element is operated machanically (TRUE) or not, i.e. manually (FALSE)'      
+      type: boolean      
+      x-ngsi:      
+        type: Property      
+    name:      
+      description: The name of this item      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    owner:      
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)      
+      items:      
+        anyOf:      
+          - description: Identifier format of any NGSI entity      
+            maxLength: 256      
+            minLength: 1      
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+            type: string      
+            x-ngsi:      
+              type: Property      
+          - description: Identifier format of any NGSI entity      
+            format: uri      
+            type: string      
+            x-ngsi:      
+              type: Property      
+        description: Unique identifier of the entity      
+        x-ngsi:      
+          type: Property      
+      type: array      
+      x-ngsi:      
+        type: Property      
+    roughness:      
+      description: A measure of the vertical deviations of the surface      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    seeAlso:      
+      description: list of uri pointing to additional resources about the item      
+      oneOf:      
+        - items:      
+            format: uri      
+            type: string      
+          minItems: 1      
+          type: array      
+        - format: uri      
+          type: string      
+      x-ngsi:      
+        type: Property      
+    shadingDeviceType:      
+      description: Specifies the type of shading device      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    solarReflectance:      
+      description: '(Rsol): The ratio of incident solar radiation that is reflected by a shading system (also named _e). Note the following equation Asol + Rsol + Tsol = 1'      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    solarTransmittance:      
+      description: (Tsol) The ratio of incident solar radiation that directly passes through a shading system (also named _e). Note the following equation Asol + Rsol + Tsol = 1      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    source:      
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    thermalTransmittance:      
+      description: Rate at which energy is transmitted through a body. Usually measured in Watts/m2 Kelvin      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    type:      
+      description: It must be equal to `ShadingDevice`      
+      enum:      
+        - ShadingDevice      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    visibleLightReflectance:      
+      description: Fraction of the visible light that is reflected by the glazing at normal incidence. It is a value without unit      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    visibleLightTransmittance:      
+      description: Fraction of the visible light that passes the shading system at normal incidence. It is a value without unit      
+      type: number      
+      x-ngsi:      
+        type: Property      
+  required:      
+    - id      
+    - type      
+  type: object      
+  x-derived-from: "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:ShadingDevice"      
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'      
+  x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/ShadingDevice/LICENSE.md      
+  x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/ShadingDevice/schema.json      
+  x-model-tags: SAREF ShadingDevice      
+  x-version: 0.0.1      
+```    
+</details>      
+<!-- /60-ModelYaml -->    
+<!-- 70-MiddleNotes -->    
+<!-- /70-MiddleNotes -->    
+<!-- 80-Examples -->    
+## ペイロードの例    
+#### ShadingDevice NGSI-v2 キー値の例    
+JSON-LD形式のShadingDeviceのkey-valuesの例です。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。    
+<details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
-    "id": "urn:ngsi-ld:ShadingDevice:03281d48-cb47-4061-9208-b2a380b3d7cd",  
-    "type": "ShadingDevice",  
-    "isExternal": false,  
-    "mechanicalOperated": true,  
-    "roughness": "Executive",  
-    "shadingDeviceType": "client-driven",  
-    "solarReflectance": 0.7901767410172098,  
-    "solarTransmittance": 0.5537106205704284,  
-    "thermalTransmittance": 0.9786915841160174,  
-    "visibleLightReflectance": 0.7194478774053882,  
-    "visibleLightTransmittance": 0.8973320246848571,  
-    "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:3f4442cb-0f79-4dad-81ba-69879612f561",  
-    "isContainedInPhysicalObject": "urn:ngsi-ld:PhysicalObject:de04c9b6-2d78-491f-987a-085ea71f747b",  
-    "isSubSystemOf": [  
-        "urn:ngsi-ld:System:fd063381-99e7-4b7d-8936-cd66932ba1e7",  
-        "urn:ngsi-ld:System:5bfac8cc-a08e-4bc8-a9e8-474e8db84d73",  
-        "urn:ngsi-ld:System:a4eef133-5e5d-4051-8b37-bf89e468f019"  
-    ],  
-    "hasManufacturer": "ShadingDevice Company Inc.",  
-    "hasModel": "ShadingDevice 0.1.2",  
-    "dateCreated": "2023-01-26T07:18:28Z",  
-    "dateModified": "2023-01-26T08:58:08Z",  
-    "source": "Import",  
-    "name": "ShadingDevice",  
-    "alternateName": "ShadingDevice type 2",  
-    "description": "ShadingDevice of limited ShadingDevice types",  
-    "dataProvider": "IFC file"  
+  "id": "urn:ngsi-ld:ShadingDevice:03281d48-cb47-4061-9208-b2a380b3d7cd",  
+  "type": "ShadingDevice",  
+  "isExternal": false,  
+  "mechanicalOperated": true,  
+  "roughness": "Executive",  
+  "shadingDeviceType": "client-driven",  
+  "solarReflectance": 0.7901767410172098,  
+  "solarTransmittance": 0.5537106205704284,  
+  "thermalTransmittance": 0.9786915841160174,  
+  "visibleLightReflectance": 0.7194478774053882,  
+  "visibleLightTransmittance": 0.8973320246848571,  
+  "isContainedInBuildingSpace": "urn:ngsi-ld:BuildingSpace:3f4442cb-0f79-4dad-81ba-69879612f561",  
+  "isContainedInPhysicalObject": "urn:ngsi-ld:PhysicalObject:de04c9b6-2d78-491f-987a-085ea71f747b",  
+  "isSubSystemOf": [  
+    "urn:ngsi-ld:System:fd063381-99e7-4b7d-8936-cd66932ba1e7",  
+    "urn:ngsi-ld:System:5bfac8cc-a08e-4bc8-a9e8-474e8db84d73",  
+    "urn:ngsi-ld:System:a4eef133-5e5d-4051-8b37-bf89e468f019"  
+  ],  
+  "hasManufacturer": "ShadingDevice Company Inc.",  
+  "hasModel": "ShadingDevice 0.1.2",  
+  "dateCreated": "2023-01-26T07:18:28Z",  
+  "dateModified": "2023-01-26T08:58:08Z",  
+  "source": "Import",  
+  "name": "ShadingDevice",  
+  "alternateName": "ShadingDevice type 2",  
+  "description": "ShadingDevice of limited ShadingDevice types",  
+  "dataProvider": "IFC file"  
 }  
 ```  
-</details>  
-#### シェーディングデバイス NGSI-v2 正規化例  
-以下は、正規化されたJSON-LDフォーマットのShadingDeviceの例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキスト・データを返します。  
-<details><summary><strong>show/hide example</strong></summary>    
+</details>    
+#### シェーディングデバイス NGSI-v2 正規化例    
+以下は、正規化されたJSON-LDフォーマットのShadingDeviceの例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキスト・データを返します。    
+<details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
   "id": "urn:ngsi-ld:ShadingDevice:b3c3bd8f-6f5a-400a-b43c-99c32bf7d036",  
@@ -544,48 +542,39 @@ ShadingDevice:
     "value": "program"  
   },  
   "solarReflectance": {  
-    "type": "Measurement",  
+    "type": "Number",  
     "value": 0.23462582512353236  
   },  
   "solarTransmittance": {  
-    "type": "Measurement",  
+    "type": "Number",  
     "value": 0.569468324137257  
   },  
   "thermalTransmittance": {  
-    "type": "Measurement",  
+    "type": "Number",  
     "value": 0.315308180363743  
   },  
   "visibleLightReflectance": {  
-    "type": "Measurement",  
+    "type": "Number",  
     "value": 0.6167477347282538  
   },  
   "visibleLightTransmittance": {  
-    "type": "Measurement",  
+    "type": "Number",  
     "value": 0.27849116636487137  
   },  
   "isContainedInBuildingSpace": {  
-    "type": "URL",  
+    "type": "Text",  
     "value": "urn:ngsi-ld:BuildingSpace:6d6d4b35-2d0f-4590-bd7d-1e5cdc1d71fe"  
   },  
   "isContainedInPhysicalObject": {  
-    "type": "URL",  
+    "type": "Text",  
     "value": "urn:ngsi-ld:PhysicalObject:ff501e6f-1fbf-4dd4-9537-b3b6668f156b"  
   },  
   "isSubSystemOf": {  
-    "type": "array",  
+    "type": "StructuredValue",  
     "value": [  
-      {  
-        "type": "URL",  
-        "value": "urn:ngsi-ld:System:6d7f1004-c306-4d6b-8b95-d661e62087df"  
-      },  
-      {  
-        "type": "URL",  
-        "value": "urn:ngsi-ld:System:9eedb406-9b0a-466e-99bf-d8b4721af694"  
-      },  
-      {  
-        "type": "URL",  
-        "value": "urn:ngsi-ld:System:c485e374-da84-4bff-8a79-7d35bdcd0dab"  
-      }  
+      "urn:ngsi-ld:System:6d7f1004-c306-4d6b-8b95-d661e62087df",  
+      "urn:ngsi-ld:System:9eedb406-9b0a-466e-99bf-d8b4721af694",  
+      "urn:ngsi-ld:System:c485e374-da84-4bff-8a79-7d35bdcd0dab"  
     ]  
   },  
   "hasManufacturer": {  
@@ -626,10 +615,10 @@ ShadingDevice:
   }  
 }  
 ```  
-</details>  
-#### ShadingDevice NGSI-LD キー値の例  
-JSON-LD形式のShadingDeviceのkey-valuesの例です。これはNGSI-LDと互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
-<details><summary><strong>show/hide example</strong></summary>    
+</details>    
+#### ShadingDevice NGSI-LD キー値の例    
+JSON-LD形式のShadingDeviceのkey-valuesの例です。これはNGSI-LDと互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。    
+<details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
   "id": "urn:ngsi-ld:ShadingDevice:03281d48-cb47-4061-9208-b2a380b3d7cd",  
@@ -665,10 +654,10 @@ ShadingDevice:
   ]  
 }  
 ```  
-</details>  
-#### シェーディングデバイス NGSI-LD 正規化例  
-以下は、正規化されたJSON-LDフォーマットのShadingDeviceの例です。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>show/hide example</strong></summary>    
+</details>    
+#### シェーディングデバイス NGSI-LD 正規化例    
+以下は、正規化されたJSON-LDフォーマットのShadingDeviceの例です。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。    
+<details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
   "id": "urn:ngsi-ld:ShadingDevice:98dd5d05-db70-4ebb-a39c-e286063cb137",  
@@ -783,12 +772,12 @@ ShadingDevice:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
----  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+</details><!-- /80-Examples -->    
+<!-- 90-FooterNotes -->    
+<!-- /90-FooterNotes -->    
+<!-- 95-Units -->    
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。    
+<!-- /95-Units -->    
+<!-- 97-LastFooter -->    
+---    
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->    
