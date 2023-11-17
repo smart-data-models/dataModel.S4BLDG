@@ -1,498 +1,496 @@
-<!-- 10-Header -->  
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entity: Compressor  
-==================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Compressor/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Global description: **A compressor is a device that compresses a fluid typically used in a refrigeration circuit.**  
-version: 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
-
-## List of properties  
-
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
-	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `compressorSpeed[number]`: Compressor speed. Usually measured in cycles/s  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `hasHotGasBypass[boolean]`: Whether or not hot gas bypass is provided for the compressor. TRUE = Yes, FALSE = No  - `hasManufacturer[string]`: A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag  - `hasModel[string]`: A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag  - `id[*]`: Unique identifier of the entity  - `idealCapacity[number]`: Compressor capacity under ideal conditions. Usually measured in Watts (W, J/s)  - `idealShaftPower[number]`: Compressor shaft power under ideal conditions. Usually measured in Watts (W, J/s)  - `impellerDiameter[number]`: Diameter of compressor impeller - used to scale performance of geometrically similar compressors. Usually measured in millimeters (mm)  - `isContainedInBuildingSpace[*]`: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)  - `isContainedInPhysicalObject[*]`: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)  - `isSubSystemOf[array]`: A reference to a system(s) that this Physical Object is part of  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item  - `nominalCapacity[number]`: Nominal capacity. Usually measured in Watts (W, J/s)  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `partLoadRatioMax[number]`: Maximum part load ratio as a fraction of nominal capacity  - `partLoadRatioMin[number]`: Minimum part load ratio as a fraction of nominal capacity  - `powerSource[string]`: Type of power driving the compressor  - `refrigerantClass[string]`: Refrigerant class used by the compressor. CFC: Chlorofluorocarbons. HCFC: Hydrochlorofluorocarbons. HFC: Hydrofluorocarbons  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `type[string]`: It must be equal to `Compressor`  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Required properties  
-- `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Data Model description of properties  
-Sorted alphabetically (click for details)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
-<details><summary><strong>full yaml details</strong></summary>    
-```yaml  
-Compressor:    
-  description: A compressor is a device that compresses a fluid typically used in a refrigeration circuit.    
-  properties:    
-    address:    
-      description: The mailing address    
-      properties:    
-        addressCountry:    
-          description: 'The country. For example, Spain'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/addressCountry    
-            type: Property    
-        addressLocality:    
-          description: 'The locality in which the street address is, and which is in the region'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/addressLocality    
-            type: Property    
-        addressRegion:    
-          description: 'The region in which the locality is, and which is in the country'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/addressRegion    
-            type: Property    
-        district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
-          type: string    
-          x-ngsi:    
-            type: Property    
-        postOfficeBoxNumber:    
-          description: 'The post office box number for PO box addresses. For example, 03578'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/postOfficeBoxNumber    
-            type: Property    
-        postalCode:    
-          description: 'The postal code. For example, 24004'    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/https://schema.org/postalCode    
-            type: Property    
-        streetAddress:    
-          description: The street address    
-          type: string    
-          x-ngsi:    
-            model: https://schema.org/streetAddress    
-            type: Property    
-        streetNr:    
-          description: Number identifying a specific property on a public street    
-          type: string    
-          x-ngsi:    
-            type: Property    
-      type: object    
-      x-ngsi:    
-        model: https://schema.org/address    
-        type: Property    
-    alternateName:    
-      description: An alternative name for this item    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    areaServed:    
-      description: The geographic area where a service or offered item is provided    
-      type: string    
-      x-ngsi:    
-        model: https://schema.org/Text    
-        type: Property    
-    compressorSpeed:    
-      description: Compressor speed. Usually measured in cycles/s    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    description:    
-      description: A description of this item    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    hasHotGasBypass:    
-      description: 'Whether or not hot gas bypass is provided for the compressor. TRUE = Yes, FALSE = No'    
-      type: boolean    
-      x-ngsi:    
-        type: Property    
-    hasManufacturer:    
-      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    hasModel:    
-      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    id:    
-      anyOf:    
-        - description: Identifier format of any NGSI entity    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-          x-ngsi:    
-            type: Property    
-        - description: Identifier format of any NGSI entity    
-          format: uri    
-          type: string    
-          x-ngsi:    
-            type: Property    
-      description: Unique identifier of the entity    
-      x-ngsi:    
-        type: Property    
-    idealCapacity:    
-      description: 'Compressor capacity under ideal conditions. Usually measured in Watts (W, J/s)'    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    idealShaftPower:    
-      description: 'Compressor shaft power under ideal conditions. Usually measured in Watts (W, J/s)'    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    impellerDiameter:    
-      description: Diameter of compressor impeller - used to scale performance of geometrically similar compressors. Usually measured in millimeters (mm)    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    isContainedInBuildingSpace:    
-      anyOf:    
-        - description: Identifier format of any NGSI entity    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-          x-ngsi:    
-            type: Property    
-        - description: Identifier format of any NGSI entity    
-          format: uri    
-          type: string    
-          x-ngsi:    
-            type: Property    
-      description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)    
-      x-ngsi:    
-        type: Property    
-    isContainedInPhysicalObject:    
-      anyOf:    
-        - description: Identifier format of any NGSI entity    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-          x-ngsi:    
-            type: Property    
-        - description: Identifier format of any NGSI entity    
-          format: uri    
-          type: string    
-          x-ngsi:    
-            type: Property    
-      description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)    
-      x-ngsi:    
-        type: Property    
-    isSubSystemOf:    
-      description: A reference to a system(s) that this Physical Object is part of    
-      items:    
-        anyOf:    
-          - description: Identifier format of any NGSI entity    
-            maxLength: 256    
-            minLength: 1    
-            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-            type: string    
-            x-ngsi:    
-              type: Property    
-          - description: Identifier format of any NGSI entity    
-            format: uri    
-            type: string    
-            x-ngsi:    
-              type: Property    
-        description: Unique identifier of the entity    
-        x-ngsi:    
-          type: Property    
-      type: array    
-      x-ngsi:    
-        type: Relationship    
-    location:    
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
-      oneOf:    
-        - description: Geojson reference to the item. Point    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                type: number    
-              minItems: 2    
-              type: array    
-            type:    
-              enum:    
-                - Point    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON Point    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. LineString    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  type: number    
-                minItems: 2    
-                type: array    
-              minItems: 2    
-              type: array    
-            type:    
-              enum:    
-                - LineString    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON LineString    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. Polygon    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                minItems: 4    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - Polygon    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON Polygon    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. MultiPoint    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  type: number    
-                minItems: 2    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiPoint    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON MultiPoint    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. MultiLineString    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                minItems: 2    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiLineString    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON MultiLineString    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-        - description: Geojson reference to the item. MultiLineString    
-          properties:    
-            bbox:    
-              items:    
-                type: number    
-              minItems: 4    
-              type: array    
-            coordinates:    
-              items:    
-                items:    
-                  items:    
-                    items:    
-                      type: number    
-                    minItems: 2    
-                    type: array    
-                  minItems: 4    
-                  type: array    
-                type: array    
-              type: array    
-            type:    
-              enum:    
-                - MultiPolygon    
-              type: string    
-          required:    
-            - type    
-            - coordinates    
-          title: GeoJSON MultiPolygon    
-          type: object    
-          x-ngsi:    
-            type: GeoProperty    
-      x-ngsi:    
-        type: GeoProperty    
-    name:    
-      description: The name of this item    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    nominalCapacity:    
-      description: 'Nominal capacity. Usually measured in Watts (W, J/s)'    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    owner:    
-      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
-      items:    
-        anyOf:    
-          - description: Identifier format of any NGSI entity    
-            maxLength: 256    
-            minLength: 1    
-            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-            type: string    
-            x-ngsi:    
-              type: Property    
-          - description: Identifier format of any NGSI entity    
-            format: uri    
-            type: string    
-            x-ngsi:    
-              type: Property    
-        description: Unique identifier of the entity    
-        x-ngsi:    
-          type: Property    
-      type: array    
-      x-ngsi:    
-        type: Property    
-    partLoadRatioMax:    
-      description: Maximum part load ratio as a fraction of nominal capacity    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    partLoadRatioMin:    
-      description: Minimum part load ratio as a fraction of nominal capacity    
-      type: number    
-      x-ngsi:    
-        type: Property    
-    powerSource:    
-      description: Type of power driving the compressor    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    refrigerantClass:    
-      description: 'Refrigerant class used by the compressor. CFC: Chlorofluorocarbons. HCFC: Hydrochlorofluorocarbons. HFC: Hydrofluorocarbons'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    seeAlso:    
-      description: list of uri pointing to additional resources about the item    
-      oneOf:    
-        - items:    
-            format: uri    
-            type: string    
-          minItems: 1    
-          type: array    
-        - format: uri    
-          type: string    
-      x-ngsi:    
-        type: Property    
-    source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    type:    
-      description: It must be equal to `Compressor`    
-      enum:    
-        - Compressor    
-      type: string    
-      x-ngsi:    
-        type: Property    
-  required:    
-    - id    
-    - type    
-  type: object    
-  x-derived-from: "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:Compressor"    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
-  x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Compressor/LICENSE.md    
-  x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Compressor/schema.json    
-  x-model-tags: SAREF Compressor    
-  x-version: 0.0.1    
-```  
-</details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Example payloads    
-#### Compressor NGSI-v2 key-values Example    
-Here is an example of a Compressor in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
-<details><summary><strong>show/hide example</strong></summary>    
+<!-- 10-Header -->    
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)    
+Entity: Compressor    
+==================<!-- /10-Header -->    
+<!-- 15-License -->    
+[Open License](https://github.com/smart-data-models//dataModel.S4BLDG/blob/master/Compressor/LICENSE.md)    
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
+<!-- /15-License -->    
+<!-- 20-Description -->    
+Global description: **A compressor is a device that compresses a fluid typically used in a refrigeration circuit.**    
+version: 0.0.1    
+<!-- /20-Description -->    
+<!-- 30-PropertiesList -->    
+## List of properties    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>    
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government      
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
+- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `compressorSpeed[number]`: Compressor speed. Usually measured in cycles/s  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `hasHotGasBypass[boolean]`: Whether or not hot gas bypass is provided for the compressor. TRUE = Yes, FALSE = No  - `hasManufacturer[string]`: A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag  - `hasModel[string]`: A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag  - `id[*]`: Unique identifier of the entity  - `idealCapacity[number]`: Compressor capacity under ideal conditions. Usually measured in Watts (W, J/s)  - `idealShaftPower[number]`: Compressor shaft power under ideal conditions. Usually measured in Watts (W, J/s)  - `impellerDiameter[number]`: Diameter of compressor impeller - used to scale performance of geometrically similar compressors. Usually measured in millimeters (mm)  - `isContainedInBuildingSpace[*]`: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)  - `isContainedInPhysicalObject[*]`: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)  - `isSubSystemOf[array]`: A reference to a system(s) that this Physical Object is part of  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item  - `nominalCapacity[number]`: Nominal capacity. Usually measured in Watts (W, J/s)  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `partLoadRatioMax[number]`: Maximum part load ratio as a fraction of nominal capacity  - `partLoadRatioMin[number]`: Minimum part load ratio as a fraction of nominal capacity  - `powerSource[string]`: Type of power driving the compressor  - `refrigerantClass[string]`: Refrigerant class used by the compressor. CFC: Chlorofluorocarbons. HCFC: Hydrochlorofluorocarbons. HFC: Hydrofluorocarbons  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `type[string]`: It must be equal to `Compressor`  <!-- /30-PropertiesList -->    
+<!-- 35-RequiredProperties -->    
+Required properties    
+- `id`  - `type`  <!-- /35-RequiredProperties -->    
+<!-- 40-RequiredProperties -->    
+<!-- /40-RequiredProperties -->    
+<!-- 50-DataModelHeader -->    
+## Data Model description of properties    
+Sorted alphabetically (click for details)    
+<!-- /50-DataModelHeader -->    
+<!-- 60-ModelYaml -->    
+<details><summary><strong>full yaml details</strong></summary>      
+```yaml    
+Compressor:      
+  description: A compressor is a device that compresses a fluid typically used in a refrigeration circuit.      
+  properties:      
+    address:      
+      description: The mailing address      
+      properties:      
+        addressCountry:      
+          description: 'The country. For example, Spain'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/addressCountry      
+            type: Property      
+        addressLocality:      
+          description: 'The locality in which the street address is, and which is in the region'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/addressLocality      
+            type: Property      
+        addressRegion:      
+          description: 'The region in which the locality is, and which is in the country'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/addressRegion      
+            type: Property      
+        district:      
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'      
+          type: string      
+          x-ngsi:      
+            type: Property      
+        postOfficeBoxNumber:      
+          description: 'The post office box number for PO box addresses. For example, 03578'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/postOfficeBoxNumber      
+            type: Property      
+        postalCode:      
+          description: 'The postal code. For example, 24004'      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/https://schema.org/postalCode      
+            type: Property      
+        streetAddress:      
+          description: The street address      
+          type: string      
+          x-ngsi:      
+            model: https://schema.org/streetAddress      
+            type: Property      
+        streetNr:      
+          description: Number identifying a specific property on a public street      
+          type: string      
+          x-ngsi:      
+            type: Property      
+      type: object      
+      x-ngsi:      
+        model: https://schema.org/address      
+        type: Property      
+    alternateName:      
+      description: An alternative name for this item      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    areaServed:      
+      description: The geographic area where a service or offered item is provided      
+      type: string      
+      x-ngsi:      
+        model: https://schema.org/Text      
+        type: Property      
+    compressorSpeed:      
+      description: Compressor speed. Usually measured in cycles/s      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    dataProvider:      
+      description: A sequence of characters identifying the provider of the harmonised data entity      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    dateCreated:      
+      description: Entity creation timestamp. This will usually be allocated by the storage platform      
+      format: date-time      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    dateModified:      
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform      
+      format: date-time      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    description:      
+      description: A description of this item      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    hasHotGasBypass:      
+      description: 'Whether or not hot gas bypass is provided for the compressor. TRUE = Yes, FALSE = No'      
+      type: boolean      
+      x-ngsi:      
+        type: Property      
+    hasManufacturer:      
+      description: 'A relationship identifying the manufacturer of an entity (e.g., device). The value is expected to be a string or a string with language tag'      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    hasModel:      
+      description: 'A relationship identifying the model of an entity (e.g., device). The value is expected to be a string or a string with language tag'      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    id:      
+      anyOf:      
+        - description: Identifier format of any NGSI entity      
+          maxLength: 256      
+          minLength: 1      
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+          type: string      
+          x-ngsi:      
+            type: Property      
+        - description: Identifier format of any NGSI entity      
+          format: uri      
+          type: string      
+          x-ngsi:      
+            type: Property      
+      description: Unique identifier of the entity      
+      x-ngsi:      
+        type: Property      
+    idealCapacity:      
+      description: 'Compressor capacity under ideal conditions. Usually measured in Watts (W, J/s)'      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    idealShaftPower:      
+      description: 'Compressor shaft power under ideal conditions. Usually measured in Watts (W, J/s)'      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    impellerDiameter:      
+      description: Diameter of compressor impeller - used to scale performance of geometrically similar compressors. Usually measured in millimeters (mm)      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    isContainedInBuildingSpace:      
+      anyOf:      
+        - description: Identifier format of any NGSI entity      
+          maxLength: 256      
+          minLength: 1      
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+          type: string      
+          x-ngsi:      
+            type: Property      
+        - description: Identifier format of any NGSI entity      
+          format: uri      
+          type: string      
+          x-ngsi:      
+            type: Property      
+      description: An entity used to define the physical spaces of the building. A building space contains devices or building objects. (BuildingSpace)      
+      x-ngsi:      
+        type: Property      
+    isContainedInPhysicalObject:      
+      anyOf:      
+        - description: Identifier format of any NGSI entity      
+          maxLength: 256      
+          minLength: 1      
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+          type: string      
+          x-ngsi:      
+            type: Property      
+        - description: Identifier format of any NGSI entity      
+          format: uri      
+          type: string      
+          x-ngsi:      
+            type: Property      
+      description: Any Object that has a proper space region.  (Definition extracted from DUL ontology) (PhysicalObject)      
+      x-ngsi:      
+        type: Property      
+    isSubSystemOf:      
+      description: A reference to a system(s) that this Physical Object is part of      
+      items:      
+        anyOf:      
+          - description: Identifier format of any NGSI entity      
+            maxLength: 256      
+            minLength: 1      
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+            type: string      
+            x-ngsi:      
+              type: Property      
+          - description: Identifier format of any NGSI entity      
+            format: uri      
+            type: string      
+            x-ngsi:      
+              type: Property      
+        description: Unique identifier of the entity      
+        x-ngsi:      
+          type: Property      
+      type: array      
+      x-ngsi:      
+        type: Relationship      
+    location:      
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'      
+      oneOf:      
+        - description: Geojson reference to the item. Point      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                type: number      
+              minItems: 2      
+              type: array      
+            type:      
+              enum:      
+                - Point      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON Point      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. LineString      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  type: number      
+                minItems: 2      
+                type: array      
+              minItems: 2      
+              type: array      
+            type:      
+              enum:      
+                - LineString      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON LineString      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. Polygon      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  items:      
+                    type: number      
+                  minItems: 2      
+                  type: array      
+                minItems: 4      
+                type: array      
+              type: array      
+            type:      
+              enum:      
+                - Polygon      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON Polygon      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. MultiPoint      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  type: number      
+                minItems: 2      
+                type: array      
+              type: array      
+            type:      
+              enum:      
+                - MultiPoint      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON MultiPoint      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. MultiLineString      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  items:      
+                    type: number      
+                  minItems: 2      
+                  type: array      
+                minItems: 2      
+                type: array      
+              type: array      
+            type:      
+              enum:      
+                - MultiLineString      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON MultiLineString      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+        - description: Geojson reference to the item. MultiLineString      
+          properties:      
+            bbox:      
+              items:      
+                type: number      
+              minItems: 4      
+              type: array      
+            coordinates:      
+              items:      
+                items:      
+                  items:      
+                    items:      
+                      type: number      
+                    minItems: 2      
+                    type: array      
+                  minItems: 4      
+                  type: array      
+                type: array      
+              type: array      
+            type:      
+              enum:      
+                - MultiPolygon      
+              type: string      
+          required:      
+            - type      
+            - coordinates      
+          title: GeoJSON MultiPolygon      
+          type: object      
+          x-ngsi:      
+            type: GeoProperty      
+      x-ngsi:      
+        type: GeoProperty      
+    name:      
+      description: The name of this item      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    nominalCapacity:      
+      description: 'Nominal capacity. Usually measured in Watts (W, J/s)'      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    owner:      
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)      
+      items:      
+        anyOf:      
+          - description: Identifier format of any NGSI entity      
+            maxLength: 256      
+            minLength: 1      
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+            type: string      
+            x-ngsi:      
+              type: Property      
+          - description: Identifier format of any NGSI entity      
+            format: uri      
+            type: string      
+            x-ngsi:      
+              type: Property      
+        description: Unique identifier of the entity      
+        x-ngsi:      
+          type: Property      
+      type: array      
+      x-ngsi:      
+        type: Property      
+    partLoadRatioMax:      
+      description: Maximum part load ratio as a fraction of nominal capacity      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    partLoadRatioMin:      
+      description: Minimum part load ratio as a fraction of nominal capacity      
+      type: number      
+      x-ngsi:      
+        type: Property      
+    powerSource:      
+      description: Type of power driving the compressor      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    refrigerantClass:      
+      description: 'Refrigerant class used by the compressor. CFC: Chlorofluorocarbons. HCFC: Hydrochlorofluorocarbons. HFC: Hydrofluorocarbons'      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    seeAlso:      
+      description: list of uri pointing to additional resources about the item      
+      oneOf:      
+        - items:      
+            format: uri      
+            type: string      
+          minItems: 1      
+          type: array      
+        - format: uri      
+          type: string      
+      x-ngsi:      
+        type: Property      
+    source:      
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    type:      
+      description: It must be equal to `Compressor`      
+      enum:      
+        - Compressor      
+      type: string      
+      x-ngsi:      
+        type: Property      
+  required:      
+    - id      
+    - type      
+  type: object      
+  x-derived-from: "https://saref.etsi.org/saref4bldg/v1.1.2/#s4bldg:Compressor"      
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'      
+  x-license-url: https://github.com/smart-data-models/dataModel.S4BLDG/blob/master/Compressor/LICENSE.md      
+  x-model-schema: https://smart-data-models.github.com/dataModel.SAREF4BLDG/Compressor/schema.json      
+  x-model-tags: SAREF Compressor      
+  x-version: 0.0.1      
+```    
+</details>      
+<!-- /60-ModelYaml -->    
+<!-- 70-MiddleNotes -->    
+<!-- /70-MiddleNotes -->    
+<!-- 80-Examples -->    
+## Example payloads      
+#### Compressor NGSI-v2 key-values Example      
+Here is an example of a Compressor in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.    
+<details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
   "id": "urn:ngsi-ld:Compressor:99624683-cbb4-4bac-a458-e5bde1df9ff6",  
@@ -525,16 +523,16 @@ Compressor:
   "dataProvider": "IFC file"  
 }  
 ```  
-</details>  
-#### Compressor NGSI-v2 normalized Example    
-Here is an example of a Compressor in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
-<details><summary><strong>show/hide example</strong></summary>    
+</details>    
+#### Compressor NGSI-v2 normalized Example      
+Here is an example of a Compressor in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.    
+<details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
   "id": "urn:ngsi-ld:Compressor:5286e31e-5c79-4133-93c4-07c1f3574128",  
   "type": "Compressor",  
   "compressorSpeed": {  
-    "type": "Measurement",  
+    "type": "Number",  
     "value": 0.6951462722377054  
   },  
   "hasHotGasBypass": {  
@@ -542,27 +540,27 @@ Compressor:
     "value": true  
   },  
   "idealCapacity": {  
-    "type": "Measurement",  
+    "type": "Number",  
     "value": 0.3445800754974827  
   },  
   "idealShaftPower": {  
-    "type": "Measurement",  
+    "type": "Number",  
     "value": 0.8311250404203112  
   },  
   "impellerDiameter": {  
-    "type": "Measurement",  
+    "type": "Number",  
     "value": 0.868808285450986  
   },  
   "nominalCapacity": {  
-    "type": "Measurement",  
+    "type": "Number",  
     "value": 0.9287385861700207  
   },  
   "partLoadRatioMax": {  
-    "type": "Measurement",  
+    "type": "Number",  
     "value": 0.38901369640969274  
   },  
   "partLoadRatioMin": {  
-    "type": "Measurement",  
+    "type": "Number",  
     "value": 0.9657934764992187  
   },  
   "powerSource": {  
@@ -574,28 +572,19 @@ Compressor:
     "value": "Fresh"  
   },  
   "isContainedInBuildingSpace": {  
-    "type": "URI",  
+    "type": "Text",  
     "value": "urn:ngsi-ld:BuildingSpace:91df3ba9-787a-4ebb-9be6-ae4c05263de1"  
   },  
   "isContainedInPhysicalObject": {  
-    "type": "URI",  
+    "type": "Text",  
     "value": "urn:ngsi-ld:PhysicalObject:e9909895-084e-4023-9a5a-001322f825f9"  
   },  
   "isSubSystemOf": {  
-    "type": "array",  
+    "type": "StructuredValue",  
     "value": [  
-      {  
-        "type": "URI",  
-        "value": "urn:ngsi-ld:System:7ebaae6c-b549-4610-8df4-9c28cebe42a9"  
-      },  
-      {  
-        "type": "URI",  
-        "value": "urn:ngsi-ld:System:cedc316a-3057-4f0b-9800-db9757c47286"  
-      },  
-      {  
-        "type": "URI",  
-        "value": "urn:ngsi-ld:System:b64d7a83-9d09-405a-82dc-e2dc92ba7ae5"  
-      }  
+      "urn:ngsi-ld:System:7ebaae6c-b549-4610-8df4-9c28cebe42a9",  
+      "urn:ngsi-ld:System:cedc316a-3057-4f0b-9800-db9757c47286",  
+      "urn:ngsi-ld:System:b64d7a83-9d09-405a-82dc-e2dc92ba7ae5"  
     ]  
   },  
   "hasManufacturer": {  
@@ -636,10 +625,10 @@ Compressor:
   }  
 }  
 ```  
-</details>  
-#### Compressor NGSI-LD key-values Example    
-Here is an example of a Compressor in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
-<details><summary><strong>show/hide example</strong></summary>    
+</details>    
+#### Compressor NGSI-LD key-values Example      
+Here is an example of a Compressor in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.    
+<details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
   "id": "urn:ngsi-ld:Compressor:99624683-cbb4-4bac-a458-e5bde1df9ff6",  
@@ -676,10 +665,10 @@ Compressor:
   ]  
 }  
 ```  
-</details>  
-#### Compressor NGSI-LD normalized Example    
-Here is an example of a Compressor in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-<details><summary><strong>show/hide example</strong></summary>    
+</details>    
+#### Compressor NGSI-LD normalized Example      
+Here is an example of a Compressor in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.    
+<details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
   "id": "urn:ngsi-ld:Compressor:ff065369-a64b-4950-8bcd-ea73c6f6bf34",  
@@ -802,12 +791,12 @@ Compressor:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
----  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+</details><!-- /80-Examples -->    
+<!-- 90-FooterNotes -->    
+<!-- /90-FooterNotes -->    
+<!-- 95-Units -->    
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units    
+<!-- /95-Units -->    
+<!-- 97-LastFooter -->    
+---    
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->    
