@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Tank"
 subject = "dataModel.S4BLDG"
-accessType = "{'type': 'Property', 'value': 'solid state'}"
+accessType = "Auto Loan Account"
 attribute = "accessType"
 value = accessType
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-effectiveCapacity = {'type': 'Property', 'unitCode': 'm3.B', 'observedAt': '2023-01-26T08:12:59Z', 'value': 0.30258616298480145}
+effectiveCapacity = 0.6627329008534851
 attribute = "effectiveCapacity"
 value = effectiveCapacity
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-endShapeType = "{'type': 'Property', 'value': 'Well'}"
+endShapeType = "Union"
 attribute = "endShapeType"
 value = endShapeType
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-firstCurvatureRadius = {'type': 'Property', 'unitCode': 'mm', 'observedAt': '2023-01-26T08:09:31Z', 'value': 0.1755132773764223}
+firstCurvatureRadius = 0.6799132713266423
 attribute = "firstCurvatureRadius"
 value = firstCurvatureRadius
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
