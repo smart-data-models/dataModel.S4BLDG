@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "SolarDevice"
 subject = "dataModel.S4BLDG"
-isContainedInBuildingSpace = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:BuildingSpace:a7992d2d-19f4-4e6b-938f-9de8314e6a31'}"
+isContainedInBuildingSpace = "urn:ngsi-ld:BuildingSpace:d93dffd9-84c2-488d-8ffd-f94536f804c5"
 attribute = "isContainedInBuildingSpace"
 value = isContainedInBuildingSpace
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-isContainedInPhysicalObject = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:PhysicalObject:cd9cf384-7e05-44b2-816b-9bc094ad8423'}"
+isContainedInPhysicalObject = "urn:ngsi-ld:PhysicalObject:7c028af8-992e-4aa4-a732-9b1f645fe9a1"
 attribute = "isContainedInPhysicalObject"
 value = isContainedInPhysicalObject
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-isSubSystemOf = [{'type': 'Relationship', 'object': 'urn:ngsi-ld:System:fea01066-da6c-4823-8331-a7450f139df6'}, {'type': 'Relationship', 'object': 'urn:ngsi-ld:System:4f04da6b-d1c0-47a7-afd9-4455b3cfda01'}, {'type': 'Relationship', 'object': 'urn:ngsi-ld:System:353b9e43-78b1-44b7-a3e4-8f9bc523d7fc'}]
+isSubSystemOf = ['urn:ngsi-ld:System:f4d59d6a-9a55-41e8-9b74-cb3a77ea7251', 'urn:ngsi-ld:System:702c2871-cf14-4b89-9dee-a3848eda3e67', 'urn:ngsi-ld:System:71958de6-470b-4195-9b02-8d204b7c7aec']
 attribute = "isSubSystemOf"
 value = isSubSystemOf
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-hasManufacturer = "{'type': 'Property', 'value': 'SolarDevice Company Inc.'}"
+hasManufacturer = "SolarDevice Company Inc."
 attribute = "hasManufacturer"
 value = hasManufacturer
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
