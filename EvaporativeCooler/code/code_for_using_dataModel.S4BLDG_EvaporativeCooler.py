@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "EvaporativeCooler"
 subject = "dataModel.S4BLDG"
-flowArrangement = "{'type': 'Property', 'value': 'COM'}"
+flowArrangement = "Walk"
 attribute = "flowArrangement"
 value = flowArrangement
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-heatExchangeArea = {'type': 'Property', 'unitCode': 'm2', 'observedAt': '2023-01-25T17:08:28Z', 'value': 0.7584250696633893}
+heatExchangeArea = 0.0154798489699417
 attribute = "heatExchangeArea"
 value = heatExchangeArea
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-operationTemperatureMax = {'type': 'Property', 'unitCode': 'K', 'observedAt': '2023-01-25T18:14:01Z', 'value': 0.692516512025741}
+operationTemperatureMax = 0.8076614358257233
 attribute = "operationTemperatureMax"
 value = operationTemperatureMax
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-operationTemperatureMin = {'type': 'Property', 'unitCode': 'K', 'observedAt': '2023-01-25T20:42:27Z', 'value': 0.7188097385031748}
+operationTemperatureMin = 0.05752519637609499
 attribute = "operationTemperatureMin"
 value = operationTemperatureMin
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
