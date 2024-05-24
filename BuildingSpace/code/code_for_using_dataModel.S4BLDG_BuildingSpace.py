@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "BuildingSpace"
 subject = "dataModel.S4BLDG"
-airVolume = {'type': 'Property', 'unitCode': 'm3', 'observedAt': '2023-01-26T13:10:25Z', 'value': 0.24704243447487917}
+airVolume = 0.6757573914426188
 attribute = "airVolume"
 value = airVolume
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-bounds = {'type': 'Property', 'value': {'max': {'type': 'Property', 'value': {'x': {'type': 'Property', 'value': 0.5826533723200945}, 'y': {'type': 'Property', 'value': 0.8080827869513028}, 'z': {'type': 'Property', 'value': 0.7573005865012242}}}, 'min': {'type': 'Property', 'value': {'x': {'type': 'Property', 'value': 0.6273023443041038}, 'y': {'type': 'Property', 'value': 0.3279024163898896}, 'z': {'type': 'Property', 'value': 0.9097369934052144}}}}}
+bounds = {'max': {'type': 'Point', 'x': 0.11739641482930474, 'y': 0.6412223514966972, 'z': 0.8162459383914825}, 'min': {'type': 'Point', 'x': 0.656218944969374, 'y': 0.2590907017420844, 'z': 0.10417683913385478}}
 attribute = "bounds"
 value = bounds
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-buildingSpaceKind = "{'type': 'Property', 'value': 'Covering'}"
+buildingSpaceKind = "Plate"
 attribute = "buildingSpaceKind"
 value = buildingSpaceKind
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-isSpaceOfBuilding = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:Building:46ad9d28-a073-4895-a02e-eb5d12495b4a'}"
+isSpaceOfBuilding = "urn:ngsi-ld:Building:c09b1c10-d5bb-40cb-a76a-bbf551661d55"
 attribute = "isSpaceOfBuilding"
 value = isSpaceOfBuilding
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
