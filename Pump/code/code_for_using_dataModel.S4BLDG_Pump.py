@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Pump"
 subject = "dataModel.S4BLDG"
-connectionSize = {'type': 'Property', 'unitCode': 'mm', 'observedAt': '2023-01-26T01:56:40Z', 'value': 0.439871049852415}
+connectionSize = 0.0736674796470771
 attribute = "connectionSize"
 value = connectionSize
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-flowResistanceMax = {'type': 'Property', 'unitCode': 'N/m2', 'observedAt': '2023-01-26T10:30:54Z', 'value': 0.70272326323097}
+flowResistanceMax = 0.5763414622833901
 attribute = "flowResistanceMax"
 value = flowResistanceMax
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-flowResistanceMin = {'type': 'Property', 'unitCode': 'N/m2', 'observedAt': '2023-01-26T11:23:10Z', 'value': 0.748100252355086}
+flowResistanceMin = 0.23194313125611832
 attribute = "flowResistanceMin"
 value = flowResistanceMin
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-netPositiveSuctionHead = {'type': 'Property', 'unitCode': 'N/m2', 'observedAt': '2023-01-25T23:42:12Z', 'value': 0.4372375818125598}
+netPositiveSuctionHead = 0.9430406136976697
 attribute = "netPositiveSuctionHead"
 value = netPositiveSuctionHead
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
