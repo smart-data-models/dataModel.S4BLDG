@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Coil"
 subject = "dataModel.S4BLDG"
-airFlowRateMax = {'type': 'Property', 'unitCode': 'm3/s', 'observedAt': '2023-01-25T22:00:31Z', 'value': 0.461404719601072}
+airFlowRateMax = 0.22332143818011307
 attribute = "airFlowRateMax"
 value = airFlowRateMax
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-airFlowRateMin = {'type': 'Property', 'unitCode': 'm3/s', 'observedAt': '2023-01-26T12:18:55Z', 'value': 0.3100905584892091}
+airFlowRateMin = 0.6369516028350278
 attribute = "airFlowRateMin"
 value = airFlowRateMin
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-nominalLatentCapacity = {'type': 'Property', 'unitCode': 'J/s', 'observedAt': '2023-01-25T15:57:00Z', 'value': 0.0859276056343462}
+nominalLatentCapacity = 0.9394595315602638
 attribute = "nominalLatentCapacity"
 value = nominalLatentCapacity
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-nominalSensibleCapacity = {'type': 'Property', 'unitCode': 'J/s', 'observedAt': '2023-01-25T15:07:49Z', 'value': 0.9959034840230547}
+nominalSensibleCapacity = 0.8014808985276609
 attribute = "nominalSensibleCapacity"
 value = nominalSensibleCapacity
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
