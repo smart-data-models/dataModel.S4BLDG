@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Humidifier"
 subject = "dataModel.S4BLDG"
-application = "{'type': 'Property', 'value': 'payment'}"
+application = "Trafficway"
 attribute = "application"
 value = application
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-internalControl = "{'type': 'Property', 'value': 'national'}"
+internalControl = "circuit"
 attribute = "internalControl"
 value = internalControl
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-nominalAirFlowRate = {'type': 'Property', 'unitCode': 'm3/s', 'observedAt': '2023-01-25T23:50:20Z', 'value': 0.6517710650891719}
+nominalAirFlowRate = 0.5067643159622129
 attribute = "nominalAirFlowRate"
 value = nominalAirFlowRate
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-nominalMoistureGain = {'type': 'Property', 'unitCode': 'kg/s', 'observedAt': '2023-01-26T00:47:56Z', 'value': 0.7521424188536304}
+nominalMoistureGain = 0.6949833248374234
 attribute = "nominalMoistureGain"
 value = nominalMoistureGain
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
