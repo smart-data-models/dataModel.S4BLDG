@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "CooledBeam"
 subject = "dataModel.S4BLDG"
-coilLength = {'type': 'Property', 'unitCode': 'mm', 'observedAt': '2023-01-25T18:59:14Z', 'value': 0.45413352830053977}
+coilLength = 0.12136965337189098
 attribute = "coilLength"
 value = coilLength
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-coilWidth = {'type': 'Property', 'unitCode': 'm', 'observedAt': '2023-01-26T07:44:01Z', 'value': 0.2692385089640058}
+coilWidth = 0.9739362570796377
 attribute = "coilWidth"
 value = coilWidth
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-finishColor = "{'type': 'Property', 'value': 'indigo'}"
+finishColor = "deposit"
 attribute = "finishColor"
 value = finishColor
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-integratedLightingType = "{'type': 'Property', 'value': 'Graphical User Interface'}"
+integratedLightingType = "Metrics"
 attribute = "integratedLightingType"
 value = integratedLightingType
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
