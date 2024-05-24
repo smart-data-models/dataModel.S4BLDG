@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "FlowMeter"
 subject = "dataModel.S4BLDG"
-readOutType = "{'type': 'Property', 'value': 'website'}"
+readOutType = "Spain"
 attribute = "readOutType"
 value = readOutType
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-remoteReading = {'type': 'Property', 'value': True}
+remoteReading = False
 attribute = "remoteReading"
 value = remoteReading
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-isContainedInBuildingSpace = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:BuildingSpace:9da65e0c-7b0c-4d62-99bc-1cb6926749e4'}"
+isContainedInBuildingSpace = "urn:ngsi-ld:BuildingSpace:a8241df5-decd-47d3-83fb-23ac625a5690"
 attribute = "isContainedInBuildingSpace"
 value = isContainedInBuildingSpace
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-isContainedInPhysicalObject = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:PhysicalObject:5199f09c-629d-48ca-9b21-7d3c2800f97f'}"
+isContainedInPhysicalObject = "urn:ngsi-ld:PhysicalObject:c6fb3c72-03ea-4973-afbc-63d75c005d24"
 attribute = "isContainedInPhysicalObject"
 value = isContainedInPhysicalObject
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
