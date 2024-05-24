@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Interceptor"
 subject = "dataModel.S4BLDG"
-coverLength = {'type': 'Property', 'unitCode': 'mm', 'observedAt': '2023-01-26T04:52:13Z', 'value': 0.7541861378948772}
+coverLength = 0.637563278020405
 attribute = "coverLength"
 value = coverLength
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-coverWidth = {'type': 'Property', 'unitCode': 'mm', 'observedAt': '2023-01-26T13:23:50Z', 'value': 0.18581009233424606}
+coverWidth = 0.39657091750888485
 attribute = "coverWidth"
 value = coverWidth
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-inletConnectionSize = {'type': 'Property', 'unitCode': 'mm', 'observedAt': '2023-01-26T06:33:28Z', 'value': 0.5362664253813387}
+inletConnectionSize = 0.19141372654068167
 attribute = "inletConnectionSize"
 value = inletConnectionSize
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-nominalBodyDepth = {'type': 'Property', 'unitCode': 'mm', 'observedAt': '2023-01-26T01:38:01Z', 'value': 0.8646722014120122}
+nominalBodyDepth = 0.14989240074077315
 attribute = "nominalBodyDepth"
 value = nominalBodyDepth
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
