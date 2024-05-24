@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "CoolingTower"
 subject = "dataModel.S4BLDG"
-ambientDesignDryBulbTemperature = {'type': 'Property', 'unitCode': 'K', 'observedAt': '2023-01-26T08:09:09Z', 'value': 0.9762464796853121}
+ambientDesignDryBulbTemperature = 0.7275209381168831
 attribute = "ambientDesignDryBulbTemperature"
 value = ambientDesignDryBulbTemperature
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-ambientDesignWetBulbTemperature = {'type': 'Property', 'unitCode': 'K', 'observedAt': '2023-01-25T14:29:40Z', 'value': 0.3062794162138128}
+ambientDesignWetBulbTemperature = 0.8419497776651206
 attribute = "ambientDesignWetBulbTemperature"
 value = ambientDesignWetBulbTemperature
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-basinReserveVolume = {'type': 'Property', 'unitCode': 'm3', 'observedAt': '2023-01-26T01:28:50Z', 'value': 0.9472477891325785}
+basinReserveVolume = 0.9886525691530367
 attribute = "basinReserveVolume"
 value = basinReserveVolume
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-capacityControl = "{'type': 'Property', 'value': 'input'}"
+capacityControl = "Lead"
 attribute = "capacityControl"
 value = capacityControl
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
