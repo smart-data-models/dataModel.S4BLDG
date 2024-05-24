@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Transformer"
 subject = "dataModel.S4BLDG"
-apparentPowerMax = {'type': 'Property', 'unitCode': 'J/s', 'observedAt': '2023-01-25T20:30:38Z', 'value': 0.24466523496915848}
+apparentPowerMax = 0.17497838413457267
 attribute = "apparentPowerMax"
 value = apparentPowerMax
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-imaginaryImpedanceRatio = {'type': 'Property', 'unitCode': 'NA', 'observedAt': '2023-01-26T00:56:06Z', 'value': 0.0034198103714959682}
+imaginaryImpedanceRatio = 0.5323895083879017
 attribute = "imaginaryImpedanceRatio"
 value = imaginaryImpedanceRatio
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-isNeutralPrimaryTerminalAvailable = {'type': 'Property', 'value': False}
+isNeutralPrimaryTerminalAvailable = False
 attribute = "isNeutralPrimaryTerminalAvailable"
 value = isNeutralPrimaryTerminalAvailable
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-isNeutralSecondaryTerminalAvailable = {'type': 'Property', 'value': True}
+isNeutralSecondaryTerminalAvailable = True
 attribute = "isNeutralSecondaryTerminalAvailable"
 value = isNeutralSecondaryTerminalAvailable
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
