@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Compressor"
 subject = "dataModel.S4BLDG"
-compressorSpeed = {'type': 'Property', 'unitCode': 'cycles/s', 'observedAt': '2023-01-26T02:36:18Z', 'value': 0.23988109283737147}
+compressorSpeed = 0.679723675842234
 attribute = "compressorSpeed"
 value = compressorSpeed
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-hasHotGasBypass = {'type': 'Property', 'value': True}
+hasHotGasBypass = True
 attribute = "hasHotGasBypass"
 value = hasHotGasBypass
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-idealCapacity = {'type': 'Property', 'unitCode': 'J/s', 'observedAt': '2023-01-25T18:17:55Z', 'value': 0.37381644415955617}
+idealCapacity = 0.7248048000316983
 attribute = "idealCapacity"
 value = idealCapacity
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-idealShaftPower = {'type': 'Property', 'unitCode': 'J/s', 'observedAt': '2023-01-25T19:36:02Z', 'value': 0.7352666167757617}
+idealShaftPower = 0.47111429367476765
 attribute = "idealShaftPower"
 value = idealShaftPower
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
