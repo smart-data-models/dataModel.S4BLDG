@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "ElectricFlowStorageDevice"
 subject = "dataModel.S4BLDG"
-nominalFrequency = {'type': 'Property', 'unitCode': 'Hz', 'observedAt': '2023-01-25T19:08:38Z', 'value': 0.6604645004424095}
+nominalFrequency = 0.6643858958243121
 attribute = "nominalFrequency"
 value = nominalFrequency
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-nominalSupplyVoltage = {'type': 'Property', 'unitCode': 'W/A', 'observedAt': '2023-01-26T06:40:20Z', 'value': 0.7889839353290103}
+nominalSupplyVoltage = 0.9863230627218449
 attribute = "nominalSupplyVoltage"
 value = nominalSupplyVoltage
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-nominalSupplyVoltageMin = {'type': 'Property', 'unitCode': 'NA', 'observedAt': '2023-01-26T13:04:38Z', 'value': 0.5759276076424262}
+nominalSupplyVoltageMin = 0.5073272634060758
 attribute = "nominalSupplyVoltageMin"
 value = nominalSupplyVoltageMin
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-isContainedInBuildingSpace = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:BuildingSpace:8d1a4801-d77d-48ce-8fdb-6b0e6bf737f2'}"
+isContainedInBuildingSpace = "urn:ngsi-ld:BuildingSpace:783aa5ff-fb6a-4fd8-863d-82a133f5d062"
 attribute = "isContainedInBuildingSpace"
 value = isContainedInBuildingSpace
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
