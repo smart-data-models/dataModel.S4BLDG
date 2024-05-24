@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Condenser"
 subject = "dataModel.S4BLDG"
-externalSurfaceArea = {'type': 'Property', 'unitCode': 'm2', 'observedAt': '2023-01-26T11:04:44Z', 'value': 0.3471102075551651}
+externalSurfaceArea = 0.18804655027013273
 attribute = "externalSurfaceArea"
 value = externalSurfaceArea
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-internalRefrigerantVolume = {'type': 'Property', 'unitCode': 'm3', 'observedAt': '2023-01-26T10:30:09Z', 'value': 0.696994206179287}
+internalRefrigerantVolume = 0.1588694072031649
 attribute = "internalRefrigerantVolume"
 value = internalRefrigerantVolume
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-internalSurfaceArea = {'type': 'Property', 'unitCode': 'm2', 'observedAt': '2023-01-25T14:42:31Z', 'value': 0.7522617883905902}
+internalSurfaceArea = 0.884829655411807
 attribute = "internalSurfaceArea"
 value = internalSurfaceArea
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-internalWaterVolume = {'type': 'Property', 'unitCode': 'm3', 'observedAt': '2023-01-26T09:25:42Z', 'value': 0.5807649609435256}
+internalWaterVolume = 0.7576300292464242
 attribute = "internalWaterVolume"
 value = internalWaterVolume
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
