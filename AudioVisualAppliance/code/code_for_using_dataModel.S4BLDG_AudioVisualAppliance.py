@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "AudioVisualAppliance"
 subject = "dataModel.S4BLDG"
-audioVolume = {'type': 'Property', 'unitCode': 'watts', 'observedAt': '2023-01-26T03:27:08Z', 'value': 0.5554214508770069}
+audioVolume = 0.45106111153820727
 attribute = "audioVolume"
 value = audioVolume
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-mediaSource = "{'type': 'Property', 'value': 'Cambridgeshire'}"
+mediaSource = "eco-centric"
 attribute = "mediaSource"
 value = mediaSource
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-isContainedInBuildingSpace = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:BuildingSpace:d8d8ebe8-1ace-4416-bd78-27c7da946369'}"
+isContainedInBuildingSpace = "urn:ngsi-ld:BuildingSpace:8c627932-e06a-4ae9-b789-0021e562a215"
 attribute = "isContainedInBuildingSpace"
 value = isContainedInBuildingSpace
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-isContainedInPhysicalObject = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:PhysicalObject:63dae1f5-8a50-4827-b54f-e2414f37e25b'}"
+isContainedInPhysicalObject = "urn:ngsi-ld:PhysicalObject:16c0c4e6-09aa-4086-98ca-5ef2f437274f"
 attribute = "isContainedInPhysicalObject"
 value = isContainedInPhysicalObject
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
