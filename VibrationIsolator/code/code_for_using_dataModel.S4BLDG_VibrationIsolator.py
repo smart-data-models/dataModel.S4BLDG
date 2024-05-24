@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "VibrationIsolator"
 subject = "dataModel.S4BLDG"
-height = {'type': 'Property', 'unitCode': 'mm', 'observedAt': '2023-01-26T00:57:35Z', 'value': 0.5291676326164039}
+height = 0.38014362681889713
 attribute = "height"
 value = height
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-isolatorCompressibility = {'type': 'Property', 'unitCode': 'NA', 'observedAt': '2023-01-26T13:38:20Z', 'value': 0.0633806140666543}
+isolatorCompressibility = 0.7634523319144405
 attribute = "isolatorCompressibility"
 value = isolatorCompressibility
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-isolatorStaticDeflection = {'type': 'Property', 'unitCode': 'mm', 'observedAt': '2023-01-26T05:45:32Z', 'value': 0.7015963366033574}
+isolatorStaticDeflection = 0.7887792629834026
 attribute = "isolatorStaticDeflection"
 value = isolatorStaticDeflection
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-supportedWeightMax = {'type': 'Property', 'unitCode': 'g', 'observedAt': '2023-01-26T11:46:41Z', 'value': 0.22821941593534223}
+supportedWeightMax = 0.32346503665487614
 attribute = "supportedWeightMax"
 value = supportedWeightMax
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
