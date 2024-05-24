@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "SpaceHeater"
 subject = "dataModel.S4BLDG"
-bodyMass = {'type': 'Property', 'unitCode': 'g', 'observedAt': '2023-01-26T04:40:44Z', 'value': 0.40152893437379167}
+bodyMass = 0.2211394720882921
 attribute = "bodyMass"
 value = bodyMass
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-energySource = "{'type': 'Property', 'value': 'groupware'}"
+energySource = "Research"
 attribute = "energySource"
 value = energySource
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-heatTransferDimension = "{'type': 'Property', 'value': 'Licensed Frozen Bike'}"
+heatTransferDimension = "Sleek Rubber Chicken"
 attribute = "heatTransferDimension"
 value = heatTransferDimension
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-heatTransferMedium = "{'type': 'Property', 'value': 'Pakistan Rupee'}"
+heatTransferMedium = "calculating"
 attribute = "heatTransferMedium"
 value = heatTransferMedium
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
