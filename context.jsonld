@@ -71,7 +71,7 @@
         "basinReserveVolume": "https://smartdatamodels.org/dataModel.S4BLDG/basinReserveVolume",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "bladeAction": "https://smartdatamodels.org/dataModel.S4BLDG/bladeAction",
         "bladeEdge": "https://smartdatamodels.org/dataModel.S4BLDG/bladeEdge",
@@ -98,7 +98,7 @@
         "controllingProperty": "https://smartdatamodels.org/dataModel.S4BLDG/controllingProperty",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "coverLength": "https://smartdatamodels.org/dataModel.S4BLDG/coverLength",
         "coverWidth": "https://smartdatamodels.org/dataModel.S4BLDG/coverWidth",
@@ -186,18 +186,18 @@
         "liftElevationDifference": "https://smartdatamodels.org/dataModel.S4BLDG/liftElevationDifference",
         "lightEmitterNominalPower": "https://smartdatamodels.org/dataModel.S4BLDG/lightEmitterNominalPower",
         "limitingTerminalSize": "https://smartdatamodels.org/dataModel.S4BLDG/limitingTerminalSize",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "lockedRotorCurrent": "https://smartdatamodels.org/dataModel.S4BLDG/lockedRotorCurrent",
         "manualOverride": "https://smartdatamodels.org/dataModel.S4BLDG/manualOverride",
         "max": {
             "@container": "@list",
-            "@id": "ngsi-ld:max"
+            "@id": "https://uri.etsi.org/ngsi-ld/max"
         },
         "mechanicalOperated": "https://smartdatamodels.org/dataModel.S4BLDG/mechanicalOperated",
         "mediaSource": "https://smartdatamodels.org/dataModel.S4BLDG/mediaSource",
         "min": {
             "@container": "@list",
-            "@id": "ngsi-ld:min"
+            "@id": "https://uri.etsi.org/ngsi-ld/min"
         },
         "motorDriveType": "https://smartdatamodels.org/dataModel.S4BLDG/motorDriveType",
         "motorEnclosureType": "https://smartdatamodels.org/dataModel.S4BLDG/motorEnclosureType",
