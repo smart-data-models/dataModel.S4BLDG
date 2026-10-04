@@ -1,3 +1,23 @@
 /* (Beta) Export of data model FlowInstrument of the subject dataModel.S4BLDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE FlowInstrument_type AS ENUM ('FlowInstrument');
-CREATE TABLE FlowInstrument (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, hasManufacturer TEXT, hasModel TEXT, id TEXT PRIMARY KEY, isSubSystemOf JSON, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type FlowInstrument_type);
+CREATE TABLE FlowInstrument (
+  "address" JSON,
+  "alternateName" TEXT,
+  "areaServed" TEXT,
+  "dataProvider" TEXT,
+  "dateCreated" TIMESTAMP,
+  "dateModified" TIMESTAMP,
+  "description" TEXT,
+  "hasManufacturer" TEXT,
+  "hasModel" TEXT,
+  "id" TEXT PRIMARY KEY,
+  "isContainedInBuildingSpace" JSON,
+  "isContainedInPhysicalObject" JSON,
+  "isSubSystemOf" JSON,
+  "location" JSON,
+  "name" TEXT,
+  "owner" JSON,
+  "seeAlso" JSON,
+  "source" TEXT,
+  "type" FlowInstrument_type
+);
