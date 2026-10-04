@@ -1,3 +1,26 @@
 /* (Beta) Export of data model TransportElement of the subject dataModel.S4BLDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE TransportElement_type AS ENUM ('TransportElement');
-CREATE TABLE TransportElement (address JSON, alternateName TEXT, areaServed TEXT, capacityPeople NUMERIC, capacityWeight NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, fireExit BOOLEAN, hasManufacturer TEXT, hasModel TEXT, id TEXT PRIMARY KEY, isSubSystemOf JSON, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type TransportElement_type);
+CREATE TABLE TransportElement (
+  "address" JSON,
+  "alternateName" TEXT,
+  "areaServed" TEXT,
+  "capacityPeople" NUMERIC,
+  "capacityWeight" NUMERIC,
+  "dataProvider" TEXT,
+  "dateCreated" TIMESTAMP,
+  "dateModified" TIMESTAMP,
+  "description" TEXT,
+  "fireExit" BOOLEAN,
+  "hasManufacturer" TEXT,
+  "hasModel" TEXT,
+  "id" TEXT PRIMARY KEY,
+  "isContainedInBuildingSpace" JSON,
+  "isContainedInPhysicalObject" JSON,
+  "isSubSystemOf" JSON,
+  "location" JSON,
+  "name" TEXT,
+  "owner" JSON,
+  "seeAlso" JSON,
+  "source" TEXT,
+  "type" TransportElement_type
+);
