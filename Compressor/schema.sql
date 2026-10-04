@@ -1,3 +1,33 @@
 /* (Beta) Export of data model Compressor of the subject dataModel.S4BLDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Compressor_type AS ENUM ('Compressor');
-CREATE TABLE Compressor (address JSON, alternateName TEXT, areaServed TEXT, compressorSpeed NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, hasHotGasBypass BOOLEAN, hasManufacturer TEXT, hasModel TEXT, id TEXT PRIMARY KEY, idealCapacity NUMERIC, idealShaftPower NUMERIC, impellerDiameter NUMERIC, isSubSystemOf JSON, location JSON, name TEXT, nominalCapacity NUMERIC, owner JSON, partLoadRatioMax NUMERIC, partLoadRatioMin NUMERIC, powerSource TEXT, refrigerantClass TEXT, seeAlso JSON, source TEXT, type Compressor_type);
+CREATE TABLE Compressor (
+  "address" JSON,
+  "alternateName" TEXT,
+  "areaServed" TEXT,
+  "compressorSpeed" NUMERIC,
+  "dataProvider" TEXT,
+  "dateCreated" TIMESTAMP,
+  "dateModified" TIMESTAMP,
+  "description" TEXT,
+  "hasHotGasBypass" BOOLEAN,
+  "hasManufacturer" TEXT,
+  "hasModel" TEXT,
+  "id" TEXT PRIMARY KEY,
+  "idealCapacity" NUMERIC,
+  "idealShaftPower" NUMERIC,
+  "impellerDiameter" NUMERIC,
+  "isContainedInBuildingSpace" JSON,
+  "isContainedInPhysicalObject" JSON,
+  "isSubSystemOf" JSON,
+  "location" JSON,
+  "name" TEXT,
+  "nominalCapacity" NUMERIC,
+  "owner" JSON,
+  "partLoadRatioMax" NUMERIC,
+  "partLoadRatioMin" NUMERIC,
+  "powerSource" TEXT,
+  "refrigerantClass" TEXT,
+  "seeAlso" JSON,
+  "source" TEXT,
+  "type" Compressor_type
+);
