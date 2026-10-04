@@ -1,3 +1,37 @@
 /* (Beta) Export of data model CoolingTower of the subject dataModel.S4BLDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE CoolingTower_type AS ENUM ('CoolingTower');
-CREATE TABLE CoolingTower (address JSON, alternateName TEXT, ambientDesignDryBulbTemperature NUMERIC, ambientDesignWetBulbTemperature NUMERIC, areaServed TEXT, basinReserveVolume NUMERIC, capacityControl TEXT, circuitType TEXT, controlStrategy TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, flowArrangement TEXT, hasManufacturer TEXT, hasModel TEXT, id TEXT PRIMARY KEY, isSubSystemOf JSON, liftElevationDifference NUMERIC, location JSON, name TEXT, nominalCapacity NUMERIC, numberOfCells NUMERIC, operationTemperatureMax NUMERIC, operationTemperatureMin NUMERIC, owner JSON, seeAlso JSON, source TEXT, sprayType TEXT, type CoolingTower_type, waterRequirement NUMERIC);
+CREATE TABLE CoolingTower (
+  "address" JSON,
+  "alternateName" TEXT,
+  "ambientDesignDryBulbTemperature" NUMERIC,
+  "ambientDesignWetBulbTemperature" NUMERIC,
+  "areaServed" TEXT,
+  "basinReserveVolume" NUMERIC,
+  "capacityControl" TEXT,
+  "circuitType" TEXT,
+  "controlStrategy" TEXT,
+  "dataProvider" TEXT,
+  "dateCreated" TIMESTAMP,
+  "dateModified" TIMESTAMP,
+  "description" TEXT,
+  "flowArrangement" TEXT,
+  "hasManufacturer" TEXT,
+  "hasModel" TEXT,
+  "id" TEXT PRIMARY KEY,
+  "isContainedInBuildingSpace" JSON,
+  "isContainedInPhysicalObject" JSON,
+  "isSubSystemOf" JSON,
+  "liftElevationDifference" NUMERIC,
+  "location" JSON,
+  "name" TEXT,
+  "nominalCapacity" NUMERIC,
+  "numberOfCells" NUMERIC,
+  "operationTemperatureMax" NUMERIC,
+  "operationTemperatureMin" NUMERIC,
+  "owner" JSON,
+  "seeAlso" JSON,
+  "source" TEXT,
+  "sprayType" TEXT,
+  "type" CoolingTower_type,
+  "waterRequirement" NUMERIC
+);
