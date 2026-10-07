@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Fan of the subject dataModel.S4BLDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE operationMode_type AS ENUM ('supply', 'exhaust');
+CREATE TYPE Fan_operationMode_type AS ENUM ('supply', 'exhaust');
 CREATE TYPE Fan_type AS ENUM ('Fan');
 CREATE TABLE Fan (
   "address" JSON,
@@ -24,7 +24,7 @@ CREATE TABLE Fan (
   "nominalRotationSpeed" NUMERIC,
   "nominalStaticPressure" NUMERIC,
   "nominalTotalPressure" NUMERIC,
-  "operationMode" operationMode_type,
+  "operationMode" Fan_operationMode_type,
   "operationTemperatureMax" NUMERIC,
   "operationTemperatureMin" NUMERIC,
   "operationalRiterial" NUMERIC,
