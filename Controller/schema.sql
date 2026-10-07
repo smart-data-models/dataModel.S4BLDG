@@ -1,11 +1,11 @@
 /* (Beta) Export of data model Controller of the subject dataModel.S4BLDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE controllingProperty_type AS ENUM ('temperature', 'CO2');
+CREATE TYPE Controller_controllingProperty_type AS ENUM ('temperature', 'CO2');
 CREATE TYPE Controller_type AS ENUM ('Controller');
 CREATE TABLE Controller (
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
-  "controllingProperty" controllingProperty_type,
+  "controllingProperty" Controller_controllingProperty_type,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
   "dateModified" TIMESTAMP,
