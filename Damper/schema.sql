@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Damper of the subject dataModel.S4BLDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE operationMode_type AS ENUM ('supply', 'exhaust');
+CREATE TYPE Damper_operationMode_type AS ENUM ('supply', 'exhaust');
 CREATE TYPE Damper_type AS ENUM ('Damper');
 CREATE TABLE Damper (
   "address" JSON,
@@ -32,7 +32,7 @@ CREATE TABLE Damper (
   "numberOfBlades" NUMERIC,
   "openPressureDrop" NUMERIC,
   "operation" TEXT,
-  "operationMode" operationMode_type,
+  "operationMode" Damper_operationMode_type,
   "operationTemperatureMax" NUMERIC,
   "operationTemperatureMin" NUMERIC,
   "orientation" TEXT,
